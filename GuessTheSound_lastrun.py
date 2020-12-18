@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 18, 2020, at 18:34
+    on December 18, 2020, at 18:50
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -155,7 +155,6 @@ Question = visual.TextStim(win=win, name='Question',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-key_resp = keyboard.Keyboard()
 ResponseBox = visual.TextBox2(
      win, text='default text', font='Arial',
      pos=(0, -0.2),     letterHeight=0.03,
@@ -175,29 +174,13 @@ ResponseBox = visual.TextBox2(
 SubmitClick = event.Mouse(win=win)
 x, y = [None, None]
 SubmitClick.mouseClock = core.Clock()
-Submit = visual.TextBox2(
-     win, text='Submit', font='Arial',
-     pos=[0, -0.4],     letterHeight=0.03,
-     size=[0.15, 0.05], borderWidth=3.0,
-     color='black', colorSpace='rgb',
-     opacity=1,
-     bold=True, italic=False,
-     lineSpacing=1.0,
-     padding=0.01,
-     anchor='top-center',
-     fillColor=None, borderColor=None,
-     flipHoriz=False, flipVert=False,
-     editable=False,
-     name='Submit',
-     autoLog=True,
-)
 ClickTheButton = visual.TextStim(win=win, name='ClickTheButton',
     text="Click 'Submit' to begin the next trial.",
     font='Arial',
     pos=(0, -0.03), height=0.025, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-5.0);
+    depth=-3.0);
 SoundItem = sound.Sound('A', secs=-1, stereo=True, hamming=True,
     name='SoundItem')
 SoundItem.setVolume(1.1)
@@ -207,7 +190,23 @@ ItemNo = visual.TextStim(win=win, name='ItemNo',
     pos=(0, 0.45), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-7.0);
+    depth=-5.0);
+Submit = visual.TextBox2(
+     win, text='Submit', font='Arial',
+     pos=(0, -0.4),     letterHeight=0.04,
+     size=(0.15, 0.1), borderWidth=2.0,
+     color='white', colorSpace='rgb',
+     opacity=1,
+     bold=False, italic=False,
+     lineSpacing=1.0,
+     padding=None,
+     anchor='center',
+     fillColor=None, borderColor=None,
+     flipHoriz=False, flipVert=False,
+     editable=False,
+     name='Submit',
+     autoLog=True,
+)
 
 # Initialize components for Routine "End"
 EndClock = core.Clock()
@@ -709,9 +708,6 @@ for thisTrial in trials:
     # ------Prepare to start Routine "Study"-------
     continueRoutine = True
     # update component parameters for each repeat
-    key_resp.keys = []
-    key_resp.rt = []
-    _key_resp_allKeys = []
     ResponseBox.setText('\n\n')
     # setup some python lists for storing info about the SubmitClick
     SubmitClick.clicked_name = []
@@ -720,7 +716,7 @@ for thisTrial in trials:
     SoundItem.setVolume(1.1, log=False)
     ItemNo.setText(number)
     # keep track of which components have finished
-    StudyComponents = [Question, key_resp, ResponseBox, SubmitClick, Submit, ClickTheButton, SoundItem, ItemNo]
+    StudyComponents = [Question, ResponseBox, SubmitClick, ClickTheButton, SoundItem, ItemNo, Submit]
     for thisComponent in StudyComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -751,28 +747,6 @@ for thisTrial in trials:
             Question.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(Question, 'tStartRefresh')  # time at next scr refresh
             Question.setAutoDraw(True)
-        
-        # *key_resp* updates
-        waitOnFlip = False
-        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp.frameNStart = frameN  # exact frame index
-            key_resp.tStart = t  # local t and not account for scr refresh
-            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
-            key_resp.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp.getKeys(keyList=['enter'], waitRelease=False)
-            _key_resp_allKeys.extend(theseKeys)
-            if len(_key_resp_allKeys):
-                key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
-                key_resp.rt = _key_resp_allKeys[-1].rt
-                # a response ends the routine
-                continueRoutine = False
         
         # *ResponseBox* updates
         if ResponseBox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -806,15 +780,6 @@ for thisTrial in trials:
                     if gotValidClick:  # abort routine on response
                         continueRoutine = False
         
-        # *Submit* updates
-        if Submit.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            Submit.frameNStart = frameN  # exact frame index
-            Submit.tStart = t  # local t and not account for scr refresh
-            Submit.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Submit, 'tStartRefresh')  # time at next scr refresh
-            Submit.setAutoDraw(True)
-        
         # *ClickTheButton* updates
         if ClickTheButton.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -839,6 +804,15 @@ for thisTrial in trials:
             ItemNo.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(ItemNo, 'tStartRefresh')  # time at next scr refresh
             ItemNo.setAutoDraw(True)
+        
+        # *Submit* updates
+        if Submit.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            Submit.frameNStart = frameN  # exact frame index
+            Submit.tStart = t  # local t and not account for scr refresh
+            Submit.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Submit, 'tStartRefresh')  # time at next scr refresh
+            Submit.setAutoDraw(True)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -870,8 +844,6 @@ for thisTrial in trials:
     # store data for trials (TrialHandler)
     trials.addData('SubmitClick.started', SubmitClick.tStart)
     trials.addData('SubmitClick.stopped', SubmitClick.tStop)
-    trials.addData('Submit.started', Submit.tStartRefresh)
-    trials.addData('Submit.stopped', Submit.tStopRefresh)
     trials.addData('ClickTheButton.started', ClickTheButton.tStartRefresh)
     trials.addData('ClickTheButton.stopped', ClickTheButton.tStopRefresh)
     SoundItem.stop()  # ensure sound has stopped at end of routine
@@ -881,6 +853,8 @@ for thisTrial in trials:
     trials.addData('ItemNo.stopped', ItemNo.tStopRefresh)
     if trials.thisN == 61: # i.e. trials 0, 1, 2 have been completed
         trials.finished = True # end the loop early
+    trials.addData('Submit.started', Submit.tStartRefresh)
+    trials.addData('Submit.stopped', Submit.tStopRefresh)
     # the Routine "Study" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()

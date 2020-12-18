@@ -221,6 +221,7 @@ var SubmitClick;
 var ClickTheButton;
 var SoundItem;
 var ItemNo;
+var Submit;
 var EndClock;
 var ThankyouMssg;
 var globalClock;
@@ -376,6 +377,23 @@ function experimentInit() {
     pos: [0, 0.45], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: -5.0 
+  });
+  
+  Submit = new visual.TextBox({
+    win: psychoJS.window,
+    name: 'Submit',
+    text: 'Submit',
+    font: 'Arial',
+    pos: [0, (- 0.4)], letterHeight: 0.04,
+    size: [0.15, 0.1],  units: undefined, 
+    color: 'white', colorSpace: 'rgb',
+    fillColor: undefined, borderColor: undefined,
+    bold: false, italic: false,
+    opacity: 1,
+    padding: undefined,
+    editable: false,
+    anchor: 'center',
+    depth: -7.0 
   });
   
   // Initialize components for Routine "End"
@@ -1048,6 +1066,7 @@ function StudyRoutineBegin(snapshot) {
     StudyComponents.push(ClickTheButton);
     StudyComponents.push(SoundItem);
     StudyComponents.push(ItemNo);
+    StudyComponents.push(Submit);
     
     for (const thisComponent of StudyComponents)
       if ('status' in thisComponent)
@@ -1146,6 +1165,16 @@ function StudyRoutineEachFrame(snapshot) {
       ItemNo.frameNStart = frameN;  // exact frame index
       
       ItemNo.setAutoDraw(true);
+    }
+
+    
+    // *Submit* updates
+    if (t >= 0.0 && Submit.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      Submit.tStart = t;  // (not accounting for frame time here)
+      Submit.frameNStart = frameN;  // exact frame index
+      
+      Submit.setAutoDraw(true);
     }
 
     // check for quit (typically the Esc key)
