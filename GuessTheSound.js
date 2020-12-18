@@ -216,10 +216,8 @@ var Count1Clock;
 var no1;
 var StudyClock;
 var Question;
-var key_resp;
 var ResponseBox;
 var SubmitClick;
-var Submit;
 var ClickTheButton;
 var SoundItem;
 var ItemNo;
@@ -331,8 +329,6 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
   ResponseBox = new visual.TextBox({
     win: psychoJS.window,
     name: 'ResponseBox',
@@ -347,30 +343,13 @@ function experimentInit() {
     padding: undefined,
     editable: true,
     anchor: 'center',
-    depth: -2.0 
+    depth: -1.0 
   });
   
   SubmitClick = new core.Mouse({
     win: psychoJS.window,
   });
   SubmitClick.mouseClock = new util.Clock();
-  Submit = new visual.TextBox({
-    win: psychoJS.window,
-    name: 'Submit',
-    text: 'Submit',
-    font: 'Arial',
-    pos: [0, (- 0.3)], letterHeight: 0.03,
-    size: [0.15, 0.05],  units: undefined, 
-    color: 'black', colorSpace: 'rgb',
-    fillColor: undefined, borderColor: undefined,
-    bold: true, italic: false,
-    opacity: 1,
-    padding: 0.01,
-    editable: false,
-    anchor: 'top-center',
-    depth: -4.0 
-  });
-  
   ClickTheButton = new visual.TextStim({
     win: psychoJS.window,
     name: 'ClickTheButton',
@@ -379,7 +358,7 @@ function experimentInit() {
     units: undefined, 
     pos: [0, (- 0.03)], height: 0.025,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -5.0 
+    depth: -3.0 
   });
   
   SoundItem = new sound.Sound({
@@ -396,7 +375,7 @@ function experimentInit() {
     units: undefined, 
     pos: [0, 0.45], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -7.0 
+    depth: -5.0 
   });
   
   // Initialize components for Routine "End"
@@ -1040,7 +1019,6 @@ function Count1RoutineEnd(snapshot) {
 }
 
 
-var _key_resp_allKeys;
 var gotValidClick;
 var StudyComponents;
 function StudyRoutineBegin(snapshot) {
@@ -1051,9 +1029,6 @@ function StudyRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    key_resp.keys = undefined;
-    key_resp.rt = undefined;
-    _key_resp_allKeys = [];
     ResponseBox.setText('\n\n');
     // setup some python lists for storing info about the SubmitClick
     SubmitClick.clicked_name = [];
@@ -1068,10 +1043,8 @@ function StudyRoutineBegin(snapshot) {
     // keep track of which components have finished
     StudyComponents = [];
     StudyComponents.push(Question);
-    StudyComponents.push(key_resp);
     StudyComponents.push(ResponseBox);
     StudyComponents.push(SubmitClick);
-    StudyComponents.push(Submit);
     StudyComponents.push(ClickTheButton);
     StudyComponents.push(SoundItem);
     StudyComponents.push(ItemNo);
@@ -1103,30 +1076,6 @@ function StudyRoutineEachFrame(snapshot) {
       Question.setAutoDraw(true);
     }
 
-    
-    // *key_resp* updates
-    if (t >= 0.0 && key_resp.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      key_resp.tStart = t;  // (not accounting for frame time here)
-      key_resp.frameNStart = frameN;  // exact frame index
-      
-      // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { key_resp.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { key_resp.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { key_resp.clearEvents(); });
-    }
-
-    if (key_resp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp.getKeys({keyList: ['enter'], waitRelease: false});
-      _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
-      if (_key_resp_allKeys.length > 0) {
-        key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
-        key_resp.rt = _key_resp_allKeys[_key_resp_allKeys.length - 1].rt;
-        // a response ends the routine
-        continueRoutine = false;
-      }
-    }
-    
     
     // *ResponseBox* updates
     if (t >= 0.0 && ResponseBox.status === PsychoJS.Status.NOT_STARTED) {
@@ -1166,16 +1115,6 @@ function StudyRoutineEachFrame(snapshot) {
         }
       }
     }
-    
-    // *Submit* updates
-    if (t >= 0.0 && Submit.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      Submit.tStart = t;  // (not accounting for frame time here)
-      Submit.frameNStart = frameN;  // exact frame index
-      
-      Submit.setAutoDraw(true);
-    }
-
     
     // *ClickTheButton* updates
     if (t >= 0.0 && ClickTheButton.status === PsychoJS.Status.NOT_STARTED) {

@@ -151,10 +151,10 @@
         <Param name="name" updates="None" val="Submit" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="padding" updates="constant" val="None" valType="code"/>
+        <Param name="padding" updates="constant" val="0.01" valType="code"/>
         <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="[0.15, 0.15]" valType="code"/>
+        <Param name="size" updates="constant" val="[0.15, 0.05]" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
