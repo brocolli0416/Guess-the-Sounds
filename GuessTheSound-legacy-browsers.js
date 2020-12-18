@@ -102,7 +102,6 @@ psychoJS.start({
     {'name': 'Initial/Doubled/Clock_A.wav', 'path': 'Initial/Doubled/Clock_A.wav'},
     {'name': 'Initial/Doubled/Guitar_A.wav', 'path': 'Initial/Doubled/Guitar_A.wav'},
     {'name': 'Initial/Repeat/Cymbal_A.wav', 'path': 'Initial/Repeat/Cymbal_A.wav'},
-    {'name': 'GuessSounds.xlsx', 'path': 'GuessSounds.xlsx'},
     {'name': 'Initial/Repeat/Crow_B.wav', 'path': 'Initial/Repeat/Crow_B.wav'},
     {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
     {'name': 'Initial/Doubled/Train_A.wav', 'path': 'Initial/Doubled/Train_A.wav'},
@@ -113,6 +112,7 @@ psychoJS.start({
     {'name': 'Initial/Repeat/Cicade.wav', 'path': 'Initial/Repeat/Cicade.wav'},
     {'name': 'Test/Foils/Gallop.wav', 'path': 'Test/Foils/Gallop.wav'},
     {'name': 'Initial/Doubled/Geese_A.wav', 'path': 'Initial/Doubled/Geese_A.wav'},
+    {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
     {'name': 'Initial/NoRepeat/Chainsaw_A.wav', 'path': 'Initial/NoRepeat/Chainsaw_A.wav'},
     {'name': 'Initial/Doubled/Windchime_A.wav', 'path': 'Initial/Doubled/Windchime_A.wav'},
     {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
@@ -743,7 +743,7 @@ function trialsLoopBegin(trialsLoopScheduler) {
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds.xlsx', 'np.random.choice(100, size = 60, replace = FALSE'),
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds_conditions.xlsx', 'np.random.choice(100, size = 60, replace = FALSE'),
     seed: undefined, name: 'trials'
   });
   psychoJS.experiment.addLoop(trials); // add the loop to the experiment
