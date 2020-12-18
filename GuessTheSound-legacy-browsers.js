@@ -211,6 +211,7 @@ var ClickTheButton;
 var SoundItem;
 var ItemNo;
 var Submit;
+var key_resp;
 var EndClock;
 var ThankyouMssg;
 var globalClock;
@@ -384,6 +385,8 @@ function experimentInit() {
     anchor: 'center',
     depth: -7.0 
   });
+  
+  key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "End"
   EndClock = new util.Clock();
@@ -1034,6 +1037,7 @@ function Count1RoutineEnd(snapshot) {
 
 
 var gotValidClick;
+var _key_resp_allKeys;
 var StudyComponents;
 function StudyRoutineBegin(snapshot) {
   return function () {
@@ -1054,6 +1058,9 @@ function StudyRoutineBegin(snapshot) {
     });
     SoundItem.setVolume(1.1);
     ItemNo.setText(number);
+    key_resp.keys = undefined;
+    key_resp.rt = undefined;
+    _key_resp_allKeys = [];
     // keep track of which components have finished
     StudyComponents = [];
     StudyComponents.push(Question);
@@ -1063,6 +1070,7 @@ function StudyRoutineBegin(snapshot) {
     StudyComponents.push(SoundItem);
     StudyComponents.push(ItemNo);
     StudyComponents.push(Submit);
+    StudyComponents.push(key_resp);
     
     StudyComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -1174,6 +1182,30 @@ function StudyRoutineEachFrame(snapshot) {
       Submit.setAutoDraw(true);
     }
 
+    
+    // *key_resp* updates
+    if (t >= 0.0 && key_resp.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      key_resp.tStart = t;  // (not accounting for frame time here)
+      key_resp.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { key_resp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp.clearEvents(); });
+    }
+
+    if (key_resp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp.getKeys({keyList: ['enter'], waitRelease: false});
+      _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
+      if (_key_resp_allKeys.length > 0) {
+        key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
+        key_resp.rt = _key_resp_allKeys[_key_resp_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -1216,6 +1248,13 @@ function StudyRoutineEnd(snapshot) {
         trials.finished = true;
     }
     
+    psychoJS.experiment.addData('key_resp.keys', key_resp.keys);
+    if (typeof key_resp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp.rt', key_resp.rt);
+        routineTimer.reset();
+        }
+    
+    key_resp.stop();
     // the Routine "Study" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
