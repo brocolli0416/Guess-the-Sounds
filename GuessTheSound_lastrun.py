@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 18, 2020, at 17:01
+    on December 18, 2020, at 18:19
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -177,15 +177,15 @@ x, y = [None, None]
 SubmitClick.mouseClock = core.Clock()
 Submit = visual.TextBox2(
      win, text='Submit', font='Arial',
-     pos=(0, -0.4),     letterHeight=0.04,
-     size=None, borderWidth=3.0,
+     pos=[0, -0.4],     letterHeight=0.03,
+     size=[0.15, 0.1], borderWidth=3.0,
      color='black', colorSpace='rgb',
      opacity=1,
      bold=True, italic=False,
      lineSpacing=1.0,
      padding=None,
-     anchor='center',
-     fillColor=None, borderColor=None,
+     anchor='top-center',
+     fillColor=None, borderColor='Black',
      flipHoriz=False, flipVert=False,
      editable=False,
      name='Submit',
@@ -481,7 +481,7 @@ thisExp.addData('StartTxt.stopped', StartTxt.tStopRefresh)
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='np.random.choice(100, size = 60, replace = False)'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -879,6 +879,8 @@ for thisTrial in trials:
     trials.addData('SoundItem.stopped', SoundItem.tStopRefresh)
     trials.addData('ItemNo.started', ItemNo.tStartRefresh)
     trials.addData('ItemNo.stopped', ItemNo.tStopRefresh)
+    if trials.thisN == 61: # i.e. trials 0, 1, 2 have been completed
+        trials.finished = True # end the loop early
     # the Routine "Study" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
