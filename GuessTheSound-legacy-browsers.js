@@ -349,7 +349,7 @@ function experimentInit() {
     text: 'Submit',
     font: 'Arial',
     pos: [0, (- 0.4)], letterHeight: 0.03,
-    size: [0.15, 0.1],  units: undefined, 
+    size: [0.15, 0.15],  units: undefined, 
     color: 'black', colorSpace: 'rgb',
     fillColor: undefined, borderColor: 'Black',
     bold: true, italic: false,
