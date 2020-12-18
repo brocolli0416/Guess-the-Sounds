@@ -148,9 +148,10 @@ psychoJS.start({
     {'name': 'Test/Foils/Kettle.wav', 'path': 'Test/Foils/Kettle.wav'},
     {'name': 'Test/Foils/PaperRip.wav', 'path': 'Test/Foils/PaperRip.wav'},
     {'name': 'Initial/NoRepeat/Eagle_B.wav', 'path': 'Initial/NoRepeat/Eagle_B.wav'},
+    {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
     {'name': 'Initial/Repeat/Whistle_A.wav', 'path': 'Initial/Repeat/Whistle_A.wav'},
-    {'name': 'Initial/NoRepeat/Rooster_B.wav', 'path': 'Initial/NoRepeat/Rooster_B.wav'},
     {'name': 'Initial/Doubled/Growl_A.wav', 'path': 'Initial/Doubled/Growl_A.wav'},
+    {'name': 'Initial/NoRepeat/Rooster_B.wav', 'path': 'Initial/NoRepeat/Rooster_B.wav'},
     {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'},
     {'name': 'Initial/Doubled/Turkey_A.wav', 'path': 'Initial/Doubled/Turkey_A.wav'},
     {'name': 'Initial/Doubled/Doorchime_A.wav', 'path': 'Initial/Doubled/Doorchime_A.wav'},
@@ -324,7 +325,7 @@ function experimentInit() {
   ResponseBox = new visual.TextBox({
     win: psychoJS.window,
     name: 'ResponseBox',
-    text: '\n\n',
+    text: 'default text',
     font: 'Arial',
     pos: [0, (- 0.2)], letterHeight: 0.03,
     size: undefined,  units: undefined, 
@@ -348,7 +349,7 @@ function experimentInit() {
     text: 'Submit',
     font: 'Arial',
     pos: [0, (- 0.4)], letterHeight: 0.04,
-    size: [0.15, 0.1],  units: undefined, 
+    size: undefined,  units: undefined, 
     color: 'black', colorSpace: 'rgb',
     fillColor: undefined, borderColor: undefined,
     bold: true, italic: false,
@@ -742,7 +743,7 @@ function trialsLoopBegin(trialsLoopScheduler) {
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds.xlsx', '80:100'),
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds.xlsx', 'np.random.choice(100, size = 60, replace = FALSE'),
     seed: undefined, name: 'trials'
   });
   psychoJS.experiment.addLoop(trials); // add the loop to the experiment
@@ -1049,6 +1050,7 @@ function StudyRoutineBegin(snapshot) {
     key_resp.keys = undefined;
     key_resp.rt = undefined;
     _key_resp_allKeys = [];
+    ResponseBox.setText('\n\n');
     // setup some python lists for storing info about the SubmitClick
     SubmitClick.clicked_name = [];
     gotValidClick = false; // until a click is received
