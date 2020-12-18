@@ -351,7 +351,7 @@ function experimentInit() {
     pos: [0, (- 0.4)], letterHeight: 0.03,
     size: [0.15, 0.15],  units: undefined, 
     color: 'black', colorSpace: 'rgb',
-    fillColor: undefined, borderColor: 'Black',
+    fillColor: undefined, borderColor: undefined,
     bold: true, italic: false,
     opacity: 1,
     padding: undefined,

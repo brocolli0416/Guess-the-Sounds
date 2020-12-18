@@ -133,7 +133,7 @@
         <Param name="anchor" updates="constant" val="top-center" valType="str"/>
         <Param name="autoLog" updates="constant" val="True" valType="bool"/>
         <Param name="bold" updates="constant" val="True" valType="bool"/>
-        <Param name="borderColor" updates="constant" val="Black" valType="str"/>
+        <Param name="borderColor" updates="constant" val="None" valType="str"/>
         <Param name="borderWidth" updates="constant" val="3" valType="num"/>
         <Param name="color" updates="constant" val="black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -151,10 +151,10 @@
         <Param name="name" updates="None" val="Submit" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="padding" updates="constant" val="" valType="code"/>
+        <Param name="padding" updates="constant" val="None" valType="code"/>
         <Param name="pos" updates="constant" val="[0, -0.4]" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="[0.15, 0.1]" valType="code"/>
+        <Param name="size" updates="constant" val="[0.15, 0.15]" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>

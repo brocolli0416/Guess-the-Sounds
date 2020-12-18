@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 18, 2020, at 18:19
+    on December 18, 2020, at 18:23
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -178,14 +178,14 @@ SubmitClick.mouseClock = core.Clock()
 Submit = visual.TextBox2(
      win, text='Submit', font='Arial',
      pos=[0, -0.4],     letterHeight=0.03,
-     size=[0.15, 0.1], borderWidth=3.0,
+     size=[0.15, 0.15], borderWidth=3.0,
      color='black', colorSpace='rgb',
      opacity=1,
      bold=True, italic=False,
      lineSpacing=1.0,
      padding=None,
      anchor='top-center',
-     fillColor=None, borderColor='Black',
+     fillColor=None, borderColor=None,
      flipHoriz=False, flipVert=False,
      editable=False,
      name='Submit',

@@ -1,0 +1,5 @@
+﻿SoundFiles,Type,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,InstructionTxt.started,InstructionTxt.stopped,text.started,text.stopped,Music.started,Music.stopped,StartTxt.started,StartTxt.stopped,no3.started,no3.stopped,no2.started,no2.stopped,no1.started,no1.stopped,Question.started,Question.stopped,ResponseBox.text,ResponseBox.started,ResponseBox.stopped,SubmitClick.started,SubmitClick.stopped,Submit.started,Submit.stopped,ClickTheButton.started,ClickTheButton.stopped,SoundItem.started,SoundItem.stopped,ItemNo.started,ItemNo.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+Initial/Repeat/Drum_B.wav,Repeat,0,0,0,46,9.483846100003575,None,10.533373300000676,None,10.531663499996647,None,11.24718930000381,None,13.291214400000172,None,14.264028699995833,None,15.263785699993605,None,16.28565209999215,None,"
+
+",16.28565209999215,None,0.007737499996437691,None,16.28565209999215,None,16.28565209999215,None,16.28052979999338,None,16.28565209999215,None,,001,2020_Dec_18_1823,GuessTheSound,2020.2.10,60.00164404883412,
+,,,,,,,,,,,,,,20.58068679999269,None,21.580334199999925,None,22.58029529999476,None,,,,,,,,,,,,,,,,,,,,,,
