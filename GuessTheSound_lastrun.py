@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 18, 2020, at 16:43
+    on December 18, 2020, at 16:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -157,7 +157,7 @@ Question = visual.TextStim(win=win, name='Question',
     depth=0.0);
 key_resp = keyboard.Keyboard()
 ResponseBox = visual.TextBox2(
-     win, text='\n\n', font='Arial',
+     win, text='default text', font='Arial',
      pos=(0, -0.2),     letterHeight=0.03,
      size=None, borderWidth=2.0,
      color='black', colorSpace='rgb',
@@ -178,7 +178,7 @@ SubmitClick.mouseClock = core.Clock()
 Submit = visual.TextBox2(
      win, text='Submit', font='Arial',
      pos=(0, -0.4),     letterHeight=0.04,
-     size=(0.15, 0.1), borderWidth=3.0,
+     size=None, borderWidth=3.0,
      color='black', colorSpace='rgb',
      opacity=1,
      bold=True, italic=False,
@@ -481,7 +481,7 @@ thisExp.addData('StartTxt.stopped', StartTxt.tStopRefresh)
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds.xlsx', selection='80:100'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='np.random.choice(100, size = 60, replace = False)'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -712,6 +712,7 @@ for thisTrial in trials:
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
+    ResponseBox.setText('\n\n')
     # setup some python lists for storing info about the SubmitClick
     SubmitClick.clicked_name = []
     gotValidClick = False  # until a click is received
