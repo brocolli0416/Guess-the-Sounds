@@ -1,0 +1,11 @@
+ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+,0,0,0,21,1,Initial/NoRepeat/Chainsaw_A.wav,NoRepeat,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,1,1,20,1,Initial/NoRepeat/Baby_B.wav,NoRepeat,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,2,2,38,1,Initial/NoRepeat/Snore_B.wav,NoRepeat,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,3,3,49,1,Initial/Repeat/Pour.wav,Repeat,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,4,4,45,1,Initial/Repeat/Cymbal_A.wav,Repeat,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,5,5,83,1,Initial/Doubled/Chomp_A.wav,Extra,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,6,6,73,1,Test/Foils/Kettle.wav,New,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,7,7,76,1,Test/Foils/Steam.wav,New,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,8,8,1,1,Initial/Doubled/Chicken_A.wav,Doubled,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
+,0,9,9,79,1,Test/Foils/Wind_B.wav,New,,001,2020-12-18_21h58.07.389,GuessTheSound,2020.2.10,Win32,60
