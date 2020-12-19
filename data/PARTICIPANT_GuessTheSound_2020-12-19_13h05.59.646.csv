@@ -1,0 +1,5 @@
+ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+clapping,0,0,0,3,1,Initial/Doubled/Clap_A.wav,Doubled,,001,2020-12-19_13h05.59.646,GuessTheSound,2020.2.10,Win32,60
+horse,0,1,1,72,1,Test/Foils/Horse.wav,New,,001,2020-12-19_13h05.59.646,GuessTheSound,2020.2.10,Win32,60
+guitar,0,2,2,91,1,Initial/Doubled/Guitar_A.wav,Extra,,001,2020-12-19_13h05.59.646,GuessTheSound,2020.2.10,Win32,60
+footsteps,0,3,3,29,1,Initial/NoRepeat/Footsteps_B.wav,NoRepeat,,001,2020-12-19_13h05.59.646,GuessTheSound,2020.2.10,Win32,60
