@@ -1,0 +1,8 @@
+﻿SoundFiles,Type,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,InstructionTxt.started,InstructionTxt.stopped,text.started,text.stopped,Music.started,Music.stopped,StartTxt.started,StartTxt.stopped,no3.started,no3.stopped,no2.started,no2.stopped,no1.started,no1.stopped,Question.started,Question.stopped,ResponseBox.text,ResponseBox.started,ResponseBox.stopped,SubmitClick.started,SubmitClick.stopped,ClickTheButton.started,ClickTheButton.stopped,SoundItem.started,SoundItem.stopped,ItemNo.started,ItemNo.stopped,Submit.started,Submit.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+Initial/NoRepeat/Fireworks.wav,NoRepeat,0,0,0,28,14.30459840002004,None,18.544884599978104,None,18.55198356000474,None,19.3511206000112,None,21.431875000009313,None,22.367499499989208,None,23.367388600017875,None,24.420103200012818,None,"
+
+",24.420103200012818,None,0.011522060027346015,None,24.420103200012818,None,24.41773606002098,None,24.420103200012818,None,24.420103200012818,None,,001,2020_Dec_21_1834,GuessTheSound,2020.2.10,59.89347345880018,
+Initial/Doubled/Guitar_A.wav,Extra,0,1,1,91,,,,,,,,,27.0073111000238,None,28.01742180000292,None,29.017476300010458,None,30.060896400013007,None,"
+
+",30.060896400013007,None,0.009003420011140406,None,30.060896400013007,None,30.050727320002625,None,30.060896400013007,None,30.060896400013007,None,,001,2020_Dec_21_1834,GuessTheSound,2020.2.10,59.89347345880018,
+,,,,,,,,,,,,,,33.40167430002475,None,34.417250900005456,None,35.41733710002154,None,,,,,,,,,,,,,,,,,,,,,,

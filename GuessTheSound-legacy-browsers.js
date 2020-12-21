@@ -958,9 +958,6 @@ function Count1RoutineBegin(snapshot) {
     // update component parameters for each repeat
     count += 1;
     number = (count.toString() + "/60");
-    if ((count === 3)) {
-        thisComponent.status = PsychoJS.Status.FINISHED;
-    }
     
     // keep track of which components have finished
     Count1Components = [];
@@ -1031,6 +1028,10 @@ function Count1RoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     });
+    if ((count === 3)) {
+        continueRoutine = true;
+    }
+    
     return Scheduler.Event.NEXT;
   };
 }
@@ -1215,8 +1216,8 @@ function StudyRoutineEnd(snapshot) {
     psychoJS.experiment.addData('ResponseBox.text', ResponseBox.text);
     // store data for thisExp (ExperimentHandler)
     SoundItem.stop();  // ensure sound has stopped at end of routine
-    if ((count === 2)) {
-        thisComponent.status = PsychoJS.Status.FINISHED;
+    if ((trials.thisN === 2)) {
+        trials.finished = true;
     }
     
     // the Routine "Study" was not non-slip safe, so reset the non-slip timer
