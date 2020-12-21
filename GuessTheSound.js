@@ -963,6 +963,9 @@ function Count1RoutineBegin(snapshot) {
     // update component parameters for each repeat
     count += 1;
     number = (count.toString() + "/60");
+    if ((count === 3)) {
+        thisComponent.status = PsychoJS.Status.FINISHED;
+    }
     
     // keep track of which components have finished
     Count1Components = [];
