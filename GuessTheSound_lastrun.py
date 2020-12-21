@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 21, 2020, at 18:44
+    on December 21, 2020, at 18:55
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -855,8 +855,12 @@ for thisTrial in trials:
     trials.addData('SoundItem.stopped', SoundItem.tStopRefresh)
     trials.addData('ItemNo.started', ItemNo.tStartRefresh)
     trials.addData('ItemNo.stopped', ItemNo.tStopRefresh)
-    if trials.thisN == 2: # i.e. trials 0, 1, 2 have been completed
-        trials.finished = True # end the loop early
+    #if trials.thisN == 2: # i.e. trials 0, 1, 2 have been completed
+     #   trials.finished = True # end the loop early
+     
+    
+    if count == 2:
+        thisComponent.status == PsychoJS.Status.FINISHED
     trials.addData('Submit.started', Submit.tStartRefresh)
     trials.addData('Submit.stopped', Submit.tStopRefresh)
     # the Routine "Study" was not non-slip safe, so reset the non-slip timer

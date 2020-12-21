@@ -186,8 +186,8 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((trials.thisN === 2)) {&amp;#10;    trials.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if trials.thisN == 2: # i.e. trials 0, 1, 2 have been completed&amp;#10;    trials.finished = True # end the loop early" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((count === 2)) {&amp;#10;    (thisComponent.status === PsychoJS.Status.FINISHED);&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="#if trials.thisN == 2: # i.e. trials 0, 1, 2 have been completed&amp;#10; #   trials.finished = True # end the loop early&amp;#10; &amp;#10;&amp;#10;if count == 2:&amp;#10;    thisComponent.status == PsychoJS.Status.FINISHED" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="FinishTrial" valType="code"/>
       </CodeComponent>
