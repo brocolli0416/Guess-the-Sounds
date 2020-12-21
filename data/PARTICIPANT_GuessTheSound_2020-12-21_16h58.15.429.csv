@@ -1,0 +1,5 @@
+ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+,0,0,0,62,1,Test/Foils/Bird.wav,New,,001,2020-12-21_16h58.15.429,GuessTheSound,2020.2.10,Win32,60
+,0,1,1,93,1,Initial/NoRepeat/Helicopter_A.wav,Extra,,001,2020-12-21_16h58.15.429,GuessTheSound,2020.2.10,Win32,60
+,0,2,2,4,1,Initial/Doubled/Coin_A.wav,Doubled,,001,2020-12-21_16h58.15.429,GuessTheSound,2020.2.10,Win32,60
+,0,3,3,88,1,Test/Foils/DialTone.wav,Extra,,001,2020-12-21_16h58.15.429,GuessTheSound,2020.2.10,Win32,60
