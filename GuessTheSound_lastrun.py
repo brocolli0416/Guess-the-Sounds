@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 18, 2020, at 18:50
+    on December 21, 2020, at 14:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -175,7 +175,7 @@ SubmitClick = event.Mouse(win=win)
 x, y = [None, None]
 SubmitClick.mouseClock = core.Clock()
 ClickTheButton = visual.TextStim(win=win, name='ClickTheButton',
-    text="Click 'Submit' to begin the next trial.",
+    text="Click 'Submit' to continue.",
     font='Arial',
     pos=(0, -0.03), height=0.025, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -193,9 +193,9 @@ ItemNo = visual.TextStim(win=win, name='ItemNo',
     depth=-5.0);
 Submit = visual.TextBox2(
      win, text='Submit', font='Arial',
-     pos=(0, -0.4),     letterHeight=0.04,
+     pos=(0, -0.4),     letterHeight=0.03,
      size=(0.15, 0.1), borderWidth=2.0,
-     color='white', colorSpace='rgb',
+     color='black', colorSpace='rgb',
      opacity=1,
      bold=False, italic=False,
      lineSpacing=1.0,
@@ -765,7 +765,7 @@ for thisTrial in trials:
             win.timeOnFlip(SubmitClick, 'tStartRefresh')  # time at next scr refresh
             SubmitClick.status = STARTED
             SubmitClick.mouseClock.reset()
-            prevButtonState = SubmitClick.getPressed()  # if button is down already this ISN'T a new click
+            prevButtonState = [0, 0, 0]  # if now button is down we will treat as 'new' click
         if SubmitClick.status == STARTED:  # only update if started and not finished!
             buttons = SubmitClick.getPressed()
             if buttons != prevButtonState:  # button state changed?
@@ -851,7 +851,7 @@ for thisTrial in trials:
     trials.addData('SoundItem.stopped', SoundItem.tStopRefresh)
     trials.addData('ItemNo.started', ItemNo.tStartRefresh)
     trials.addData('ItemNo.stopped', ItemNo.tStopRefresh)
-    if trials.thisN == 61: # i.e. trials 0, 1, 2 have been completed
+    if trials.thisN == 3: # i.e. trials 0, 1, 2 have been completed
         trials.finished = True # end the loop early
     trials.addData('Submit.started', Submit.tStartRefresh)
     trials.addData('Submit.stopped', Submit.tStopRefresh)

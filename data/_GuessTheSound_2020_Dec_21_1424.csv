@@ -1,0 +1,13 @@
+﻿SoundFiles,Type,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,InstructionTxt.started,InstructionTxt.stopped,text.started,text.stopped,Music.started,Music.stopped,StartTxt.started,StartTxt.stopped,no3.started,no3.stopped,no2.started,no2.stopped,no1.started,no1.stopped,Question.started,Question.stopped,ResponseBox.text,ResponseBox.started,ResponseBox.stopped,SubmitClick.started,SubmitClick.stopped,ClickTheButton.started,ClickTheButton.stopped,SoundItem.started,SoundItem.stopped,ItemNo.started,ItemNo.stopped,Submit.started,Submit.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+Test/Foils/Horse.wav,New,0,0,0,72,9.748331099981442,None,11.128256600000896,None,11.121079120028298,None,12.235029599978589,None,14.336151299998164,None,15.25494890002301,None,16.249840200005565,None,17.303163899981882,None,"
+
+",17.303163899981882,None,0.01432021998334676,None,17.303163899981882,None,17.29963071999373,None,17.303163899981882,None,17.303163899981882,None,,001,2020_Dec_21_1424,GuessTheSound,2020.2.10,60.039830419248155,
+Initial/NoRepeat/Hammer_A.wav,NoRepeat,0,1,1,31,,,,,,,,,20.150780999974813,None,21.16533150000032,None,22.165749999985565,None,23.20715889998246,None,"
+
+",23.20715889998246,None,0.00928279000800103,None,23.20715889998246,None,23.199238790024538,None,23.20715889998246,None,23.20715889998246,None,,001,2020_Dec_21_1424,GuessTheSound,2020.2.10,60.039830419248155,
+Initial/NoRepeat/Fireworks.wav,NoRepeat,0,2,2,28,,,,,,,,,23.98973129998194,None,24.999442000000272,None,25.999911899969447,None,27.052028300007805,None,"
+
+",27.052028300007805,None,0.00020859000505879521,None,27.052028300007805,None,27.032961189979687,None,27.052028300007805,None,27.052028300007805,None,,001,2020_Dec_21_1424,GuessTheSound,2020.2.10,60.039830419248155,
+Initial/NoRepeat/Saw_A.wav,NoRepeat,0,3,3,35,,,,,,,,,27.961495099996682,None,28.966048799979035,None,29.96631879999768,None,31.038257499982137,None,"
+
+",31.038257499982137,None,0.014779849967453629,None,31.038257499982137,None,31.033436850004364,None,31.038257499982137,None,31.038257499982137,None,,001,2020_Dec_21_1424,GuessTheSound,2020.2.10,60.039830419248155,

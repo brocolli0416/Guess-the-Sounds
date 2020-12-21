@@ -99,7 +99,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutineOnPress" updates="constant" val="valid click" valType="str"/>
         <Param name="name" updates="None" val="SubmitClick" valType="code"/>
-        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="newClicksOnly" updates="constant" val="False" valType="bool"/>
         <Param name="saveMouseState" updates="None" val="never" valType="str"/>
         <Param name="saveParamsClickable" updates="constant" val="name," valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
@@ -131,7 +131,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Click 'Submit' to begin the next trial." valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Click 'Submit' to continue." valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -186,8 +186,8 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((trials.thisN === 61)) {&amp;#10;    trials.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if trials.thisN == 61: # i.e. trials 0, 1, 2 have been completed&amp;#10;    trials.finished = True # end the loop early" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((trials.thisN === 3)) {&amp;#10;    trials.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if trials.thisN == 3: # i.e. trials 0, 1, 2 have been completed&amp;#10;    trials.finished = True # end the loop early" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code" valType="code"/>
       </CodeComponent>
