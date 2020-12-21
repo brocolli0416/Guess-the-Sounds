@@ -1,0 +1,8 @@
+﻿SoundFiles,Type,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,InstructionTxt.started,InstructionTxt.stopped,text.started,text.stopped,Music.started,Music.stopped,StartTxt.started,StartTxt.stopped,no3.started,no3.stopped,no2.started,no2.stopped,no1.started,no1.stopped,Question.started,Question.stopped,ResponseBox.text,ResponseBox.started,ResponseBox.stopped,SubmitClick.started,SubmitClick.stopped,ClickTheButton.started,ClickTheButton.stopped,SoundItem.started,SoundItem.stopped,ItemNo.started,ItemNo.stopped,Submit.started,Submit.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+Initial/Repeat/Stir.wav,Repeat,0,0,0,57,8.612256299995352,None,9.661763600015547,None,9.656385499995666,None,10.30537399998866,None,12.437897399999201,None,13.320849200012162,None,14.320754499989562,None,15.356231299985666,None,"
+
+",15.356231299985666,None,0.009778549952898175,None,15.356231299985666,None,15.354407749976962,None,15.356231299985666,None,15.356231299985666,None,,001,2020_Dec_21_1511,GuessTheSound,2020.2.10,60.103052688181684,
+Initial/Doubled/Windchime_A.wav,Doubled,0,1,1,17,,,,,,,,,16.863570099987555,None,17.871909799985588,None,18.87214930000482,None,19.919198199990205,None,"
+
+",19.919198199990205,None,0.0036514499224722385,None,19.919198199990205,None,19.905072449962606,None,19.919198199990205,None,19.919198199990205,None,,001,2020_Dec_21_1511,GuessTheSound,2020.2.10,60.103052688181684,
+,,,,,,,,,,,,,,20.361870499968063,None,21.371886599983554,None,22.372191399976145,None,,,,,,,,,,,,,,,,,,,,,,

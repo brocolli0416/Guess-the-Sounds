@@ -174,7 +174,7 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <CodeComponent name="code">
+      <CodeComponent name="FinishTrial">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -186,10 +186,10 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((trials.thisN === 3)) {&amp;#10;    trials.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if trials.thisN == 3: # i.e. trials 0, 1, 2 have been completed&amp;#10;    trials.finished = True # end the loop early" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((count === 2)) {&amp;#10;    thisComponent.status = PsychoJS.Status.FINISHED;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if count == 2: # i.e. trials 0, 1, 2 have been completed&amp;#10;    thisComponent.status = PsychoJS.Status.FINISHED # end the loop early" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code" valType="code"/>
+        <Param name="name" updates="None" val="FinishTrial" valType="code"/>
       </CodeComponent>
       <TextboxComponent name="Submit">
         <Param name="anchor" updates="constant" val="center" valType="str"/>
@@ -304,7 +304,7 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <CodeComponent name="code_2">
+      <CodeComponent name="AddCount">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -319,7 +319,7 @@
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code_2" valType="code"/>
+        <Param name="name" updates="None" val="AddCount" valType="code"/>
       </CodeComponent>
     </Routine>
     <Routine name="Welcome">
@@ -365,7 +365,7 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
-      <CodeComponent name="code_3">
+      <CodeComponent name="CountIsZero">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="count = 0" valType="extendedCode"/>
@@ -380,7 +380,7 @@
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code_3" valType="code"/>
+        <Param name="name" updates="None" val="CountIsZero" valType="code"/>
       </CodeComponent>
     </Routine>
     <Routine name="VolumeAdjustment">

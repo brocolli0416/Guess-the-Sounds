@@ -1,0 +1,7 @@
+﻿SoundFiles,Type,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,InstructionTxt.started,InstructionTxt.stopped,text.started,text.stopped,Music.started,Music.stopped,StartTxt.started,StartTxt.stopped,no3.started,no3.stopped,no2.started,no2.stopped,no1.started,no1.stopped,Question.started,Question.stopped,ResponseBox.text,ResponseBox.started,ResponseBox.stopped,SubmitClick.started,SubmitClick.stopped,ClickTheButton.started,ClickTheButton.stopped,SoundItem.started,SoundItem.stopped,ItemNo.started,ItemNo.stopped,Submit.started,Submit.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+Initial/Doubled/Siren_A.wav,Doubled,0,0,0,11,10.721077800029889,None,13.428791800048202,None,13.432870520022698,None,14.13334500003839,None,16.226558100024704,None,17.14780299999984,None,18.147686700045597,None,19.178660700039472,None,"
+
+",19.178660700039472,None,0.015225809998810291,None,19.178660700039472,None,19.1808204100118,None,19.178660700039472,None,19.178660700039472,None,,001,2020_Dec_21_1510,GuessTheSound,2020.2.10,59.84888155904742,
+Initial/Repeat/Stir.wav,Repeat,0,1,1,57,,,,,,,,,20.27624500001548,None,21.281239700037986,None,22.281249099993147,None,23.336796500021592,None,"
+
+",23.336796500021592,None,0.013467679964378476,None,23.336796500021592,None,23.330912180035373,None,23.336796500021592,None,23.336796500021592,None,,001,2020_Dec_21_1510,GuessTheSound,2020.2.10,59.84888155904742,

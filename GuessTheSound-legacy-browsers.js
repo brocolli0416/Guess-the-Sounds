@@ -1212,8 +1212,8 @@ function StudyRoutineEnd(snapshot) {
     psychoJS.experiment.addData('ResponseBox.text', ResponseBox.text);
     // store data for thisExp (ExperimentHandler)
     SoundItem.stop();  // ensure sound has stopped at end of routine
-    if ((trials.thisN === 3)) {
-        trials.finished = true;
+    if ((count === 2)) {
+        thisComponent.status = PsychoJS.Status.FINISHED;
     }
     
     // the Routine "Study" was not non-slip safe, so reset the non-slip timer
