@@ -1,0 +1,5 @@
+ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+,0,0,0,55,1,Initial/Repeat/Sealion.wav,Repeat,,001,2020-12-21_18h45.49.819,GuessTheSound,2020.2.10,Win32,60
+,0,1,1,29,1,Initial/NoRepeat/Footsteps_B.wav,NoRepeat,,001,2020-12-21_18h45.49.819,GuessTheSound,2020.2.10,Win32,60
+,0,2,2,67,1,Test/Foils/Curtain.wav,New,,001,2020-12-21_18h45.49.819,GuessTheSound,2020.2.10,Win32,60
+,0,3,3,69,1,Test/Foils/Gallop.wav,New,,001,2020-12-21_18h45.49.819,GuessTheSound,2020.2.10,Win32,60
