@@ -1028,10 +1028,6 @@ function Count1RoutineEnd(snapshot) {
         thisComponent.setAutoDraw(false);
       }
     });
-    if ((count === 3)) {
-        continueRoutine = true;
-    }
-    
     return Scheduler.Event.NEXT;
   };
 }
@@ -1217,7 +1213,7 @@ function StudyRoutineEnd(snapshot) {
     // store data for thisExp (ExperimentHandler)
     SoundItem.stop();  // ensure sound has stopped at end of routine
     if ((count === 2)) {
-        thisComponent.status = PsychoJS.Status.FINISHED;
+        trials.status = PsychoJS.Status.FINISHED;
     }
     
     // the Routine "Study" was not non-slip safe, so reset the non-slip timer
