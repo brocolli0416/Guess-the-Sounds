@@ -1215,7 +1215,7 @@ function StudyRoutineEnd(snapshot) {
     psychoJS.experiment.addData('ResponseBox.text', ResponseBox.text);
     // store data for thisExp (ExperimentHandler)
     SoundItem.stop();  // ensure sound has stopped at end of routine
-    if ((count === 2)) {
+    if ((count === 60)) {
         trials.finished = true;
     }
     
