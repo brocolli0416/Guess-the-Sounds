@@ -198,7 +198,6 @@ function updateInfo() {
 
 var EndClock;
 var ThankyouMssg;
-var CompletionCode;
 var ExitTxt;
 var ExitKey;
 var CodeTxt;
@@ -252,23 +251,6 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  CompletionCode = new visual.TextBox({
-    win: psychoJS.window,
-    name: 'CompletionCode',
-    text: '51DF249E',
-    font: 'Arial',
-    pos: [0, 0], letterHeight: 0.04,
-    size: [0.34, 0.07],  units: undefined, 
-    color: 'Black', colorSpace: 'rgb',
-    fillColor: 'White', borderColor: 'Black',
-    bold: true, italic: false,
-    opacity: 1,
-    padding: undefined,
-    editable: false,
-    anchor: 'center',
-    depth: -1.0 
-  });
-  
   ExitTxt = new visual.TextStim({
     win: psychoJS.window,
     name: 'ExitTxt',
@@ -277,7 +259,7 @@ function experimentInit() {
     units: undefined, 
     pos: [0, (- 0.4)], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -2.0 
+    depth: -1.0 
   });
   
   ExitKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -290,7 +272,7 @@ function experimentInit() {
     units: undefined, 
     pos: [0, (- 0.22)], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -4.0 
+    depth: -3.0 
   });
   
   // Initialize components for Routine "Welcome"
@@ -549,23 +531,6 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  CompletionCode = new visual.TextBox({
-    win: psychoJS.window,
-    name: 'CompletionCode',
-    text: '51DF249E',
-    font: 'Arial',
-    pos: [0, 0], letterHeight: 0.04,
-    size: [0.34, 0.07],  units: undefined, 
-    color: 'Black', colorSpace: 'rgb',
-    fillColor: 'White', borderColor: 'Black',
-    bold: true, italic: false,
-    opacity: 1,
-    padding: undefined,
-    editable: false,
-    anchor: 'center',
-    depth: -1.0 
-  });
-  
   ExitTxt = new visual.TextStim({
     win: psychoJS.window,
     name: 'ExitTxt',
@@ -574,7 +539,7 @@ function experimentInit() {
     units: undefined, 
     pos: [0, (- 0.4)], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -2.0 
+    depth: -1.0 
   });
   
   ExitKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -587,7 +552,7 @@ function experimentInit() {
     units: undefined, 
     pos: [0, (- 0.22)], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -4.0 
+    depth: -3.0 
   });
   
   // Create some handy timers
@@ -617,7 +582,6 @@ function EndRoutineBegin(snapshot) {
     // keep track of which components have finished
     EndComponents = [];
     EndComponents.push(ThankyouMssg);
-    EndComponents.push(CompletionCode);
     EndComponents.push(ExitTxt);
     EndComponents.push(ExitKey);
     EndComponents.push(CodeTxt);
@@ -646,16 +610,6 @@ function EndRoutineEachFrame(snapshot) {
       ThankyouMssg.frameNStart = frameN;  // exact frame index
       
       ThankyouMssg.setAutoDraw(true);
-    }
-
-    
-    // *CompletionCode* updates
-    if (t >= 0.0 && CompletionCode.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      CompletionCode.tStart = t;  // (not accounting for frame time here)
-      CompletionCode.frameNStart = frameN;  // exact frame index
-      
-      CompletionCode.setAutoDraw(true);
     }
 
     
