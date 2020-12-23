@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 23, 2020, at 11:46
+    on December 23, 2020, at 11:53
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -85,14 +85,14 @@ EndClock = core.Clock()
 ThankyouMssg = visual.TextStim(win=win, name='ThankyouMssg',
     text='This is the end of the experiment.\n\nThank you for your participation!\n\n\n\nYour Completion Code is',
     font='Arial',
-    pos=(0, 0.1), height=0.04, wrapWidth=None, ori=0, 
+    pos=(0, 0.2), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 CompletionCode = visual.TextBox2(
      win, text='51DF249E', font='Arial',
-     pos=(0, -0.1),     letterHeight=0.04,
-     size=(0.2, 0.07), borderWidth=2.0,
+     pos=(0, 0),     letterHeight=0.04,
+     size=(0.34, 0.07), borderWidth=2.0,
      color='Black', colorSpace='rgb',
      opacity=1,
      bold=True, italic=False,
@@ -116,7 +116,7 @@ ExitKey = keyboard.Keyboard()
 CodeTxt = visual.TextStim(win=win, name='CodeTxt',
     text='Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
     font='Arial',
-    pos=(0, -0.18), height=0.03, wrapWidth=None, ori=0, 
+    pos=(0, -0.22), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
@@ -304,14 +304,14 @@ EndClock = core.Clock()
 ThankyouMssg = visual.TextStim(win=win, name='ThankyouMssg',
     text='This is the end of the experiment.\n\nThank you for your participation!\n\n\n\nYour Completion Code is',
     font='Arial',
-    pos=(0, 0.1), height=0.04, wrapWidth=None, ori=0, 
+    pos=(0, 0.2), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 CompletionCode = visual.TextBox2(
      win, text='51DF249E', font='Arial',
-     pos=(0, -0.1),     letterHeight=0.04,
-     size=(0.2, 0.07), borderWidth=2.0,
+     pos=(0, 0),     letterHeight=0.04,
+     size=(0.34, 0.07), borderWidth=2.0,
      color='Black', colorSpace='rgb',
      opacity=1,
      bold=True, italic=False,
@@ -335,7 +335,7 @@ ExitKey = keyboard.Keyboard()
 CodeTxt = visual.TextStim(win=win, name='CodeTxt',
     text='Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
     font='Arial',
-    pos=(0, -0.18), height=0.03, wrapWidth=None, ori=0, 
+    pos=(0, -0.22), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
