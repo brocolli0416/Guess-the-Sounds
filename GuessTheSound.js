@@ -44,6 +44,9 @@ psychoJS.scheduleCondition(function() { return (psychoJS.gui.dialogComponent.but
 // flowScheduler gets run if the participants presses OK
 flowScheduler.add(updateInfo); // add timeStamp
 flowScheduler.add(experimentInit);
+flowScheduler.add(EndRoutineBegin());
+flowScheduler.add(EndRoutineEachFrame());
+flowScheduler.add(EndRoutineEnd());
 flowScheduler.add(WelcomeRoutineBegin());
 flowScheduler.add(WelcomeRoutineEachFrame());
 flowScheduler.add(WelcomeRoutineEnd());
@@ -75,108 +78,108 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'Initial/NoRepeat/Eagle_B.wav', 'path': 'Initial/NoRepeat/Eagle_B.wav'},
-    {'name': 'Initial/Doubled/CarStart_A.wav', 'path': 'Initial/Doubled/CarStart_A.wav'},
-    {'name': 'Initial/NoRepeat/Duck_A.wav', 'path': 'Initial/NoRepeat/Duck_A.wav'},
-    {'name': 'Initial/Doubled/Geese_A.wav', 'path': 'Initial/Doubled/Geese_A.wav'},
-    {'name': 'Initial/Doubled/HairDryer_A.wav', 'path': 'Initial/Doubled/HairDryer_A.wav'},
-    {'name': 'Initial/Doubled/Windchime_A.wav', 'path': 'Initial/Doubled/Windchime_A.wav'},
-    {'name': 'Initial/Repeat/MetalBang.wav', 'path': 'Initial/Repeat/MetalBang.wav'},
-    {'name': 'Initial/Doubled/Writing_A.wav', 'path': 'Initial/Doubled/Writing_A.wav'},
-    {'name': 'Initial/Repeat/Printer.wav', 'path': 'Initial/Repeat/Printer.wav'},
-    {'name': 'Test/Foils/Heartbeat.wav', 'path': 'Test/Foils/Heartbeat.wav'},
-    {'name': 'Initial/Doubled/Harp_A.wav', 'path': 'Initial/Doubled/Harp_A.wav'},
-    {'name': 'Initial/Doubled/Coin_A.wav', 'path': 'Initial/Doubled/Coin_A.wav'},
-    {'name': 'Initial/NoRepeat/Rooster_B.wav', 'path': 'Initial/NoRepeat/Rooster_B.wav'},
-    {'name': 'Initial/Repeat/Cymbal_A.wav', 'path': 'Initial/Repeat/Cymbal_A.wav'},
-    {'name': 'Initial/Doubled/Cricket_A.wav', 'path': 'Initial/Doubled/Cricket_A.wav'},
-    {'name': 'Test/Foils/Bullfrog.wav', 'path': 'Test/Foils/Bullfrog.wav'},
-    {'name': 'Test/Foils/Horse.wav', 'path': 'Test/Foils/Horse.wav'},
-    {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
-    {'name': 'Initial/Repeat/Stir.wav', 'path': 'Initial/Repeat/Stir.wav'},
-    {'name': 'Test/Foils/Slurp.wav', 'path': 'Test/Foils/Slurp.wav'},
-    {'name': 'Initial/NoRepeat/Saw_A.wav', 'path': 'Initial/NoRepeat/Saw_A.wav'},
-    {'name': 'Initial/Doubled/Guitar_A.wav', 'path': 'Initial/Doubled/Guitar_A.wav'},
-    {'name': 'Initial/Repeat/ManWhistle.wav', 'path': 'Initial/Repeat/ManWhistle.wav'},
-    {'name': 'Initial/Doubled/Doorchime_A.wav', 'path': 'Initial/Doubled/Doorchime_A.wav'},
-    {'name': 'Test/Foils/PartyHorn.wav', 'path': 'Test/Foils/PartyHorn.wav'},
-    {'name': 'Initial/Repeat/Drum_B.wav', 'path': 'Initial/Repeat/Drum_B.wav'},
-    {'name': 'Test/Foils/PaperRip.wav', 'path': 'Test/Foils/PaperRip.wav'},
-    {'name': 'Initial/Repeat/Bagpipe.wav', 'path': 'Initial/Repeat/Bagpipe.wav'},
-    {'name': 'Initial/NoRepeat/Snore_B.wav', 'path': 'Initial/NoRepeat/Snore_B.wav'},
-    {'name': 'Initial/Repeat/Howl.wav', 'path': 'Initial/Repeat/Howl.wav'},
-    {'name': 'Test/Foils/Donkey.wav', 'path': 'Test/Foils/Donkey.wav'},
-    {'name': 'Initial/NoRepeat/Droplet_B.wav', 'path': 'Initial/NoRepeat/Droplet_B.wav'},
-    {'name': 'Initial/NoRepeat/Goat_B.wav', 'path': 'Initial/NoRepeat/Goat_B.wav'},
-    {'name': 'Initial/Doubled/Owl_A.wav', 'path': 'Initial/Doubled/Owl_A.wav'},
-    {'name': 'Initial/NoRepeat/Thunder_A.wav', 'path': 'Initial/NoRepeat/Thunder_A.wav'},
     {'name': 'Test/Foils/Gallop.wav', 'path': 'Test/Foils/Gallop.wav'},
-    {'name': 'Test/Foils/Typing.wav', 'path': 'Test/Foils/Typing.wav'},
-    {'name': 'Initial/NoRepeat/Toilet_B.wav', 'path': 'Initial/NoRepeat/Toilet_B.wav'},
-    {'name': 'Test/Foils/Buzz.wav', 'path': 'Test/Foils/Buzz.wav'},
-    {'name': 'Initial/NoRepeat/Mosquito_B.wav', 'path': 'Initial/NoRepeat/Mosquito_B.wav'},
-    {'name': 'Initial/NoRepeat/MusicBox_A.wav', 'path': 'Initial/NoRepeat/MusicBox_A.wav'},
-    {'name': 'Initial/Repeat/IceDrop.wav', 'path': 'Initial/Repeat/IceDrop.wav'},
-    {'name': 'Initial/NoRepeat/Chainsaw_A.wav', 'path': 'Initial/NoRepeat/Chainsaw_A.wav'},
-    {'name': 'Initial/Doubled/Creak.wav', 'path': 'Initial/Doubled/Creak.wav'},
-    {'name': 'Initial/Doubled/Laugh_A.wav', 'path': 'Initial/Doubled/Laugh_A.wav'},
-    {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
-    {'name': 'Initial/NoRepeat/Elephant_A.wav', 'path': 'Initial/NoRepeat/Elephant_A.wav'},
-    {'name': 'Test/Foils/Airhorn.wav', 'path': 'Test/Foils/Airhorn.wav'},
-    {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'},
-    {'name': 'Initial/Doubled/Surf_A.wav', 'path': 'Initial/Doubled/Surf_A.wav'},
-    {'name': 'Initial/Repeat/Airplane_B.wav', 'path': 'Initial/Repeat/Airplane_B.wav'},
-    {'name': 'Initial/Doubled/Turkey_A.wav', 'path': 'Initial/Doubled/Turkey_A.wav'},
-    {'name': 'Initial/Repeat/Cicade.wav', 'path': 'Initial/Repeat/Cicade.wav'},
-    {'name': 'Initial/Doubled/Clap_A.wav', 'path': 'Initial/Doubled/Clap_A.wav'},
-    {'name': 'Test/Foils/Robot.wav', 'path': 'Test/Foils/Robot.wav'},
-    {'name': 'Initial/Doubled/Cough_A.wav', 'path': 'Initial/Doubled/Cough_A.wav'},
-    {'name': 'Test/Foils/Cards.wav', 'path': 'Test/Foils/Cards.wav'},
-    {'name': 'Initial/Doubled/Clock_A.wav', 'path': 'Initial/Doubled/Clock_A.wav'},
-    {'name': 'Test/Foils/Wind_B.wav', 'path': 'Test/Foils/Wind_B.wav'},
-    {'name': 'Initial/Doubled/Train_A.wav', 'path': 'Initial/Doubled/Train_A.wav'},
-    {'name': 'Initial/Repeat/Bat.wav', 'path': 'Initial/Repeat/Bat.wav'},
-    {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
-    {'name': 'Initial/Repeat/Crow_B.wav', 'path': 'Initial/Repeat/Crow_B.wav'},
-    {'name': 'Initial/Doubled/Siren_A.wav', 'path': 'Initial/Doubled/Siren_A.wav'},
-    {'name': 'Test/Foils/Gulp.wav', 'path': 'Test/Foils/Gulp.wav'},
-    {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
-    {'name': 'Initial/Doubled/Cuckoo_A.wav', 'path': 'Initial/Doubled/Cuckoo_A.wav'},
-    {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
-    {'name': 'Initial/Doubled/Growl_A.wav', 'path': 'Initial/Doubled/Growl_A.wav'},
-    {'name': 'Initial/Repeat/Pour.wav', 'path': 'Initial/Repeat/Pour.wav'},
-    {'name': 'Initial/Repeat/Sealion.wav', 'path': 'Initial/Repeat/Sealion.wav'},
-    {'name': 'Test/Foils/Bird.wav', 'path': 'Test/Foils/Bird.wav'},
-    {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
-    {'name': 'Initial/NoRepeat/Helicopter_A.wav', 'path': 'Initial/NoRepeat/Helicopter_A.wav'},
-    {'name': 'Initial/NoRepeat/Puff_A.wav', 'path': 'Initial/NoRepeat/Puff_A.wav'},
-    {'name': 'Test/Foils/Harmonica.wav', 'path': 'Test/Foils/Harmonica.wav'},
-    {'name': 'Initial/Repeat/Sneeze_B.wav', 'path': 'Initial/Repeat/Sneeze_B.wav'},
-    {'name': 'Initial/Doubled/Chime_A.wav', 'path': 'Initial/Doubled/Chime_A.wav'},
-    {'name': 'Initial/Doubled/Dog_A.wav', 'path': 'Initial/Doubled/Dog_A.wav'},
-    {'name': 'Initial/Doubled/Gargle_A.wav', 'path': 'Initial/Doubled/Gargle_A.wav'},
-    {'name': 'Initial/NoRepeat/Faucet_A.wav', 'path': 'Initial/NoRepeat/Faucet_A.wav'},
-    {'name': 'Initial/NoRepeat/Hammer_A.wav', 'path': 'Initial/NoRepeat/Hammer_A.wav'},
-    {'name': 'Initial/Repeat/Whistle_A.wav', 'path': 'Initial/Repeat/Whistle_A.wav'},
-    {'name': 'Initial/NoRepeat/Sax_A.wav', 'path': 'Initial/NoRepeat/Sax_A.wav'},
-    {'name': 'Initial/NoRepeat/Baby_B.wav', 'path': 'Initial/NoRepeat/Baby_B.wav'},
-    {'name': 'Test/Foils/Steam.wav', 'path': 'Test/Foils/Steam.wav'},
-    {'name': 'Initial/Doubled/Cat_A.wav', 'path': 'Initial/Doubled/Cat_A.wav'},
-    {'name': 'Test/Foils/Brushing.wav', 'path': 'Test/Foils/Brushing.wav'},
-    {'name': 'Test/Foils/Camera.wav', 'path': 'Test/Foils/Camera.wav'},
-    {'name': 'Initial/Doubled/Piano_A.wav', 'path': 'Initial/Doubled/Piano_A.wav'},
-    {'name': 'Test/Foils/Axe.wav', 'path': 'Test/Foils/Axe.wav'},
     {'name': 'Initial/Repeat/Phone_A.wav', 'path': 'Initial/Repeat/Phone_A.wav'},
-    {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
-    {'name': 'Initial/Repeat/Trumpet_B.wav', 'path': 'Initial/Repeat/Trumpet_B.wav'},
-    {'name': 'Initial/Doubled/Chicken_A.wav', 'path': 'Initial/Doubled/Chicken_A.wav'},
-    {'name': 'Initial/Repeat/Pingpong.wav', 'path': 'Initial/Repeat/Pingpong.wav'},
-    {'name': 'Initial/Doubled/Bubbles_A.wav', 'path': 'Initial/Doubled/Bubbles_A.wav'},
-    {'name': 'Test/Foils/Kettle.wav', 'path': 'Test/Foils/Kettle.wav'},
+    {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
+    {'name': 'Test/Foils/Harmonica.wav', 'path': 'Test/Foils/Harmonica.wav'},
+    {'name': 'Initial/NoRepeat/Helicopter_A.wav', 'path': 'Initial/NoRepeat/Helicopter_A.wav'},
+    {'name': 'Initial/Repeat/Cymbal_A.wav', 'path': 'Initial/Repeat/Cymbal_A.wav'},
+    {'name': 'Initial/Doubled/Harp_A.wav', 'path': 'Initial/Doubled/Harp_A.wav'},
+    {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
+    {'name': 'Initial/Doubled/Siren_A.wav', 'path': 'Initial/Doubled/Siren_A.wav'},
+    {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'},
+    {'name': 'Test/Foils/Gulp.wav', 'path': 'Test/Foils/Gulp.wav'},
+    {'name': 'Initial/NoRepeat/Goat_B.wav', 'path': 'Initial/NoRepeat/Goat_B.wav'},
+    {'name': 'Initial/Doubled/Surf_A.wav', 'path': 'Initial/Doubled/Surf_A.wav'},
+    {'name': 'Test/Foils/Slurp.wav', 'path': 'Test/Foils/Slurp.wav'},
+    {'name': 'Initial/NoRepeat/Mosquito_B.wav', 'path': 'Initial/NoRepeat/Mosquito_B.wav'},
+    {'name': 'Initial/Doubled/Cat_A.wav', 'path': 'Initial/Doubled/Cat_A.wav'},
+    {'name': 'Initial/Repeat/Sneeze_B.wav', 'path': 'Initial/Repeat/Sneeze_B.wav'},
+    {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
+    {'name': 'Initial/Doubled/Turkey_A.wav', 'path': 'Initial/Doubled/Turkey_A.wav'},
+    {'name': 'Initial/Doubled/Coin_A.wav', 'path': 'Initial/Doubled/Coin_A.wav'},
+    {'name': 'Initial/Doubled/Gargle_A.wav', 'path': 'Initial/Doubled/Gargle_A.wav'},
+    {'name': 'Initial/Repeat/Stir.wav', 'path': 'Initial/Repeat/Stir.wav'},
+    {'name': 'Initial/Doubled/Cricket_A.wav', 'path': 'Initial/Doubled/Cricket_A.wav'},
+    {'name': 'Initial/NoRepeat/Hammer_A.wav', 'path': 'Initial/NoRepeat/Hammer_A.wav'},
+    {'name': 'Test/Foils/Heartbeat.wav', 'path': 'Test/Foils/Heartbeat.wav'},
+    {'name': 'Initial/NoRepeat/Baby_B.wav', 'path': 'Initial/NoRepeat/Baby_B.wav'},
     {'name': 'Test/Foils/Curtain.wav', 'path': 'Test/Foils/Curtain.wav'},
-    {'name': 'Initial/Repeat/Cello.wav', 'path': 'Initial/Repeat/Cello.wav'},
+    {'name': 'Initial/Doubled/Windchime_A.wav', 'path': 'Initial/Doubled/Windchime_A.wav'},
+    {'name': 'Initial/Doubled/Laugh_A.wav', 'path': 'Initial/Doubled/Laugh_A.wav'},
+    {'name': 'Initial/Repeat/Cicade.wav', 'path': 'Initial/Repeat/Cicade.wav'},
+    {'name': 'Test/Foils/Bird.wav', 'path': 'Test/Foils/Bird.wav'},
+    {'name': 'Initial/NoRepeat/Eagle_B.wav', 'path': 'Initial/NoRepeat/Eagle_B.wav'},
+    {'name': 'Initial/NoRepeat/Rooster_B.wav', 'path': 'Initial/NoRepeat/Rooster_B.wav'},
+    {'name': 'Initial/Repeat/Drum_B.wav', 'path': 'Initial/Repeat/Drum_B.wav'},
+    {'name': 'Initial/Doubled/Clap_A.wav', 'path': 'Initial/Doubled/Clap_A.wav'},
+    {'name': 'Initial/Repeat/Whistle_A.wav', 'path': 'Initial/Repeat/Whistle_A.wav'},
+    {'name': 'Initial/Doubled/CarStart_A.wav', 'path': 'Initial/Doubled/CarStart_A.wav'},
+    {'name': 'Initial/Repeat/Pour.wav', 'path': 'Initial/Repeat/Pour.wav'},
+    {'name': 'Initial/NoRepeat/Snore_B.wav', 'path': 'Initial/NoRepeat/Snore_B.wav'},
+    {'name': 'Initial/NoRepeat/Toilet_B.wav', 'path': 'Initial/NoRepeat/Toilet_B.wav'},
+    {'name': 'Initial/Repeat/Howl.wav', 'path': 'Initial/Repeat/Howl.wav'},
     {'name': 'Initial/NoRepeat/Sleighbells_B.wav', 'path': 'Initial/NoRepeat/Sleighbells_B.wav'},
-    {'name': 'Test/Foils/Bowlingpins.wav', 'path': 'Test/Foils/Bowlingpins.wav'}
+    {'name': 'Initial/Doubled/Dog_A.wav', 'path': 'Initial/Doubled/Dog_A.wav'},
+    {'name': 'Test/Foils/Steam.wav', 'path': 'Test/Foils/Steam.wav'},
+    {'name': 'Initial/Repeat/Crow_B.wav', 'path': 'Initial/Repeat/Crow_B.wav'},
+    {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
+    {'name': 'Test/Foils/Typing.wav', 'path': 'Test/Foils/Typing.wav'},
+    {'name': 'Initial/Doubled/HairDryer_A.wav', 'path': 'Initial/Doubled/HairDryer_A.wav'},
+    {'name': 'Initial/Doubled/Cuckoo_A.wav', 'path': 'Initial/Doubled/Cuckoo_A.wav'},
+    {'name': 'Initial/NoRepeat/Chainsaw_A.wav', 'path': 'Initial/NoRepeat/Chainsaw_A.wav'},
+    {'name': 'Test/Foils/Buzz.wav', 'path': 'Test/Foils/Buzz.wav'},
+    {'name': 'Initial/NoRepeat/Elephant_A.wav', 'path': 'Initial/NoRepeat/Elephant_A.wav'},
+    {'name': 'Initial/Doubled/Piano_A.wav', 'path': 'Initial/Doubled/Piano_A.wav'},
+    {'name': 'Initial/Doubled/Chicken_A.wav', 'path': 'Initial/Doubled/Chicken_A.wav'},
+    {'name': 'Initial/Repeat/IceDrop.wav', 'path': 'Initial/Repeat/IceDrop.wav'},
+    {'name': 'Initial/Repeat/Trumpet_B.wav', 'path': 'Initial/Repeat/Trumpet_B.wav'},
+    {'name': 'Test/Foils/Axe.wav', 'path': 'Test/Foils/Axe.wav'},
+    {'name': 'Initial/Repeat/Cello.wav', 'path': 'Initial/Repeat/Cello.wav'},
+    {'name': 'Initial/NoRepeat/Faucet_A.wav', 'path': 'Initial/NoRepeat/Faucet_A.wav'},
+    {'name': 'Initial/Doubled/Cough_A.wav', 'path': 'Initial/Doubled/Cough_A.wav'},
+    {'name': 'Initial/NoRepeat/Droplet_B.wav', 'path': 'Initial/NoRepeat/Droplet_B.wav'},
+    {'name': 'Initial/Doubled/Writing_A.wav', 'path': 'Initial/Doubled/Writing_A.wav'},
+    {'name': 'Initial/Doubled/Bubbles_A.wav', 'path': 'Initial/Doubled/Bubbles_A.wav'},
+    {'name': 'Initial/Doubled/Chime_A.wav', 'path': 'Initial/Doubled/Chime_A.wav'},
+    {'name': 'Initial/Doubled/Train_A.wav', 'path': 'Initial/Doubled/Train_A.wav'},
+    {'name': 'Initial/NoRepeat/Saw_A.wav', 'path': 'Initial/NoRepeat/Saw_A.wav'},
+    {'name': 'Test/Foils/Camera.wav', 'path': 'Test/Foils/Camera.wav'},
+    {'name': 'Initial/NoRepeat/Thunder_A.wav', 'path': 'Initial/NoRepeat/Thunder_A.wav'},
+    {'name': 'Test/Foils/Wind_B.wav', 'path': 'Test/Foils/Wind_B.wav'},
+    {'name': 'Initial/Doubled/Clock_A.wav', 'path': 'Initial/Doubled/Clock_A.wav'},
+    {'name': 'Test/Foils/Donkey.wav', 'path': 'Test/Foils/Donkey.wav'},
+    {'name': 'Test/Foils/PartyHorn.wav', 'path': 'Test/Foils/PartyHorn.wav'},
+    {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
+    {'name': 'Initial/Repeat/Sealion.wav', 'path': 'Initial/Repeat/Sealion.wav'},
+    {'name': 'Initial/Doubled/Doorchime_A.wav', 'path': 'Initial/Doubled/Doorchime_A.wav'},
+    {'name': 'Test/Foils/Bullfrog.wav', 'path': 'Test/Foils/Bullfrog.wav'},
+    {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
+    {'name': 'Initial/Doubled/Owl_A.wav', 'path': 'Initial/Doubled/Owl_A.wav'},
+    {'name': 'Initial/Doubled/Geese_A.wav', 'path': 'Initial/Doubled/Geese_A.wav'},
+    {'name': 'Initial/NoRepeat/MusicBox_A.wav', 'path': 'Initial/NoRepeat/MusicBox_A.wav'},
+    {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
+    {'name': 'Initial/NoRepeat/Puff_A.wav', 'path': 'Initial/NoRepeat/Puff_A.wav'},
+    {'name': 'Initial/Repeat/Printer.wav', 'path': 'Initial/Repeat/Printer.wav'},
+    {'name': 'Initial/Repeat/Bagpipe.wav', 'path': 'Initial/Repeat/Bagpipe.wav'},
+    {'name': 'Test/Foils/Cards.wav', 'path': 'Test/Foils/Cards.wav'},
+    {'name': 'Test/Foils/Airhorn.wav', 'path': 'Test/Foils/Airhorn.wav'},
+    {'name': 'Test/Foils/Brushing.wav', 'path': 'Test/Foils/Brushing.wav'},
+    {'name': 'Test/Foils/Robot.wav', 'path': 'Test/Foils/Robot.wav'},
+    {'name': 'Initial/Repeat/ManWhistle.wav', 'path': 'Initial/Repeat/ManWhistle.wav'},
+    {'name': 'Initial/Repeat/MetalBang.wav', 'path': 'Initial/Repeat/MetalBang.wav'},
+    {'name': 'Initial/NoRepeat/Sax_A.wav', 'path': 'Initial/NoRepeat/Sax_A.wav'},
+    {'name': 'Test/Foils/Bowlingpins.wav', 'path': 'Test/Foils/Bowlingpins.wav'},
+    {'name': 'Initial/NoRepeat/Duck_A.wav', 'path': 'Initial/NoRepeat/Duck_A.wav'},
+    {'name': 'Initial/Doubled/Guitar_A.wav', 'path': 'Initial/Doubled/Guitar_A.wav'},
+    {'name': 'Initial/Repeat/Airplane_B.wav', 'path': 'Initial/Repeat/Airplane_B.wav'},
+    {'name': 'Test/Foils/PaperRip.wav', 'path': 'Test/Foils/PaperRip.wav'},
+    {'name': 'Initial/Repeat/Bat.wav', 'path': 'Initial/Repeat/Bat.wav'},
+    {'name': 'Initial/Repeat/Pingpong.wav', 'path': 'Initial/Repeat/Pingpong.wav'},
+    {'name': 'Initial/Doubled/Creak.wav', 'path': 'Initial/Doubled/Creak.wav'},
+    {'name': 'Initial/Doubled/Growl_A.wav', 'path': 'Initial/Doubled/Growl_A.wav'},
+    {'name': 'Test/Foils/Horse.wav', 'path': 'Test/Foils/Horse.wav'},
+    {'name': 'Test/Foils/Kettle.wav', 'path': 'Test/Foils/Kettle.wav'}
   ]
 });
 
@@ -204,6 +207,12 @@ function updateInfo() {
 }
 
 
+var EndClock;
+var ThankyouMssg;
+var CompletionCode;
+var ExitTxt;
+var ExitKey;
+var CodeTxt;
 var WelcomeClock;
 var InstructionTxt;
 var WelcomeContinueKey;
@@ -238,11 +247,63 @@ var ClickTheButton;
 var SoundItem;
 var ItemNo;
 var Submit;
-var EndClock;
-var ThankyouMssg;
 var globalClock;
 var routineTimer;
 function experimentInit() {
+  // Initialize components for Routine "End"
+  EndClock = new util.Clock();
+  ThankyouMssg = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'ThankyouMssg',
+    text: 'This is the end of the experiment.\n\nThank you for your participation!\n\n\n\nYour Completion Code is',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: 0.0 
+  });
+  
+  CompletionCode = new visual.TextBox({
+    win: psychoJS.window,
+    name: 'CompletionCode',
+    text: '51DF249E',
+    font: 'Arial',
+    pos: [0, (- 0.1)], letterHeight: 0.04,
+    size: [0.2, 0.07],  units: undefined, 
+    color: 'Black', colorSpace: 'rgb',
+    fillColor: 'White', borderColor: 'Black',
+    bold: true, italic: false,
+    opacity: 1,
+    padding: undefined,
+    editable: false,
+    anchor: 'center',
+    depth: -1.0 
+  });
+  
+  ExitTxt = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'ExitTxt',
+    text: 'Press SPACE to exit the study',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, (- 0.4)], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -2.0 
+  });
+  
+  ExitKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  CodeTxt = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'CodeTxt',
+    text: 'Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, (- 0.18)], height: 0.03,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -4.0 
+  });
+  
   // Initialize components for Routine "Welcome"
   WelcomeClock = new util.Clock();
   InstructionTxt = new visual.TextStim({
@@ -276,7 +337,7 @@ function experimentInit() {
   InstructionTxt2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'InstructionTxt2',
-    text: 'Each sound will be only played once so please listen carefully.\n\nYou can leave your answer blank, but please try to label as many items as possible.\n\n\n',
+    text: 'Each sound will be only played once so please listen carefully and make sure you are in a quiet environment.\n\nYou can leave your answer blank, but please try to label as many items as possible.\n\n\n',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -491,12 +552,53 @@ function experimentInit() {
   ThankyouMssg = new visual.TextStim({
     win: psychoJS.window,
     name: 'ThankyouMssg',
-    text: 'This is the end of the experiment.\n\n\n\nThank you for your participation!',
+    text: 'This is the end of the experiment.\n\nThank you for your participation!\n\n\n\nYour Completion Code is',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
+  });
+  
+  CompletionCode = new visual.TextBox({
+    win: psychoJS.window,
+    name: 'CompletionCode',
+    text: '51DF249E',
+    font: 'Arial',
+    pos: [0, (- 0.1)], letterHeight: 0.04,
+    size: [0.2, 0.07],  units: undefined, 
+    color: 'Black', colorSpace: 'rgb',
+    fillColor: 'White', borderColor: 'Black',
+    bold: true, italic: false,
+    opacity: 1,
+    padding: undefined,
+    editable: false,
+    anchor: 'center',
+    depth: -1.0 
+  });
+  
+  ExitTxt = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'ExitTxt',
+    text: 'Press SPACE to exit the study',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, (- 0.4)], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -2.0 
+  });
+  
+  ExitKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  CodeTxt = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'CodeTxt',
+    text: 'Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, (- 0.18)], height: 0.03,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -4.0 
   });
   
   // Create some handy timers
@@ -510,6 +612,156 @@ function experimentInit() {
 var t;
 var frameN;
 var continueRoutine;
+var _ExitKey_allKeys;
+var EndComponents;
+function EndRoutineBegin(snapshot) {
+  return function () {
+    //------Prepare to start Routine 'End'-------
+    t = 0;
+    EndClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    ExitKey.keys = undefined;
+    ExitKey.rt = undefined;
+    _ExitKey_allKeys = [];
+    // keep track of which components have finished
+    EndComponents = [];
+    EndComponents.push(ThankyouMssg);
+    EndComponents.push(CompletionCode);
+    EndComponents.push(ExitTxt);
+    EndComponents.push(ExitKey);
+    EndComponents.push(CodeTxt);
+    
+    for (const thisComponent of EndComponents)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function EndRoutineEachFrame(snapshot) {
+  return function () {
+    //------Loop for each frame of Routine 'End'-------
+    // get current time
+    t = EndClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *ThankyouMssg* updates
+    if (t >= 0.0 && ThankyouMssg.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ThankyouMssg.tStart = t;  // (not accounting for frame time here)
+      ThankyouMssg.frameNStart = frameN;  // exact frame index
+      
+      ThankyouMssg.setAutoDraw(true);
+    }
+
+    
+    // *CompletionCode* updates
+    if (t >= 0.0 && CompletionCode.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      CompletionCode.tStart = t;  // (not accounting for frame time here)
+      CompletionCode.frameNStart = frameN;  // exact frame index
+      
+      CompletionCode.setAutoDraw(true);
+    }
+
+    
+    // *ExitTxt* updates
+    if (t >= 0.0 && ExitTxt.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ExitTxt.tStart = t;  // (not accounting for frame time here)
+      ExitTxt.frameNStart = frameN;  // exact frame index
+      
+      ExitTxt.setAutoDraw(true);
+    }
+
+    
+    // *ExitKey* updates
+    if (t >= 0.0 && ExitKey.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ExitKey.tStart = t;  // (not accounting for frame time here)
+      ExitKey.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { ExitKey.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { ExitKey.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { ExitKey.clearEvents(); });
+    }
+
+    if (ExitKey.status === PsychoJS.Status.STARTED) {
+      let theseKeys = ExitKey.getKeys({keyList: ['space'], waitRelease: false});
+      _ExitKey_allKeys = _ExitKey_allKeys.concat(theseKeys);
+      if (_ExitKey_allKeys.length > 0) {
+        ExitKey.keys = _ExitKey_allKeys[_ExitKey_allKeys.length - 1].name;  // just the last key pressed
+        ExitKey.rt = _ExitKey_allKeys[_ExitKey_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    
+    // *CodeTxt* updates
+    if (t >= 0.0 && CodeTxt.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      CodeTxt.tStart = t;  // (not accounting for frame time here)
+      CodeTxt.frameNStart = frameN;  // exact frame index
+      
+      CodeTxt.setAutoDraw(true);
+    }
+
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of EndComponents)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function EndRoutineEnd(snapshot) {
+  return function () {
+    //------Ending Routine 'End'-------
+    for (const thisComponent of EndComponents) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('ExitKey.keys', ExitKey.keys);
+    if (typeof ExitKey.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('ExitKey.rt', ExitKey.rt);
+        routineTimer.reset();
+        }
+    
+    ExitKey.stop();
+    // the Routine "End" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    return Scheduler.Event.NEXT;
+  };
+}
+
+
 var _WelcomeContinueKey_allKeys;
 var WelcomeComponents;
 function WelcomeRoutineBegin(snapshot) {
@@ -1590,89 +1842,6 @@ function StudyRoutineEnd(snapshot) {
     // the Routine "Study" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
-    return Scheduler.Event.NEXT;
-  };
-}
-
-
-var EndComponents;
-function EndRoutineBegin(snapshot) {
-  return function () {
-    //------Prepare to start Routine 'End'-------
-    t = 0;
-    EndClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    routineTimer.add(3.000000);
-    // update component parameters for each repeat
-    // keep track of which components have finished
-    EndComponents = [];
-    EndComponents.push(ThankyouMssg);
-    
-    for (const thisComponent of EndComponents)
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function EndRoutineEachFrame(snapshot) {
-  return function () {
-    //------Loop for each frame of Routine 'End'-------
-    // get current time
-    t = EndClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    
-    // *ThankyouMssg* updates
-    if (t >= 0.0 && ThankyouMssg.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      ThankyouMssg.tStart = t;  // (not accounting for frame time here)
-      ThankyouMssg.frameNStart = frameN;  // exact frame index
-      
-      ThankyouMssg.setAutoDraw(true);
-    }
-
-    frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if ((ThankyouMssg.status === PsychoJS.Status.STARTED || ThankyouMssg.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
-      ThankyouMssg.setAutoDraw(false);
-    }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of EndComponents)
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-        break;
-      }
-    
-    // refresh the screen if continuing
-    if (continueRoutine && routineTimer.getTime() > 0) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function EndRoutineEnd(snapshot) {
-  return function () {
-    //------Ending Routine 'End'-------
-    for (const thisComponent of EndComponents) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    }
     return Scheduler.Event.NEXT;
   };
 }
