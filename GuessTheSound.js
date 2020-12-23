@@ -258,7 +258,7 @@ function experimentInit() {
     text: 'This is the end of the experiment.\n\nThank you for your participation!\n\n\n\nYour Completion Code is',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0.2], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
@@ -555,7 +555,7 @@ function experimentInit() {
     text: 'This is the end of the experiment.\n\nThank you for your participation!\n\n\n\nYour Completion Code is',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0.2], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
