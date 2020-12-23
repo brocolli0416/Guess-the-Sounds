@@ -258,7 +258,7 @@ function experimentInit() {
     text: '51DF249E',
     font: 'Arial',
     pos: [0, (- 0.1)], letterHeight: 0.04,
-    size: [0.2, 0.07],  units: undefined, 
+    size: [0.22, 0.07],  units: undefined, 
     color: 'Black', colorSpace: 'rgb',
     fillColor: 'White', borderColor: 'Black',
     bold: true, italic: false,
@@ -288,7 +288,7 @@ function experimentInit() {
     text: 'Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
     font: 'Arial',
     units: undefined, 
-    pos: [0, (- 0.18)], height: 0.03,  wrapWidth: undefined, ori: 0,
+    pos: [0, (- 0.22)], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: -4.0 
   });
@@ -555,7 +555,7 @@ function experimentInit() {
     text: '51DF249E',
     font: 'Arial',
     pos: [0, (- 0.1)], letterHeight: 0.04,
-    size: [0.2, 0.07],  units: undefined, 
+    size: [0.22, 0.07],  units: undefined, 
     color: 'Black', colorSpace: 'rgb',
     fillColor: 'White', borderColor: 'Black',
     bold: true, italic: false,
@@ -585,7 +585,7 @@ function experimentInit() {
     text: 'Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
     font: 'Arial',
     units: undefined, 
-    pos: [0, (- 0.18)], height: 0.03,  wrapWidth: undefined, ori: 0,
+    pos: [0, (- 0.22)], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: -4.0 
   });
