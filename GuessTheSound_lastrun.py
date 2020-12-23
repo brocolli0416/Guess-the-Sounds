@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on December 23, 2020, at 11:53
+    on December 23, 2020, at 11:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -89,29 +89,13 @@ ThankyouMssg = visual.TextStim(win=win, name='ThankyouMssg',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-CompletionCode = visual.TextBox2(
-     win, text='51DF249E', font='Arial',
-     pos=(0, 0),     letterHeight=0.04,
-     size=(0.34, 0.07), borderWidth=2.0,
-     color='Black', colorSpace='rgb',
-     opacity=1,
-     bold=True, italic=False,
-     lineSpacing=1.0,
-     padding=None,
-     anchor='center',
-     fillColor='White', borderColor='Black',
-     flipHoriz=False, flipVert=False,
-     editable=False,
-     name='CompletionCode',
-     autoLog=True,
-)
 ExitTxt = visual.TextStim(win=win, name='ExitTxt',
     text='Press SPACE to exit the study',
     font='Arial',
     pos=(0, -0.4), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-2.0);
+    depth=-1.0);
 ExitKey = keyboard.Keyboard()
 CodeTxt = visual.TextStim(win=win, name='CodeTxt',
     text='Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
@@ -119,7 +103,7 @@ CodeTxt = visual.TextStim(win=win, name='CodeTxt',
     pos=(0, -0.22), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-4.0);
+    depth=-3.0);
 
 # Initialize components for Routine "Welcome"
 WelcomeClock = core.Clock()
@@ -308,29 +292,13 @@ ThankyouMssg = visual.TextStim(win=win, name='ThankyouMssg',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-CompletionCode = visual.TextBox2(
-     win, text='51DF249E', font='Arial',
-     pos=(0, 0),     letterHeight=0.04,
-     size=(0.34, 0.07), borderWidth=2.0,
-     color='Black', colorSpace='rgb',
-     opacity=1,
-     bold=True, italic=False,
-     lineSpacing=1.0,
-     padding=None,
-     anchor='center',
-     fillColor='White', borderColor='Black',
-     flipHoriz=False, flipVert=False,
-     editable=False,
-     name='CompletionCode',
-     autoLog=True,
-)
 ExitTxt = visual.TextStim(win=win, name='ExitTxt',
     text='Press SPACE to exit the study',
     font='Arial',
     pos=(0, -0.4), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-2.0);
+    depth=-1.0);
 ExitKey = keyboard.Keyboard()
 CodeTxt = visual.TextStim(win=win, name='CodeTxt',
     text='Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
@@ -338,7 +306,7 @@ CodeTxt = visual.TextStim(win=win, name='CodeTxt',
     pos=(0, -0.22), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-4.0);
+    depth=-3.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -351,7 +319,7 @@ ExitKey.keys = []
 ExitKey.rt = []
 _ExitKey_allKeys = []
 # keep track of which components have finished
-EndComponents = [ThankyouMssg, CompletionCode, ExitTxt, ExitKey, CodeTxt]
+EndComponents = [ThankyouMssg, ExitTxt, ExitKey, CodeTxt]
 for thisComponent in EndComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -382,15 +350,6 @@ while continueRoutine:
         ThankyouMssg.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(ThankyouMssg, 'tStartRefresh')  # time at next scr refresh
         ThankyouMssg.setAutoDraw(True)
-    
-    # *CompletionCode* updates
-    if CompletionCode.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        CompletionCode.frameNStart = frameN  # exact frame index
-        CompletionCode.tStart = t  # local t and not account for scr refresh
-        CompletionCode.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(CompletionCode, 'tStartRefresh')  # time at next scr refresh
-        CompletionCode.setAutoDraw(True)
     
     # *ExitTxt* updates
     if ExitTxt.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -455,8 +414,6 @@ for thisComponent in EndComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('ThankyouMssg.started', ThankyouMssg.tStartRefresh)
 thisExp.addData('ThankyouMssg.stopped', ThankyouMssg.tStopRefresh)
-thisExp.addData('CompletionCode.started', CompletionCode.tStartRefresh)
-thisExp.addData('CompletionCode.stopped', CompletionCode.tStopRefresh)
 thisExp.addData('ExitTxt.started', ExitTxt.tStartRefresh)
 thisExp.addData('ExitTxt.stopped', ExitTxt.tStopRefresh)
 # check responses
@@ -1363,7 +1320,7 @@ ExitKey.keys = []
 ExitKey.rt = []
 _ExitKey_allKeys = []
 # keep track of which components have finished
-EndComponents = [ThankyouMssg, CompletionCode, ExitTxt, ExitKey, CodeTxt]
+EndComponents = [ThankyouMssg, ExitTxt, ExitKey, CodeTxt]
 for thisComponent in EndComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -1394,15 +1351,6 @@ while continueRoutine:
         ThankyouMssg.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(ThankyouMssg, 'tStartRefresh')  # time at next scr refresh
         ThankyouMssg.setAutoDraw(True)
-    
-    # *CompletionCode* updates
-    if CompletionCode.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        CompletionCode.frameNStart = frameN  # exact frame index
-        CompletionCode.tStart = t  # local t and not account for scr refresh
-        CompletionCode.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(CompletionCode, 'tStartRefresh')  # time at next scr refresh
-        CompletionCode.setAutoDraw(True)
     
     # *ExitTxt* updates
     if ExitTxt.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1467,8 +1415,6 @@ for thisComponent in EndComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('ThankyouMssg.started', ThankyouMssg.tStartRefresh)
 thisExp.addData('ThankyouMssg.stopped', ThankyouMssg.tStopRefresh)
-thisExp.addData('CompletionCode.started', CompletionCode.tStartRefresh)
-thisExp.addData('CompletionCode.stopped', CompletionCode.tStopRefresh)
 thisExp.addData('ExitTxt.started', ExitTxt.tStartRefresh)
 thisExp.addData('ExitTxt.stopped', ExitTxt.tStopRefresh)
 # check responses
