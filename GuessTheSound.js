@@ -44,9 +44,6 @@ psychoJS.scheduleCondition(function() { return (psychoJS.gui.dialogComponent.but
 // flowScheduler gets run if the participants presses OK
 flowScheduler.add(updateInfo); // add timeStamp
 flowScheduler.add(experimentInit);
-flowScheduler.add(EndRoutineBegin());
-flowScheduler.add(EndRoutineEachFrame());
-flowScheduler.add(EndRoutineEnd());
 flowScheduler.add(WelcomeRoutineBegin());
 flowScheduler.add(WelcomeRoutineEachFrame());
 flowScheduler.add(WelcomeRoutineEnd());
@@ -207,12 +204,6 @@ function updateInfo() {
 }
 
 
-var EndClock;
-var ThankyouMssg;
-var CompletionCode;
-var ExitTxt;
-var ExitKey;
-var CodeTxt;
 var WelcomeClock;
 var InstructionTxt;
 var WelcomeContinueKey;
@@ -247,63 +238,15 @@ var ClickTheButton;
 var SoundItem;
 var ItemNo;
 var Submit;
+var EndClock;
+var ThankyouMssg;
+var CompletionCode;
+var ExitTxt;
+var ExitKey;
+var CodeTxt;
 var globalClock;
 var routineTimer;
 function experimentInit() {
-  // Initialize components for Routine "End"
-  EndClock = new util.Clock();
-  ThankyouMssg = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'ThankyouMssg',
-    text: 'This is the end of the experiment.\n\nThank you for your participation!\n\n\n\nYour Completion Code is',
-    font: 'Arial',
-    units: undefined, 
-    pos: [0, 0.2], height: 0.04,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('white'),  opacity: 1,
-    depth: 0.0 
-  });
-  
-  CompletionCode = new visual.TextBox({
-    win: psychoJS.window,
-    name: 'CompletionCode',
-    text: '51DF249E',
-    font: 'Arial',
-    pos: [0, 0], letterHeight: 0.04,
-    size: [0.25, 0.07],  units: undefined, 
-    color: 'Black', colorSpace: 'rgb',
-    fillColor: 'White', borderColor: 'Black',
-    bold: true, italic: false,
-    opacity: 1,
-    padding: undefined,
-    editable: false,
-    anchor: 'center',
-    depth: -1.0 
-  });
-  
-  ExitTxt = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'ExitTxt',
-    text: 'Press SPACE to exit the study',
-    font: 'Arial',
-    units: undefined, 
-    pos: [0, (- 0.4)], height: 0.04,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('white'),  opacity: 1,
-    depth: -2.0 
-  });
-  
-  ExitKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
-  CodeTxt = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'CodeTxt',
-    text: 'Please write the code down so you can enter it when you return to Prolific. You may then exit the study by pressing SPACE.',
-    font: 'Arial',
-    units: undefined, 
-    pos: [0, (- 0.22)], height: 0.04,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('white'),  opacity: 1,
-    depth: -4.0 
-  });
-  
   // Initialize components for Routine "Welcome"
   WelcomeClock = new util.Clock();
   InstructionTxt = new visual.TextStim({
@@ -612,156 +555,6 @@ function experimentInit() {
 var t;
 var frameN;
 var continueRoutine;
-var _ExitKey_allKeys;
-var EndComponents;
-function EndRoutineBegin(snapshot) {
-  return function () {
-    //------Prepare to start Routine 'End'-------
-    t = 0;
-    EndClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    // update component parameters for each repeat
-    ExitKey.keys = undefined;
-    ExitKey.rt = undefined;
-    _ExitKey_allKeys = [];
-    // keep track of which components have finished
-    EndComponents = [];
-    EndComponents.push(ThankyouMssg);
-    EndComponents.push(CompletionCode);
-    EndComponents.push(ExitTxt);
-    EndComponents.push(ExitKey);
-    EndComponents.push(CodeTxt);
-    
-    for (const thisComponent of EndComponents)
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function EndRoutineEachFrame(snapshot) {
-  return function () {
-    //------Loop for each frame of Routine 'End'-------
-    // get current time
-    t = EndClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    
-    // *ThankyouMssg* updates
-    if (t >= 0.0 && ThankyouMssg.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      ThankyouMssg.tStart = t;  // (not accounting for frame time here)
-      ThankyouMssg.frameNStart = frameN;  // exact frame index
-      
-      ThankyouMssg.setAutoDraw(true);
-    }
-
-    
-    // *CompletionCode* updates
-    if (t >= 0.0 && CompletionCode.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      CompletionCode.tStart = t;  // (not accounting for frame time here)
-      CompletionCode.frameNStart = frameN;  // exact frame index
-      
-      CompletionCode.setAutoDraw(true);
-    }
-
-    
-    // *ExitTxt* updates
-    if (t >= 0.0 && ExitTxt.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      ExitTxt.tStart = t;  // (not accounting for frame time here)
-      ExitTxt.frameNStart = frameN;  // exact frame index
-      
-      ExitTxt.setAutoDraw(true);
-    }
-
-    
-    // *ExitKey* updates
-    if (t >= 0.0 && ExitKey.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      ExitKey.tStart = t;  // (not accounting for frame time here)
-      ExitKey.frameNStart = frameN;  // exact frame index
-      
-      // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { ExitKey.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { ExitKey.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { ExitKey.clearEvents(); });
-    }
-
-    if (ExitKey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = ExitKey.getKeys({keyList: ['space'], waitRelease: false});
-      _ExitKey_allKeys = _ExitKey_allKeys.concat(theseKeys);
-      if (_ExitKey_allKeys.length > 0) {
-        ExitKey.keys = _ExitKey_allKeys[_ExitKey_allKeys.length - 1].name;  // just the last key pressed
-        ExitKey.rt = _ExitKey_allKeys[_ExitKey_allKeys.length - 1].rt;
-        // a response ends the routine
-        continueRoutine = false;
-      }
-    }
-    
-    
-    // *CodeTxt* updates
-    if (t >= 0.0 && CodeTxt.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      CodeTxt.tStart = t;  // (not accounting for frame time here)
-      CodeTxt.frameNStart = frameN;  // exact frame index
-      
-      CodeTxt.setAutoDraw(true);
-    }
-
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of EndComponents)
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-        break;
-      }
-    
-    // refresh the screen if continuing
-    if (continueRoutine) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function EndRoutineEnd(snapshot) {
-  return function () {
-    //------Ending Routine 'End'-------
-    for (const thisComponent of EndComponents) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    }
-    psychoJS.experiment.addData('ExitKey.keys', ExitKey.keys);
-    if (typeof ExitKey.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('ExitKey.rt', ExitKey.rt);
-        routineTimer.reset();
-        }
-    
-    ExitKey.stop();
-    // the Routine "End" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
-    return Scheduler.Event.NEXT;
-  };
-}
-
-
 var _WelcomeContinueKey_allKeys;
 var WelcomeComponents;
 function WelcomeRoutineBegin(snapshot) {
@@ -1840,6 +1633,156 @@ function StudyRoutineEnd(snapshot) {
     }
     
     // the Routine "Study" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    return Scheduler.Event.NEXT;
+  };
+}
+
+
+var _ExitKey_allKeys;
+var EndComponents;
+function EndRoutineBegin(snapshot) {
+  return function () {
+    //------Prepare to start Routine 'End'-------
+    t = 0;
+    EndClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    ExitKey.keys = undefined;
+    ExitKey.rt = undefined;
+    _ExitKey_allKeys = [];
+    // keep track of which components have finished
+    EndComponents = [];
+    EndComponents.push(ThankyouMssg);
+    EndComponents.push(CompletionCode);
+    EndComponents.push(ExitTxt);
+    EndComponents.push(ExitKey);
+    EndComponents.push(CodeTxt);
+    
+    for (const thisComponent of EndComponents)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function EndRoutineEachFrame(snapshot) {
+  return function () {
+    //------Loop for each frame of Routine 'End'-------
+    // get current time
+    t = EndClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *ThankyouMssg* updates
+    if (t >= 0.0 && ThankyouMssg.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ThankyouMssg.tStart = t;  // (not accounting for frame time here)
+      ThankyouMssg.frameNStart = frameN;  // exact frame index
+      
+      ThankyouMssg.setAutoDraw(true);
+    }
+
+    
+    // *CompletionCode* updates
+    if (t >= 0.0 && CompletionCode.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      CompletionCode.tStart = t;  // (not accounting for frame time here)
+      CompletionCode.frameNStart = frameN;  // exact frame index
+      
+      CompletionCode.setAutoDraw(true);
+    }
+
+    
+    // *ExitTxt* updates
+    if (t >= 0.0 && ExitTxt.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ExitTxt.tStart = t;  // (not accounting for frame time here)
+      ExitTxt.frameNStart = frameN;  // exact frame index
+      
+      ExitTxt.setAutoDraw(true);
+    }
+
+    
+    // *ExitKey* updates
+    if (t >= 0.0 && ExitKey.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ExitKey.tStart = t;  // (not accounting for frame time here)
+      ExitKey.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { ExitKey.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { ExitKey.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { ExitKey.clearEvents(); });
+    }
+
+    if (ExitKey.status === PsychoJS.Status.STARTED) {
+      let theseKeys = ExitKey.getKeys({keyList: ['space'], waitRelease: false});
+      _ExitKey_allKeys = _ExitKey_allKeys.concat(theseKeys);
+      if (_ExitKey_allKeys.length > 0) {
+        ExitKey.keys = _ExitKey_allKeys[_ExitKey_allKeys.length - 1].name;  // just the last key pressed
+        ExitKey.rt = _ExitKey_allKeys[_ExitKey_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    
+    // *CodeTxt* updates
+    if (t >= 0.0 && CodeTxt.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      CodeTxt.tStart = t;  // (not accounting for frame time here)
+      CodeTxt.frameNStart = frameN;  // exact frame index
+      
+      CodeTxt.setAutoDraw(true);
+    }
+
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of EndComponents)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function EndRoutineEnd(snapshot) {
+  return function () {
+    //------Ending Routine 'End'-------
+    for (const thisComponent of EndComponents) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('ExitKey.keys', ExitKey.keys);
+    if (typeof ExitKey.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('ExitKey.rt', ExitKey.rt);
+        routineTimer.reset();
+        }
+    
+    ExitKey.stop();
+    // the Routine "End" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;

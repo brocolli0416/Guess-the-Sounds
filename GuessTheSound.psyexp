@@ -537,7 +537,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="This is the end of the experiment.&amp;#10;&amp;#10;Thank you for your participation!&amp;#10;&amp;#10;&amp;#10;&amp;#10;Your Completion Code is" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="This is the end of the experiment.&amp;#10;&amp;#10;Thank you for your participation!&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;Your Completion Code is" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -549,7 +549,7 @@
         <Param name="borderWidth" updates="constant" val="2" valType="num"/>
         <Param name="color" updates="constant" val="Black" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="True" valType="bool"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="editable" updates="constant" val="False" valType="bool"/>
         <Param name="fillColor" updates="constant" val="White" valType="str"/>
@@ -566,7 +566,7 @@
         <Param name="padding" updates="constant" val="None" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.34, 0.07)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.25, 0.07)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
