@@ -1,0 +1,11 @@
+WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+space,5.367225,space,2.944315,angry elephant,0,0,0,26,1,Initial/NoRepeat/Elephant_A.wav,NoRepeat,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,scottish pipes,0,1,1,42,1,Initial/Repeat/Bagpipe.wav,Repeat,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,church bells,0,2,2,2,1,Initial/Doubled/Chime_A.wav,Doubled,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,frog ribbiting,0,3,3,65,1,Test/Foils/Bullfrog.wav,New,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,old telephone ringing,0,4,4,52,1,Initial/Repeat/Phone_A.wav,Repeat,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,dog howling,0,5,5,48,1,Initial/Repeat/Howl.wav,Repeat,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,donkey sound,0,6,6,68,1,Test/Foils/Donkey.wav,New,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,telephone hang up,0,7,7,88,1,Test/Foils/DialTone.wav,Extra,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,cola ice cubes?,0,8,8,57,1,Initial/Repeat/Stir.wav,Repeat,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,9,9,90,1,Initial/Doubled/Geese_A.wav,Extra,5bd4547f979dd2000139f98e,001,2021-01-01_16h58.12.668,GuessTheSound,2020.2.10,Win32,60
