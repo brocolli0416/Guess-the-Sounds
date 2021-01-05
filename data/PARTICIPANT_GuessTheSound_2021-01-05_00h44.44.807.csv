@@ -1,0 +1,4 @@
+WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+space,0.33806,space,0.29549,,0,0,0,51,1,Initial/Repeat/MetalBang.wav,Repeat,,001,2021-01-05_00h44.44.807,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,1,1,65,1,Test/Foils/Bullfrog.wav,New,,001,2021-01-05_00h44.44.807,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,2,2,58,1,Initial/Repeat/Trumpet_B.wav,Repeat,,001,2021-01-05_00h44.44.807,GuessTheSound,2020.2.10,Win32,60
