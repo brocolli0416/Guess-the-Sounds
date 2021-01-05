@@ -86,7 +86,6 @@ psychoJS.start({
     {'name': 'Dog_D.wav', 'path': 'Dog_D.wav'},
     {'name': 'Initial/Doubled/Cat_A.wav', 'path': 'Initial/Doubled/Cat_A.wav'},
     {'name': 'Bird_B.wav', 'path': 'Bird_B.wav'},
-    {'name': 'Footsteps_C.wav', 'path': 'Footsteps_C.wav'},
     {'name': 'Laugh_B.wav', 'path': 'Laugh_B.wav'},
     {'name': 'Chomp_C.wav', 'path': 'Chomp_C.wav'},
     {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
@@ -125,6 +124,7 @@ psychoJS.start({
     {'name': 'Initial/NoRepeat/Baby_B.wav', 'path': 'Initial/NoRepeat/Baby_B.wav'},
     {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
     {'name': 'Siren_C.wav', 'path': 'Siren_C.wav'},
+    {'name': 'Footsteps_A.wav', 'path': 'Footsteps_A.wav'},
     {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
     {'name': 'Siren_B.wav', 'path': 'Siren_B.wav'}
   ]
