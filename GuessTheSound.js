@@ -47,6 +47,9 @@ flowScheduler.add(experimentInit);
 flowScheduler.add(WelcomeRoutineBegin());
 flowScheduler.add(WelcomeRoutineEachFrame());
 flowScheduler.add(WelcomeRoutineEnd());
+flowScheduler.add(Welcome1RoutineBegin());
+flowScheduler.add(Welcome1RoutineEachFrame());
+flowScheduler.add(Welcome1RoutineEnd());
 flowScheduler.add(Welcome2RoutineBegin());
 flowScheduler.add(Welcome2RoutineEachFrame());
 flowScheduler.add(Welcome2RoutineEnd());
@@ -189,6 +192,10 @@ var InstructionTxt;
 var WelcomeContinueKey;
 var count;
 var WelcomContinue;
+var Welcome1Clock;
+var WelcomeTxt1;
+var ContinueKey1;
+var ContinueResp;
 var Welcome2Clock;
 var InstructionTxt2;
 var WelcomeContinue2;
@@ -218,6 +225,9 @@ var ClickTheButton;
 var SoundItem;
 var ItemNo;
 var Submit;
+var MSTClock;
+var MSTQuestion;
+var MSTResp;
 var EndClock;
 var ThankyouMssg;
 var CompletionCode;
@@ -254,6 +264,32 @@ function experimentInit() {
     color: new util.Color('white'),  opacity: 1,
     depth: -3.0 
   });
+  
+  // Initialize components for Routine "Welcome1"
+  Welcome1Clock = new util.Clock();
+  WelcomeTxt1 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'WelcomeTxt1',
+    text: 'Occasionally, you will hear the same sound file being played for the second time. You will also hear sounds that are similar but different from a previously played sound. In each trial, please also indicate whether the sound is a new sound, a repeat, or similar to a previously played sound.',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: 0.0 
+  });
+  
+  ContinueKey1 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'ContinueKey1',
+    text: 'Press SPACE to continue',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, (- 0.4)], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -1.0 
+  });
+  
+  ContinueResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "Welcome2"
   Welcome2Clock = new util.Clock();
@@ -470,6 +506,21 @@ function experimentInit() {
     depth: -7.0 
   });
   
+  // Initialize components for Routine "MST"
+  MSTClock = new util.Clock();
+  MSTQuestion = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'MSTQuestion',
+    text: 'Has this sound been played before?\n(press the corresponding number on your keyboard)\n\n\n1 = YES, I have heard this exact same sound \n\n2 = NO, but I have heard a similar sound\n\n3 = NO, this is my first time hearing this sound\n',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: 0.0 
+  });
+  
+  MSTResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  
   // Initialize components for Routine "End"
   EndClock = new util.Clock();
   ThankyouMssg = new visual.TextStim({
@@ -649,6 +700,134 @@ function WelcomeRoutineEnd(snapshot) {
       }
     }
     // the Routine "Welcome" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    return Scheduler.Event.NEXT;
+  };
+}
+
+
+var _ContinueResp_allKeys;
+var Welcome1Components;
+function Welcome1RoutineBegin(snapshot) {
+  return function () {
+    //------Prepare to start Routine 'Welcome1'-------
+    t = 0;
+    Welcome1Clock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    ContinueResp.keys = undefined;
+    ContinueResp.rt = undefined;
+    _ContinueResp_allKeys = [];
+    // keep track of which components have finished
+    Welcome1Components = [];
+    Welcome1Components.push(WelcomeTxt1);
+    Welcome1Components.push(ContinueKey1);
+    Welcome1Components.push(ContinueResp);
+    
+    for (const thisComponent of Welcome1Components)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function Welcome1RoutineEachFrame(snapshot) {
+  return function () {
+    //------Loop for each frame of Routine 'Welcome1'-------
+    // get current time
+    t = Welcome1Clock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *WelcomeTxt1* updates
+    if (t >= 0.0 && WelcomeTxt1.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      WelcomeTxt1.tStart = t;  // (not accounting for frame time here)
+      WelcomeTxt1.frameNStart = frameN;  // exact frame index
+      
+      WelcomeTxt1.setAutoDraw(true);
+    }
+
+    
+    // *ContinueKey1* updates
+    if (t >= 0.0 && ContinueKey1.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ContinueKey1.tStart = t;  // (not accounting for frame time here)
+      ContinueKey1.frameNStart = frameN;  // exact frame index
+      
+      ContinueKey1.setAutoDraw(true);
+    }
+
+    
+    // *ContinueResp* updates
+    if (t >= 0.0 && ContinueResp.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      ContinueResp.tStart = t;  // (not accounting for frame time here)
+      ContinueResp.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { ContinueResp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { ContinueResp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { ContinueResp.clearEvents(); });
+    }
+
+    if (ContinueResp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = ContinueResp.getKeys({keyList: ['space'], waitRelease: false});
+      _ContinueResp_allKeys = _ContinueResp_allKeys.concat(theseKeys);
+      if (_ContinueResp_allKeys.length > 0) {
+        ContinueResp.keys = _ContinueResp_allKeys[_ContinueResp_allKeys.length - 1].name;  // just the last key pressed
+        ContinueResp.rt = _ContinueResp_allKeys[_ContinueResp_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of Welcome1Components)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function Welcome1RoutineEnd(snapshot) {
+  return function () {
+    //------Ending Routine 'Welcome1'-------
+    for (const thisComponent of Welcome1Components) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('ContinueResp.keys', ContinueResp.keys);
+    if (typeof ContinueResp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('ContinueResp.rt', ContinueResp.rt);
+        routineTimer.reset();
+        }
+    
+    ContinueResp.stop();
+    // the Routine "Welcome1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;
@@ -1141,7 +1320,7 @@ function trialsLoopBegin(trialsLoopScheduler) {
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
-    trialList: 'GuessSounds_conditions.xlsx',
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds_conditions.xlsx', '20:90'),
     seed: undefined, name: 'trials'
   });
   psychoJS.experiment.addLoop(trials); // add the loop to the experiment
@@ -1163,6 +1342,9 @@ function trialsLoopBegin(trialsLoopScheduler) {
     trialsLoopScheduler.add(StudyRoutineBegin(snapshot));
     trialsLoopScheduler.add(StudyRoutineEachFrame(snapshot));
     trialsLoopScheduler.add(StudyRoutineEnd(snapshot));
+    trialsLoopScheduler.add(MSTRoutineBegin(snapshot));
+    trialsLoopScheduler.add(MSTRoutineEachFrame(snapshot));
+    trialsLoopScheduler.add(MSTRoutineEnd(snapshot));
     trialsLoopScheduler.add(endLoopIteration(trialsLoopScheduler, snapshot));
   }
 
@@ -1613,6 +1795,123 @@ function StudyRoutineEnd(snapshot) {
     }
     
     // the Routine "Study" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    return Scheduler.Event.NEXT;
+  };
+}
+
+
+var _MSTResp_allKeys;
+var MSTComponents;
+function MSTRoutineBegin(snapshot) {
+  return function () {
+    //------Prepare to start Routine 'MST'-------
+    t = 0;
+    MSTClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    MSTResp.keys = undefined;
+    MSTResp.rt = undefined;
+    _MSTResp_allKeys = [];
+    // keep track of which components have finished
+    MSTComponents = [];
+    MSTComponents.push(MSTQuestion);
+    MSTComponents.push(MSTResp);
+    
+    for (const thisComponent of MSTComponents)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function MSTRoutineEachFrame(snapshot) {
+  return function () {
+    //------Loop for each frame of Routine 'MST'-------
+    // get current time
+    t = MSTClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *MSTQuestion* updates
+    if (t >= 0.0 && MSTQuestion.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      MSTQuestion.tStart = t;  // (not accounting for frame time here)
+      MSTQuestion.frameNStart = frameN;  // exact frame index
+      
+      MSTQuestion.setAutoDraw(true);
+    }
+
+    
+    // *MSTResp* updates
+    if (t >= 0.0 && MSTResp.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      MSTResp.tStart = t;  // (not accounting for frame time here)
+      MSTResp.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { MSTResp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { MSTResp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { MSTResp.clearEvents(); });
+    }
+
+    if (MSTResp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = MSTResp.getKeys({keyList: ['1', '2', '3'], waitRelease: false});
+      _MSTResp_allKeys = _MSTResp_allKeys.concat(theseKeys);
+      if (_MSTResp_allKeys.length > 0) {
+        MSTResp.keys = _MSTResp_allKeys[_MSTResp_allKeys.length - 1].name;  // just the last key pressed
+        MSTResp.rt = _MSTResp_allKeys[_MSTResp_allKeys.length - 1].rt;
+        // a response ends the routine
+        continueRoutine = false;
+      }
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of MSTComponents)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function MSTRoutineEnd(snapshot) {
+  return function () {
+    //------Ending Routine 'MST'-------
+    for (const thisComponent of MSTComponents) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('MSTResp.keys', MSTResp.keys);
+    if (typeof MSTResp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('MSTResp.rt', MSTResp.rt);
+        routineTimer.reset();
+        }
+    
+    MSTResp.stop();
+    // the Routine "MST" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;

@@ -1,0 +1,762 @@
+1.1781 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+8.1902 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2256, 1504]. Using actual size
+10.1312 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000205EF861E80>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000205EF7705C0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2256, 1504]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.1319 	EXP 	window1: mouseVisible = True
+10.1320 	EXP 	window1: recordFrameIntervals = False
+10.2961 	EXP 	window1: recordFrameIntervals = True
+10.4800 	EXP 	window1: recordFrameIntervals = False
+11.2306 	EXP 	Created InstructionTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.2396 	EXP 	Created WelcomContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+11.2558 	EXP 	Created InstructionTxt2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.2601 	EXP 	Created WelcomeContinue2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomeContinue2', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+11.2667 	EXP 	Created VolumeBeginTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='VolumeBeginTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.2714 	EXP 	Created VolumeContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='VolumeContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.2792 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.4575 	EXP 	Sound Music set volume 0.300
+11.4793 	EXP 	Created AdjustContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='AdjustContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.4954 	EXP 	Created StartTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='StartTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='We will now begin the task', units='height', win=Window(...), wrapWidth=1)
+11.5257 	EXP 	Created no3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='3', units='height', win=Window(...), wrapWidth=1)
+11.5386 	EXP 	Created no2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='2', units='height', win=Window(...), wrapWidth=1)
+11.5451 	EXP 	Created no1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='1', units='height', win=Window(...), wrapWidth=1)
+11.5531 	EXP 	Created Question = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Question', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='What is this sound?\n', units='height', win=Window(...), wrapWidth=1)
+11.6010 	EXP 	window1: mouseVisible = True
+11.6242 	EXP 	Created ClickTheButton = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='ClickTheButton', opacity=1.0, ori=0, pos=array([ 0.  , -0.03]), rgb=array([255., 255., 255.]), text="Click 'Submit' to continue.", units='height', win=Window(...), wrapWidth=1)
+11.6243 	EXP 	Sound SoundItem set volume 1.000
+11.6341 	EXP 	Created ItemNo = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ItemNo', opacity=1.0, ori=0, pos=array([0.  , 0.45]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+11.6985 	EXP 	Created MSTQuestion = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='MSTQuestion', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.7082 	EXP 	Created ThankyouMssg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ThankyouMssg', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.7611 	EXP 	Created ExitTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ExitTxt', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to exit the study', units='height', win=Window(...), wrapWidth=1)
+11.7703 	EXP 	Created CodeTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='CodeTxt', opacity=1.0, ori=0, pos=array([ 0.  , -0.22]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.8111 	EXP 	ResponseBox: autoLog = True
+11.8111 	EXP 	Submit: autoLog = True
+11.8111 	EXP 	CompletionCode: autoLog = True
+11.8111 	EXP 	InstructionTxt: autoDraw = True
+11.8111 	EXP 	WelcomContinue: autoDraw = True
+16.7884 	DATA 	Keypress: space
+16.7969 	EXP 	ResponseBox: text = 'default text '
+16.8144 	EXP 	InstructionTxt: autoDraw = False
+16.8144 	EXP 	WelcomContinue: autoDraw = False
+16.8144 	EXP 	InstructionTxt2: autoDraw = True
+16.8144 	EXP 	WelcomeContinue2: autoDraw = True
+23.6871 	DATA 	Keypress: space
+23.6966 	EXP 	ResponseBox: text = 'default text  '
+23.7143 	EXP 	InstructionTxt2: autoDraw = False
+23.7143 	EXP 	WelcomeContinue2: autoDraw = False
+23.7143 	EXP 	VolumeBeginTxt: autoDraw = True
+23.7143 	EXP 	VolumeContinue: autoDraw = True
+25.3494 	DATA 	Keypress: space
+25.3542 	EXP 	VolumeBeginTxt: autoDraw = False
+25.3542 	EXP 	VolumeContinue: autoDraw = False
+25.3542 	EXP 	text: autoDraw = True
+25.3542 	EXP 	AdjustContinue: autoDraw = True
+25.3542 	EXP 	ResponseBox: text = 'default text   '
+26.4214 	DATA 	Keypress: space
+26.4293 	EXP 	ResponseBox: text = 'default text    '
+26.4457 	EXP 	text: autoDraw = False
+26.4457 	EXP 	AdjustContinue: autoDraw = False
+26.4457 	EXP 	StartTxt: autoDraw = True
+28.7876 	EXP 	window1: mouseVisible = True
+1.2369 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+19.9118 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2256, 1504]. Using actual size
+21.7499 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019DF1F71E10>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000019DF1E80550>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2256, 1504]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.7506 	EXP 	window1: mouseVisible = True
+21.7507 	EXP 	window1: recordFrameIntervals = False
+21.9153 	EXP 	window1: recordFrameIntervals = True
+22.0990 	EXP 	window1: recordFrameIntervals = False
+22.4577 	EXP 	Created InstructionTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.4684 	EXP 	Created WelcomContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+22.4853 	EXP 	Created InstructionTxt2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.4893 	EXP 	Created WelcomeContinue2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomeContinue2', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+22.4975 	EXP 	Created VolumeBeginTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='VolumeBeginTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5035 	EXP 	Created VolumeContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='VolumeContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5122 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.6271 	EXP 	Sound Music set volume 0.300
+22.6334 	EXP 	Created AdjustContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='AdjustContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.6378 	EXP 	Created StartTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='StartTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='We will now begin the task', units='height', win=Window(...), wrapWidth=1)
+22.6476 	EXP 	Created no3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='3', units='height', win=Window(...), wrapWidth=1)
+22.6527 	EXP 	Created no2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='2', units='height', win=Window(...), wrapWidth=1)
+22.6562 	EXP 	Created no1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='1', units='height', win=Window(...), wrapWidth=1)
+22.6618 	EXP 	Created Question = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Question', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='What is this sound?\n', units='height', win=Window(...), wrapWidth=1)
+22.7071 	EXP 	window1: mouseVisible = True
+22.7296 	EXP 	Created ClickTheButton = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='ClickTheButton', opacity=1.0, ori=0, pos=array([ 0.  , -0.03]), rgb=array([255., 255., 255.]), text="Click 'Submit' to continue.", units='height', win=Window(...), wrapWidth=1)
+22.7297 	EXP 	Sound SoundItem set volume 1.000
+22.7385 	EXP 	Created ItemNo = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ItemNo', opacity=1.0, ori=0, pos=array([0.  , 0.45]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+22.8083 	EXP 	Created MSTQuestion = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='MSTQuestion', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.8205 	EXP 	Created ThankyouMssg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ThankyouMssg', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.8699 	EXP 	Created ExitTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ExitTxt', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to exit the study', units='height', win=Window(...), wrapWidth=1)
+22.8801 	EXP 	Created CodeTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='CodeTxt', opacity=1.0, ori=0, pos=array([ 0.  , -0.22]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.9124 	EXP 	ResponseBox: autoLog = True
+22.9124 	EXP 	Submit: autoLog = True
+22.9124 	EXP 	CompletionCode: autoLog = True
+22.9124 	EXP 	InstructionTxt: autoDraw = True
+22.9124 	EXP 	WelcomContinue: autoDraw = True
+23.7131 	DATA 	Keypress: space
+23.7203 	EXP 	InstructionTxt: autoDraw = False
+23.7203 	EXP 	WelcomContinue: autoDraw = False
+23.7203 	EXP 	InstructionTxt2: autoDraw = True
+23.7203 	EXP 	WelcomeContinue2: autoDraw = True
+23.7203 	EXP 	ResponseBox: text = 'default text '
+24.1463 	DATA 	Keypress: space
+24.1530 	EXP 	InstructionTxt2: autoDraw = False
+24.1530 	EXP 	WelcomeContinue2: autoDraw = False
+24.1530 	EXP 	VolumeBeginTxt: autoDraw = True
+24.1530 	EXP 	VolumeContinue: autoDraw = True
+24.1530 	EXP 	ResponseBox: text = 'default text  '
+24.5732 	DATA 	Keypress: space
+24.5824 	EXP 	ResponseBox: text = 'default text   '
+24.6483 	EXP 	VolumeBeginTxt: autoDraw = False
+24.6483 	EXP 	VolumeContinue: autoDraw = False
+24.6483 	EXP 	text: autoDraw = True
+24.6483 	EXP 	AdjustContinue: autoDraw = True
+25.1093 	DATA 	Keypress: space
+25.1154 	EXP 	text: autoDraw = False
+25.1154 	EXP 	AdjustContinue: autoDraw = False
+25.1154 	EXP 	StartTxt: autoDraw = True
+25.1154 	EXP 	ResponseBox: text = 'default text    '
+27.2257 	EXP 	Imported GuessSounds_conditions.xlsx as conditions, 80 conditions, 1 params
+27.2262 	EXP 	Created sequence: sequential, trialTypes=80, nReps=1, seed=None
+27.2266 	EXP 	New trial (rep=0, index=0): OrderedDict([('SoundFiles2', 'Initial/Doubled/Siren_A.wav')])
+27.2337 	EXP 	StartTxt: autoDraw = False
+27.2337 	EXP 	StartTxt: autoDraw = False
+27.2337 	EXP 	no3: autoDraw = True
+28.1318 	EXP 	no3: autoDraw = False
+28.1318 	EXP 	no2: autoDraw = True
+29.1317 	EXP 	no2: autoDraw = False
+29.1317 	EXP 	no1: autoDraw = True
+30.1776 	EXP 	no1: autoDraw = False
+30.1776 	EXP 	ResponseBox: text = '\n\n'
+30.1776 	EXP 	ItemNo: text = '1/60'
+30.1776 	EXP 	Question: autoDraw = True
+30.1776 	EXP 	ResponseBox: autoDraw = True
+30.1776 	EXP 	ClickTheButton: autoDraw = True
+30.1776 	EXP 	ItemNo: autoDraw = True
+30.1776 	EXP 	Submit: autoDraw = True
+32.2195 	DATA 	Mouse: Left button down, pos=(1134,183)
+32.2591 	EXP 	Question: autoDraw = False
+32.2591 	EXP 	ResponseBox: autoDraw = False
+32.2591 	EXP 	ClickTheButton: autoDraw = False
+32.2591 	EXP 	ItemNo: autoDraw = False
+32.2591 	EXP 	Submit: autoDraw = False
+32.2591 	EXP 	ResponseBox: text = 'default text'
+32.2591 	EXP 	MSTQuestion: autoDraw = True
+32.4417 	DATA 	Mouse:  Left button up, pos=(1134,183)
+34.2907 	EXP 	New trial (rep=0, index=1): OrderedDict([('SoundFiles2', 'Initial/NoRepeat/Baby_B.wav')])
+34.2945 	DATA 	Keypress: 3
+34.3298 	EXP 	MSTQuestion: autoDraw = False
+34.3298 	EXP 	no3: autoDraw = True
+34.3298 	EXP 	ResponseBox: text = 'de3fault text'
+35.3150 	EXP 	no3: autoDraw = False
+35.3150 	EXP 	no2: autoDraw = True
+36.3151 	EXP 	no2: autoDraw = False
+36.3151 	EXP 	no1: autoDraw = True
+37.3582 	EXP 	no1: autoDraw = False
+37.3582 	EXP 	ResponseBox: text = '\n\n'
+37.3582 	EXP 	ItemNo: text = '2/60'
+37.3582 	EXP 	Question: autoDraw = True
+37.3582 	EXP 	ResponseBox: autoDraw = True
+37.3582 	EXP 	ClickTheButton: autoDraw = True
+37.3582 	EXP 	ItemNo: autoDraw = True
+37.3582 	EXP 	Submit: autoDraw = True
+38.7164 	DATA 	Mouse: Left button down, pos=(1134,183)
+38.7406 	EXP 	Question: autoDraw = False
+38.7406 	EXP 	ResponseBox: autoDraw = False
+38.7406 	EXP 	ClickTheButton: autoDraw = False
+38.7406 	EXP 	ItemNo: autoDraw = False
+38.7406 	EXP 	Submit: autoDraw = False
+38.7406 	EXP 	ResponseBox: text = 'default text'
+38.7406 	EXP 	MSTQuestion: autoDraw = True
+38.9383 	DATA 	Mouse:  Left button up, pos=(1134,183)
+39.7221 	EXP 	New trial (rep=0, index=2): OrderedDict([('SoundFiles2', 'Initial/NoRepeat/Footsteps_B.wav')])
+39.7267 	DATA 	Keypress: 3
+39.7334 	EXP 	MSTQuestion: autoDraw = False
+39.7334 	EXP 	no3: autoDraw = True
+39.7334 	EXP 	ResponseBox: text = 'de3fault text'
+40.7483 	EXP 	no3: autoDraw = False
+40.7483 	EXP 	no2: autoDraw = True
+41.7486 	EXP 	no2: autoDraw = False
+41.7486 	EXP 	no1: autoDraw = True
+42.7806 	EXP 	no1: autoDraw = False
+42.7806 	EXP 	ResponseBox: text = '\n\n'
+42.7806 	EXP 	ItemNo: text = '3/60'
+42.7806 	EXP 	Question: autoDraw = True
+42.7806 	EXP 	ResponseBox: autoDraw = True
+42.7806 	EXP 	ClickTheButton: autoDraw = True
+42.7806 	EXP 	ItemNo: autoDraw = True
+42.7806 	EXP 	Submit: autoDraw = True
+43.3712 	DATA 	Mouse: Left button down, pos=(1134,183)
+43.4006 	EXP 	Question: autoDraw = False
+43.4006 	EXP 	ResponseBox: autoDraw = False
+43.4006 	EXP 	ClickTheButton: autoDraw = False
+43.4006 	EXP 	ItemNo: autoDraw = False
+43.4006 	EXP 	Submit: autoDraw = False
+43.4006 	EXP 	ResponseBox: text = 'default text'
+43.4006 	EXP 	MSTQuestion: autoDraw = True
+43.5898 	DATA 	Mouse:  Left button up, pos=(1134,183)
+44.5394 	EXP 	New trial (rep=0, index=3): OrderedDict([('SoundFiles2', 'Initial/Repeat/Pour.wav')])
+44.5441 	DATA 	Keypress: 3
+44.5501 	EXP 	MSTQuestion: autoDraw = False
+44.5501 	EXP 	no3: autoDraw = True
+44.5501 	EXP 	ResponseBox: text = 'de3fault text'
+45.5650 	EXP 	no3: autoDraw = False
+45.5650 	EXP 	no2: autoDraw = True
+46.5649 	EXP 	no2: autoDraw = False
+46.5649 	EXP 	no1: autoDraw = True
+47.6069 	EXP 	no1: autoDraw = False
+47.6069 	EXP 	ResponseBox: text = '\n\n'
+47.6069 	EXP 	ItemNo: text = '4/60'
+47.6069 	EXP 	Question: autoDraw = True
+47.6069 	EXP 	ResponseBox: autoDraw = True
+47.6069 	EXP 	ClickTheButton: autoDraw = True
+47.6069 	EXP 	ItemNo: autoDraw = True
+47.6069 	EXP 	Submit: autoDraw = True
+48.4040 	DATA 	Mouse: Left button down, pos=(1134,183)
+48.4376 	EXP 	Question: autoDraw = False
+48.4376 	EXP 	ResponseBox: autoDraw = False
+48.4376 	EXP 	ClickTheButton: autoDraw = False
+48.4376 	EXP 	ItemNo: autoDraw = False
+48.4376 	EXP 	Submit: autoDraw = False
+48.4376 	EXP 	ResponseBox: text = 'default text'
+48.4376 	EXP 	MSTQuestion: autoDraw = True
+48.6391 	DATA 	Mouse:  Left button up, pos=(1134,183)
+49.9054 	DATA 	Keypress: 3
+49.9158 	EXP 	ResponseBox: text = 'de3fault text'
+49.9233 	EXP 	New trial (rep=0, index=4): OrderedDict([('SoundFiles2', 'Initial/Doubled/Piano_A.wav')])
+49.9322 	EXP 	MSTQuestion: autoDraw = False
+49.9322 	EXP 	no3: autoDraw = True
+50.9315 	EXP 	no3: autoDraw = False
+50.9315 	EXP 	no3: autoDraw = False
+50.9315 	EXP 	no2: autoDraw = True
+51.9316 	EXP 	no2: autoDraw = False
+51.9316 	EXP 	no2: autoDraw = False
+51.9316 	EXP 	no1: autoDraw = True
+52.9694 	EXP 	no1: autoDraw = False
+52.9694 	EXP 	no1: autoDraw = False
+52.9694 	EXP 	ResponseBox: text = '\n\n'
+52.9694 	EXP 	ItemNo: text = '5/60'
+52.9694 	EXP 	Question: autoDraw = True
+52.9694 	EXP 	ResponseBox: autoDraw = True
+52.9694 	EXP 	ClickTheButton: autoDraw = True
+52.9694 	EXP 	ItemNo: autoDraw = True
+52.9694 	EXP 	Submit: autoDraw = True
+53.4416 	DATA 	Mouse: Left button down, pos=(1134,183)
+53.4699 	EXP 	Question: autoDraw = False
+53.4699 	EXP 	ResponseBox: autoDraw = False
+53.4699 	EXP 	ClickTheButton: autoDraw = False
+53.4699 	EXP 	ItemNo: autoDraw = False
+53.4699 	EXP 	Submit: autoDraw = False
+53.4699 	EXP 	ResponseBox: text = 'default text'
+53.4699 	EXP 	MSTQuestion: autoDraw = True
+53.6745 	DATA 	Mouse:  Left button up, pos=(1134,183)
+55.3394 	EXP 	New trial (rep=0, index=5): OrderedDict([('SoundFiles2', 'Initial/NoRepeat/Snore_B.wav')])
+55.3444 	DATA 	Keypress: 3
+55.3503 	EXP 	MSTQuestion: autoDraw = False
+55.3503 	EXP 	no3: autoDraw = True
+55.3503 	EXP 	ResponseBox: text = 'de3fault text'
+56.3648 	EXP 	no3: autoDraw = False
+56.3648 	EXP 	no2: autoDraw = True
+57.3648 	EXP 	no2: autoDraw = False
+57.3648 	EXP 	no1: autoDraw = True
+58.3954 	EXP 	no1: autoDraw = False
+58.3954 	EXP 	ResponseBox: text = '\n\n'
+58.3954 	EXP 	ItemNo: text = '6/60'
+58.3954 	EXP 	Question: autoDraw = True
+58.3954 	EXP 	ResponseBox: autoDraw = True
+58.3954 	EXP 	ClickTheButton: autoDraw = True
+58.3954 	EXP 	ItemNo: autoDraw = True
+58.3954 	EXP 	Submit: autoDraw = True
+59.8013 	DATA 	Mouse: Left button down, pos=(1134,183)
+59.8282 	EXP 	Question: autoDraw = False
+59.8282 	EXP 	ResponseBox: autoDraw = False
+59.8282 	EXP 	ClickTheButton: autoDraw = False
+59.8282 	EXP 	ItemNo: autoDraw = False
+59.8282 	EXP 	Submit: autoDraw = False
+59.8282 	EXP 	ResponseBox: text = 'default text'
+59.8282 	EXP 	MSTQuestion: autoDraw = True
+60.0230 	DATA 	Mouse:  Left button up, pos=(1134,183)
+61.7230 	EXP 	New trial (rep=0, index=6): OrderedDict([('SoundFiles2', 'Test/Foils/Donkey.wav')])
+61.7279 	DATA 	Keypress: 3
+61.7347 	EXP 	MSTQuestion: autoDraw = False
+61.7347 	EXP 	no3: autoDraw = True
+61.7347 	EXP 	ResponseBox: text = 'de3fault text'
+62.7485 	EXP 	no3: autoDraw = False
+62.7485 	EXP 	no2: autoDraw = True
+63.7481 	EXP 	no2: autoDraw = False
+63.7481 	EXP 	no1: autoDraw = True
+64.7828 	EXP 	no1: autoDraw = False
+64.7828 	EXP 	ResponseBox: text = '\n\n'
+64.7828 	EXP 	ItemNo: text = '7/60'
+64.7828 	EXP 	Question: autoDraw = True
+64.7828 	EXP 	ResponseBox: autoDraw = True
+64.7828 	EXP 	ClickTheButton: autoDraw = True
+64.7828 	EXP 	ItemNo: autoDraw = True
+64.7828 	EXP 	Submit: autoDraw = True
+65.2602 	DATA 	Mouse: Left button down, pos=(1134,183)
+65.2843 	EXP 	Question: autoDraw = False
+65.2843 	EXP 	ResponseBox: autoDraw = False
+65.2843 	EXP 	ClickTheButton: autoDraw = False
+65.2843 	EXP 	ItemNo: autoDraw = False
+65.2843 	EXP 	Submit: autoDraw = False
+65.2843 	EXP 	ResponseBox: text = 'default text'
+65.2843 	EXP 	MSTQuestion: autoDraw = True
+65.4738 	DATA 	Mouse:  Left button up, pos=(1134,183)
+67.8722 	EXP 	New trial (rep=0, index=7): OrderedDict([('SoundFiles2', 'Initial/Doubled/Chicken_A.wav')])
+67.8770 	DATA 	Keypress: 3
+67.8840 	EXP 	MSTQuestion: autoDraw = False
+67.8840 	EXP 	no3: autoDraw = True
+67.8840 	EXP 	ResponseBox: text = 'de3fault text'
+68.8981 	EXP 	no3: autoDraw = False
+68.8981 	EXP 	no2: autoDraw = True
+69.8982 	EXP 	no2: autoDraw = False
+69.8982 	EXP 	no1: autoDraw = True
+70.9398 	EXP 	no1: autoDraw = False
+70.9398 	EXP 	ResponseBox: text = '\n\n'
+70.9398 	EXP 	ItemNo: text = '8/60'
+70.9398 	EXP 	Question: autoDraw = True
+70.9398 	EXP 	ResponseBox: autoDraw = True
+70.9398 	EXP 	ClickTheButton: autoDraw = True
+70.9398 	EXP 	ItemNo: autoDraw = True
+70.9398 	EXP 	Submit: autoDraw = True
+72.6208 	DATA 	Mouse: Left button down, pos=(1134,183)
+72.6367 	EXP 	Question: autoDraw = False
+72.6367 	EXP 	ResponseBox: autoDraw = False
+72.6367 	EXP 	ClickTheButton: autoDraw = False
+72.6367 	EXP 	ItemNo: autoDraw = False
+72.6367 	EXP 	Submit: autoDraw = False
+72.6367 	EXP 	ResponseBox: text = 'default text'
+72.6367 	EXP 	MSTQuestion: autoDraw = True
+72.8396 	DATA 	Mouse:  Left button up, pos=(1134,183)
+75.4721 	DATA 	Keypress: 3
+75.4820 	EXP 	ResponseBox: text = 'de3fault text'
+75.4889 	EXP 	New trial (rep=0, index=8): OrderedDict([('SoundFiles2', 'Initial/Doubled/Growl_A.wav')])
+75.4980 	EXP 	MSTQuestion: autoDraw = False
+75.4980 	EXP 	no3: autoDraw = True
+76.4981 	EXP 	no3: autoDraw = False
+76.4981 	EXP 	no3: autoDraw = False
+76.4981 	EXP 	no2: autoDraw = True
+77.4979 	EXP 	no2: autoDraw = False
+77.4979 	EXP 	no2: autoDraw = False
+77.4979 	EXP 	no1: autoDraw = True
+78.5298 	EXP 	no1: autoDraw = False
+78.5298 	EXP 	no1: autoDraw = False
+78.5298 	EXP 	ResponseBox: text = '\n\n'
+78.5298 	EXP 	ItemNo: text = '9/60'
+78.5298 	EXP 	Question: autoDraw = True
+78.5298 	EXP 	ResponseBox: autoDraw = True
+78.5298 	EXP 	ClickTheButton: autoDraw = True
+78.5298 	EXP 	ItemNo: autoDraw = True
+78.5298 	EXP 	Submit: autoDraw = True
+79.9571 	DATA 	Mouse: Left button down, pos=(1134,183)
+79.9884 	EXP 	Question: autoDraw = False
+79.9884 	EXP 	ResponseBox: autoDraw = False
+79.9884 	EXP 	ClickTheButton: autoDraw = False
+79.9884 	EXP 	ItemNo: autoDraw = False
+79.9884 	EXP 	Submit: autoDraw = False
+79.9884 	EXP 	ResponseBox: text = 'default text'
+79.9884 	EXP 	MSTQuestion: autoDraw = True
+80.1887 	DATA 	Mouse:  Left button up, pos=(1134,183)
+80.9217 	DATA 	Keypress: 3
+80.9320 	EXP 	ResponseBox: text = 'de3fault text'
+83.2384 	EXP 	New trial (rep=0, index=9): OrderedDict([('SoundFiles2', 'Test/Foils/Bullfrog.wav')])
+83.2437 	DATA 	Keypress: 3
+83.2507 	EXP 	MSTQuestion: autoDraw = False
+83.2507 	EXP 	no3: autoDraw = True
+83.2507 	EXP 	ResponseBox: text = 'de33fault text'
+84.2647 	EXP 	no3: autoDraw = False
+84.2647 	EXP 	no2: autoDraw = True
+85.2647 	EXP 	no2: autoDraw = False
+85.2647 	EXP 	no1: autoDraw = True
+86.3042 	EXP 	no1: autoDraw = False
+86.3042 	EXP 	ResponseBox: text = '\n\n'
+86.3042 	EXP 	ItemNo: text = '10/60'
+86.3042 	EXP 	Question: autoDraw = True
+86.3042 	EXP 	ResponseBox: autoDraw = True
+86.3042 	EXP 	ClickTheButton: autoDraw = True
+86.3042 	EXP 	ItemNo: autoDraw = True
+86.3042 	EXP 	Submit: autoDraw = True
+87.7655 	DATA 	Mouse: Left button down, pos=(1134,183)
+87.7851 	EXP 	Question: autoDraw = False
+87.7851 	EXP 	ResponseBox: autoDraw = False
+87.7851 	EXP 	ClickTheButton: autoDraw = False
+87.7851 	EXP 	ItemNo: autoDraw = False
+87.7851 	EXP 	Submit: autoDraw = False
+87.7851 	EXP 	ResponseBox: text = 'default text'
+87.7851 	EXP 	MSTQuestion: autoDraw = True
+87.9728 	DATA 	Mouse:  Left button up, pos=(1134,183)
+91.8890 	EXP 	New trial (rep=0, index=10): OrderedDict([('SoundFiles2', 'Initial/Doubled/Guitar_A.wav')])
+91.8931 	DATA 	Keypress: 3
+91.8988 	EXP 	MSTQuestion: autoDraw = False
+91.8988 	EXP 	no3: autoDraw = True
+91.8988 	EXP 	ResponseBox: text = 'de3fault text'
+92.9145 	EXP 	no3: autoDraw = False
+92.9145 	EXP 	no2: autoDraw = True
+93.9145 	EXP 	no2: autoDraw = False
+93.9145 	EXP 	no1: autoDraw = True
+94.9719 	EXP 	no1: autoDraw = False
+94.9719 	EXP 	ResponseBox: text = '\n\n'
+94.9719 	EXP 	ItemNo: text = '11/60'
+94.9719 	EXP 	Question: autoDraw = True
+94.9719 	EXP 	ResponseBox: autoDraw = True
+94.9719 	EXP 	ClickTheButton: autoDraw = True
+94.9719 	EXP 	ItemNo: autoDraw = True
+94.9719 	EXP 	Submit: autoDraw = True
+96.2575 	DATA 	Mouse: Left button down, pos=(1134,183)
+96.2932 	EXP 	Question: autoDraw = False
+96.2932 	EXP 	ResponseBox: autoDraw = False
+96.2932 	EXP 	ClickTheButton: autoDraw = False
+96.2932 	EXP 	ItemNo: autoDraw = False
+96.2932 	EXP 	Submit: autoDraw = False
+96.2932 	EXP 	ResponseBox: text = 'default text'
+96.2932 	EXP 	MSTQuestion: autoDraw = True
+96.4877 	DATA 	Mouse:  Left button up, pos=(1134,183)
+98.3724 	DATA 	Mouse: Left button down, pos=(1134,183)
+98.5876 	DATA 	Mouse:  Left button up, pos=(1134,183)
+99.0393 	EXP 	New trial (rep=0, index=11): OrderedDict([('SoundFiles2', 'Test/Foils/PaperRip.wav')])
+99.0442 	DATA 	Keypress: 3
+99.0509 	EXP 	MSTQuestion: autoDraw = False
+99.0509 	EXP 	no3: autoDraw = True
+99.0509 	EXP 	ResponseBox: text = 'de3fault text'
+100.0644 	EXP 	no3: autoDraw = False
+100.0644 	EXP 	no2: autoDraw = True
+101.0644 	EXP 	no2: autoDraw = False
+101.0644 	EXP 	no1: autoDraw = True
+102.0909 	EXP 	no1: autoDraw = False
+102.0909 	EXP 	ResponseBox: text = '\n\n'
+102.0909 	EXP 	ItemNo: text = '12/60'
+102.0909 	EXP 	Question: autoDraw = True
+102.0909 	EXP 	ResponseBox: autoDraw = True
+102.0909 	EXP 	ClickTheButton: autoDraw = True
+102.0909 	EXP 	ItemNo: autoDraw = True
+102.0909 	EXP 	Submit: autoDraw = True
+103.2393 	DATA 	Mouse: Left button down, pos=(1134,183)
+103.2608 	EXP 	Question: autoDraw = False
+103.2608 	EXP 	ResponseBox: autoDraw = False
+103.2608 	EXP 	ClickTheButton: autoDraw = False
+103.2608 	EXP 	ItemNo: autoDraw = False
+103.2608 	EXP 	Submit: autoDraw = False
+103.2608 	EXP 	ResponseBox: text = 'default text'
+103.2608 	EXP 	MSTQuestion: autoDraw = True
+103.4544 	DATA 	Mouse:  Left button up, pos=(1134,183)
+106.5234 	DATA 	Keypress: 3
+106.5317 	EXP 	ResponseBox: text = 'de3fault text'
+106.5386 	EXP 	New trial (rep=0, index=12): OrderedDict([('SoundFiles2', 'Test/Foils/Heartbeat.wav')])
+106.5477 	EXP 	MSTQuestion: autoDraw = False
+106.5477 	EXP 	no3: autoDraw = True
+107.5476 	EXP 	no3: autoDraw = False
+107.5476 	EXP 	no3: autoDraw = False
+107.5476 	EXP 	no2: autoDraw = True
+108.5477 	EXP 	no2: autoDraw = False
+108.5477 	EXP 	no2: autoDraw = False
+108.5477 	EXP 	no1: autoDraw = True
+109.5789 	EXP 	no1: autoDraw = False
+109.5789 	EXP 	no1: autoDraw = False
+109.5789 	EXP 	ResponseBox: text = '\n\n'
+109.5789 	EXP 	ItemNo: text = '13/60'
+109.5789 	EXP 	Question: autoDraw = True
+109.5789 	EXP 	ResponseBox: autoDraw = True
+109.5789 	EXP 	ClickTheButton: autoDraw = True
+109.5789 	EXP 	ItemNo: autoDraw = True
+109.5789 	EXP 	Submit: autoDraw = True
+110.6835 	DATA 	Mouse: Left button down, pos=(1104,173)
+110.7119 	EXP 	Question: autoDraw = False
+110.7119 	EXP 	ResponseBox: autoDraw = False
+110.7119 	EXP 	ClickTheButton: autoDraw = False
+110.7119 	EXP 	ItemNo: autoDraw = False
+110.7119 	EXP 	Submit: autoDraw = False
+110.7119 	EXP 	ResponseBox: text = 'default text'
+110.7119 	EXP 	MSTQuestion: autoDraw = True
+110.9040 	DATA 	Mouse:  Left button up, pos=(1104,173)
+112.2223 	EXP 	New trial (rep=0, index=13): OrderedDict([('SoundFiles2', 'Initial/NoRepeat/Duck_A.wav')])
+112.2283 	DATA 	Keypress: 3
+112.2343 	EXP 	MSTQuestion: autoDraw = False
+112.2343 	EXP 	no3: autoDraw = True
+112.2343 	EXP 	ResponseBox: text = 'de3fault text'
+113.2480 	EXP 	no3: autoDraw = False
+113.2480 	EXP 	no2: autoDraw = True
+114.2476 	EXP 	no2: autoDraw = False
+114.2476 	EXP 	no1: autoDraw = True
+115.2789 	EXP 	no1: autoDraw = False
+115.2789 	EXP 	ResponseBox: text = '\n\n'
+115.2789 	EXP 	ItemNo: text = '14/60'
+115.2789 	EXP 	Question: autoDraw = True
+115.2789 	EXP 	ResponseBox: autoDraw = True
+115.2789 	EXP 	ClickTheButton: autoDraw = True
+115.2789 	EXP 	ItemNo: autoDraw = True
+115.2789 	EXP 	Submit: autoDraw = True
+116.0989 	DATA 	Mouse: Left button down, pos=(1104,173)
+116.1241 	EXP 	Question: autoDraw = False
+116.1241 	EXP 	ResponseBox: autoDraw = False
+116.1241 	EXP 	ClickTheButton: autoDraw = False
+116.1241 	EXP 	ItemNo: autoDraw = False
+116.1241 	EXP 	Submit: autoDraw = False
+116.1241 	EXP 	ResponseBox: text = 'default text'
+116.1241 	EXP 	MSTQuestion: autoDraw = True
+116.3256 	DATA 	Mouse:  Left button up, pos=(1104,173)
+117.7218 	DATA 	Keypress: 3
+117.7318 	EXP 	ResponseBox: text = 'de3fault text'
+117.7395 	EXP 	New trial (rep=0, index=14): OrderedDict([('SoundFiles2', 'Test/Foils/Bird.wav')])
+117.7485 	EXP 	MSTQuestion: autoDraw = False
+117.7485 	EXP 	no3: autoDraw = True
+118.7475 	EXP 	no3: autoDraw = False
+118.7475 	EXP 	no3: autoDraw = False
+118.7475 	EXP 	no2: autoDraw = True
+119.7476 	EXP 	no2: autoDraw = False
+119.7476 	EXP 	no2: autoDraw = False
+119.7476 	EXP 	no1: autoDraw = True
+120.7799 	EXP 	no1: autoDraw = False
+120.7799 	EXP 	no1: autoDraw = False
+120.7799 	EXP 	ResponseBox: text = '\n\n'
+120.7799 	EXP 	ItemNo: text = '15/60'
+120.7799 	EXP 	Question: autoDraw = True
+120.7799 	EXP 	ResponseBox: autoDraw = True
+120.7799 	EXP 	ClickTheButton: autoDraw = True
+120.7799 	EXP 	ItemNo: autoDraw = True
+120.7799 	EXP 	Submit: autoDraw = True
+121.7498 	DATA 	Mouse: Left button down, pos=(1104,173)
+121.7667 	EXP 	Question: autoDraw = False
+121.7667 	EXP 	ResponseBox: autoDraw = False
+121.7667 	EXP 	ClickTheButton: autoDraw = False
+121.7667 	EXP 	ItemNo: autoDraw = False
+121.7667 	EXP 	Submit: autoDraw = False
+121.7667 	EXP 	ResponseBox: text = 'default text'
+121.7667 	EXP 	MSTQuestion: autoDraw = True
+121.9742 	DATA 	Mouse:  Left button up, pos=(1104,173)
+125.3054 	EXP 	New trial (rep=0, index=15): OrderedDict([('SoundFiles2', 'Initial/NoRepeat/Mosquito_B.wav')])
+125.3123 	DATA 	Keypress: 3
+125.3183 	EXP 	MSTQuestion: autoDraw = False
+125.3183 	EXP 	no3: autoDraw = True
+125.3183 	EXP 	ResponseBox: text = 'de3fault text'
+126.3308 	EXP 	no3: autoDraw = False
+126.3308 	EXP 	no2: autoDraw = True
+127.3307 	EXP 	no2: autoDraw = False
+127.3307 	EXP 	no1: autoDraw = True
+128.3648 	EXP 	no1: autoDraw = False
+128.3648 	EXP 	ResponseBox: text = '\n\n'
+128.3648 	EXP 	ItemNo: text = '16/60'
+128.3648 	EXP 	Question: autoDraw = True
+128.3648 	EXP 	ResponseBox: autoDraw = True
+128.3648 	EXP 	ClickTheButton: autoDraw = True
+128.3648 	EXP 	ItemNo: autoDraw = True
+128.3648 	EXP 	Submit: autoDraw = True
+129.5259 	DATA 	Mouse: Left button down, pos=(1104,173)
+129.5477 	EXP 	Question: autoDraw = False
+129.5477 	EXP 	ResponseBox: autoDraw = False
+129.5477 	EXP 	ClickTheButton: autoDraw = False
+129.5477 	EXP 	ItemNo: autoDraw = False
+129.5477 	EXP 	Submit: autoDraw = False
+129.5477 	EXP 	ResponseBox: text = 'default text'
+129.5477 	EXP 	MSTQuestion: autoDraw = True
+129.7538 	DATA 	Mouse:  Left button up, pos=(1104,173)
+130.5550 	DATA 	Keypress: 3
+130.5648 	EXP 	ResponseBox: text = 'de3fault text'
+130.5721 	EXP 	New trial (rep=0, index=16): OrderedDict([('SoundFiles2', 'Initial/Doubled/Chime_A.wav')])
+130.5810 	EXP 	MSTQuestion: autoDraw = False
+130.5810 	EXP 	no3: autoDraw = True
+131.5808 	EXP 	no3: autoDraw = False
+131.5808 	EXP 	no3: autoDraw = False
+131.5808 	EXP 	no2: autoDraw = True
+132.5807 	EXP 	no2: autoDraw = False
+132.5807 	EXP 	no2: autoDraw = False
+132.5807 	EXP 	no1: autoDraw = True
+133.6203 	EXP 	no1: autoDraw = False
+133.6203 	EXP 	no1: autoDraw = False
+133.6203 	EXP 	ResponseBox: text = '\n\n'
+133.6203 	EXP 	ItemNo: text = '17/60'
+133.6203 	EXP 	Question: autoDraw = True
+133.6203 	EXP 	ResponseBox: autoDraw = True
+133.6203 	EXP 	ClickTheButton: autoDraw = True
+133.6203 	EXP 	ItemNo: autoDraw = True
+133.6203 	EXP 	Submit: autoDraw = True
+134.3635 	DATA 	Mouse: Left button down, pos=(1104,173)
+134.3964 	EXP 	Question: autoDraw = False
+134.3964 	EXP 	ResponseBox: autoDraw = False
+134.3964 	EXP 	ClickTheButton: autoDraw = False
+134.3964 	EXP 	ItemNo: autoDraw = False
+134.3964 	EXP 	Submit: autoDraw = False
+134.3964 	EXP 	ResponseBox: text = 'default text'
+134.3964 	EXP 	MSTQuestion: autoDraw = True
+134.5867 	DATA 	Mouse:  Left button up, pos=(1104,173)
+135.7212 	EXP 	New trial (rep=0, index=17): OrderedDict([('SoundFiles2', 'Test/Foils/DialTone.wav')])
+135.7258 	DATA 	Keypress: 3
+135.7326 	EXP 	MSTQuestion: autoDraw = False
+135.7326 	EXP 	no3: autoDraw = True
+135.7326 	EXP 	ResponseBox: text = 'de3fault text'
+136.7474 	EXP 	no3: autoDraw = False
+136.7474 	EXP 	no2: autoDraw = True
+137.7473 	EXP 	no2: autoDraw = False
+137.7473 	EXP 	no1: autoDraw = True
+138.7786 	EXP 	no1: autoDraw = False
+138.7786 	EXP 	ResponseBox: text = '\n\n'
+138.7786 	EXP 	ItemNo: text = '18/60'
+138.7786 	EXP 	Question: autoDraw = True
+138.7786 	EXP 	ResponseBox: autoDraw = True
+138.7786 	EXP 	ClickTheButton: autoDraw = True
+138.7786 	EXP 	ItemNo: autoDraw = True
+138.7786 	EXP 	Submit: autoDraw = True
+139.7257 	DATA 	Mouse: Left button down, pos=(1104,173)
+139.7552 	EXP 	Question: autoDraw = False
+139.7552 	EXP 	ResponseBox: autoDraw = False
+139.7552 	EXP 	ClickTheButton: autoDraw = False
+139.7552 	EXP 	ItemNo: autoDraw = False
+139.7552 	EXP 	Submit: autoDraw = False
+139.7552 	EXP 	ResponseBox: text = 'default text'
+139.7552 	EXP 	MSTQuestion: autoDraw = True
+139.9543 	DATA 	Mouse:  Left button up, pos=(1104,173)
+140.3396 	DATA 	Keypress: 3
+140.3481 	EXP 	ResponseBox: text = 'de3fault text'
+140.3552 	EXP 	New trial (rep=0, index=18): OrderedDict([('SoundFiles2', 'Initial/Doubled/CarStart_A.wav')])
+140.3640 	EXP 	MSTQuestion: autoDraw = False
+140.3640 	EXP 	no3: autoDraw = True
+141.3642 	EXP 	no3: autoDraw = False
+141.3642 	EXP 	no3: autoDraw = False
+141.3642 	EXP 	no2: autoDraw = True
+142.3640 	EXP 	no2: autoDraw = False
+142.3640 	EXP 	no2: autoDraw = False
+142.3640 	EXP 	no1: autoDraw = True
+143.4005 	EXP 	no1: autoDraw = False
+143.4005 	EXP 	no1: autoDraw = False
+143.4005 	EXP 	ResponseBox: text = '\n\n'
+143.4005 	EXP 	ItemNo: text = '19/60'
+143.4005 	EXP 	Question: autoDraw = True
+143.4005 	EXP 	ResponseBox: autoDraw = True
+143.4005 	EXP 	ClickTheButton: autoDraw = True
+143.4005 	EXP 	ItemNo: autoDraw = True
+143.4005 	EXP 	Submit: autoDraw = True
+144.1101 	DATA 	Mouse: Left button down, pos=(1104,173)
+144.1379 	EXP 	Question: autoDraw = False
+144.1379 	EXP 	ResponseBox: autoDraw = False
+144.1379 	EXP 	ClickTheButton: autoDraw = False
+144.1379 	EXP 	ItemNo: autoDraw = False
+144.1379 	EXP 	Submit: autoDraw = False
+144.1379 	EXP 	ResponseBox: text = 'default text'
+144.1379 	EXP 	MSTQuestion: autoDraw = True
+144.3416 	DATA 	Mouse:  Left button up, pos=(1104,173)
+145.2212 	EXP 	New trial (rep=0, index=19): OrderedDict([('SoundFiles2', 'Initial/Repeat/ManWhistle.wav')])
+145.2284 	DATA 	Keypress: 3
+145.2342 	EXP 	MSTQuestion: autoDraw = False
+145.2342 	EXP 	no3: autoDraw = True
+145.2342 	EXP 	ResponseBox: text = 'de3fault text'
+146.2477 	EXP 	no3: autoDraw = False
+146.2477 	EXP 	no2: autoDraw = True
+147.2478 	EXP 	no2: autoDraw = False
+147.2478 	EXP 	no1: autoDraw = True
+148.2758 	EXP 	no1: autoDraw = False
+148.2758 	EXP 	ResponseBox: text = '\n\n'
+148.2758 	EXP 	ItemNo: text = '20/60'
+148.2758 	EXP 	Question: autoDraw = True
+148.2758 	EXP 	ResponseBox: autoDraw = True
+148.2758 	EXP 	ClickTheButton: autoDraw = True
+148.2758 	EXP 	ItemNo: autoDraw = True
+148.2758 	EXP 	Submit: autoDraw = True
+149.0507 	DATA 	Mouse: Left button down, pos=(1104,173)
+149.0801 	EXP 	Question: autoDraw = False
+149.0801 	EXP 	ResponseBox: autoDraw = False
+149.0801 	EXP 	ClickTheButton: autoDraw = False
+149.0801 	EXP 	ItemNo: autoDraw = False
+149.0801 	EXP 	Submit: autoDraw = False
+149.0801 	EXP 	ResponseBox: text = 'default text'
+149.0801 	EXP 	MSTQuestion: autoDraw = True
+149.2871 	DATA 	Mouse:  Left button up, pos=(1104,173)
+150.1891 	DATA 	Keypress: 3
+150.1980 	EXP 	ResponseBox: text = 'de3fault text'
+150.2048 	EXP 	New trial (rep=0, index=20): OrderedDict([('SoundFiles2', 'Initial/Doubled/HairDryer_A.wav')])
+150.2139 	EXP 	MSTQuestion: autoDraw = False
+150.2139 	EXP 	no3: autoDraw = True
+151.2140 	EXP 	no3: autoDraw = False
+151.2140 	EXP 	no3: autoDraw = False
+151.2140 	EXP 	no2: autoDraw = True
+152.2140 	EXP 	no2: autoDraw = False
+152.2140 	EXP 	no2: autoDraw = False
+152.2140 	EXP 	no1: autoDraw = True
+153.2510 	EXP 	no1: autoDraw = False
+153.2510 	EXP 	no1: autoDraw = False
+153.2510 	EXP 	ResponseBox: text = '\n\n'
+153.2510 	EXP 	ItemNo: text = '21/60'
+153.2510 	EXP 	Question: autoDraw = True
+153.2510 	EXP 	ResponseBox: autoDraw = True
+153.2510 	EXP 	ClickTheButton: autoDraw = True
+153.2510 	EXP 	ItemNo: autoDraw = True
+153.2510 	EXP 	Submit: autoDraw = True
+154.5046 	DATA 	Mouse: Left button down, pos=(1104,173)
+154.5354 	EXP 	Question: autoDraw = False
+154.5354 	EXP 	ResponseBox: autoDraw = False
+154.5354 	EXP 	ClickTheButton: autoDraw = False
+154.5354 	EXP 	ItemNo: autoDraw = False
+154.5354 	EXP 	Submit: autoDraw = False
+154.5354 	EXP 	ResponseBox: text = 'default text'
+154.5354 	EXP 	MSTQuestion: autoDraw = True
+154.7212 	DATA 	Mouse:  Left button up, pos=(1104,173)
+155.3544 	DATA 	Keypress: 3
+155.3645 	EXP 	ResponseBox: text = 'de3fault text'
+155.3711 	EXP 	New trial (rep=0, index=21): OrderedDict([('SoundFiles2', 'Test/Foils/Slurp.wav')])
+155.3804 	EXP 	MSTQuestion: autoDraw = False
+155.3804 	EXP 	no3: autoDraw = True
+156.3805 	EXP 	no3: autoDraw = False
+156.3805 	EXP 	no3: autoDraw = False
+156.3805 	EXP 	no2: autoDraw = True
+157.3806 	EXP 	no2: autoDraw = False
+157.3806 	EXP 	no2: autoDraw = False
+157.3806 	EXP 	no1: autoDraw = True
+158.4296 	EXP 	no1: autoDraw = False
+158.4296 	EXP 	ResponseBox: text = '\n\n'
+158.4296 	EXP 	ItemNo: text = '22/60'
+158.4296 	EXP 	Question: autoDraw = True
+158.4296 	EXP 	ResponseBox: autoDraw = True
+158.4296 	EXP 	ClickTheButton: autoDraw = True
+158.4296 	EXP 	ItemNo: autoDraw = True
+158.4296 	EXP 	Submit: autoDraw = True
+159.6682 	DATA 	Mouse: Left button down, pos=(1104,173)
+159.6822 	EXP 	Question: autoDraw = False
+159.6822 	EXP 	ResponseBox: autoDraw = False
+159.6822 	EXP 	ClickTheButton: autoDraw = False
+159.6822 	EXP 	ItemNo: autoDraw = False
+159.6822 	EXP 	Submit: autoDraw = False
+159.6822 	EXP 	ResponseBox: text = 'default text'
+159.6822 	EXP 	MSTQuestion: autoDraw = True
+159.9022 	DATA 	Mouse:  Left button up, pos=(1104,173)
+160.3400 	DATA 	Keypress: 3
+160.3480 	EXP 	ResponseBox: text = 'de3fault text'
+160.3552 	EXP 	New trial (rep=0, index=22): OrderedDict([('SoundFiles2', 'Initial/Doubled/Dog_A.wav')])
+160.3637 	EXP 	MSTQuestion: autoDraw = False
+160.3637 	EXP 	no3: autoDraw = True
+161.3639 	EXP 	no3: autoDraw = False
+161.3639 	EXP 	no3: autoDraw = False
+161.3639 	EXP 	no2: autoDraw = True
+162.3639 	EXP 	no2: autoDraw = False
+162.3639 	EXP 	no2: autoDraw = False
+162.3639 	EXP 	no1: autoDraw = True
+163.3965 	EXP 	no1: autoDraw = False
+163.3965 	EXP 	no1: autoDraw = False
+163.3965 	EXP 	ResponseBox: text = '\n\n'
+163.3965 	EXP 	ItemNo: text = '23/60'
+163.3965 	EXP 	Question: autoDraw = True
+163.3965 	EXP 	ResponseBox: autoDraw = True
+163.3965 	EXP 	ClickTheButton: autoDraw = True
+163.3965 	EXP 	ItemNo: autoDraw = True
+163.3965 	EXP 	Submit: autoDraw = True
+164.6168 	DATA 	Keypress: 3
+164.6281 	EXP 	ResponseBox: text = '\n\n3'
+165.2423 	DATA 	Keypress: 3
+165.2490 	EXP 	ResponseBox: text = '\n\n33'
+166.3015 	DATA 	Keypress: backspace
+166.3124 	EXP 	ResponseBox: text = '\n\n3'
+166.4722 	DATA 	Keypress: backspace
+166.4935 	EXP 	ResponseBox: text = '\n\n'
+167.0825 	DATA 	Mouse: Left button down, pos=(1104,173)
+167.0995 	EXP 	Question: autoDraw = False
+167.0995 	EXP 	ResponseBox: autoDraw = False
+167.0995 	EXP 	ClickTheButton: autoDraw = False
+167.0995 	EXP 	ItemNo: autoDraw = False
+167.0995 	EXP 	Submit: autoDraw = False
+167.0995 	EXP 	ResponseBox: text = 'default text'
+167.0995 	EXP 	MSTQuestion: autoDraw = True
+167.3212 	DATA 	Mouse:  Left button up, pos=(1104,173)
+168.3050 	EXP 	New trial (rep=0, index=23): OrderedDict([('SoundFiles2', 'Initial/Doubled/Chomp_A.wav')])
+168.3095 	DATA 	Keypress: 3
+168.3157 	EXP 	MSTQuestion: autoDraw = False
+168.3157 	EXP 	no3: autoDraw = True
+168.3157 	EXP 	ResponseBox: text = 'de3fault text'
+169.3305 	EXP 	no3: autoDraw = False
+169.3305 	EXP 	no2: autoDraw = True
+170.3305 	EXP 	no2: autoDraw = False
+170.3305 	EXP 	no1: autoDraw = True
+171.6421 	EXP 	window1: mouseVisible = True
