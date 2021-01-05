@@ -1444,7 +1444,7 @@ function StudyRoutineBegin(snapshot) {
     gotValidClick = false; // until a click is received
     SoundItem = new sound.Sound({
     win: psychoJS.window,
-    value: SoundFiles,
+    value: SoundFiles2,
     secs: -1,
     });
     SoundItem.setVolume(1.1);
