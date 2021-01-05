@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 04, 2021, at 22:51
+    on January 05, 2021, at 00:55
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -797,7 +797,7 @@ thisExp.addData('StartTxt.stopped', StartTxt.tStopRefresh)
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='52:'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1031,7 +1031,7 @@ for thisTrial in trials:
     # setup some python lists for storing info about the SubmitClick
     SubmitClick.clicked_name = []
     gotValidClick = False  # until a click is received
-    SoundItem.setSound(SoundFiles, hamming=True)
+    SoundItem.setSound(SoundFiles2, hamming=True)
     SoundItem.setVolume(1.1, log=False)
     ItemNo.setText(number)
     # keep track of which components have finished
