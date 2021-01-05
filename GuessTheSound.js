@@ -83,6 +83,7 @@ psychoJS.start({
     {'name': 'Bird_C.wav', 'path': 'Bird_C.wav'},
     {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
     {'name': 'Initial/NoRepeat/Elephant_A.wav', 'path': 'Initial/NoRepeat/Elephant_A.wav'},
+    {'name': 'Piano_C.wav', 'path': 'Piano_C.wav'},
     {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
     {'name': 'Chomp_C.wav', 'path': 'Chomp_C.wav'},
     {'name': 'Baby_D.wav', 'path': 'Baby_D.wav'},
@@ -154,7 +155,8 @@ psychoJS.start({
     {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
     {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
     {'name': 'Initial/Doubled/Dog_A.wav', 'path': 'Initial/Doubled/Dog_A.wav'},
-    {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'}
+    {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'},
+    {'name': 'Piano_D.wav', 'path': 'Piano_D.wav'}
   ]
 });
 
