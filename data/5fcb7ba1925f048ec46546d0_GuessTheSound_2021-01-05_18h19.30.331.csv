@@ -1,0 +1,61 @@
+ContinueResp.keys,ContinueResp.rt,WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,MSTResp.keys,MSTResp.rt,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles2,participant,session,date,expName,psychopyVersion,OS,frameRate
+space,17.334535,space,10.744055,space,3.715405,"New sound, someone scratching their nails in wood",3,12.9917,0,0,0,53,1,Chomp_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Birds singing,3,2.970195,0,1,1,43,1,Bird_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Birds singing,2,1.250445,0,2,2,4,1,Test/Foils/Bird.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Hair dryer,3,4.075365,0,3,3,10,1,Initial/Doubled/HairDryer_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Police siren,3,3.086945,0,4,4,35,1,Siren_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,howl of a wolf,3,1.351385,0,5,5,26,1,Initial/Repeat/Howl.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,piano being played,3,1.191805,0,6,6,3,1,Initial/Doubled/Piano_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,dog barking,3,0.94772,0,7,7,12,1,Initial/Doubled/Dog_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,a phone when someone hangs up on you,3,0.91974,0,8,8,7,1,Test/Foils/DialTone.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,piano being played,2,4.12204,0,9,9,57,1,Piano_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Helicopter,3,1.87271,0,10,10,20,1,Initial/NoRepeat/Helicopter_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,whistle,3,2.523525,0,11,11,9,1,Initial/Repeat/ManWhistle.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Elephant,3,4.30167,0,12,12,29,1,Initial/NoRepeat/Elephant_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone chewing,3,1.533295,0,13,13,51,1,Chomp_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Baby crying,3,1.14189,0,14,14,63,1,Initial/NoRepeat/Baby_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,A liquid being poured ,3,1.38595,0,15,15,2,1,Initial/Repeat/Pour.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Laughter,3,1.13783,0,16,16,14,1,Initial/Doubled/Laugh_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Dog barking,2,2.04889,0,17,17,50,1,Dog_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone clearing their throat,3,0.838205,0,18,18,54,1,Cough_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone coughing,3,1.177005,0,19,19,69,1,Initial/Doubled/Cough_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Dog barking,2,1.751365,0,20,20,48,1,Dog_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,toilet being flushed,3,3.338475,0,21,21,21,1,Initial/NoRepeat/Toilet_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Laughter by women,3,3.895295,0,22,22,40,1,Laugh_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Cuckoo clock,3,1.32266,0,23,23,25,1,Initial/Doubled/Cuckoo_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Water tap,3,1.36214,0,24,24,16,1,Initial/NoRepeat/Faucet_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Piano being played,1,2.36735,0,25,25,61,1,Initial/Doubled/Piano_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone coughing,2,1.67854,0,26,26,55,1,Cough_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone chewing,2,2.115835,0,27,27,13,1,Initial/Doubled/Chomp_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Laughter,1,2.62346,0,28,28,41,1,Laugh_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Piano being played,2,1.71549,0,29,29,58,1,Piano_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone coughing,2,2.80765,0,30,30,19,1,Initial/Doubled/Cough_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Liquid being poured ,1,1.03169,0,31,31,31,1,Pour_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Baby babbling,3,4.345905,0,32,32,38,1,Baby_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Ringing bells,3,1.180075,0,33,33,15,1,Initial/NoRepeat/Sleighbells_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Clapping,3,0.81758,0,34,34,22,1,Initial/Doubled/Clap_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Piano being played ,3,1.37849,0,35,35,59,1,Piano_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Bells of church,3,1.15791,0,36,36,6,1,Initial/Doubled/Chime_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Ambulance siren ,3,1.068325,0,37,37,33,1,Siren_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone coughing ,2,3.045815,0,38,38,56,1,Cough_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Carbonated liquid being poured,2,2.511075,0,39,39,32,1,Pour_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Liquid being poured,1,0.79437,0,40,40,60,1,Initial/Repeat/Pour.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Baby crying,2,3.075515,0,41,41,36,1,Baby_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,A car that is out of battery,3,1.381315,0,42,42,46,1,Carstart_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Wind on a cold night,3,1.216565,0,43,43,23,1,Test/Foils/Wind_B.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Dog barking,3,1.06227,0,44,44,67,1,Initial/Doubled/Dog_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone gargling,3,1.080495,0,45,45,28,1,Initial/Doubled/Gargle_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone taking sips of a liquid,3,35.25237,0,46,46,52,1,Chomp_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Liquid being poured,1,4.433995,0,47,47,30,1,Pour_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Police siren,1,2.29676,0,48,48,34,1,Siren_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Rain and thunder,3,1.893005,0,49,49,24,1,Initial/NoRepeat/Thunder_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Dog barking,1,2.33287,0,50,50,49,1,Dog_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Car starting,3,0.81248,0,51,51,66,1,Initial/Doubled/CarStart_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Car starting,1,3.442995,0,52,52,8,1,Initial/Doubled/CarStart_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Cow mooing,3,1.558225,0,53,53,27,1,Initial/NoRepeat/Cow.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Child crying,2,3.822745,0,54,54,37,1,Baby_C.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Ambulance siren,2,0.917715,0,55,55,0,1,Initial/Doubled/Siren_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Birds singing,1,1.09729,0,56,56,65,1,Test/Foils/Bird.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Laughter,1,0.675305,0,57,57,64,1,Initial/Doubled/Laugh_A.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Someone taking sips of a liquid,1,0.69179,0,58,58,11,1,Test/Foils/Slurp.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
+,,,,,,Bird singing,2,1.041235,0,59,59,44,1,Bird_D.wav,5fcb7ba1925f048ec46546d0,001,2021-01-05_18h19.30.331,GuessTheSound,2020.2.10,Win32,60
