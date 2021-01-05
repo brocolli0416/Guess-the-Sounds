@@ -1,0 +1,6 @@
+WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+space,0.74843,space,0.744805,,0,0,0,3,1,Initial/Doubled/Clap_A.wav,Doubled,,001,2021-01-05_00h40.23.942,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,1,1,8,1,Initial/Doubled/Doorchime_A.wav,Doubled,,001,2021-01-05_00h40.23.942,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,2,2,6,1,Initial/Doubled/Cuckoo_A.wav,Doubled,,001,2021-01-05_00h40.23.942,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,3,3,27,1,Initial/NoRepeat/Faucet_A.wav,NoRepeat,,001,2021-01-05_00h40.23.942,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,4,4,2,1,Initial/Doubled/Chime_A.wav,Doubled,,001,2021-01-05_00h40.23.942,GuessTheSound,2020.2.10,Win32,60
