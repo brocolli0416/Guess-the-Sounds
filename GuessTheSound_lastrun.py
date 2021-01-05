@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 05, 2021, at 13:11
+    on January 05, 2021, at 16:30
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -102,7 +102,7 @@ WelcomContinue = visual.TextStim(win=win, name='WelcomContinue',
 # Initialize components for Routine "Welcome1"
 Welcome1Clock = core.Clock()
 WelcomeTxt1 = visual.TextStim(win=win, name='WelcomeTxt1',
-    text='Occasionally, you will hear the same sound file being played for the second time. You will also hear sounds that are SIMILAR BUT DIFFERENT from a previously played sound. In each trial, please indicate whether the sound is a repeat, similar to a previously played sound, or a new sound that has never been played before.',
+    text='Occasionally, you will hear the same sound file being played for the second time. You will also hear sounds that are similar but different from a previously played sound. In each trial, please also indicate whether the sound is a new sound, a repeat, or similar to a previously played sound.',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -931,9 +931,9 @@ thisExp.addData('StartTxt.started', StartTxt.tStartRefresh)
 thisExp.addData('StartTxt.stopped', StartTxt.tStopRefresh)
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1, method='random', 
+trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='20:90'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1092,7 +1092,7 @@ for thisTrial in trials:
     routineTimer.add(1.000000)
     # update component parameters for each repeat
     count += 1
-    number = str(count) + "/60"
+    number = str(count) + "/61"
     
     
     # keep track of which components have finished
@@ -1167,7 +1167,7 @@ for thisTrial in trials:
     # setup some python lists for storing info about the SubmitClick
     SubmitClick.clicked_name = []
     gotValidClick = False  # until a click is received
-    SoundItem.setSound(SoundFiles2, hamming=True)
+    SoundItem.setSound(SoundFiles3, hamming=True)
     SoundItem.setVolume(1.1, log=False)
     ItemNo.setText(number)
     # keep track of which components have finished
@@ -1310,9 +1310,9 @@ for thisTrial in trials:
      #   trials.finished = True # end the loop early
      
     
-    if count == 60:
-        trials.finished = True
-        #trials.status = PsychoJS.Status.FINISHED
+    #if count == 60:
+    #    trials.finished = True
+    #    #trials.status = PsychoJS.Status.FINISHED
     trials.addData('Submit.started', Submit.tStartRefresh)
     trials.addData('Submit.stopped', Submit.tStopRefresh)
     # the Routine "Study" was not non-slip safe, so reset the non-slip timer
