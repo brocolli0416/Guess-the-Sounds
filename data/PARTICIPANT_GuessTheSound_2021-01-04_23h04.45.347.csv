@@ -1,0 +1,3 @@
+WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+space,0.649245,space,0.74175,,0,0,0,22,1,Initial/NoRepeat/Cow.wav,NoRepeat,,001,2021-01-04_23h04.45.347,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,1,1,86,1,Initial/Doubled/Creak.wav,Extra,,001,2021-01-04_23h04.45.347,GuessTheSound,2020.2.10,Win32,60
