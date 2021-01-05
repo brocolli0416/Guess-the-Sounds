@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 05, 2021, at 00:55
+    on January 05, 2021, at 09:45
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -795,7 +795,7 @@ thisExp.addData('StartTxt.started', StartTxt.tStartRefresh)
 thisExp.addData('StartTxt.stopped', StartTxt.tStopRefresh)
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1, method='sequential', 
+trials = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('GuessSounds_conditions.xlsx'),
     seed=None, name='trials')
