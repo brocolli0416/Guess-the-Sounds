@@ -1,7 +1,7 @@
 import pandas as pd 
 import numpy as np
 import csv
-df = pd.read_csv(r"C:\Users\wangs\OneDrive - The University of Western Ontario\Desktop\Project BL\Guess The Sound\Analysis\5e8ec3e28ee4fe17502d74eb_GuessTheSound_2021-01-03_23h16.02.196.csv")
+df = pd.read_csv(r"C:\Users\wangs\OneDrive - The University of Western Ontario\Desktop\Project BL\Guess The Sound\Analysis\mayte_GuessTheSound_2021-01-04_21h16.16.532.csv")
 output = pd.read_csv(r"C:\Users\wangs\OneDrive - The University of Western Ontario\Desktop\Project BL\Alien language pilot\Analysis\Sound_data.csv")
 types = output.columns.tolist()
 names = []
@@ -25,4 +25,4 @@ for i in soundname:
 with open ('Sound_data.csv', 'a') as file:
         writer = csv.writer(file)
         writer.writerow(names)
-        #writer.writerow(new)
+        writer.writerow(new)
