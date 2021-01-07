@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 05, 2021, at 16:30
+    on January 07, 2021, at 15:40
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -194,16 +194,6 @@ no3 = visual.TextStim(win=win, name='no3',
     languageStyle='LTR',
     depth=0.0);
 
-# Initialize components for Routine "Count2"
-Count2Clock = core.Clock()
-no2 = visual.TextStim(win=win, name='no2',
-    text='2',
-    font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
 # Initialize components for Routine "Count1"
 Count1Clock = core.Clock()
 no1 = visual.TextStim(win=win, name='no1',
@@ -275,6 +265,7 @@ Submit = visual.TextBox2(
      name='Submit',
      autoLog=True,
 )
+key_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "MST"
 MSTClock = core.Clock()
@@ -1018,75 +1009,6 @@ for thisTrial in trials:
     trials.addData('no3.started', no3.tStartRefresh)
     trials.addData('no3.stopped', no3.tStopRefresh)
     
-    # ------Prepare to start Routine "Count2"-------
-    continueRoutine = True
-    routineTimer.add(1.000000)
-    # update component parameters for each repeat
-    # keep track of which components have finished
-    Count2Components = [no2]
-    for thisComponent in Count2Components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    Count2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    
-    # -------Run Routine "Count2"-------
-    while continueRoutine and routineTimer.getTime() > 0:
-        # get current time
-        t = Count2Clock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=Count2Clock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *no2* updates
-        if no2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            no2.frameNStart = frameN  # exact frame index
-            no2.tStart = t  # local t and not account for scr refresh
-            no2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(no2, 'tStartRefresh')  # time at next scr refresh
-            no2.setAutoDraw(True)
-        if no2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > no2.tStartRefresh + 1-frameTolerance:
-                # keep track of stop time/frame for later
-                no2.tStop = t  # not accounting for scr refresh
-                no2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(no2, 'tStopRefresh')  # time at next scr refresh
-                no2.setAutoDraw(False)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in Count2Components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "Count2"-------
-    for thisComponent in Count2Components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    trials.addData('no2.started', no2.tStartRefresh)
-    trials.addData('no2.stopped', no2.tStopRefresh)
-    
     # ------Prepare to start Routine "Count1"-------
     continueRoutine = True
     routineTimer.add(1.000000)
@@ -1170,8 +1092,11 @@ for thisTrial in trials:
     SoundItem.setSound(SoundFiles3, hamming=True)
     SoundItem.setVolume(1.1, log=False)
     ItemNo.setText(number)
+    key_resp.keys = []
+    key_resp.rt = []
+    _key_resp_allKeys = []
     # keep track of which components have finished
-    StudyComponents = [Question, ResponseBox, SubmitClick, ClickTheButton, SoundItem, ItemNo, Submit]
+    StudyComponents = [Question, ResponseBox, SubmitClick, ClickTheButton, SoundItem, ItemNo, Submit, key_resp]
     for thisComponent in StudyComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1269,6 +1194,28 @@ for thisTrial in trials:
             win.timeOnFlip(Submit, 'tStartRefresh')  # time at next scr refresh
             Submit.setAutoDraw(True)
         
+        # *key_resp* updates
+        waitOnFlip = False
+        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp.frameNStart = frameN  # exact frame index
+            key_resp.tStart = t  # local t and not account for scr refresh
+            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+            key_resp.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp.getKeys(keyList=['y', 'n', 'left', 'right', 'space', '1'], waitRelease=False)
+            _key_resp_allKeys.extend(theseKeys)
+            if len(_key_resp_allKeys):
+                key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
+                key_resp.rt = _key_resp_allKeys[-1].rt
+                # a response ends the routine
+                continueRoutine = False
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -1315,6 +1262,14 @@ for thisTrial in trials:
     #    #trials.status = PsychoJS.Status.FINISHED
     trials.addData('Submit.started', Submit.tStartRefresh)
     trials.addData('Submit.stopped', Submit.tStopRefresh)
+    # check responses
+    if key_resp.keys in ['', [], None]:  # No response was made
+        key_resp.keys = None
+    trials.addData('key_resp.keys',key_resp.keys)
+    if key_resp.keys != None:  # we had a response
+        trials.addData('key_resp.rt', key_resp.rt)
+    trials.addData('key_resp.started', key_resp.tStartRefresh)
+    trials.addData('key_resp.stopped', key_resp.tStopRefresh)
     # the Routine "Study" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1376,6 +1331,11 @@ for thisTrial in trials:
             if len(_MSTResp_allKeys):
                 MSTResp.keys = _MSTResp_allKeys[-1].name  # just the last key pressed
                 MSTResp.rt = _MSTResp_allKeys[-1].rt
+                # was this correct?
+                if (MSTResp.keys == str(Correct)) or (MSTResp.keys == Correct):
+                    MSTResp.corr = 1
+                else:
+                    MSTResp.corr = 0
                 # a response ends the routine
                 continueRoutine = False
         
@@ -1405,7 +1365,14 @@ for thisTrial in trials:
     # check responses
     if MSTResp.keys in ['', [], None]:  # No response was made
         MSTResp.keys = None
+        # was no response the correct answer?!
+        if str(Correct).lower() == 'none':
+           MSTResp.corr = 1;  # correct non-response
+        else:
+           MSTResp.corr = 0;  # failed to respond (incorrectly)
+    # store data for trials (TrialHandler)
     trials.addData('MSTResp.keys',MSTResp.keys)
+    trials.addData('MSTResp.corr', MSTResp.corr)
     if MSTResp.keys != None:  # we had a response
         trials.addData('MSTResp.rt', MSTResp.rt)
     trials.addData('MSTResp.started', MSTResp.tStartRefresh)
