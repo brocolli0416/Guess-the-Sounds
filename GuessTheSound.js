@@ -98,7 +98,7 @@ psychoJS.start({
     {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
     {'name': 'Test/Foils/Wind_B.wav', 'path': 'Test/Foils/Wind_B.wav'},
     {'name': 'Laugh_D.wav', 'path': 'Laugh_D.wav'},
-    {'name': 'Carstart_B.wav', 'path': 'Carstart_B.wav'},
+    {'name': 'CarStart_B.wav', 'path': 'CarStart_B.wav'},
     {'name': 'Initial/Doubled/Cat_A.wav', 'path': 'Initial/Doubled/Cat_A.wav'},
     {'name': 'Dog_D.wav', 'path': 'Dog_D.wav'},
     {'name': 'Initial/Doubled/Writing_A.wav', 'path': 'Initial/Doubled/Writing_A.wav'},
