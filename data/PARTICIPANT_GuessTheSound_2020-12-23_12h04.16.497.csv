@@ -1,6 +1,0 @@
-WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
-space,6.55605,space,6.09995,air hissing,0,0,0,34,1,Initial/NoRepeat/Puff_A.wav,NoRepeat,,001,2020-12-23_12h04.16.497,GuessTheSound,2020.2.10,Win32,60
-,,,,dropping a metal object,0,1,1,51,1,Initial/Repeat/MetalBang.wav,Repeat,,001,2020-12-23_12h04.16.497,GuessTheSound,2020.2.10,Win32,60
-,,,,airhorn,0,2,2,60,1,Test/Foils/Airhorn.wav,New,,001,2020-12-23_12h04.16.497,GuessTheSound,2020.2.10,Win32,60
-,,,,goat,0,3,3,30,1,Initial/NoRepeat/Goat_B.wav,NoRepeat,,001,2020-12-23_12h04.16.497,GuessTheSound,2020.2.10,Win32,60
-,,,,christmas bell,0,4,4,37,1,Initial/NoRepeat/Sleighbells_B.wav,NoRepeat,,001,2020-12-23_12h04.16.497,GuessTheSound,2020.2.10,Win32,60

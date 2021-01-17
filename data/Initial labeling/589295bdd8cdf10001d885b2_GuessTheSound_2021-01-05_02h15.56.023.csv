@@ -1,0 +1,61 @@
+WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
+space,7.531,space,4.699,keyboard keys,0,0,0,77,1,Test/Foils/Typing.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,door closing,0,1,1,86,1,Initial/Doubled/Creak.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,kettle  boiling,0,2,2,73,1,Test/Foils/Kettle.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,fireworks,0,3,3,28,1,Initial/NoRepeat/Fireworks.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,man coughing,0,4,4,85,1,Initial/Doubled/Cough_A.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,crow,0,5,5,87,1,Initial/Repeat/Crow_B.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,tap water running,0,6,6,27,1,Initial/NoRepeat/Faucet_A.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,frog,0,7,7,65,1,Test/Foils/Bullfrog.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,person sneezing,0,8,8,56,1,Initial/Repeat/Sneeze_B.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,falcon,0,9,9,25,1,Initial/NoRepeat/Eagle_B.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,cow,0,10,10,22,1,Initial/NoRepeat/Cow.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,dog howling,0,11,11,48,1,Initial/Repeat/Howl.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,samba music,0,12,12,46,1,Initial/Repeat/Drum_B.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,writing with chalk on a board,0,13,13,99,1,Initial/Doubled/Writing_A.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,buzzer sound,0,14,14,60,1,Test/Foils/Airhorn.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,ripping paper apart,0,15,15,95,1,Test/Foils/PaperRip.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,dog bark,0,16,16,7,1,Initial/Doubled/Dog_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,elephant,0,17,17,26,1,Initial/NoRepeat/Elephant_A.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,crow clapping,0,18,18,3,1,Initial/Doubled/Clap_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,ice on glass,0,19,19,94,1,Initial/Repeat/IceDrop.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,horse,0,20,20,72,1,Test/Foils/Horse.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,bowling,0,21,21,63,1,Test/Foils/Bowlingpins.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,tree cutting,0,22,22,61,1,Test/Foils/Axe.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,duck,0,23,23,90,1,Initial/Doubled/Geese_A.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,guitar ,0,24,24,91,1,Initial/Doubled/Guitar_A.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,rub,0,25,25,64,1,Test/Foils/Brushing.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,piano,0,26,26,9,1,Initial/Doubled/Piano_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,mosquito,0,27,27,32,1,Initial/NoRepeat/Mosquito_B.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,whistle,0,28,28,59,1,Initial/Repeat/Whistle_A.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,cat,0,29,29,82,1,Initial/Doubled/Cat_A.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,drum plate,0,30,30,45,1,Initial/Repeat/Cymbal_A.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,harmonica,0,31,31,70,1,Test/Foils/Harmonica.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,lion roar,0,32,32,12,1,Initial/Doubled/Growl_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,heart beating,0,33,33,71,1,Test/Foils/Heartbeat.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,helicopter,0,34,34,93,1,Initial/NoRepeat/Helicopter_A.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,people laughing,0,35,35,15,1,Initial/Doubled/Laugh_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,footsteps,0,36,36,29,1,Initial/NoRepeat/Footsteps_B.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,computer calculation,0,37,37,75,1,Test/Foils/Robot.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,38,38,31,1,Initial/NoRepeat/Hammer_A.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,Ocean waves,0,39,39,18,1,Initial/Doubled/Surf_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,harp ,0,40,40,14,1,Initial/Doubled/Harp_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,,0,41,41,78,1,Test/Foils/Cards.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,hen,0,42,42,96,1,Initial/NoRepeat/Rooster_B.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,bat,0,43,43,41,1,Initial/Repeat/Bat.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,mouthwash,0,44,44,10,1,Initial/Doubled/Gargle_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,siren,0,45,45,11,1,Initial/Doubled/Siren_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,coins ,0,46,46,4,1,Initial/Doubled/Coin_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,snoring,0,47,47,38,1,Initial/NoRepeat/Snore_B.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,soda pouring,0,48,48,49,1,Initial/Repeat/Pour.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,cicada,0,49,49,44,1,Initial/Repeat/Cicade.wav,Repeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,phone vibrating,0,50,50,66,1,Test/Foils/Buzz.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,dripping water,0,51,51,24,1,Initial/NoRepeat/Droplet_B.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,sheep,0,52,52,30,1,Initial/NoRepeat/Goat_B.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,donkey,0,53,53,68,1,Test/Foils/Donkey.wav,New,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,trumpet,0,54,54,36,1,Initial/NoRepeat/Sax_A.wav,NoRepeat,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,owl,0,55,55,16,1,Initial/Doubled/Owl_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,piano,0,56,56,8,1,Initial/Doubled/Doorchime_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,water swallow,0,57,57,92,1,Test/Foils/Gulp.wav,Extra,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,wind chime,0,58,58,17,1,Initial/Doubled/Windchime_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60
+,,,,turkey,0,59,59,19,1,Initial/Doubled/Turkey_A.wav,Doubled,589295bdd8cdf10001d885b2,001,2021-01-05_02h15.56.023,GuessTheSound,2020.2.10,Win32,60

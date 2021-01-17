@@ -153,7 +153,7 @@
       <TextComponent name="ItemNo">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
@@ -296,9 +296,9 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="startVal" updates="None" val="2" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="1" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -321,6 +321,54 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="AddCount" valType="code"/>
       </CodeComponent>
+      <TextComponent name="no_2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="no_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="2" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="no_3">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="no_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="3" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
     </Routine>
     <Routine name="Welcome">
       <TextComponent name="InstructionTxt">
@@ -343,7 +391,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Welcome to 'Guess the Sound!'&amp;#10;&amp;#10;&amp;#10;In this task, you will be presented with different environmental sounds one by one. Listen to each sound and try to give it a short label so that another person, seeing only your labels, can guess what the sound was.&amp;#10;&amp;#10;&amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Welcome to 'Sound Memory Test'!&amp;#10;&amp;#10;&amp;#10;In this experiment, we will test your memory for different sound items. &amp;#10;&amp;#10;&amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -509,9 +557,51 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="We will now begin the task" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="This is the end of practice.&amp;#10;&amp;#10;&amp;#10;We will now begin the actual task.&amp;#10;There are 80 items in total. Listen to each sound carefully as they will play once." valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="StartTast">
+        <Param name="allowedKeys" updates="constant" val="'space' " valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="StartTast" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="ContinueStart">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="ContinueStart" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Press SPACE to begin the task" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -711,74 +801,6 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="Welcome2">
-      <TextComponent name="InstructionTxt2">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
-        <Param name="name" updates="None" val="InstructionTxt2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Each sound will be only played once so please listen carefully and make sure you are in a quiet environment.&amp;#10;&amp;#10;You can leave your answer blank, but please try to label as many items as possible.&amp;#10;&amp;#10;&amp;#10;" valType="extendedStr"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <TextComponent name="WelcomeContinue2">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
-        <Param name="name" updates="None" val="WelcomeContinue2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, -0.4)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Press SPACE to continue" valType="extendedStr"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <KeyboardComponent name="WelcomeContinueKey2">
-        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="WelcomeContinueKey2" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
-    </Routine>
     <Routine name="MST">
       <TextComponent name="MSTQuestion">
         <Param name="color" updates="constant" val="white" valType="str"/>
@@ -800,7 +822,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Has this sound been played before?&amp;#10;(press the corresponding number on your keyboard)&amp;#10;&amp;#10;&amp;#10;1 = YES, I have heard this exact same sound &amp;#10;&amp;#10;2 = NO, but I have heard a similar sound&amp;#10;&amp;#10;3 = NO, this is my first time hearing this sound&amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="1 = REPEAT&amp;#10;&amp;#10;2 = SIMILAR&amp;#10;&amp;#10;3 = NEW&amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -844,7 +866,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Occasionally, you will hear the same sound file being played for the second time. You will also hear sounds that are similar but different from a previously played sound. In each trial, please also indicate whether the sound is a new sound, a repeat, or similar to a previously played sound." valType="extendedStr"/>
+        <Param name="text" updates="constant" val="In this task, you will be presented with different enviornmental sounds one by one. For each sound you hear, please indicate whether it is a NEW sound that has never been presented before, a REPEAT of a previously presented sound, or a sound that is SIMILAR but different from a previously presented sound. &amp;#10;&amp;#10;Press '1' on your keyboard for REPEAT, '2' for SIMILAR, and '3' for NEW." valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -891,17 +913,346 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
+    <Routine name="PracticeBegin">
+      <TextComponent name="InstructionTxt2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="InstructionTxt2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Let's begin with a few practice trials. &amp;#10;&amp;#10;&amp;#10;" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="WelcomeContinue2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="WelcomeContinue2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Press SPACE to begin practice&amp;#10;" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="WelcomeContinueKey2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="WelcomeContinueKey2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Practice1">
+      <TextComponent name="TrialNumber">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="TrialNumber" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$PracticeSound.getDuration()" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$TrialCount" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <SoundComponent name="PracticeSound">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="hamming" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="PracticeSound" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="sound" updates="set every repeat" val="$SoundFiles3" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+        <Param name="volume" updates="constant" val="1" valType="code"/>
+      </SoundComponent>
+      <TextComponent name="PracticeCross">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="PracticeCross" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$PracticeSound.getDuration()" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_2">
+        <Param name="Before Experiment" updates="constant" val="Tcount = 1&amp;#10;TrialCount = 'Trial ' + str(Tcount)" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="Tcount = 1;&amp;#10;TrialCount = (&quot;Trial &quot; + Tcount.toString());&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="/* Syntax Error: Fix Python code */" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="PracticeFeedback">
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="Tcount += 1;&amp;#10;TrialCount = (&quot;Trial &quot; + Tcount.toString());&amp;#10;if ((Correct === 3)) {&amp;#10;    message = &quot;This is a NEW sound. \nThis sound has never been presented before.&quot;;&amp;#10;} else {&amp;#10;    if ((Correct === 2)) {&amp;#10;        message = &quot;This is a SIMILAR sound. \nThis sound is similar but not identical to a previously presented sound.&quot;;&amp;#10;    } else {&amp;#10;        if ((Correct === 1)) {&amp;#10;            message = &quot;This is a REPEAT sound. \nThe exact same sound has been presented previously.&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="Tcount += 1&amp;#10;TrialCount = 'Trial ' + str(Tcount)&amp;#10;if Correct == 3:&amp;#10;    message = &quot;This is a NEW sound. \nThis sound has never been presented before.&quot;&amp;#10;elif Correct == 2:&amp;#10;    message = &quot;This is a SIMILAR sound. \nThis sound is similar but not identical to a previously presented sound.&quot;&amp;#10;elif Correct == 1:&amp;#10;    message = &quot;This is a REPEAT sound. \nThe exact same sound has been presented previously.&quot;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+      <KeyboardComponent name="Practice_resp">
+        <Param name="allowedKeys" updates="constant" val="'1', '2', '3' " valType="code"/>
+        <Param name="correctAns" updates="constant" val="$Correct" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Practice_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="PracticeMssg">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="PracticeMssg" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$message" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="FeedbackCross">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="FeedbackCross" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="Continue">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="Continue" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Press the right key on your keyboard" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="Options">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="Options" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="1 = REPEAT&amp;#10;2 = SIMILAR&amp;#10;3 = NEW" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="MSTSound">
+      <SoundComponent name="TargetSound">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="hamming" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="TargetSound" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="sound" updates="set every repeat" val="$SoundFiles3" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+        <Param name="volume" updates="constant" val="1" valType="code"/>
+      </SoundComponent>
+    </Routine>
   </Routines>
   <Flow>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="5:85" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Skid_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Coin_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/ManWhistle.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Piano_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Siren_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bird.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cat_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Baby_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Piano_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Phone_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Pour.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/HairDryer_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_A.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/DialTone.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Siren_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Bird_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Pour_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Camera.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Snore_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Siren_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Piano_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Pour_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Bird_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Airplane_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Growl_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chicken_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Laugh_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cough_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chomp_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/CarStart_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Cow.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Dog_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Laugh_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Cough_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Howl.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Bubbles_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Dog_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Laugh_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Cough_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Heartbeat.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Footsteps_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Guitar_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Dog_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="GuessSounds_conditions.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Study"/>
+    <Routine name="MSTSound"/>
+    <Routine name="MST"/>
+    <LoopTerminator name="trials_2"/>
     <Routine name="Welcome"/>
-    <Routine name="Welcome1"/>
-    <Routine name="Welcome2"/>
     <Routine name="StartAdjustment"/>
     <Routine name="VolumeAdjustment"/>
+    <Routine name="Welcome1"/>
+    <Routine name="PracticeBegin"/>
+    <LoopInitiator loopType="TrialHandler" name="PracticeTrials">
+      <Param name="Selected rows" updates="None" val="0:5" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Skid_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Coin_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/ManWhistle.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Piano_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Siren_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bird.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cat_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Baby_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Piano_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Phone_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Pour.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/HairDryer_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_A.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/DialTone.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Siren_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Bird_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Pour_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Camera.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Snore_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Siren_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Piano_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Pour_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Bird_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Airplane_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Growl_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chicken_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Laugh_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cough_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chomp_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/CarStart_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Cow.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Dog_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Laugh_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Cough_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Howl.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Bubbles_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Dog_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Laugh_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Cough_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Heartbeat.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Footsteps_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Guitar_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Dog_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="GuessSounds_conditions.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="PracticeTrials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Practice1"/>
+    <Routine name="PracticeFeedback"/>
+    <LoopTerminator name="PracticeTrials"/>
     <Routine name="Start"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('SoundFiles3', 'Test/Foils/Slurp.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/ManWhistle.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Airhorn.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Piano_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Siren_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bird.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cat_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Baby_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Mosquito_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Pour.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/HairDryer_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Airhorn.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Piano_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Thunder_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_A.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/IceDrop.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Siren_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Bird_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Pour_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Camera.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Snore_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Siren_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Thunder_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Piano_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Pour_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Bird_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Airplane_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Growl_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Airhorn.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chicken_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Laugh_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cough_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chomp_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/CarStart_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Donkey.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Dog_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Thunder_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Laugh_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Cough_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Duck_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Whistle_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Dog_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Laugh_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Cough_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Heartbeat.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Carstart_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Footsteps_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Guitar_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Dog_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="5:85" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Skid_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Coin_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/ManWhistle.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Piano_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Siren_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bird.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cat_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Baby_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Piano_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Phone_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Pour.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/HairDryer_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_A.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/DialTone.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Siren_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Bird_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Pour_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Camera.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Snore_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Siren_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Piano_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Pour_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Bird_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Airplane_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Growl_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chicken_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Laugh_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cough_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chomp_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/CarStart_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Cow.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Dog_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Laugh_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Cough_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Howl.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Bubbles_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Dog_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Laugh_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Cough_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Heartbeat.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Footsteps_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Guitar_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Dog_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="GuessSounds_conditions.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -910,10 +1261,8 @@
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="Count3"/>
-    <Routine name="Count2"/>
     <Routine name="Count1"/>
-    <Routine name="Study"/>
+    <Routine name="MSTSound"/>
     <Routine name="MST"/>
     <LoopTerminator name="trials"/>
     <Routine name="End"/>

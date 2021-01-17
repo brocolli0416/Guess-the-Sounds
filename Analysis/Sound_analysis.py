@@ -1,8 +1,8 @@
 import pandas as pd 
 import numpy as np
 import csv
-df = pd.read_csv(r"C:\Users\wangs\OneDrive - The University of Western Ontario\Desktop\Project BL\Guess The Sound\Analysis\mayte_GuessTheSound_2021-01-04_21h16.16.532.csv")
-output = pd.read_csv(r"C:\Users\wangs\OneDrive - The University of Western Ontario\Desktop\Project BL\Alien language pilot\Analysis\Sound_data.csv")
+df = pd.read_csv(r"C:\Users\wangs\OneDrive - The University of Western Ontario\Desktop\Project BL\Guess The Sound\Analysis\589295bdd8cdf10001d885b2_GuessTheSound_2021-01-05_02h15.56.023.csv", encoding='latin-1')
+output = pd.read_csv(r"C:\Users\wangs\OneDrive - The University of Western Ontario\Desktop\Project BL\Alien language pilot\Analysis\Sound_data.csv", encoding='latin-1')
 types = output.columns.tolist()
 names = []
 new = []

@@ -1,0 +1,53 @@
+session_id,participant_id,status,started_datetime,completed_date_time,time_taken,age,num_approvals,num_rejections,prolific_score,reviewed_at_datetime,entered_code,Country of Birth,Current Country of Residence,Employment Status,First Language,Nationality,Sex,Student Status,Version
+5fef4686eed16d26a347c481,5f3971a9bc04640d4b77d837,APPROVED,57:58.0,12:43.5,885.466,27,31,0,100,43:53.5,51DF249E,"Venezuela, Bolivarian Republic of",Chile,Full-Time,DATA EXPIRED,"Venezuela, Bolivarian Republic of",Male,No,1
+5fef4689b289afd91a5ff626,5eac59fffec73d29939eba0d,APPROVED,58:22.0,14:30.0,967.984,24,86,0,100,43:54.8,51DF249E,Slovenia,Slovenia,Full-Time,Slovenian,Slovenia,Female,No,1
+5fef468b509c7ea6a23078a8,5e5d0bb3afebf1000ad9a903,APPROVED,58:02.8,24:25.6,1582.786,19,49,0,100,43:55.8,51DF249E,Portugal,Portugal,Other,Portuguese,Portugal,Female,Yes,1
+5fef468fc39215288e484c7f,5d39dd63c49dae00016065c7,APPROVED,58:07.4,20:35.6,1348.214,20,193,1,100,43:56.9,51DF249E,Portugal,Portugal,Other,Portuguese,Portugal,Female,Yes,1
+5fef46956d65c526afbb8ec6,5fc0aa89eba500058d6d9381,APPROVED,58:13.2,29:18.1,1864.842,24,12,0,100,43:58.6,51DF249E,Poland,Poland,Unemployed (and job seeking),DATA EXPIRED,Poland,Female,Yes,1
+5fef469b520dd127cec917e2,5f8f06786c0b690ec6481f00,APPROVED,58:18.9,23:11.4,1492.509,18,23,0,100,43:59.4,51DF249E,Poland,Poland,Other,DATA EXPIRED,Poland,Female,No,1
+5fef46aae7417a276b3c0650,5f26ab25496aa941640e9a81,APPROVED,01:03.7,25:48.1,1484.376,22,45,1,100,44:00.3,51DF249E,Hungary,Hungary,Part-Time,Hungarian,Hungary,Female,Yes,1
+5fef46ac520dd127cec917e4,5fc96de088c43f432906043b,APPROVED,58:36.7,14:32.8,956.101,18,6,0,100,44:03.9,51DF249E,Hungary,Hungary,,,Hungary,Male,Yes,1
+5fef46b46a36572767e3cb55,5e68a655dfa1b714311fc76c,TIMED-OUT,58:46.7,,1040234.607,23,132,0,100,,,Portugal,Portugal,Part-Time,Portuguese,Portugal,Male,Yes,1
+5fef46b55ce3aed816195d8d,5ab0b347e1546900019b16aa,APPROVED,58:45.5,16:03.4,1037.977,21,136,0,100,44:06.7,51DF249E,Portugal,Portugal,Full-Time,Portuguese,Portugal,Male,No,1
+5fef46b6b890b1d8a7eccdc4,5e935f7042d2cd694d3f1179,APPROVED,58:46.5,33:55.7,2109.2,46,117,3,99,44:08.2,51DF249E,Portugal,Portugal,Full-Time,Portuguese,Portugal,Female,No,1
+5fef46baa35c0ed7b16cd9c1,5a2126371a1ad3000138f77e,APPROVED,59:03.3,15:34.7,991.421,35,362,5,99,45:50.1,NOCODE,United Kingdom,United Kingdom,"Not in paid work (e.g. homemaker, retired or disabled)",English,United Kingdom,Female,Yes,1
+5fef46bd9bca6f21ea6c36fa,5fc29ee9f10d240008413855,APPROVED,00:32.6,16:17.1,944.462,19,3,0,100,44:09.5,51DF249E,Portugal,Portugal,Other,,Portugal,Male,Yes,1
+5fef46be0479d7d8e4b634b7,59c16bcd754a19000111c523,APPROVED,59:06.0,15:51.3,1005.249,33,275,1,100,44:10.3,51DF249E,Poland,United Kingdom,Full-Time,Polish,Poland,Female,No,1
+5fef46c2e9df3da78e5a09c3,5b2bc0070ec82d0001d2997e,APPROVED,58:58.0,11:15.6,737.614,23,94,0,100,44:11.2,51DF249E,Romania,Italy,Unemployed (and job seeking),Romanian,Romania,Male,No,1
+5fef46c599e7cf27305b5400,5f54ed45a3b43286df0b0a0b,APPROVED,59:07.6,20:14.3,1266.698,22,41,1,100,47:19.1,NOCODE,Portugal,Portugal,Other,DATA EXPIRED,Portugal,Male,Yes,1
+5fef46c6eed16d26a347c482,5e0613233ccda2ffaaeec5bd,APPROVED,59:02.1,13:02.9,840.785,19,104,1,99,44:12.3,51DF249E,Italy,Italy,Other,Italian,Italy,Male,Yes,1
+5fef46c8c92b3626f8b72f61,5d67fe2073cd1d001a611229,APPROVED,59:04.2,14:52.2,948.011,33,207,1,100,44:13.3,51DF249E,Chile,Chile,Full-Time,Spanish,Chile,Male,Yes,1
+5fef473c539a382706f781c6,5fbabe8f3bdaedb1377b0068,APPROVED,01:28.8,19:30.6,1081.788,25,5,0,100,44:17.3,51DF249E,Israel,Israel,Part-Time,,Israel,Female,Yes,1
+5fef47dc827f812688085508,5ea885a6b640e22ca5805a35,APPROVED,03:44.1,18:29.6,885.422,23,101,0,100,44:18.7,51DF249E,Ukraine,Spain,Unemployed (and job seeking),Spanish,Ukraine,Male,No,1
+5fef557951f3a9280710b84c,5e7c4f45455902295048ffb6,APPROVED,01:45.0,18:40.5,1015.506,20,108,0,100,44:19.8,51DF249E,United Kingdom,Portugal,Other,Portuguese,Portugal,Male,Yes,1
+5ff2a294cbe0697a677ddb03,5eb1994b2c1e632a7f63ff52,APPROVED,07:32.3,31:00.3,1408.002,23,85,1,100,59:25.3,51DF249E,Chile,,,,Chile,Male,,1
+5ff2a2a9e766bb7df0620399,5f6cd5ce1758e90f12ae1123,APPROVED,07:53.6,23:59.3,965.696,20,21,0,100,00:00.9,51DF249E,Portugal,Portugal,Other,DATA EXPIRED,Portugal,Male,Yes,1
+5ff2a2b6f4e2337a2dc1b2a9,5e8ec3e28ee4fe17502d74eb,APPROVED,08:09.5,43:10.0,2100.414,35,71,0,100,58:58.5,51DF249E,Mexico,Mexico,DATA EXPIRED,DATA EXPIRED,Mexico,Male,DATA EXPIRED,1
+5ff2a2c446872e774d2f9470,5ee164fd75cba8192e80c528,APPROVED,08:20.7,34:26.5,1565.793,19,64,2,99,59:12.1,51DF249E,Mexico,Mexico,Unemployed (and job seeking),Spanish,Mexico,Male,Yes,1
+5ff2a2cd9bca6f75664e5414,5f593ffc7fa1481697b363e5,APPROVED,09:41.9,23:03.2,801.227,19,61,0,100,00:25.0,51DF249E,Georgia,Germany,Unemployed (and job seeking),DATA EXPIRED,Georgia,Male,Yes,1
+5ff2a2d12fd45c2cb5f7bfaf,5f47c8cc5a01ee1f5050804d,APPROVED,08:33.9,23:03.8,869.897,38,94,0,100,00:16.2,51DF249E,Uruguay,United States,Full-Time,DATA EXPIRED,Uruguay,Female,Yes,1
+5ff2a2d343c5787cece3a9b1,5eeb39b9fe8e6a01e7235c00,APPROVED,08:35.5,51:44.3,2588.845,24,85,0,100,58:03.6,51DF249E,France,France,Unemployed (and job seeking),French,France,Male,No,1
+5ff2a3473cc53c79bda2bc3d,5f792549951dda50c15b8c95,APPROVED,10:34.7,44:00.2,2005.508,29,17,0,100,58:38.4,51DF249E,Mexico,Mexico,Full-Time,DATA EXPIRED,Mexico,Female,No,1
+5ff2a3473803bb7acf2e8768,5e968c1e95b8161112136269,APPROVED,10:31.5,24:43.7,852.153,20,250,0,100,59:45.5,51DF249E,Canada,United States,Unemployed (and job seeking),Chinese,Canada,Female,Yes,1
+5ff2a6d9d4f1e42ad339e394,5fad9d68fe7eb41482edf800,APPROVED,25:49.4,52:02.1,1572.75,21,18,0,100,58:25.0,51DF249E,Mexico,Mexico,Other,DATA EXPIRED,Mexico,Female,Yes,1
+5ff3e78193786159b83bb53e,5fee41072178d111eecbce26,APPROVED,14:56.2,40:17.9,1521.695,23,1,0,100,24:54.3,51DF249E,Canada,Canada,Part-Time,,Canada,Male,No,1
+5ff3e781ad6c6d5859781ddc,5f09dff8faca1a0c4efb0711,APPROVED,14:28.0,36:40.6,1332.536,20,26,0,100,24:53.3,51DF249E,Mexico,Mexico,Other,Spanish,Mexico,Female,Yes,1
+5ff3e790a35c0e5750730541,5e7a5c6a84dea203b37bfd0b,APPROVED,14:08.6,29:15.1,906.474,23,101,0,100,24:52.1,51DF249E,Mexico,Mexico,Unemployed (and job seeking),Spanish,Mexico,Female,Yes,1
+5ff3e79ea4feb0a494c53119,5e66db7ade78964625f46543,APPROVED,14:22.7,30:05.0,942.225,20,33,0,100,24:50.9,51DF249E,Poland,Poland,Unemployed (and job seeking),Polish,Poland,Male,Yes,1
+5ff3e7a5b11116a171d3968b,5fb41ada4eadef070e1fb787,APPROVED,14:29.1,44:17.4,1788.347,22,14,0,100,24:58.8,51DF249E,Mexico,Mexico,Other,,Mexico,Female,Yes,1
+5ff3e7aabf7c82a584284eed,5f2ed39287147c26d90136ea,APPROVED,17:36.2,42:33.3,1497.152,23,30,0,100,24:19.4,51DF249E,Mexico,Mexico,"Not in paid work (e.g. homemaker', 'retired or disabled)",DATA EXPIRED,Mexico,Male,Yes,1
+5ff3e8810b03ab2494e7ede2,5e793ab51aff8103623757be,APPROVED,18:09.1,31:33.2,804.084,22,90,2,98,24:20.9,51DF249E,Philippines,Australia,Unemployed (and job seeking),Tagalog-Filipino,Philippines,Female,Yes,1
+5ff3ea9fcfa055278ce06863,5f21bb41bfbf3a5e4cae985c,APPROVED,27:11.2,27:08.7,3597.49,26,34,0,100,27:09.1,Manual Completion,DATA EXPIRED,Mexico,DATA EXPIRED,DATA EXPIRED,DATA EXPIRED,DATA EXPIRED,DATA EXPIRED,1
+5ff3f5e60c041ea7ce6c41fa,589295bdd8cdf10001d885b2,APPROVED,15:18.9,50:16.8,2097.902,30,31,1,99,49:23.6,51DF249E,Chile,Chile,"Not in paid work (e.g. homemaker', 'retired or disabled)",Spanish,Chile,Male,No,1
+,A10,,,,,,,,,,,,,,,,,,1
+5ff47cdcc39215b8be815e39,5f19dfd666d72d092db69ed6,APPROVED,51:08.4,06:41.8,933.39,23,24,0,100,39:14.9,51DF249E,Poland,Poland,Unemployed (and job seeking),Polish,Poland,Male,Yes,2
+5ff47ce4ebe59267ebba0996,5f4cf80c0bce10081b6460e2,APPROVED,51:16.4,07:47.9,991.558,23,42,0,100,39:16.2,51DF249E,Italy,Italy,Unemployed (and job seeking),DATA EXPIRED,Italy,Male,Yes,2
+5ff4ad90539a38be034b1a03,5ec5887e3ba6b459ea9fcc0f,APPROVED,18:56.5,36:20.7,1044.181,18,45,0,100,59:47.0,51DF249E,Canada,Canada,Unemployed (and job seeking),Chinese,Canada,Male,Yes,2
+5ff4ad98e9df3d3e9b2cdb20,5fcb7ba1925f048ec46546d0,APPROVED,19:06.8,44:37.0,1530.155,22,8,0,100,59:47.8,51DF249E,Portugal,Portugal,Unemployed (and job seeking),,Portugal,Male,Yes,2
+5ff4ad9bb0feb8bfb2aae508,5ebc23bce7dea502638f1bea,APPROVED,19:07.7,35:23.0,975.299,25,64,1,100,59:48.9,51DF249E,Greece,Germany,Unemployed (and job seeking),Greek,Greece,Female,No,2
+5ff4e1b10007157aa8eec4dd,5f6a03d36e099f033d6a4a50,APPROVED,01:21.8,05:45.9,3864.031,22,50,0,100,09:39.5,51DF249E,Italy,Italy,Unemployed (and job seeking),DATA EXPIRED,Italy,Male,Yes,2
+5ff4e1b68fd71dc9d1138592,578a389e07724c000114c02c,APPROVED,01:30.6,23:01.2,1290.557,26,449,1,100,09:40.8,51DF249E,Portugal,Portugal,Full-Time,Portuguese,Portugal,Male,No,2
+,A50,,,,,,,,,,,,,,,,,,2
+5ff77968a49316464e4d4dc4,5f738de5cd78b40e58fb464b,APPROVED,13:12.8,32:15.8,1142.998,20,14,0,100,44:50.7,51DF249E,Spain,Spain,Other,DATA EXPIRED,Spain,Male,Yes,3
+5ff7796b4c5da645675c27fc,5ff33ff4937861400935bba1,APPROVED,13:35.1,39:08.8,1533.671,27,1,0,100,44:58.3,51DF249E,Mexico,,Full-Time,,Mexico,Female,Yes,3
+,A50,,,,,,,,,,,,,,,,,,3

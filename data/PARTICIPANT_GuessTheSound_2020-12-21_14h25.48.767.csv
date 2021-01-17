@@ -1,5 +1,0 @@
-ResponseBox.text,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles,Type,participant,session,date,expName,psychopyVersion,OS,frameRate
-,0,0,0,13,1,Initial/Doubled/HairDryer_A.wav,Doubled,,001,2020-12-21_14h25.48.767,GuessTheSound,2020.2.10,Win32,60
-,0,1,1,84,1,Initial/Doubled/Clock_A.wav,Extra,,001,2020-12-21_14h25.48.767,GuessTheSound,2020.2.10,Win32,60
-,0,2,2,98,1,Initial/Doubled/Train_A.wav,Extra,,001,2020-12-21_14h25.48.767,GuessTheSound,2020.2.10,Win32,60
-,0,3,3,81,1,Initial/Doubled/CarStart_A.wav,Extra,,001,2020-12-21_14h25.48.767,GuessTheSound,2020.2.10,Win32,60

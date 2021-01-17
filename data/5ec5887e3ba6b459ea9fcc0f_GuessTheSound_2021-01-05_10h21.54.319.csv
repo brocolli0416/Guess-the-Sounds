@@ -1,7 +1,0 @@
-ContinueResp.keys,ContinueResp.rt,WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,VolumeContinueKey.keys,VolumeContinueKey.rt,ResponseBox.text,MSTResp.keys,MSTResp.rt,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,SoundFiles2,participant,session,date,expName,psychopyVersion,OS,frameRate
-space,6.35016,space,4.45136,space,3.188455,munching,2,2.93859,0,0,0,51,1,Chomp_B.wav,5ec5887e3ba6b459ea9fcc0f,001,2021-01-05_10h21.54.319,GuessTheSound,2020.2.10,Win32,60
-,,,,,,chirping,3,10.957435,0,1,1,43,1,Bird_C.wav,5ec5887e3ba6b459ea9fcc0f,001,2021-01-05_10h21.54.319,GuessTheSound,2020.2.10,Win32,60
-,,,,,,helicopter,3,6.161025,0,2,2,20,1,Initial/NoRepeat/Helicopter_A.wav,5ec5887e3ba6b459ea9fcc0f,001,2021-01-05_10h21.54.319,GuessTheSound,2020.2.10,Win32,60
-,,,,,,peeing,3,1.6341,0,3,3,32,1,Pour_B.wav,5ec5887e3ba6b459ea9fcc0f,001,2021-01-05_10h21.54.319,GuessTheSound,2020.2.10,Win32,60
-,,,,,,gurgle,3,1.706995,0,4,4,28,1,Initial/Doubled/Gargle_A.wav,5ec5887e3ba6b459ea9fcc0f,001,2021-01-05_10h21.54.319,GuessTheSound,2020.2.10,Win32,60
-,,,,,,baby crying,3,1.694855,0,5,5,36,1,Baby_A.wav,5ec5887e3ba6b459ea9fcc0f,001,2021-01-05_10h21.54.319,GuessTheSound,2020.2.10,Win32,60

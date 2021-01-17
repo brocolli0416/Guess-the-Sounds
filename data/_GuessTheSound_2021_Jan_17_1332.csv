@@ -1,0 +1,6 @@
+﻿SoundFiles3,Correct,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,TargetSound.started,TargetSound.stopped,MSTQuestion.started,MSTQuestion.stopped,MSTResp.keys,MSTResp.corr,MSTResp.rt,MSTResp.started,MSTResp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+Initial/Doubled/Coin_A.wav,3,0,0,0,0,10.208597949938849,None,11.185346000012942,None,3,1,1.4702324999962002,11.185346000012942,None,,001,2021_Jan_17_1332,GuessTheSound,2020.2.10,59.99638821786539,
+Initial/Repeat/ManWhistle.wav,3,0,1,1,1,12.677177349990234,None,13.677365300012752,None,3,1,0.9787133000208996,13.677365300012752,None,,001,2021_Jan_17_1332,GuessTheSound,2020.2.10,59.99638821786539,
+Initial/Doubled/Cuckoo_A.wav,3,0,2,2,2,14.677375949989074,None,15.677483399980702,None,3,1,0.6529075999860652,15.677483399980702,None,,001,2021_Jan_17_1332,GuessTheSound,2020.2.10,59.99638821786539,
+Initial/Doubled/Piano_A.wav,3,0,3,3,3,16.360865850013216,None,17.360648499976378,None,3,1,0.9023490000399761,17.360648499976378,None,,001,2021_Jan_17_1332,GuessTheSound,2020.2.10,59.99638821786539,
+,,,,,,18.293904049973936,None,,,,,,,,,,,,,,
