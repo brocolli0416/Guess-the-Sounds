@@ -20,9 +20,6 @@ let expName = 'GuessTheSound';  // from the Builder filename that created this s
 let expInfo = {'participant': '', 'session': '001'};
 
 // Start code blocks for 'Before Experiment'
-Tcount = 1;
-TrialCount = ("Trial " + Tcount.toString());
-
 // schedule the experiment:
 psychoJS.schedule(psychoJS.gui.DlgFromDict({
   dictionary: expInfo,
@@ -205,10 +202,12 @@ var PracticeBeginClock;
 var InstructionTxt2;
 var WelcomeContinue2;
 var WelcomeContinueKey2;
+var Tcount;
 var Practice1Clock;
 var TrialNumber;
 var PracticeSound;
 var PracticeCross;
+var TrialCount;
 var PracticeFeedbackClock;
 var Practice_resp;
 var PracticeMssg;
@@ -461,6 +460,8 @@ function experimentInit() {
   
   WelcomeContinueKey2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  Tcount = 0;
+  
   // Initialize components for Routine "Practice1"
   Practice1Clock = new util.Clock();
   TrialNumber = new visual.TextStim({
@@ -491,7 +492,9 @@ function experimentInit() {
     depth: -2.0 
   });
   
-  /* Syntax Error: Fix Python code */
+  Tcount += 1;
+  TrialCount = ("Trial " + Tcount.toString());
+  
   // Initialize components for Routine "PracticeFeedback"
   PracticeFeedbackClock = new util.Clock();
   Practice_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -1983,7 +1986,6 @@ function Practice1RoutineEnd(snapshot) {
 }
 
 
-var TrialCount;
 var message;
 var _Practice_resp_allKeys;
 var PracticeFeedbackComponents;
@@ -1995,8 +1997,6 @@ function PracticeFeedbackRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    Tcount += 1;
-    TrialCount = ("Trial " + Tcount.toString());
     if ((Correct === 3)) {
         message = "This is a NEW sound. \nThis sound has never been presented before.";
     } else {
@@ -2601,6 +2601,8 @@ function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   
