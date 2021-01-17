@@ -1477,13 +1477,13 @@ function PracticeFeedbackRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
     if ((Correct === 3)) {
-        message = "This is a NEW sound. \nThis sound has never been presented before.";
+        message = "This is a NEW sound. \nThis sound has never been played before.";
     } else {
         if ((Correct === 2)) {
-            message = "This is a SIMILAR sound. \nThis sound is similar but not identical to a previously presented sound.";
+            message = "This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound.";
         } else {
             if ((Correct === 1)) {
-                message = "This is a REPEAT sound. \nThe exact same sound has been presented previously.";
+                message = "This is a REPEAT sound. \nThe exact same sound has been played previously.";
             }
         }
     }
