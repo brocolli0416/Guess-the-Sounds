@@ -1806,7 +1806,7 @@ function Count1RoutineBegin(snapshot) {
     routineTimer.add(3.000000);
     // update component parameters for each repeat
     count += 1;
-    number = (count.toString() + "/80");
+    number = (count.toString() + "/110");
     
     // keep track of which components have finished
     Count1Components = [];
