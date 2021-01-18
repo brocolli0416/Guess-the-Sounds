@@ -217,11 +217,11 @@ var InstructionTxt2;
 var WelcomeContinue2;
 var WelcomeContinueKey2;
 var Tcount;
+var TrialCount;
 var Practice1Clock;
 var TrialNumber;
 var PracticeSound;
 var PracticeCross;
-var TrialCount;
 var PracticeFeedbackClock;
 var Practice_resp;
 var PracticeMssg;
@@ -390,7 +390,8 @@ function experimentInit() {
   
   WelcomeContinueKey2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  Tcount = 0;
+  Tcount = 1;
+  TrialCount = ("Trial " + Tcount.toString());
   
   // Initialize components for Routine "Practice1"
   Practice1Clock = new util.Clock();
@@ -421,9 +422,6 @@ function experimentInit() {
     color: new util.Color('white'),  opacity: 1,
     depth: -2.0 
   });
-  
-  Tcount += 1;
-  TrialCount = ("Trial " + Tcount.toString());
   
   // Initialize components for Routine "PracticeFeedback"
   PracticeFeedbackClock = new util.Clock();
@@ -1479,6 +1477,9 @@ function Practice1RoutineEnd(snapshot) {
       }
     }
     PracticeSound.stop();  // ensure sound has stopped at end of routine
+    Tcount += 1;
+    TrialCount = ("Trial " + Tcount.toString());
+    
     // the Routine "Practice1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     

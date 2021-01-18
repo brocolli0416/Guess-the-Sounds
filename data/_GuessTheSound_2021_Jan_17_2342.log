@@ -1,0 +1,221 @@
+1.2421 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+4.6629 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2256, 1504]. Using actual size
+6.4237 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002CC79C515C0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002CC79B93CC0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2256, 1504]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.4241 	EXP 	window1: mouseVisible = True
+6.4241 	EXP 	window1: recordFrameIntervals = False
+6.5898 	EXP 	window1: recordFrameIntervals = True
+6.7733 	EXP 	window1: recordFrameIntervals = False
+7.0730 	EXP 	Created InstructionTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.0831 	EXP 	Created WelcomContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+7.0951 	EXP 	Created VolumeBeginTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='VolumeBeginTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.1006 	EXP 	Created VolumeContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='VolumeContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.1083 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.2302 	EXP 	Sound Music set volume 0.300
+7.2405 	EXP 	Created AdjustContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='AdjustContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.2782 	EXP 	Created WelcomeTxt1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomeTxt1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.2813 	EXP 	Created ContinueKey1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ContinueKey1', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+7.2867 	EXP 	Created InstructionTxt2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.2913 	EXP 	Created WelcomeContinue2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomeContinue2', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to begin practice\n', units='height', win=Window(...), wrapWidth=1)
+7.2945 	EXP 	Created TrialNumber = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='TrialNumber', opacity=1.0, ori=0, pos=array([0. , 0.3]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.2946 	EXP 	Sound PracticeSound set volume 1.000
+7.3136 	EXP 	Created PracticeCross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='PracticeCross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.3162 	EXP 	Created PracticeMssg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='PracticeMssg', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.3179 	EXP 	Created FeedbackCross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='FeedbackCross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.3241 	EXP 	Created Continue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Continue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press the correct number on your keyboard', units='height', win=Window(...), wrapWidth=1)
+7.3310 	EXP 	Created Options = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Options', opacity=1.0, ori=0, pos=array([ 0. , -0.2]), rgb=array([255., 255., 255.]), text='1 = REPEAT\n2 = SIMILAR\n3 = NEW', units='height', win=Window(...), wrapWidth=1)
+7.3446 	EXP 	Created StartTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='StartTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.3486 	EXP 	Created ContinueStart = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ContinueStart', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to begin the task', units='height', win=Window(...), wrapWidth=1)
+7.3591 	EXP 	Created no1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='1', units='height', win=Window(...), wrapWidth=1)
+7.3624 	EXP 	Created no_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='2', units='height', win=Window(...), wrapWidth=1)
+7.3654 	EXP 	Created no_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='3', units='height', win=Window(...), wrapWidth=1)
+7.3655 	EXP 	Sound TargetSound set volume 1.000
+7.3682 	EXP 	Created Cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Cross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.3774 	EXP 	Created ItemNumber = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ItemNumber', opacity=1.0, ori=0, pos=array([0. , 0.3]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.3919 	EXP 	Created MSTQuestion = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='MSTQuestion', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='1 = REPEAT\n\n2 = SIMILAR\n\n3 = NEW\n', units='height', win=Window(...), wrapWidth=1)
+7.4111 	EXP 	Created ThankyouMssg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ThankyouMssg', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.4774 	EXP 	Created ExitTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ExitTxt', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to exit the study', units='height', win=Window(...), wrapWidth=1)
+7.4912 	EXP 	Created CodeTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='CodeTxt', opacity=1.0, ori=0, pos=array([ 0.  , -0.22]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.5375 	EXP 	CompletionCode: autoLog = True
+7.5375 	EXP 	InstructionTxt: autoDraw = True
+7.5375 	EXP 	WelcomContinue: autoDraw = True
+8.2136 	DATA 	Keypress: space
+8.2406 	EXP 	InstructionTxt: autoDraw = False
+8.2406 	EXP 	WelcomContinue: autoDraw = False
+8.2406 	EXP 	VolumeBeginTxt: autoDraw = True
+8.2406 	EXP 	VolumeContinue: autoDraw = True
+8.9165 	DATA 	Keypress: space
+8.9203 	EXP 	VolumeBeginTxt: autoDraw = False
+8.9203 	EXP 	VolumeContinue: autoDraw = False
+8.9203 	EXP 	text: autoDraw = True
+8.9203 	EXP 	AdjustContinue: autoDraw = True
+9.5378 	DATA 	Keypress: space
+9.5434 	EXP 	text: autoDraw = False
+9.5434 	EXP 	AdjustContinue: autoDraw = False
+9.5434 	EXP 	WelcomeTxt1: autoDraw = True
+9.5434 	EXP 	ContinueKey1: autoDraw = True
+10.4369 	DATA 	Keypress: space
+10.4413 	EXP 	WelcomeTxt1: autoDraw = False
+10.4413 	EXP 	ContinueKey1: autoDraw = False
+10.4413 	EXP 	InstructionTxt2: autoDraw = True
+10.4413 	EXP 	WelcomeContinue2: autoDraw = True
+11.2308 	DATA 	Keypress: space
+11.3382 	EXP 	Imported GuessSounds_conditions.xlsx as conditions, 5 conditions, 2 params
+11.3384 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+11.3387 	EXP 	New trial (rep=0, index=0): OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 3)])
+11.3530 	EXP 	InstructionTxt2: autoDraw = False
+11.3530 	EXP 	WelcomeContinue2: autoDraw = False
+11.3530 	EXP 	TrialNumber: text = 'Trial 1'
+11.3530 	EXP 	TrialNumber: autoDraw = True
+11.3530 	EXP 	PracticeCross: autoDraw = True
+13.6555 	EXP 	TrialNumber: autoDraw = False
+13.6555 	EXP 	PracticeCross: autoDraw = False
+13.6555 	EXP 	TrialNumber: autoDraw = False
+13.6555 	EXP 	PracticeCross: autoDraw = False
+13.6555 	EXP 	PracticeMssg: text = 'This is a NEW sound. \nThis sound has never been played before.'
+13.6555 	EXP 	PracticeMssg: autoDraw = True
+13.6555 	EXP 	FeedbackCross: autoDraw = True
+13.6555 	EXP 	Continue: autoDraw = True
+13.6555 	EXP 	Options: autoDraw = True
+14.5671 	EXP 	New trial (rep=0, index=1): OrderedDict([('SoundFiles3', 'Practice/Skid_B.wav'), ('Correct', 3)])
+14.5885 	DATA 	Keypress: 3
+14.5928 	EXP 	PracticeMssg: autoDraw = False
+14.5928 	EXP 	FeedbackCross: autoDraw = False
+14.5928 	EXP 	Continue: autoDraw = False
+14.5928 	EXP 	Options: autoDraw = False
+14.5928 	EXP 	TrialNumber: text = 'Trial 2'
+14.5928 	EXP 	TrialNumber: autoDraw = True
+14.5928 	EXP 	PracticeCross: autoDraw = True
+16.7066 	EXP 	TrialNumber: autoDraw = False
+16.7066 	EXP 	PracticeCross: autoDraw = False
+16.7066 	EXP 	TrialNumber: autoDraw = False
+16.7066 	EXP 	PracticeCross: autoDraw = False
+16.7066 	EXP 	PracticeMssg: text = 'This is a NEW sound. \nThis sound has never been played before.'
+16.7066 	EXP 	PracticeMssg: autoDraw = True
+16.7066 	EXP 	FeedbackCross: autoDraw = True
+16.7066 	EXP 	Continue: autoDraw = True
+16.7066 	EXP 	Options: autoDraw = True
+17.9155 	EXP 	New trial (rep=0, index=2): OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 1)])
+17.9387 	DATA 	Keypress: 3
+17.9430 	EXP 	PracticeMssg: autoDraw = False
+17.9430 	EXP 	FeedbackCross: autoDraw = False
+17.9430 	EXP 	Continue: autoDraw = False
+17.9430 	EXP 	Options: autoDraw = False
+17.9430 	EXP 	TrialNumber: text = 'Trial 3'
+17.9430 	EXP 	TrialNumber: autoDraw = True
+17.9430 	EXP 	PracticeCross: autoDraw = True
+20.2350 	EXP 	TrialNumber: autoDraw = False
+20.2350 	EXP 	PracticeCross: autoDraw = False
+20.2350 	EXP 	TrialNumber: autoDraw = False
+20.2350 	EXP 	PracticeCross: autoDraw = False
+20.2350 	EXP 	PracticeMssg: text = 'This is a REPEAT sound. \nThe exact same sound has been played previously.'
+20.2350 	EXP 	PracticeMssg: autoDraw = True
+20.2350 	EXP 	FeedbackCross: autoDraw = True
+20.2350 	EXP 	Continue: autoDraw = True
+20.2350 	EXP 	Options: autoDraw = True
+20.9142 	EXP 	New trial (rep=0, index=3): OrderedDict([('SoundFiles3', 'Practice/Gargle_A.wav'), ('Correct', 3)])
+20.9744 	DATA 	Keypress: 1
+20.9781 	EXP 	PracticeMssg: autoDraw = False
+20.9781 	EXP 	FeedbackCross: autoDraw = False
+20.9781 	EXP 	Continue: autoDraw = False
+20.9781 	EXP 	Options: autoDraw = False
+20.9781 	EXP 	TrialNumber: text = 'Trial 4'
+20.9781 	EXP 	TrialNumber: autoDraw = True
+20.9781 	EXP 	PracticeCross: autoDraw = True
+23.2657 	EXP 	TrialNumber: autoDraw = False
+23.2657 	EXP 	PracticeCross: autoDraw = False
+23.2657 	EXP 	TrialNumber: autoDraw = False
+23.2657 	EXP 	PracticeCross: autoDraw = False
+23.2657 	EXP 	PracticeMssg: text = 'This is a NEW sound. \nThis sound has never been played before.'
+23.2657 	EXP 	PracticeMssg: autoDraw = True
+23.2657 	EXP 	FeedbackCross: autoDraw = True
+23.2657 	EXP 	Continue: autoDraw = True
+23.2657 	EXP 	Options: autoDraw = True
+23.9997 	DATA 	Keypress: 3
+24.0144 	EXP 	New trial (rep=0, index=4): OrderedDict([('SoundFiles3', 'Practice/Gargle_B.wav'), ('Correct', 2)])
+24.0608 	EXP 	PracticeMssg: autoDraw = False
+24.0608 	EXP 	FeedbackCross: autoDraw = False
+24.0608 	EXP 	Continue: autoDraw = False
+24.0608 	EXP 	Options: autoDraw = False
+24.0608 	EXP 	TrialNumber: text = 'Trial 5'
+24.0608 	EXP 	TrialNumber: autoDraw = True
+24.0608 	EXP 	PracticeCross: autoDraw = True
+26.1399 	EXP 	TrialNumber: autoDraw = False
+26.1399 	EXP 	PracticeCross: autoDraw = False
+26.1399 	EXP 	TrialNumber: autoDraw = False
+26.1399 	EXP 	PracticeCross: autoDraw = False
+26.1399 	EXP 	PracticeMssg: text = 'This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound.'
+26.1399 	EXP 	PracticeMssg: autoDraw = True
+26.1399 	EXP 	FeedbackCross: autoDraw = True
+26.1399 	EXP 	Continue: autoDraw = True
+26.1399 	EXP 	Options: autoDraw = True
+26.8697 	DATA 	Keypress: 2
+26.8974 	EXP 	PracticeMssg: autoDraw = False
+26.8974 	EXP 	FeedbackCross: autoDraw = False
+26.8974 	EXP 	Continue: autoDraw = False
+26.8974 	EXP 	Options: autoDraw = False
+26.8974 	EXP 	StartTxt: autoDraw = True
+26.8974 	EXP 	ContinueStart: autoDraw = True
+28.4996 	EXP 	Imported GuessSounds_conditions.xlsx as conditions, 109 conditions, 2 params
+28.5002 	EXP 	Created sequence: sequential, trialTypes=109, nReps=1, seed=None
+28.5006 	EXP 	New trial (rep=0, index=0): OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Elephant_A.wav'), ('Correct', 3)])
+28.5040 	DATA 	Keypress: space
+28.5077 	EXP 	StartTxt: autoDraw = False
+28.5077 	EXP 	ContinueStart: autoDraw = False
+28.5077 	EXP 	no_3: autoDraw = True
+29.5062 	EXP 	no_2: autoDraw = True
+29.5229 	EXP 	no_3: autoDraw = False
+30.5060 	EXP 	no1: autoDraw = True
+30.5060 	EXP 	no_2: autoDraw = False
+31.4976 	EXP 	no1: autoDraw = False
+31.4976 	EXP 	no_2: autoDraw = False
+31.4976 	EXP 	no_3: autoDraw = False
+31.4976 	EXP 	ItemNumber: text = '1/110'
+31.4976 	EXP 	Cross: autoDraw = True
+31.4976 	EXP 	ItemNumber: autoDraw = True
+34.0565 	EXP 	Cross: autoDraw = False
+34.0565 	EXP 	ItemNumber: autoDraw = False
+34.0565 	EXP 	Cross: autoDraw = False
+34.0565 	EXP 	ItemNumber: autoDraw = False
+34.0565 	EXP 	MSTQuestion: autoDraw = True
+35.7316 	EXP 	New trial (rep=0, index=1): OrderedDict([('SoundFiles3', 'Initial/Repeat/ManWhistle.wav'), ('Correct', 3)])
+35.7364 	DATA 	Keypress: 3
+35.7405 	EXP 	MSTQuestion: autoDraw = False
+35.7405 	EXP 	no_3: autoDraw = True
+36.7392 	EXP 	no_2: autoDraw = True
+36.7559 	EXP 	no_3: autoDraw = False
+37.7393 	EXP 	no1: autoDraw = True
+37.7393 	EXP 	no_2: autoDraw = False
+38.7830 	EXP 	no1: autoDraw = False
+38.7830 	EXP 	no1: autoDraw = False
+38.7830 	EXP 	no_2: autoDraw = False
+38.7830 	EXP 	no_3: autoDraw = False
+38.7830 	EXP 	ItemNumber: text = '2/110'
+38.7830 	EXP 	Cross: autoDraw = True
+38.7830 	EXP 	ItemNumber: autoDraw = True
+40.5060 	EXP 	Cross: autoDraw = False
+40.5060 	EXP 	ItemNumber: autoDraw = False
+40.5060 	EXP 	Cross: autoDraw = False
+40.5060 	EXP 	ItemNumber: autoDraw = False
+40.5060 	EXP 	MSTQuestion: autoDraw = True
+41.2796 	EXP 	New trial (rep=0, index=2): OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 3)])
+41.2841 	DATA 	Keypress: 3
+41.2892 	EXP 	MSTQuestion: autoDraw = False
+41.2892 	EXP 	no_3: autoDraw = True
+42.2729 	EXP 	no_2: autoDraw = True
+42.2891 	EXP 	no_3: autoDraw = False
+43.2729 	EXP 	no1: autoDraw = True
+43.2729 	EXP 	no_2: autoDraw = False
+44.3024 	EXP 	no1: autoDraw = False
+44.3024 	EXP 	no1: autoDraw = False
+44.3024 	EXP 	no_2: autoDraw = False
+44.3024 	EXP 	no_3: autoDraw = False
+44.3024 	EXP 	ItemNumber: text = '3/110'
+44.3024 	EXP 	Cross: autoDraw = True
+44.3024 	EXP 	ItemNumber: autoDraw = True
+46.2892 	EXP 	Cross: autoDraw = False
+46.2892 	EXP 	ItemNumber: autoDraw = False
+46.2892 	EXP 	Cross: autoDraw = False
+46.2892 	EXP 	ItemNumber: autoDraw = False
+46.2892 	EXP 	MSTQuestion: autoDraw = True
+47.1958 	DATA 	Keypress: escape
+47.6303 	EXP 	window1: mouseVisible = True

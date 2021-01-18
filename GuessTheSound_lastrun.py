@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 17, 2021, at 13:36
+    on January 17, 2021, at 23:42
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -28,8 +28,6 @@ import sys  # to get file system encoding
 
 from psychopy.hardware import keyboard
 
-Tcount = 1
-TrialCount = 'Trial ' + str(Tcount)
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -81,78 +79,6 @@ else:
 
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard()
-
-# Initialize components for Routine "Study"
-StudyClock = core.Clock()
-Question = visual.TextStim(win=win, name='Question',
-    text='What is this sound?\n',
-    font='Arial',
-    pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-ResponseBox = visual.TextBox2(
-     win, text='default text', font='Arial',
-     pos=(0, -0.2),     letterHeight=0.03,
-     size=None, borderWidth=2.0,
-     color='black', colorSpace='rgb',
-     opacity=1,
-     bold=False, italic=False,
-     lineSpacing=1.0,
-     padding=None,
-     anchor='center',
-     fillColor='white', borderColor='black',
-     flipHoriz=False, flipVert=False,
-     editable=True,
-     name='ResponseBox',
-     autoLog=True,
-)
-SubmitClick = event.Mouse(win=win)
-x, y = [None, None]
-SubmitClick.mouseClock = core.Clock()
-ClickTheButton = visual.TextStim(win=win, name='ClickTheButton',
-    text="Click 'Submit' to continue.",
-    font='Arial',
-    pos=(0, -0.03), height=0.025, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-3.0);
-SoundItem = sound.Sound('A', secs=-1, stereo=True, hamming=True,
-    name='SoundItem')
-SoundItem.setVolume(1.1)
-Submit = visual.TextBox2(
-     win, text='Submit', font='Arial',
-     pos=(0, -0.4),     letterHeight=0.03,
-     size=(0.15, 0.1), borderWidth=2.0,
-     color='black', colorSpace='rgb',
-     opacity=1,
-     bold=False, italic=False,
-     lineSpacing=1.0,
-     padding=None,
-     anchor='center',
-     fillColor=None, borderColor=None,
-     flipHoriz=False, flipVert=False,
-     editable=False,
-     name='Submit',
-     autoLog=True,
-)
-
-# Initialize components for Routine "MSTSound"
-MSTSoundClock = core.Clock()
-TargetSound = sound.Sound('A', secs=-1, stereo=True, hamming=False,
-    name='TargetSound')
-TargetSound.setVolume(1)
-
-# Initialize components for Routine "MST"
-MSTClock = core.Clock()
-MSTQuestion = visual.TextStim(win=win, name='MSTQuestion',
-    text='1 = REPEAT\n\n2 = SIMILAR\n\n3 = NEW\n',
-    font='Arial',
-    pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-MSTResp = keyboard.Keyboard()
 
 # Initialize components for Routine "Welcome"
 WelcomeClock = core.Clock()
@@ -247,6 +173,8 @@ WelcomeContinue2 = visual.TextStim(win=win, name='WelcomeContinue2',
     languageStyle='LTR',
     depth=-1.0);
 WelcomeContinueKey2 = keyboard.Keyboard()
+Tcount = 1
+TrialCount = 'Trial ' + str(Tcount)
 
 # Initialize components for Routine "Practice1"
 Practice1Clock = core.Clock()
@@ -268,8 +196,6 @@ PracticeCross = visual.TextStim(win=win, name='PracticeCross',
     languageStyle='LTR',
     depth=-2.0);
 
-
-
 # Initialize components for Routine "PracticeFeedback"
 PracticeFeedbackClock = core.Clock()
 Practice_resp = keyboard.Keyboard()
@@ -288,7 +214,7 @@ FeedbackCross = visual.TextStim(win=win, name='FeedbackCross',
     languageStyle='LTR',
     depth=-3.0);
 Continue = visual.TextStim(win=win, name='Continue',
-    text='Press the right key on your keyboard',
+    text='Press the correct number on your keyboard',
     font='Arial',
     pos=(0, -0.4), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -349,6 +275,20 @@ MSTSoundClock = core.Clock()
 TargetSound = sound.Sound('A', secs=-1, stereo=True, hamming=False,
     name='TargetSound')
 TargetSound.setVolume(1)
+Cross = visual.TextStim(win=win, name='Cross',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+ItemNumber = visual.TextStim(win=win, name='ItemNumber',
+    text='default text',
+    font='Arial',
+    pos=(0, 0.3), height=0.04, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
 
 # Initialize components for Routine "MST"
 MSTClock = core.Clock()
@@ -405,345 +345,6 @@ CodeTxt = visual.TextStim(win=win, name='CodeTxt',
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
-
-# set up handler to look after randomisation of conditions etc
-trials_2 = data.TrialHandler(nReps=1, method='sequential', 
-    extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='5:85'),
-    seed=None, name='trials_2')
-thisExp.addLoop(trials_2)  # add the loop to the experiment
-thisTrial_2 = trials_2.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
-if thisTrial_2 != None:
-    for paramName in thisTrial_2:
-        exec('{} = thisTrial_2[paramName]'.format(paramName))
-
-for thisTrial_2 in trials_2:
-    currentLoop = trials_2
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
-    if thisTrial_2 != None:
-        for paramName in thisTrial_2:
-            exec('{} = thisTrial_2[paramName]'.format(paramName))
-    
-    # ------Prepare to start Routine "Study"-------
-    continueRoutine = True
-    # update component parameters for each repeat
-    ResponseBox.setText('\n\n')
-    # setup some python lists for storing info about the SubmitClick
-    SubmitClick.clicked_name = []
-    gotValidClick = False  # until a click is received
-    SoundItem.setSound(SoundFiles3, hamming=True)
-    SoundItem.setVolume(1.1, log=False)
-    # keep track of which components have finished
-    StudyComponents = [Question, ResponseBox, SubmitClick, ClickTheButton, SoundItem, Submit]
-    for thisComponent in StudyComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    StudyClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    
-    # -------Run Routine "Study"-------
-    while continueRoutine:
-        # get current time
-        t = StudyClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=StudyClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *Question* updates
-        if Question.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            Question.frameNStart = frameN  # exact frame index
-            Question.tStart = t  # local t and not account for scr refresh
-            Question.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Question, 'tStartRefresh')  # time at next scr refresh
-            Question.setAutoDraw(True)
-        
-        # *ResponseBox* updates
-        if ResponseBox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            ResponseBox.frameNStart = frameN  # exact frame index
-            ResponseBox.tStart = t  # local t and not account for scr refresh
-            ResponseBox.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(ResponseBox, 'tStartRefresh')  # time at next scr refresh
-            ResponseBox.setAutoDraw(True)
-        # *SubmitClick* updates
-        if SubmitClick.status == NOT_STARTED and t >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            SubmitClick.frameNStart = frameN  # exact frame index
-            SubmitClick.tStart = t  # local t and not account for scr refresh
-            SubmitClick.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(SubmitClick, 'tStartRefresh')  # time at next scr refresh
-            SubmitClick.status = STARTED
-            SubmitClick.mouseClock.reset()
-            prevButtonState = [0, 0, 0]  # if now button is down we will treat as 'new' click
-        if SubmitClick.status == STARTED:  # only update if started and not finished!
-            buttons = SubmitClick.getPressed()
-            if buttons != prevButtonState:  # button state changed?
-                prevButtonState = buttons
-                if sum(buttons) > 0:  # state changed to a new click
-                    # check if the mouse was inside our 'clickable' objects
-                    gotValidClick = False
-                    for obj in [Submit]:
-                        if obj.contains(SubmitClick):
-                            gotValidClick = True
-                            SubmitClick.clicked_name.append(obj.name)
-                    if gotValidClick:  # abort routine on response
-                        continueRoutine = False
-        
-        # *ClickTheButton* updates
-        if ClickTheButton.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            ClickTheButton.frameNStart = frameN  # exact frame index
-            ClickTheButton.tStart = t  # local t and not account for scr refresh
-            ClickTheButton.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(ClickTheButton, 'tStartRefresh')  # time at next scr refresh
-            ClickTheButton.setAutoDraw(True)
-        # start/stop SoundItem
-        if SoundItem.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            SoundItem.frameNStart = frameN  # exact frame index
-            SoundItem.tStart = t  # local t and not account for scr refresh
-            SoundItem.tStartRefresh = tThisFlipGlobal  # on global time
-            SoundItem.play(when=win)  # sync with win flip
-        
-        # *Submit* updates
-        if Submit.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            Submit.frameNStart = frameN  # exact frame index
-            Submit.tStart = t  # local t and not account for scr refresh
-            Submit.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Submit, 'tStartRefresh')  # time at next scr refresh
-            Submit.setAutoDraw(True)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in StudyComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "Study"-------
-    for thisComponent in StudyComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    trials_2.addData('Question.started', Question.tStartRefresh)
-    trials_2.addData('Question.stopped', Question.tStopRefresh)
-    trials_2.addData('ResponseBox.text',ResponseBox.text)
-    ResponseBox.reset()
-    trials_2.addData('ResponseBox.started', ResponseBox.tStartRefresh)
-    trials_2.addData('ResponseBox.stopped', ResponseBox.tStopRefresh)
-    # store data for trials_2 (TrialHandler)
-    trials_2.addData('SubmitClick.started', SubmitClick.tStart)
-    trials_2.addData('SubmitClick.stopped', SubmitClick.tStop)
-    trials_2.addData('ClickTheButton.started', ClickTheButton.tStartRefresh)
-    trials_2.addData('ClickTheButton.stopped', ClickTheButton.tStopRefresh)
-    SoundItem.stop()  # ensure sound has stopped at end of routine
-    trials_2.addData('SoundItem.started', SoundItem.tStartRefresh)
-    trials_2.addData('SoundItem.stopped', SoundItem.tStopRefresh)
-    #if trials.thisN == 2: # i.e. trials 0, 1, 2 have been completed
-     #   trials.finished = True # end the loop early
-     
-    
-    #if count == 60:
-    #    trials.finished = True
-    #    #trials.status = PsychoJS.Status.FINISHED
-    trials_2.addData('Submit.started', Submit.tStartRefresh)
-    trials_2.addData('Submit.stopped', Submit.tStopRefresh)
-    # the Routine "Study" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # ------Prepare to start Routine "MSTSound"-------
-    continueRoutine = True
-    # update component parameters for each repeat
-    TargetSound.setSound(SoundFiles3, hamming=False)
-    TargetSound.setVolume(1, log=False)
-    # keep track of which components have finished
-    MSTSoundComponents = [TargetSound]
-    for thisComponent in MSTSoundComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    MSTSoundClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    
-    # -------Run Routine "MSTSound"-------
-    while continueRoutine:
-        # get current time
-        t = MSTSoundClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=MSTSoundClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        # start/stop TargetSound
-        if TargetSound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            TargetSound.frameNStart = frameN  # exact frame index
-            TargetSound.tStart = t  # local t and not account for scr refresh
-            TargetSound.tStartRefresh = tThisFlipGlobal  # on global time
-            TargetSound.play(when=win)  # sync with win flip
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in MSTSoundComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "MSTSound"-------
-    for thisComponent in MSTSoundComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    TargetSound.stop()  # ensure sound has stopped at end of routine
-    trials_2.addData('TargetSound.started', TargetSound.tStartRefresh)
-    trials_2.addData('TargetSound.stopped', TargetSound.tStopRefresh)
-    # the Routine "MSTSound" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # ------Prepare to start Routine "MST"-------
-    continueRoutine = True
-    # update component parameters for each repeat
-    MSTResp.keys = []
-    MSTResp.rt = []
-    _MSTResp_allKeys = []
-    # keep track of which components have finished
-    MSTComponents = [MSTQuestion, MSTResp]
-    for thisComponent in MSTComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    MSTClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    
-    # -------Run Routine "MST"-------
-    while continueRoutine:
-        # get current time
-        t = MSTClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=MSTClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *MSTQuestion* updates
-        if MSTQuestion.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            MSTQuestion.frameNStart = frameN  # exact frame index
-            MSTQuestion.tStart = t  # local t and not account for scr refresh
-            MSTQuestion.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(MSTQuestion, 'tStartRefresh')  # time at next scr refresh
-            MSTQuestion.setAutoDraw(True)
-        
-        # *MSTResp* updates
-        waitOnFlip = False
-        if MSTResp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            MSTResp.frameNStart = frameN  # exact frame index
-            MSTResp.tStart = t  # local t and not account for scr refresh
-            MSTResp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(MSTResp, 'tStartRefresh')  # time at next scr refresh
-            MSTResp.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(MSTResp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(MSTResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if MSTResp.status == STARTED and not waitOnFlip:
-            theseKeys = MSTResp.getKeys(keyList=['1', '2', '3'], waitRelease=False)
-            _MSTResp_allKeys.extend(theseKeys)
-            if len(_MSTResp_allKeys):
-                MSTResp.keys = _MSTResp_allKeys[-1].name  # just the last key pressed
-                MSTResp.rt = _MSTResp_allKeys[-1].rt
-                # was this correct?
-                if (MSTResp.keys == str(Correct)) or (MSTResp.keys == Correct):
-                    MSTResp.corr = 1
-                else:
-                    MSTResp.corr = 0
-                # a response ends the routine
-                continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in MSTComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "MST"-------
-    for thisComponent in MSTComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    trials_2.addData('MSTQuestion.started', MSTQuestion.tStartRefresh)
-    trials_2.addData('MSTQuestion.stopped', MSTQuestion.tStopRefresh)
-    # check responses
-    if MSTResp.keys in ['', [], None]:  # No response was made
-        MSTResp.keys = None
-        # was no response the correct answer?!
-        if str(Correct).lower() == 'none':
-           MSTResp.corr = 1;  # correct non-response
-        else:
-           MSTResp.corr = 0;  # failed to respond (incorrectly)
-    # store data for trials_2 (TrialHandler)
-    trials_2.addData('MSTResp.keys',MSTResp.keys)
-    trials_2.addData('MSTResp.corr', MSTResp.corr)
-    if MSTResp.keys != None:  # we had a response
-        trials_2.addData('MSTResp.rt', MSTResp.rt)
-    trials_2.addData('MSTResp.started', MSTResp.tStartRefresh)
-    trials_2.addData('MSTResp.stopped', MSTResp.tStopRefresh)
-    # the Routine "MST" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    thisExp.nextEntry()
-    
-# completed 1 repeats of 'trials_2'
-
 
 # ------Prepare to start Routine "Welcome"-------
 continueRoutine = True
@@ -1392,20 +993,22 @@ for thisPracticeTrial in PracticeTrials:
     PracticeTrials.addData('PracticeSound.stopped', PracticeSound.tStopRefresh)
     PracticeTrials.addData('PracticeCross.started', PracticeCross.tStartRefresh)
     PracticeTrials.addData('PracticeCross.stopped', PracticeCross.tStopRefresh)
+    Tcount += 1
+    TrialCount = 'Trial ' + str(Tcount)
     # the Routine "Practice1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # ------Prepare to start Routine "PracticeFeedback"-------
     continueRoutine = True
     # update component parameters for each repeat
-    Tcount += 1
-    TrialCount = 'Trial ' + str(Tcount)
+    #Tcount += 1
+    #TrialCount = 'Trial ' + str(Tcount)
     if Correct == 3:
-        message = "This is a NEW sound. \nThis sound has never been presented before."
+        message = "This is a NEW sound. \nThis sound has never been played before."
     elif Correct == 2:
-        message = "This is a SIMILAR sound. \nThis sound is similar but not identical to a previously presented sound."
+        message = "This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound."
     elif Correct == 1:
-        message = "This is a REPEAT sound. \nThe exact same sound has been presented previously."
+        message = "This is a REPEAT sound. \nThe exact same sound has been played previously."
     Practice_resp.keys = []
     Practice_resp.rt = []
     _Practice_resp_allKeys = []
@@ -1658,7 +1261,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='5:85'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='5:115'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1679,7 +1282,7 @@ for thisTrial in trials:
     routineTimer.add(3.000000)
     # update component parameters for each repeat
     count += 1
-    number = str(count) + "/80"
+    number = str(count) + "/110"
     
     
     # keep track of which components have finished
@@ -1790,8 +1393,9 @@ for thisTrial in trials:
     # update component parameters for each repeat
     TargetSound.setSound(SoundFiles3, hamming=False)
     TargetSound.setVolume(1, log=False)
+    ItemNumber.setText(number)
     # keep track of which components have finished
-    MSTSoundComponents = [TargetSound]
+    MSTSoundComponents = [TargetSound, Cross, ItemNumber]
     for thisComponent in MSTSoundComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1821,6 +1425,40 @@ for thisTrial in trials:
             TargetSound.tStartRefresh = tThisFlipGlobal  # on global time
             TargetSound.play(when=win)  # sync with win flip
         
+        # *Cross* updates
+        if Cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            Cross.frameNStart = frameN  # exact frame index
+            Cross.tStart = t  # local t and not account for scr refresh
+            Cross.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Cross, 'tStartRefresh')  # time at next scr refresh
+            Cross.setAutoDraw(True)
+        if Cross.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Cross.tStartRefresh + TargetSound.getDuration()-frameTolerance:
+                # keep track of stop time/frame for later
+                Cross.tStop = t  # not accounting for scr refresh
+                Cross.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(Cross, 'tStopRefresh')  # time at next scr refresh
+                Cross.setAutoDraw(False)
+        
+        # *ItemNumber* updates
+        if ItemNumber.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            ItemNumber.frameNStart = frameN  # exact frame index
+            ItemNumber.tStart = t  # local t and not account for scr refresh
+            ItemNumber.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(ItemNumber, 'tStartRefresh')  # time at next scr refresh
+            ItemNumber.setAutoDraw(True)
+        if ItemNumber.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > ItemNumber.tStartRefresh + TargetSound.getDuration()-frameTolerance:
+                # keep track of stop time/frame for later
+                ItemNumber.tStop = t  # not accounting for scr refresh
+                ItemNumber.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(ItemNumber, 'tStopRefresh')  # time at next scr refresh
+                ItemNumber.setAutoDraw(False)
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -1845,6 +1483,10 @@ for thisTrial in trials:
     TargetSound.stop()  # ensure sound has stopped at end of routine
     trials.addData('TargetSound.started', TargetSound.tStartRefresh)
     trials.addData('TargetSound.stopped', TargetSound.tStopRefresh)
+    trials.addData('Cross.started', Cross.tStartRefresh)
+    trials.addData('Cross.stopped', Cross.tStopRefresh)
+    trials.addData('ItemNumber.started', ItemNumber.tStartRefresh)
+    trials.addData('ItemNumber.stopped', ItemNumber.tStopRefresh)
     # the Routine "MSTSound" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
