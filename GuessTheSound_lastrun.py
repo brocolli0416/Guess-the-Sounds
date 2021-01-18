@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 17, 2021, at 23:42
+    on January 18, 2021, at 12:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -141,7 +141,7 @@ AdjustContinue = visual.TextStim(win=win, name='AdjustContinue',
 # Initialize components for Routine "Welcome1"
 Welcome1Clock = core.Clock()
 WelcomeTxt1 = visual.TextStim(win=win, name='WelcomeTxt1',
-    text="In this task, you will be presented with different enviornmental sounds one by one. For each sound you hear, please indicate whether it is a NEW sound that has never been presented before, a REPEAT of a previously presented sound, or a sound that is SIMILAR but different from a previously presented sound. \n\nPress '1' on your keyboard for REPEAT, '2' for SIMILAR, and '3' for NEW.",
+    text="In this task, you will be presented with different enviornmental sounds one by one. \nOccasionally, you will hear the same sound being played for the second time. \n\nFor each sound you hear, please indicate whether it is a NEW sound that has never been presented before, a REPEAT of a previously presented sound, or a sound that is SIMILAR but different from a previously presented sound. \n\nPress '1' on your keyboard for REPEAT, '2' for SIMILAR, and '3' for NEW.",
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -231,7 +231,7 @@ Options = visual.TextStim(win=win, name='Options',
 # Initialize components for Routine "Start"
 StartClock = core.Clock()
 StartTxt = visual.TextStim(win=win, name='StartTxt',
-    text='This is the end of practice.\n\n\nWe will now begin the actual task.\nThere are 80 items in total. Listen to each sound carefully as they will play once.',
+    text='This is the end of practice.\n\n\nWe will now begin the actual task.\nThere are 110 items in total. Listen to each sound carefully as they will play once.',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -272,7 +272,7 @@ no_3 = visual.TextStim(win=win, name='no_3',
 
 # Initialize components for Routine "MSTSound"
 MSTSoundClock = core.Clock()
-TargetSound = sound.Sound('A', secs=-1, stereo=True, hamming=False,
+TargetSound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
     name='TargetSound')
 TargetSound.setVolume(1)
 Cross = visual.TextStim(win=win, name='Cross',
@@ -293,7 +293,7 @@ ItemNumber = visual.TextStim(win=win, name='ItemNumber',
 # Initialize components for Routine "MST"
 MSTClock = core.Clock()
 MSTQuestion = visual.TextStim(win=win, name='MSTQuestion',
-    text='1 = REPEAT\n\n2 = SIMILAR\n\n3 = NEW\n',
+    text='(Press the corresponding number on your keyboard)\n\n1 = REPEAT (The exact same sound has been played before)\n\n2 = SIMILAR (This sound is similar but not identical to a previously played sound)\n\n3 = NEW (This is my first time hearing this sound in this experiment)\n',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -878,7 +878,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 PracticeTrials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='0:5'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='0'),
     seed=None, name='PracticeTrials')
 thisExp.addLoop(PracticeTrials)  # add the loop to the experiment
 thisPracticeTrial = PracticeTrials.trialList[0]  # so we can initialise stimuli with some values
@@ -1261,7 +1261,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='5:115'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='75:115'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1391,7 +1391,7 @@ for thisTrial in trials:
     # ------Prepare to start Routine "MSTSound"-------
     continueRoutine = True
     # update component parameters for each repeat
-    TargetSound.setSound(SoundFiles3, hamming=False)
+    TargetSound.setSound(SoundFiles3, hamming=True)
     TargetSound.setVolume(1, log=False)
     ItemNumber.setText(number)
     # keep track of which components have finished
@@ -1433,14 +1433,6 @@ for thisTrial in trials:
             Cross.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(Cross, 'tStartRefresh')  # time at next scr refresh
             Cross.setAutoDraw(True)
-        if Cross.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Cross.tStartRefresh + TargetSound.getDuration()-frameTolerance:
-                # keep track of stop time/frame for later
-                Cross.tStop = t  # not accounting for scr refresh
-                Cross.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(Cross, 'tStopRefresh')  # time at next scr refresh
-                Cross.setAutoDraw(False)
         
         # *ItemNumber* updates
         if ItemNumber.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
