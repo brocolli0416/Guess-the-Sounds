@@ -1,6 +1,0 @@
-VolumeContinueKey.keys,VolumeContinueKey.rt,ContinueResp.keys,ContinueResp.rt,WelcomeContinueKey2.keys,WelcomeContinueKey2.rt,Practice_resp.keys,Practice_resp.corr,Practice_resp.rt,PracticeTrials.thisRepN,PracticeTrials.thisTrialN,PracticeTrials.thisN,PracticeTrials.thisIndex,PracticeTrials.ran,SoundFiles3,Correct,participant,session,date,expName,psychopyVersion,OS,frameRate
-space,1.399175,space,0.96211,space,1.18877,2,0,9.227405,0,0,0,0,1,Practice/Seagull_A.wav,3,5f22b9e2ab7345037a93fe6c,001,2021-01-17_19h18.34.961,GuessTheSound,2020.2.10,Win32,60
-,,,,,,2,0,2.24712,0,1,1,1,1,Practice/Skid_B.wav,3,5f22b9e2ab7345037a93fe6c,001,2021-01-17_19h18.34.961,GuessTheSound,2020.2.10,Win32,60
-,,,,,,2,0,0.947265,0,2,2,2,1,Practice/Seagull_A.wav,1,5f22b9e2ab7345037a93fe6c,001,2021-01-17_19h18.34.961,GuessTheSound,2020.2.10,Win32,60
-,,,,,,2,0,0.747995,0,3,3,3,1,Practice/Gargle_A.wav,3,5f22b9e2ab7345037a93fe6c,001,2021-01-17_19h18.34.961,GuessTheSound,2020.2.10,Win32,60
-,,,,,,2,1,1.512715,0,4,4,4,1,Practice/Gargle_B.wav,2,5f22b9e2ab7345037a93fe6c,001,2021-01-17_19h18.34.961,GuessTheSound,2020.2.10,Win32,60

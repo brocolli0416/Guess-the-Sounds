@@ -1,5 +1,0 @@
-﻿SoundFiles3,Correct,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,TargetSound.started,TargetSound.stopped,MSTQuestion.started,MSTQuestion.stopped,MSTResp.keys,MSTResp.corr,MSTResp.rt,MSTResp.started,MSTResp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-Test/Foils/Bullfrog.wav,3,0,0,0,77,9.156288839923219,None,12.056139099993743,None,3,1,1.407531100034248,12.056139099993743,None,,001,2021_Jan_17_1330,GuessTheSound,2020.2.10,60.0134910377018,
-Test/Foils/Buzz.wav,1,0,1,1,55,13.523262589983643,None,15.325208500027657,None,3,0,1.1627037999569438,15.325208500027657,None,,001,2021_Jan_17_1330,GuessTheSound,2020.2.10,60.0134910377018,
-Siren_C.wav,2,0,2,2,28,16.523006359999997,None,18.506444700004067,None,3,0,0.9918023000354879,18.506444700004067,None,,001,2021_Jan_17_1330,GuessTheSound,2020.2.10,60.0134910377018,
-,,,,,,19.556447589991148,None,,,,,,,,,,,,,,

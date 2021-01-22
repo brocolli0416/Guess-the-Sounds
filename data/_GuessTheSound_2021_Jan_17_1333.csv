@@ -1,4 +1,0 @@
-﻿SoundFiles3,Correct,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,TargetSound.started,TargetSound.stopped,MSTQuestion.started,MSTQuestion.stopped,MSTResp.keys,MSTResp.corr,MSTResp.rt,MSTResp.started,MSTResp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-Initial/Doubled/Coin_A.wav,3,0,0,0,0,8.510246540093794,None,9.636679600051139,None,3,1,1.0102438000030816,9.636679600051139,None,,001,2021_Jan_17_1333,GuessTheSound,2020.2.10,60.006756756374436,
-Initial/Repeat/ManWhistle.wav,3,0,1,1,1,10.677794840035494,None,11.810966100019868,None,3,1,1.431661200011149,11.810966100019868,None,,001,2021_Jan_17_1333,GuessTheSound,2020.2.10,60.006756756374436,
-,,,,,,13.260881840041838,None,,,,,,,,,,,,,,
