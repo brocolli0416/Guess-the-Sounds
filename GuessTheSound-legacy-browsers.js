@@ -1424,7 +1424,7 @@ function HeadphonePlayRoutineBegin(snapshot) {
     secs: -1,
     });
     CheckSound.setVolume(1);
-    counter = 1;
+    counter += 1;
     checkcount = (counter.toString() + "/6");
     
     CheckTrial.setText(checkcount);
@@ -2360,9 +2360,9 @@ function PracticeFeedbackRoutineEnd(snapshot) {
       }
     });
     if ((Practice_resp.corr === 1)) {
-        feedback = CORRECT;
+        feedback = "CORRECT";
     } else {
-        feedback = INCORRECT;
+        feedback = "INCORRECT";
     }
     
     // was no response the correct answer?!
