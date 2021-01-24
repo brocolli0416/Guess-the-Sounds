@@ -45,10 +45,10 @@ flowScheduler.add(VolumeAdjustmentRoutineEnd());
 flowScheduler.add(HeadphoneCheckRoutineBegin());
 flowScheduler.add(HeadphoneCheckRoutineEachFrame());
 flowScheduler.add(HeadphoneCheckRoutineEnd());
-const HeadphoneTrialsLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(HeadphoneTrialsLoopBegin, HeadphoneTrialsLoopScheduler);
-flowScheduler.add(HeadphoneTrialsLoopScheduler);
-flowScheduler.add(HeadphoneTrialsLoopEnd);
+const trials_2LoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(trials_2LoopBegin, trials_2LoopScheduler);
+flowScheduler.add(trials_2LoopScheduler);
+flowScheduler.add(trials_2LoopEnd);
 flowScheduler.add(Welcome1RoutineBegin());
 flowScheduler.add(Welcome1RoutineEachFrame());
 flowScheduler.add(Welcome1RoutineEnd());
@@ -103,6 +103,7 @@ psychoJS.start({
     {'name': 'Initial/Doubled/Cough_A.wav', 'path': 'Initial/Doubled/Cough_A.wav'},
     {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
     {'name': 'Baby_A.wav', 'path': 'Baby_A.wav'},
+    {'name': 'Initial/Repeat/Bagpipe.wav', 'path': 'Initial/Repeat/Bagpipe.wav'},
     {'name': 'Initial/Repeat/IceDrop.wav', 'path': 'Initial/Repeat/IceDrop.wav'},
     {'name': 'Practice/Skid_B.wav', 'path': 'Practice/Skid_B.wav'},
     {'name': 'Bird_C.wav', 'path': 'Bird_C.wav'},
@@ -112,8 +113,7 @@ psychoJS.start({
     {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
     {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
     {'name': 'Initial/Repeat/Whistle_A.wav', 'path': 'Initial/Repeat/Whistle_A.wav'},
-    {'name': 'Coin_C.wav', 'path': 'Coin_C.wav'},
-    {'name': 'Initial/NoRepeat/Puff_A.wav', 'path': 'Initial/NoRepeat/Puff_A.wav'},
+    {'name': 'ManWhistle_C.wav', 'path': 'ManWhistle_C.wav'},
     {'name': 'Initial/NoRepeat/Sleighbells_B.wav', 'path': 'Initial/NoRepeat/Sleighbells_B.wav'},
     {'name': 'Test/Foils/Bird.wav', 'path': 'Test/Foils/Bird.wav'},
     {'name': 'Initial/Repeat/Pour.wav', 'path': 'Initial/Repeat/Pour.wav'},
@@ -122,19 +122,18 @@ psychoJS.start({
     {'name': 'Dog_C.wav', 'path': 'Dog_C.wav'},
     {'name': 'Bird_D.wav', 'path': 'Bird_D.wav'},
     {'name': 'Initial/Doubled/Growl_A.wav', 'path': 'Initial/Doubled/Growl_A.wav'},
-    {'name': 'Coin_B.wav', 'path': 'Coin_B.wav'},
     {'name': 'Baby_C.wav', 'path': 'Baby_C.wav'},
     {'name': 'Initial/Doubled/CarStart_A.wav', 'path': 'Initial/Doubled/CarStart_A.wav'},
     {'name': 'Practice/Gargle_B.wav', 'path': 'Practice/Gargle_B.wav'},
     {'name': 'Chomp_B.wav', 'path': 'Chomp_B.wav'},
     {'name': 'Initial/Doubled/Chime_A.wav', 'path': 'Initial/Doubled/Chime_A.wav'},
-    {'name': 'Growl_C.wav', 'path': 'Growl_C.wav'},
     {'name': 'Whistle_C.wav', 'path': 'Whistle_C.wav'},
     {'name': 'Headphone/t2_2.wav', 'path': 'Headphone/t2_2.wav'},
     {'name': 'Headphone/t3_2.wav', 'path': 'Headphone/t3_2.wav'},
     {'name': 'Initial/Doubled/Dog_A.wav', 'path': 'Initial/Doubled/Dog_A.wav'},
     {'name': 'Initial/Doubled/Piano_A.wav', 'path': 'Initial/Doubled/Piano_A.wav'},
     {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'},
+    {'name': 'ManWhistle_D.wav', 'path': 'ManWhistle_D.wav'},
     {'name': 'Initial/NoRepeat/Helicopter_A.wav', 'path': 'Initial/NoRepeat/Helicopter_A.wav'},
     {'name': 'Test/Foils/Camera.wav', 'path': 'Test/Foils/Camera.wav'},
     {'name': 'Initial/Doubled/Cat_A.wav', 'path': 'Initial/Doubled/Cat_A.wav'},
@@ -149,15 +148,16 @@ psychoJS.start({
     {'name': 'Practice/Gargle_A.wav', 'path': 'Practice/Gargle_A.wav'},
     {'name': 'Headphone/t1_1.wav', 'path': 'Headphone/t1_1.wav'},
     {'name': 'Initial/NoRepeat/Toilet_B.wav', 'path': 'Initial/NoRepeat/Toilet_B.wav'},
+    {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
     {'name': 'Test/Foils/Bullfrog.wav', 'path': 'Test/Foils/Bullfrog.wav'},
     {'name': 'Laugh_C.wav', 'path': 'Laugh_C.wav'},
-    {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
     {'name': 'Initial/Repeat/Airplane_B.wav', 'path': 'Initial/Repeat/Airplane_B.wav'},
     {'name': 'Initial/Doubled/Clap_A.wav', 'path': 'Initial/Doubled/Clap_A.wav'},
     {'name': 'Initial/Repeat/Sneeze_B.wav', 'path': 'Initial/Repeat/Sneeze_B.wav'},
     {'name': 'Test/Foils/Buzz.wav', 'path': 'Test/Foils/Buzz.wav'},
     {'name': 'Growl_B.wav', 'path': 'Growl_B.wav'},
     {'name': 'Goat_A.wav', 'path': 'Goat_A.wav'},
+    {'name': 'Growl_D.wav', 'path': 'Growl_D.wav'},
     {'name': 'Practice/Seagull_A.wav', 'path': 'Practice/Seagull_A.wav'},
     {'name': 'Initial/Doubled/HairDryer_A.wav', 'path': 'Initial/Doubled/HairDryer_A.wav'},
     {'name': 'Laugh_D.wav', 'path': 'Laugh_D.wav'},
@@ -258,8 +258,6 @@ var StartTxt;
 var StartTast;
 var ContinueStart;
 var Count1Clock;
-var no1;
-var no_2;
 var no_3;
 var MSTSoundClock;
 var TargetSound;
@@ -386,7 +384,7 @@ function experimentInit() {
     secs: (- 1),
     });
   CheckSound.setVolume(1);
-  counter = 1;
+  counter = 0;
   checkcount = (counter.toString() + "/6");
   
   QuestionTxt = new visual.TextStim({
@@ -637,37 +635,15 @@ function experimentInit() {
   
   // Initialize components for Routine "Count1"
   Count1Clock = new util.Clock();
-  no1 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'no1',
-    text: '1',
-    font: 'Arial',
-    units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('white'),  opacity: 1,
-    depth: 0.0 
-  });
-  
-  no_2 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'no_2',
-    text: '2',
-    font: 'Arial',
-    units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
-    color: new util.Color('white'),  opacity: 1,
-    depth: -2.0 
-  });
-  
   no_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'no_3',
-    text: '3',
+    text: '+',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -3.0 
+    depth: -1.0 
   });
   
   // Initialize components for Routine "MSTSound"
@@ -681,7 +657,7 @@ function experimentInit() {
   Cross = new visual.TextStim({
     win: psychoJS.window,
     name: 'Cross',
-    text: '+',
+    text: '?',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
@@ -1287,40 +1263,40 @@ function HeadphoneCheckRoutineEnd(snapshot) {
 }
 
 
-var HeadphoneTrials;
+var trials_2;
 var currentLoop;
-function HeadphoneTrialsLoopBegin(HeadphoneTrialsLoopScheduler) {
+function trials_2LoopBegin(trials_2LoopScheduler) {
   // set up handler to look after randomisation of conditions etc
-  HeadphoneTrials = new TrialHandler({
+  trials_2 = new TrialHandler({
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'Headphone_check.xlsx', '0:6'),
-    seed: undefined, name: 'HeadphoneTrials'
+    trialList: 'Headphone_check.xlsx',
+    seed: undefined, name: 'trials_2'
   });
-  psychoJS.experiment.addLoop(HeadphoneTrials); // add the loop to the experiment
-  currentLoop = HeadphoneTrials;  // we're now the current loop
+  psychoJS.experiment.addLoop(trials_2); // add the loop to the experiment
+  currentLoop = trials_2;  // we're now the current loop
 
   // Schedule all the trials in the trialList:
-  HeadphoneTrials.forEach(function() {
-    const snapshot = HeadphoneTrials.getSnapshot();
+  trials_2.forEach(function() {
+    const snapshot = trials_2.getSnapshot();
 
-    HeadphoneTrialsLoopScheduler.add(importConditions(snapshot));
-    HeadphoneTrialsLoopScheduler.add(HeadphonePlayRoutineBegin(snapshot));
-    HeadphoneTrialsLoopScheduler.add(HeadphonePlayRoutineEachFrame(snapshot));
-    HeadphoneTrialsLoopScheduler.add(HeadphonePlayRoutineEnd(snapshot));
-    HeadphoneTrialsLoopScheduler.add(HeadphoneFeedbackRoutineBegin(snapshot));
-    HeadphoneTrialsLoopScheduler.add(HeadphoneFeedbackRoutineEachFrame(snapshot));
-    HeadphoneTrialsLoopScheduler.add(HeadphoneFeedbackRoutineEnd(snapshot));
-    HeadphoneTrialsLoopScheduler.add(endLoopIteration(HeadphoneTrialsLoopScheduler, snapshot));
+    trials_2LoopScheduler.add(importConditions(snapshot));
+    trials_2LoopScheduler.add(HeadphonePlayRoutineBegin(snapshot));
+    trials_2LoopScheduler.add(HeadphonePlayRoutineEachFrame(snapshot));
+    trials_2LoopScheduler.add(HeadphonePlayRoutineEnd(snapshot));
+    trials_2LoopScheduler.add(HeadphoneFeedbackRoutineBegin(snapshot));
+    trials_2LoopScheduler.add(HeadphoneFeedbackRoutineEachFrame(snapshot));
+    trials_2LoopScheduler.add(HeadphoneFeedbackRoutineEnd(snapshot));
+    trials_2LoopScheduler.add(endLoopIteration(trials_2LoopScheduler, snapshot));
   });
 
   return Scheduler.Event.NEXT;
 }
 
 
-function HeadphoneTrialsLoopEnd() {
-  psychoJS.experiment.removeLoop(HeadphoneTrials);
+function trials_2LoopEnd() {
+  psychoJS.experiment.removeLoop(trials_2);
 
   return Scheduler.Event.NEXT;
 }
@@ -2613,15 +2589,13 @@ function Count1RoutineBegin(snapshot) {
     Count1Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(3.000000);
+    routineTimer.add(1.500000);
     // update component parameters for each repeat
     count += 1;
     number = (count.toString() + "/110");
     
     // keep track of which components have finished
     Count1Components = [];
-    Count1Components.push(no1);
-    Count1Components.push(no_2);
     Count1Components.push(no_3);
     
     Count1Components.forEach( function(thisComponent) {
@@ -2641,34 +2615,6 @@ function Count1RoutineEachFrame(snapshot) {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *no1* updates
-    if (t >= 2 && no1.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      no1.tStart = t;  // (not accounting for frame time here)
-      no1.frameNStart = frameN;  // exact frame index
-      
-      no1.setAutoDraw(true);
-    }
-
-    frameRemains = 2 + 1 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if ((no1.status === PsychoJS.Status.STARTED || no1.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
-      no1.setAutoDraw(false);
-    }
-    
-    // *no_2* updates
-    if (t >= 1 && no_2.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      no_2.tStart = t;  // (not accounting for frame time here)
-      no_2.frameNStart = frameN;  // exact frame index
-      
-      no_2.setAutoDraw(true);
-    }
-
-    frameRemains = 1 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if ((no_2.status === PsychoJS.Status.STARTED || no_2.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
-      no_2.setAutoDraw(false);
-    }
-    
     // *no_3* updates
     if (t >= 0.0 && no_3.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
@@ -2678,7 +2624,7 @@ function Count1RoutineEachFrame(snapshot) {
       no_3.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if ((no_3.status === PsychoJS.Status.STARTED || no_3.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
       no_3.setAutoDraw(false);
     }
@@ -2783,7 +2729,7 @@ function MSTSoundRoutineEachFrame(snapshot) {
       Cross.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + TargetSound.getDuration() - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + (TargetSound.getDuration() + 0.5) - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if ((Cross.status === PsychoJS.Status.STARTED || Cross.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
       Cross.setAutoDraw(false);
     }
@@ -2797,7 +2743,7 @@ function MSTSoundRoutineEachFrame(snapshot) {
       ItemNumber.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + TargetSound.getDuration() - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + (TargetSound.getDuration() + 0.5) - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if ((ItemNumber.status === PsychoJS.Status.STARTED || ItemNumber.status === PsychoJS.Status.FINISHED) && t >= frameRemains) {
       ItemNumber.setAutoDraw(false);
     }

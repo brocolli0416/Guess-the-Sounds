@@ -1069,8 +1069,8 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((Practice_resp.corr === 1)) {&amp;#10;    feedback = CORRECT;&amp;#10;} else {&amp;#10;    feedback = INCORRECT;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if Practice_resp.corr == 1:&amp;#10;    feedback = CORRECT&amp;#10;else:&amp;#10;    feedback = INCORRECT" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((Practice_resp.corr === 1)) {&amp;#10;    feedback = &quot;CORRECT&quot;;&amp;#10;} else {&amp;#10;    feedback = &quot;INCORRECT&quot;;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if Practice_resp.corr == 1:&amp;#10;    feedback = 'CORRECT'&amp;#10;else:&amp;#10;    feedback = 'INCORRECT'" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code" valType="code"/>
       </CodeComponent>
@@ -1341,10 +1341,10 @@
       <CodeComponent name="code_4">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="counter = 1&amp;#10;checkcount = str(counter) + &quot;/6&quot;" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="counter = 1;&amp;#10;checkcount = (counter.toString() + &quot;/6&quot;);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="counter = 1;&amp;#10;checkcount = (counter.toString() + &quot;/6&quot;);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="counter = 1&amp;#10;checkcount = str(counter) + &quot;/6&quot;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="counter = 0&amp;#10;checkcount = str(counter) + &quot;/6&quot;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="counter = 0;&amp;#10;checkcount = (counter.toString() + &quot;/6&quot;);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="counter += 1;&amp;#10;checkcount = (counter.toString() + &quot;/6&quot;);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="counter += 1&amp;#10;checkcount = str(counter) + &quot;/6&quot;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -1572,20 +1572,6 @@
     <Routine name="StartAdjustment"/>
     <Routine name="VolumeAdjustment"/>
     <Routine name="HeadphoneCheck"/>
-    <LoopInitiator loopType="TrialHandler" name="HeadphoneTrials">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('File', 'Headphone/t1_1.wav'), ('Correct', 1)]), OrderedDict([('File', 'Headphone/t1_2.wav'), ('Correct', 1)]), OrderedDict([('File', 'Headphone/t2_1.wav'), ('Correct', 2)]), OrderedDict([('File', 'Headphone/t2_2.wav'), ('Correct', 2)]), OrderedDict([('File', 'Headphone/t3_1.wav'), ('Correct', 3)]), OrderedDict([('File', 'Headphone/t3_2.wav'), ('Correct', 3)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="Headphone_check.xlsx" valType="str"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="HeadphoneTrials" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
-    <Routine name="HeadphonePlay"/>
-    <Routine name="HeadphoneFeedback"/>
-    <LoopTerminator name="HeadphoneTrials"/>
     <Routine name="Welcome1"/>
     <Routine name="Welcome2"/>
     <Routine name="PracticeBegin"/>
