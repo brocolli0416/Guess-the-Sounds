@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 23, 2021, at 14:26
+    on January 23, 2021, at 23:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -287,27 +287,13 @@ ContinueStart = visual.TextStim(win=win, name='ContinueStart',
 
 # Initialize components for Routine "Count1"
 Count1Clock = core.Clock()
-no1 = visual.TextStim(win=win, name='no1',
-    text='1',
-    font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-no_2 = visual.TextStim(win=win, name='no_2',
-    text='2',
-    font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
 no_3 = visual.TextStim(win=win, name='no_3',
-    text='3',
+    text='+',
     font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-1.0);
 
 # Initialize components for Routine "MSTSound"
 MSTSoundClock = core.Clock()
@@ -315,7 +301,7 @@ TargetSound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
     name='TargetSound')
 TargetSound.setVolume(1)
 Cross = visual.TextStim(win=win, name='Cross',
-    text='+',
+    text='?',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -1120,7 +1106,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 PracticeTrials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='0:5'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='0'),
     seed=None, name='PracticeTrials')
 thisExp.addLoop(PracticeTrials)  # add the loop to the experiment
 thisPracticeTrial = PracticeTrials.trialList[0]  # so we can initialise stimuli with some values
@@ -1577,7 +1563,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='5:115'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='8:115'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1595,14 +1581,14 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "Count1"-------
     continueRoutine = True
-    routineTimer.add(3.000000)
+    routineTimer.add(1.500000)
     # update component parameters for each repeat
     count += 1
     number = str(count) + "/110"
     
     
     # keep track of which components have finished
-    Count1Components = [no1, no_2, no_3]
+    Count1Components = [no_3]
     for thisComponent in Count1Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1625,40 +1611,6 @@ for thisTrial in trials:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *no1* updates
-        if no1.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
-            # keep track of start time/frame for later
-            no1.frameNStart = frameN  # exact frame index
-            no1.tStart = t  # local t and not account for scr refresh
-            no1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(no1, 'tStartRefresh')  # time at next scr refresh
-            no1.setAutoDraw(True)
-        if no1.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > no1.tStartRefresh + 1-frameTolerance:
-                # keep track of stop time/frame for later
-                no1.tStop = t  # not accounting for scr refresh
-                no1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(no1, 'tStopRefresh')  # time at next scr refresh
-                no1.setAutoDraw(False)
-        
-        # *no_2* updates
-        if no_2.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
-            # keep track of start time/frame for later
-            no_2.frameNStart = frameN  # exact frame index
-            no_2.tStart = t  # local t and not account for scr refresh
-            no_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(no_2, 'tStartRefresh')  # time at next scr refresh
-            no_2.setAutoDraw(True)
-        if no_2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > no_2.tStartRefresh + 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                no_2.tStop = t  # not accounting for scr refresh
-                no_2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(no_2, 'tStopRefresh')  # time at next scr refresh
-                no_2.setAutoDraw(False)
-        
         # *no_3* updates
         if no_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1669,7 +1621,7 @@ for thisTrial in trials:
             no_3.setAutoDraw(True)
         if no_3.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > no_3.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > no_3.tStartRefresh + 1.5-frameTolerance:
                 # keep track of stop time/frame for later
                 no_3.tStop = t  # not accounting for scr refresh
                 no_3.frameNStop = frameN  # exact frame index
@@ -1697,10 +1649,6 @@ for thisTrial in trials:
     for thisComponent in Count1Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials.addData('no1.started', no1.tStartRefresh)
-    trials.addData('no1.stopped', no1.tStopRefresh)
-    trials.addData('no_2.started', no_2.tStartRefresh)
-    trials.addData('no_2.stopped', no_2.tStopRefresh)
     trials.addData('no_3.started', no_3.tStartRefresh)
     trials.addData('no_3.stopped', no_3.tStopRefresh)
     
@@ -1751,7 +1699,7 @@ for thisTrial in trials:
             Cross.setAutoDraw(True)
         if Cross.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > Cross.tStartRefresh + TargetSound.getDuration()-frameTolerance:
+            if tThisFlipGlobal > Cross.tStartRefresh + TargetSound.getDuration() + 0.5-frameTolerance:
                 # keep track of stop time/frame for later
                 Cross.tStop = t  # not accounting for scr refresh
                 Cross.frameNStop = frameN  # exact frame index
@@ -1768,7 +1716,7 @@ for thisTrial in trials:
             ItemNumber.setAutoDraw(True)
         if ItemNumber.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > ItemNumber.tStartRefresh + TargetSound.getDuration()-frameTolerance:
+            if tThisFlipGlobal > ItemNumber.tStartRefresh + TargetSound.getDuration() + 0.5-frameTolerance:
                 # keep track of stop time/frame for later
                 ItemNumber.tStop = t  # not accounting for scr refresh
                 ItemNumber.frameNStop = frameN  # exact frame index

@@ -280,30 +280,6 @@
       </TextComponent>
     </Routine>
     <Routine name="Count1">
-      <TextComponent name="no1">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
-        <Param name="name" updates="None" val="no1" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="2" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="1" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="1" valType="extendedStr"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
       <CodeComponent name="AddCount">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -321,30 +297,6 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="AddCount" valType="code"/>
       </CodeComponent>
-      <TextComponent name="no_2">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
-        <Param name="name" updates="None" val="no_2" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="1" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="2" valType="extendedStr"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
       <TextComponent name="no_3">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -353,7 +305,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
         <Param name="name" updates="None" val="no_3" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -363,9 +315,9 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="1.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="3" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="+" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1223,9 +1175,9 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="$TargetSound.getDuration()" valType="code"/>
+        <Param name="stopVal" updates="constant" val="$TargetSound.getDuration() + 0.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="+" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="?" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1247,7 +1199,7 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="$TargetSound.getDuration()" valType="code"/>
+        <Param name="stopVal" updates="constant" val="$TargetSound.getDuration() + 0.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="set every repeat" val="$number" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -1576,7 +1528,7 @@
     <Routine name="Welcome2"/>
     <Routine name="PracticeBegin"/>
     <LoopInitiator loopType="TrialHandler" name="PracticeTrials">
-      <Param name="Selected rows" updates="None" val="0:5" valType="str"/>
+      <Param name="Selected rows" updates="None" val="0" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Skid_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Elephant_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/ManWhistle.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Piano_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Siren_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bird.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cat_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Baby_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Piano_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Sleighbells_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Pour.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/HairDryer_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_A.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/DialTone.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Siren_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Sneeze_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Bird_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Pour_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Camera.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Snore_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Siren_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Piano_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Pour_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Bird_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Airplane_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Donkey.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chicken_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Laugh_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cough_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chomp_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/CarStart_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Cow.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Dog_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Laugh_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Cough_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/IceDrop.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Bubbles_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Dog_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Laugh_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Cough_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Coin_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Guitar_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Dog_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Goat_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Coin_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Thunder_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Faucet_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Phone_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Growl_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Howl.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Goat_A.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Coin_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Whistle_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Puff_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Phone_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Growl_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Thunder_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Howl.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Goat_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Faucet_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Whistle_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Footsteps_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Growl_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Phone_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Howl.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Thunder_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Whistle_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Faucet_A.wav'), ('Correct', 1)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="GuessSounds_conditions.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
@@ -1592,7 +1544,7 @@
     <LoopTerminator name="PracticeTrials"/>
     <Routine name="Start"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
-      <Param name="Selected rows" updates="None" val="5:115" valType="str"/>
+      <Param name="Selected rows" updates="None" val="8:115" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Skid_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Seagull_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Practice/Gargle_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Coin_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/ManWhistle.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Piano_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Siren_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bird.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cat_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Baby_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Piano_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Phone_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Pour.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/HairDryer_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_A.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/DialTone.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Siren_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/PaperRip.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Bird_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Pour_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Camera.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Snore_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Baby_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Siren_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Piano_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Pour_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Bird_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Airplane_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Growl_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chicken_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Laugh_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Typing.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Cough_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Writing_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chomp_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/CarStart_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Fireworks.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Cow.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Dog_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Chime_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Laugh_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Cough_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Repeat/Howl.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Bubbles_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Dog_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Laugh_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Cough_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Test/Foils/Heartbeat.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'CarStart_B.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Chomp_C.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Footsteps_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Buzz.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Guitar_A.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Toilet_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Dog_D.wav'), ('Correct', 2)]), OrderedDict([('SoundFiles3', 'Initial/Doubled/Clap_A.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Test/Foils/Bullfrog.wav'), ('Correct', 3)]), OrderedDict([('SoundFiles3', 'Test/Foils/Wind_B.wav'), ('Correct', 1)]), OrderedDict([('SoundFiles3', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="GuessSounds_conditions.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
