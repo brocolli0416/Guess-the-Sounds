@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on January 23, 2021, at 23:57
+    on February 14, 2021, at 19:53
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -149,41 +149,41 @@ HeadphoneContinue = visual.TextStim(win=win, name='HeadphoneContinue',
     depth=-1.0);
 HeadphoneContinueKey = keyboard.Keyboard()
 
-# Initialize components for Routine "Welcome1"
-Welcome1Clock = core.Clock()
-WelcomeTxt1 = visual.TextStim(win=win, name='WelcomeTxt1',
-    text='In this experiment, you will be presented with different enviornmental sounds one by one. \nOccasionally, you will hear the same sound being played for the second time. There are also sounds that are similar but not identical to a previously played sound.',
+# Initialize components for Routine "Welcome1Ver2"
+Welcome1Ver2Clock = core.Clock()
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='Sound Sorting Task\n\n\nA scientist is collecting different sounds of everyday life and has created an audio file for each sound. However, he has accidently duplicated some of the audio files and now he needs your help looking for the duplicated words.\n\nThere are 144 sound files in total. Your task is to listen to each sound and label them as either "OLD" (duplicate) or "NEW".',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-ContinueKey1 = visual.TextStim(win=win, name='ContinueKey1',
+text_4 = visual.TextStim(win=win, name='text_4',
     text='Press SPACE to continue',
     font='Arial',
     pos=(0, -0.4), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-ContinueResp = keyboard.Keyboard()
+key_resp_2 = keyboard.Keyboard()
 
-# Initialize components for Routine "Welcome2"
-Welcome2Clock = core.Clock()
-Welcome2Txt = visual.TextStim(win=win, name='Welcome2Txt',
-    text="Your task is to indicate whether a sound is a NEW sound that has never been presented before, a REPEAT of a previously presented sound, or a sound that is SIMILAR but different from a previously presented sound. \n\nPress '1' on your keyboard for REPEAT, '2' for SIMILAR, and '3' for NEW.",
+# Initialize components for Routine "Welcome2Ver2"
+Welcome2Ver2Clock = core.Clock()
+text_5 = visual.TextStim(win=win, name='text_5',
+    text='Importantly, some sounds are from the same category and are very similar but not identical to each other. Pay close attention to each sound and only label it as "OLD" if it is EXACTLY THE SAME as a previously played sound.',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-Wel2ContinueKey = keyboard.Keyboard()
-Continue2 = visual.TextStim(win=win, name='Continue2',
+text_6 = visual.TextStim(win=win, name='text_6',
     text='Press SPACE to continue',
     font='Arial',
     pos=(0, -0.4), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-2.0);
+    depth=-1.0);
+key_resp_3 = keyboard.Keyboard()
 
 # Initialize components for Routine "PracticeBegin"
 PracticeBeginClock = core.Clock()
@@ -250,7 +250,7 @@ Continue = visual.TextStim(win=win, name='Continue',
     languageStyle='LTR',
     depth=-4.0);
 Options = visual.TextStim(win=win, name='Options',
-    text='1 = REPEAT\n2 = SIMILAR\n3 = NEW',
+    text='1 = OLD    2 = NEW',
     font='Arial',
     pos=(0, -0.2), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -270,7 +270,7 @@ FeedbackMssg = visual.TextStim(win=win, name='FeedbackMssg',
 # Initialize components for Routine "Start"
 StartClock = core.Clock()
 StartTxt = visual.TextStim(win=win, name='StartTxt',
-    text='This is the end of practice.\n\n\nWe will now begin the actual task.\nThere are 110 items in total. Listen to each sound carefully as they will play once.',
+    text='This is the end of practice.\n\n\nWe will now begin the actual task.\nThere are 144 items in total. Listen to each sound carefully as they will play once.',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -301,7 +301,7 @@ TargetSound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
     name='TargetSound')
 TargetSound.setVolume(1)
 Cross = visual.TextStim(win=win, name='Cross',
-    text='?',
+    text='+',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -315,16 +315,16 @@ ItemNumber = visual.TextStim(win=win, name='ItemNumber',
     languageStyle='LTR',
     depth=-2.0);
 
-# Initialize components for Routine "MST"
-MSTClock = core.Clock()
-MSTQuestion = visual.TextStim(win=win, name='MSTQuestion',
-    text='(Press the corresponding number on your keyboard)\n\n1 = REPEAT (The exact same sound has been played before)\n\n2 = SIMILAR (This sound is similar but not identical to a previously played sound)\n\n3 = NEW (This is my first time hearing this sound in this experiment)\n',
+# Initialize components for Routine "MSTVer2"
+MSTVer2Clock = core.Clock()
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='1 = OLD (This exact sound has been played before) \n\n2 = NEW (This sound is being played for the first time)',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-MSTResp = keyboard.Keyboard()
+key_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "End"
 EndClock = core.Clock()
@@ -782,15 +782,15 @@ thisExp.nextEntry()
 # the Routine "HeadphoneCheck" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "Welcome1"-------
+# ------Prepare to start Routine "Welcome1Ver2"-------
 continueRoutine = True
 # update component parameters for each repeat
-ContinueResp.keys = []
-ContinueResp.rt = []
-_ContinueResp_allKeys = []
+key_resp_2.keys = []
+key_resp_2.rt = []
+_key_resp_2_allKeys = []
 # keep track of which components have finished
-Welcome1Components = [WelcomeTxt1, ContinueKey1, ContinueResp]
-for thisComponent in Welcome1Components:
+Welcome1Ver2Components = [text_3, text_4, key_resp_2]
+for thisComponent in Welcome1Ver2Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
     thisComponent.tStartRefresh = None
@@ -800,55 +800,55 @@ for thisComponent in Welcome1Components:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-Welcome1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+Welcome1Ver2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "Welcome1"-------
+# -------Run Routine "Welcome1Ver2"-------
 while continueRoutine:
     # get current time
-    t = Welcome1Clock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=Welcome1Clock)
+    t = Welcome1Ver2Clock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=Welcome1Ver2Clock)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *WelcomeTxt1* updates
-    if WelcomeTxt1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *text_3* updates
+    if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        WelcomeTxt1.frameNStart = frameN  # exact frame index
-        WelcomeTxt1.tStart = t  # local t and not account for scr refresh
-        WelcomeTxt1.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(WelcomeTxt1, 'tStartRefresh')  # time at next scr refresh
-        WelcomeTxt1.setAutoDraw(True)
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.tStart = t  # local t and not account for scr refresh
+        text_3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+        text_3.setAutoDraw(True)
     
-    # *ContinueKey1* updates
-    if ContinueKey1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *text_4* updates
+    if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        ContinueKey1.frameNStart = frameN  # exact frame index
-        ContinueKey1.tStart = t  # local t and not account for scr refresh
-        ContinueKey1.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(ContinueKey1, 'tStartRefresh')  # time at next scr refresh
-        ContinueKey1.setAutoDraw(True)
+        text_4.frameNStart = frameN  # exact frame index
+        text_4.tStart = t  # local t and not account for scr refresh
+        text_4.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
+        text_4.setAutoDraw(True)
     
-    # *ContinueResp* updates
+    # *key_resp_2* updates
     waitOnFlip = False
-    if ContinueResp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if key_resp_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        ContinueResp.frameNStart = frameN  # exact frame index
-        ContinueResp.tStart = t  # local t and not account for scr refresh
-        ContinueResp.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(ContinueResp, 'tStartRefresh')  # time at next scr refresh
-        ContinueResp.status = STARTED
+        key_resp_2.frameNStart = frameN  # exact frame index
+        key_resp_2.tStart = t  # local t and not account for scr refresh
+        key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
+        key_resp_2.status = STARTED
         # keyboard checking is just starting
         waitOnFlip = True
-        win.callOnFlip(ContinueResp.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(ContinueResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if ContinueResp.status == STARTED and not waitOnFlip:
-        theseKeys = ContinueResp.getKeys(keyList=['space'], waitRelease=False)
-        _ContinueResp_allKeys.extend(theseKeys)
-        if len(_ContinueResp_allKeys):
-            ContinueResp.keys = _ContinueResp_allKeys[-1].name  # just the last key pressed
-            ContinueResp.rt = _ContinueResp_allKeys[-1].rt
+        win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_2.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_2.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_2_allKeys.extend(theseKeys)
+        if len(_key_resp_2_allKeys):
+            key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
+            key_resp_2.rt = _key_resp_2_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
     
@@ -860,7 +860,7 @@ while continueRoutine:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Welcome1Components:
+    for thisComponent in Welcome1Ver2Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -869,35 +869,35 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "Welcome1"-------
-for thisComponent in Welcome1Components:
+# -------Ending Routine "Welcome1Ver2"-------
+for thisComponent in Welcome1Ver2Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('WelcomeTxt1.started', WelcomeTxt1.tStartRefresh)
-thisExp.addData('WelcomeTxt1.stopped', WelcomeTxt1.tStopRefresh)
-thisExp.addData('ContinueKey1.started', ContinueKey1.tStartRefresh)
-thisExp.addData('ContinueKey1.stopped', ContinueKey1.tStopRefresh)
+thisExp.addData('text_3.started', text_3.tStartRefresh)
+thisExp.addData('text_3.stopped', text_3.tStopRefresh)
+thisExp.addData('text_4.started', text_4.tStartRefresh)
+thisExp.addData('text_4.stopped', text_4.tStopRefresh)
 # check responses
-if ContinueResp.keys in ['', [], None]:  # No response was made
-    ContinueResp.keys = None
-thisExp.addData('ContinueResp.keys',ContinueResp.keys)
-if ContinueResp.keys != None:  # we had a response
-    thisExp.addData('ContinueResp.rt', ContinueResp.rt)
-thisExp.addData('ContinueResp.started', ContinueResp.tStartRefresh)
-thisExp.addData('ContinueResp.stopped', ContinueResp.tStopRefresh)
+if key_resp_2.keys in ['', [], None]:  # No response was made
+    key_resp_2.keys = None
+thisExp.addData('key_resp_2.keys',key_resp_2.keys)
+if key_resp_2.keys != None:  # we had a response
+    thisExp.addData('key_resp_2.rt', key_resp_2.rt)
+thisExp.addData('key_resp_2.started', key_resp_2.tStartRefresh)
+thisExp.addData('key_resp_2.stopped', key_resp_2.tStopRefresh)
 thisExp.nextEntry()
-# the Routine "Welcome1" was not non-slip safe, so reset the non-slip timer
+# the Routine "Welcome1Ver2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "Welcome2"-------
+# ------Prepare to start Routine "Welcome2Ver2"-------
 continueRoutine = True
 # update component parameters for each repeat
-Wel2ContinueKey.keys = []
-Wel2ContinueKey.rt = []
-_Wel2ContinueKey_allKeys = []
+key_resp_3.keys = []
+key_resp_3.rt = []
+_key_resp_3_allKeys = []
 # keep track of which components have finished
-Welcome2Components = [Welcome2Txt, Wel2ContinueKey, Continue2]
-for thisComponent in Welcome2Components:
+Welcome2Ver2Components = [text_5, text_6, key_resp_3]
+for thisComponent in Welcome2Ver2Components:
     thisComponent.tStart = None
     thisComponent.tStop = None
     thisComponent.tStartRefresh = None
@@ -907,57 +907,57 @@ for thisComponent in Welcome2Components:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-Welcome2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+Welcome2Ver2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "Welcome2"-------
+# -------Run Routine "Welcome2Ver2"-------
 while continueRoutine:
     # get current time
-    t = Welcome2Clock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=Welcome2Clock)
+    t = Welcome2Ver2Clock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=Welcome2Ver2Clock)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *Welcome2Txt* updates
-    if Welcome2Txt.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *text_5* updates
+    if text_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        Welcome2Txt.frameNStart = frameN  # exact frame index
-        Welcome2Txt.tStart = t  # local t and not account for scr refresh
-        Welcome2Txt.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(Welcome2Txt, 'tStartRefresh')  # time at next scr refresh
-        Welcome2Txt.setAutoDraw(True)
+        text_5.frameNStart = frameN  # exact frame index
+        text_5.tStart = t  # local t and not account for scr refresh
+        text_5.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_5, 'tStartRefresh')  # time at next scr refresh
+        text_5.setAutoDraw(True)
     
-    # *Wel2ContinueKey* updates
-    waitOnFlip = False
-    if Wel2ContinueKey.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *text_6* updates
+    if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        Wel2ContinueKey.frameNStart = frameN  # exact frame index
-        Wel2ContinueKey.tStart = t  # local t and not account for scr refresh
-        Wel2ContinueKey.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(Wel2ContinueKey, 'tStartRefresh')  # time at next scr refresh
-        Wel2ContinueKey.status = STARTED
+        text_6.frameNStart = frameN  # exact frame index
+        text_6.tStart = t  # local t and not account for scr refresh
+        text_6.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
+        text_6.setAutoDraw(True)
+    
+    # *key_resp_3* updates
+    waitOnFlip = False
+    if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_3.frameNStart = frameN  # exact frame index
+        key_resp_3.tStart = t  # local t and not account for scr refresh
+        key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
+        key_resp_3.status = STARTED
         # keyboard checking is just starting
         waitOnFlip = True
-        win.callOnFlip(Wel2ContinueKey.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(Wel2ContinueKey.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if Wel2ContinueKey.status == STARTED and not waitOnFlip:
-        theseKeys = Wel2ContinueKey.getKeys(keyList=['space'], waitRelease=False)
-        _Wel2ContinueKey_allKeys.extend(theseKeys)
-        if len(_Wel2ContinueKey_allKeys):
-            Wel2ContinueKey.keys = _Wel2ContinueKey_allKeys[-1].name  # just the last key pressed
-            Wel2ContinueKey.rt = _Wel2ContinueKey_allKeys[-1].rt
+        win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_3.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_3.getKeys(keyList=['space'], waitRelease=False)
+        _key_resp_3_allKeys.extend(theseKeys)
+        if len(_key_resp_3_allKeys):
+            key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+            key_resp_3.rt = _key_resp_3_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
-    
-    # *Continue2* updates
-    if Continue2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        Continue2.frameNStart = frameN  # exact frame index
-        Continue2.tStart = t  # local t and not account for scr refresh
-        Continue2.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(Continue2, 'tStartRefresh')  # time at next scr refresh
-        Continue2.setAutoDraw(True)
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -967,7 +967,7 @@ while continueRoutine:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Welcome2Components:
+    for thisComponent in Welcome2Ver2Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -976,24 +976,24 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "Welcome2"-------
-for thisComponent in Welcome2Components:
+# -------Ending Routine "Welcome2Ver2"-------
+for thisComponent in Welcome2Ver2Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('Welcome2Txt.started', Welcome2Txt.tStartRefresh)
-thisExp.addData('Welcome2Txt.stopped', Welcome2Txt.tStopRefresh)
+thisExp.addData('text_5.started', text_5.tStartRefresh)
+thisExp.addData('text_5.stopped', text_5.tStopRefresh)
+thisExp.addData('text_6.started', text_6.tStartRefresh)
+thisExp.addData('text_6.stopped', text_6.tStopRefresh)
 # check responses
-if Wel2ContinueKey.keys in ['', [], None]:  # No response was made
-    Wel2ContinueKey.keys = None
-thisExp.addData('Wel2ContinueKey.keys',Wel2ContinueKey.keys)
-if Wel2ContinueKey.keys != None:  # we had a response
-    thisExp.addData('Wel2ContinueKey.rt', Wel2ContinueKey.rt)
-thisExp.addData('Wel2ContinueKey.started', Wel2ContinueKey.tStartRefresh)
-thisExp.addData('Wel2ContinueKey.stopped', Wel2ContinueKey.tStopRefresh)
+if key_resp_3.keys in ['', [], None]:  # No response was made
+    key_resp_3.keys = None
+thisExp.addData('key_resp_3.keys',key_resp_3.keys)
+if key_resp_3.keys != None:  # we had a response
+    thisExp.addData('key_resp_3.rt', key_resp_3.rt)
+thisExp.addData('key_resp_3.started', key_resp_3.tStartRefresh)
+thisExp.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
 thisExp.nextEntry()
-thisExp.addData('Continue2.started', Continue2.tStartRefresh)
-thisExp.addData('Continue2.stopped', Continue2.tStopRefresh)
-# the Routine "Welcome2" was not non-slip safe, so reset the non-slip timer
+# the Routine "Welcome2Ver2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "PracticeBegin"-------
@@ -1106,7 +1106,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 PracticeTrials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='0'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='0:5'),
     seed=None, name='PracticeTrials')
 thisExp.addLoop(PracticeTrials)  # add the loop to the experiment
 thisPracticeTrial = PracticeTrials.trialList[0]  # so we can initialise stimuli with some values
@@ -1126,7 +1126,7 @@ for thisPracticeTrial in PracticeTrials:
     continueRoutine = True
     # update component parameters for each repeat
     TrialNumber.setText(TrialCount)
-    PracticeSound.setSound(SoundFiles3, hamming=True)
+    PracticeSound.setSound(SoundFile5, hamming=True)
     PracticeSound.setVolume(1, log=False)
     # keep track of which components have finished
     Practice1Components = [TrialNumber, PracticeSound, PracticeCross]
@@ -1223,6 +1223,13 @@ for thisPracticeTrial in PracticeTrials:
     PracticeTrials.addData('PracticeCross.stopped', PracticeCross.tStopRefresh)
     Tcount += 1
     TrialCount = 'Trial ' + str(Tcount)
+    
+    if Type == 'NEW':
+        message = "This is a NEW word. \nThis is your first time hearing this sound."
+    elif Type == 'SIMILAR':
+        message = "This is a NEW word. \nNotice that this one sounds similar to the previous sound but is not exactly the same."
+    elif Type == 'OLD':
+        message = "This is an OLD word. \nThis sound is exactly the same as the first sound."
     # the Routine "Practice1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1231,12 +1238,13 @@ for thisPracticeTrial in PracticeTrials:
     # update component parameters for each repeat
     #Tcount += 1
     #TrialCount = 'Trial ' + str(Tcount)
-    if Correct == 3:
-        message = "This is a NEW sound. \nThis sound has never been played before."
-    elif Correct == 2:
-        message = "This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound."
-    elif Correct == 1:
-        message = "This is a REPEAT sound. \nThe exact same sound has been played previously."
+    #if Correct == 3:
+    #    message = "This is a NEW sound. \nThis sound has never been played before."
+    #elif Correct == 2:
+    #    message = "This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound."
+    #elif Correct == 1:
+    #    message = "This is a REPEAT sound. \nThe exact same sound has been played previously."
+    
     Practice_resp.keys = []
     Practice_resp.rt = []
     _Practice_resp_allKeys = []
@@ -1279,7 +1287,7 @@ for thisPracticeTrial in PracticeTrials:
             win.callOnFlip(Practice_resp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(Practice_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if Practice_resp.status == STARTED and not waitOnFlip:
-            theseKeys = Practice_resp.getKeys(keyList=['1', '2', '3'], waitRelease=False)
+            theseKeys = Practice_resp.getKeys(keyList=['1', '2'], waitRelease=False)
             _Practice_resp_allKeys.extend(theseKeys)
             if len(_Practice_resp_allKeys):
                 Practice_resp.keys = _Practice_resp_allKeys[-1].name  # just the last key pressed
@@ -1563,7 +1571,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='8:115'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='5:149'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1584,7 +1592,7 @@ for thisTrial in trials:
     routineTimer.add(1.500000)
     # update component parameters for each repeat
     count += 1
-    number = str(count) + "/110"
+    number = str(count) + "/144"
     
     
     # keep track of which components have finished
@@ -1655,7 +1663,7 @@ for thisTrial in trials:
     # ------Prepare to start Routine "MSTSound"-------
     continueRoutine = True
     # update component parameters for each repeat
-    TargetSound.setSound(SoundFiles3, hamming=True)
+    TargetSound.setSound(SoundFile5, hamming=True)
     TargetSound.setVolume(1, log=False)
     ItemNumber.setText(number)
     # keep track of which components have finished
@@ -1754,15 +1762,15 @@ for thisTrial in trials:
     # the Routine "MSTSound" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
-    # ------Prepare to start Routine "MST"-------
+    # ------Prepare to start Routine "MSTVer2"-------
     continueRoutine = True
     # update component parameters for each repeat
-    MSTResp.keys = []
-    MSTResp.rt = []
-    _MSTResp_allKeys = []
+    key_resp.keys = []
+    key_resp.rt = []
+    _key_resp_allKeys = []
     # keep track of which components have finished
-    MSTComponents = [MSTQuestion, MSTResp]
-    for thisComponent in MSTComponents:
+    MSTVer2Components = [text_2, key_resp]
+    for thisComponent in MSTVer2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1772,51 +1780,51 @@ for thisTrial in trials:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    MSTClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    MSTVer2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "MST"-------
+    # -------Run Routine "MSTVer2"-------
     while continueRoutine:
         # get current time
-        t = MSTClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=MSTClock)
+        t = MSTVer2Clock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=MSTVer2Clock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *MSTQuestion* updates
-        if MSTQuestion.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *text_2* updates
+        if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            MSTQuestion.frameNStart = frameN  # exact frame index
-            MSTQuestion.tStart = t  # local t and not account for scr refresh
-            MSTQuestion.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(MSTQuestion, 'tStartRefresh')  # time at next scr refresh
-            MSTQuestion.setAutoDraw(True)
+            text_2.frameNStart = frameN  # exact frame index
+            text_2.tStart = t  # local t and not account for scr refresh
+            text_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+            text_2.setAutoDraw(True)
         
-        # *MSTResp* updates
+        # *key_resp* updates
         waitOnFlip = False
-        if MSTResp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            MSTResp.frameNStart = frameN  # exact frame index
-            MSTResp.tStart = t  # local t and not account for scr refresh
-            MSTResp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(MSTResp, 'tStartRefresh')  # time at next scr refresh
-            MSTResp.status = STARTED
+            key_resp.frameNStart = frameN  # exact frame index
+            key_resp.tStart = t  # local t and not account for scr refresh
+            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+            key_resp.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(MSTResp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(MSTResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if MSTResp.status == STARTED and not waitOnFlip:
-            theseKeys = MSTResp.getKeys(keyList=['1', '2', '3'], waitRelease=False)
-            _MSTResp_allKeys.extend(theseKeys)
-            if len(_MSTResp_allKeys):
-                MSTResp.keys = _MSTResp_allKeys[-1].name  # just the last key pressed
-                MSTResp.rt = _MSTResp_allKeys[-1].rt
+            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp.getKeys(keyList=['1', '2'], waitRelease=False)
+            _key_resp_allKeys.extend(theseKeys)
+            if len(_key_resp_allKeys):
+                key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
+                key_resp.rt = _key_resp_allKeys[-1].rt
                 # was this correct?
-                if (MSTResp.keys == str(Correct)) or (MSTResp.keys == Correct):
-                    MSTResp.corr = 1
+                if (key_resp.keys == str(Correct)) or (key_resp.keys == Correct):
+                    key_resp.corr = 1
                 else:
-                    MSTResp.corr = 0
+                    key_resp.corr = 0
                 # a response ends the routine
                 continueRoutine = False
         
@@ -1828,7 +1836,7 @@ for thisTrial in trials:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in MSTComponents:
+        for thisComponent in MSTVer2Components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1837,28 +1845,28 @@ for thisTrial in trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "MST"-------
-    for thisComponent in MSTComponents:
+    # -------Ending Routine "MSTVer2"-------
+    for thisComponent in MSTVer2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials.addData('MSTQuestion.started', MSTQuestion.tStartRefresh)
-    trials.addData('MSTQuestion.stopped', MSTQuestion.tStopRefresh)
+    trials.addData('text_2.started', text_2.tStartRefresh)
+    trials.addData('text_2.stopped', text_2.tStopRefresh)
     # check responses
-    if MSTResp.keys in ['', [], None]:  # No response was made
-        MSTResp.keys = None
+    if key_resp.keys in ['', [], None]:  # No response was made
+        key_resp.keys = None
         # was no response the correct answer?!
         if str(Correct).lower() == 'none':
-           MSTResp.corr = 1;  # correct non-response
+           key_resp.corr = 1;  # correct non-response
         else:
-           MSTResp.corr = 0;  # failed to respond (incorrectly)
+           key_resp.corr = 0;  # failed to respond (incorrectly)
     # store data for trials (TrialHandler)
-    trials.addData('MSTResp.keys',MSTResp.keys)
-    trials.addData('MSTResp.corr', MSTResp.corr)
-    if MSTResp.keys != None:  # we had a response
-        trials.addData('MSTResp.rt', MSTResp.rt)
-    trials.addData('MSTResp.started', MSTResp.tStartRefresh)
-    trials.addData('MSTResp.stopped', MSTResp.tStopRefresh)
-    # the Routine "MST" was not non-slip safe, so reset the non-slip timer
+    trials.addData('key_resp.keys',key_resp.keys)
+    trials.addData('key_resp.corr', key_resp.corr)
+    if key_resp.keys != None:  # we had a response
+        trials.addData('key_resp.rt', key_resp.rt)
+    trials.addData('key_resp.started', key_resp.tStartRefresh)
+    trials.addData('key_resp.stopped', key_resp.tStopRefresh)
+    # the Routine "MSTVer2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
