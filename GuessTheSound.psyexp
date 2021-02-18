@@ -756,7 +756,7 @@
       </TextComponent>
       <KeyboardComponent name="MSTResp">
         <Param name="allowedKeys" updates="constant" val="'1', '2', '3'," valType="code"/>
-        <Param name="correctAns" updates="constant" val="$Correct" valType="str"/>
+        <Param name="correctAns" updates="constant" val="$Correct2" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
@@ -1002,8 +1002,8 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="Tcount += 1;&amp;#10;TrialCount = (&quot;Trial &quot; + Tcount.toString());&amp;#10;if ((Type === &quot;NEW&quot;)) {&amp;#10;    message = &quot;This is a NEW word. \nThis is your first time hearing this sound.&quot;;&amp;#10;} else {&amp;#10;    if ((Type === &quot;SIMILAR&quot;)) {&amp;#10;        message = &quot;This is a NEW word. \nNotice that this one sounds similar to the previous sound but is not exactly the same.&quot;;&amp;#10;    } else {&amp;#10;        if ((Type === &quot;OLD&quot;)) {&amp;#10;            message = &quot;This is an OLD word. \nThis sound is exactly the same as the first sound.&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="Tcount += 1&amp;#10;TrialCount = 'Trial ' + str(Tcount)&amp;#10;&amp;#10;if Type == 'NEW':&amp;#10;    message = &quot;This is a NEW word. \nThis is your first time hearing this sound.&quot;&amp;#10;elif Type == 'SIMILAR':&amp;#10;    message = &quot;This is a NEW word. \nNotice that this one sounds similar to the previous sound but is not exactly the same.&quot;&amp;#10;elif Type == 'OLD':&amp;#10;    message = &quot;This is an OLD word. \nThis sound is exactly the same as the first sound.&quot;" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="Tcount += 1;&amp;#10;TrialCount = (&quot;Trial &quot; + Tcount.toString());&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="Tcount += 1&amp;#10;TrialCount = 'Trial ' + str(Tcount)&amp;#10;&amp;#10;#if Type == 'NEW':&amp;#10;#    message = &quot;This is a NEW word. \nThis is your first time hearing this sound.&quot;&amp;#10;#elif Type == 'SIMILAR':&amp;#10;#    message = &quot;This is a NEW word. \nNotice that this one sounds similar to the previous sound but is not exactly the same.&quot;&amp;#10;#elif Type == 'OLD':&amp;#10;#    message = &quot;This is an OLD word. \nThis sound is exactly the same as the first sound.&quot;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_2" valType="code"/>
       </CodeComponent>
@@ -1014,8 +1014,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="/* Syntax Error: Fix Python code */" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="#Tcount += 1&amp;#10;#TrialCount = 'Trial ' + str(Tcount)&amp;#10;#if Correct == 3:&amp;#10;#    message = &quot;This is a NEW sound. \nThis sound has never been played before.&quot;&amp;#10;#elif Correct == 2:&amp;#10;#    message = &quot;This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound.&quot;&amp;#10;#elif Correct == 1:&amp;#10;#    message = &quot;This is a REPEAT sound. \nThe exact same sound has been played previously.&quot;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if ((Correct2 === 3)) {&amp;#10;    message = &quot;This is a NEW sound. \nThis sound has never been played before.&quot;;&amp;#10;} else {&amp;#10;    if ((Correct2 === 2)) {&amp;#10;        message = &quot;This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound.&quot;;&amp;#10;    } else {&amp;#10;        if ((Correct2 === 1)) {&amp;#10;            message = &quot;This is a REPEAT sound. \nThe exact same sound has been played previously.&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="#Tcount += 1&amp;#10;#TrialCount = 'Trial ' + str(Tcount)&amp;#10;if Correct2 == 3:&amp;#10;    message = &quot;This is a NEW sound. \nThis sound has never been played before.&quot;&amp;#10;elif Correct2 == 2:&amp;#10;    message = &quot;This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound.&quot;&amp;#10;elif Correct2 == 1:&amp;#10;    message = &quot;This is a REPEAT sound. \nThe exact same sound has been played previously.&quot;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -1027,8 +1027,8 @@
         <Param name="name" updates="None" val="code" valType="code"/>
       </CodeComponent>
       <KeyboardComponent name="Practice_resp">
-        <Param name="allowedKeys" updates="constant" val="'1', '2'," valType="code"/>
-        <Param name="correctAns" updates="constant" val="$Correct" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'1', '2','3'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="$Correct2" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
@@ -1136,7 +1136,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="1 = OLD    2 = NEW" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="1 = OLD&amp;#10;2 = SIMILAR&amp;#10;3 = NEW" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1544,8 +1544,8 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="key_resp">
-        <Param name="allowedKeys" updates="set every repeat" val="'1', '2', " valType="code"/>
-        <Param name="correctAns" updates="constant" val="$Correct" valType="str"/>
+        <Param name="allowedKeys" updates="set every repeat" val="'1', '2', '3', " valType="code"/>
+        <Param name="correctAns" updates="constant" val="$Correct2" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
@@ -1704,8 +1704,8 @@
     <Routine name="StartAdjustment"/>
     <Routine name="VolumeAdjustment"/>
     <Routine name="HeadphoneCheck"/>
-    <Routine name="Welcome1Ver2"/>
-    <Routine name="Welcome2Ver2"/>
+    <Routine name="Welcome1"/>
+    <Routine name="Welcome2"/>
     <Routine name="PracticeBegin"/>
     <LoopInitiator loopType="TrialHandler" name="PracticeTrials">
       <Param name="Selected rows" updates="None" val="0:5" valType="str"/>
@@ -1736,7 +1736,7 @@
     </LoopInitiator>
     <Routine name="Count1"/>
     <Routine name="MSTSound"/>
-    <Routine name="MSTVer2"/>
+    <Routine name="MST"/>
     <LoopTerminator name="trials"/>
     <Routine name="End"/>
   </Flow>
