@@ -5,16 +5,12 @@ import pandas as pd
 ### The number of "OLD" response to the Lure items is used to measure similarity 
 ### (The more OLD response given, the greater the similarity)
 
-filelist = [1, 2, 4, 5, 6]
+filelist = [7, 8, 9]
 
-for f in filelist:
-    filename = str(f)+'_MST110.csv'
-    df = pd.read_csv(filename)
-    get_similarity(df, 1) # Enter the number for the type of sound you want to analyze. (OLD = 1, LURE = 2, FOIL = 3)
 
 def get_similarity(df, cat):
-    cor_orig = df['Correct']
-    st_orig = df['SoundFiles3']
+    cor_orig = df['Correct2']
+    st_orig = df['SoundFile5']
     rp_orig = df['MSTResp.keys']
     correct = []
     soundtype = []
@@ -36,5 +32,10 @@ def get_similarity(df, cat):
         writer = csv.writer(file)
         writer.writerow(new_sound)
         writer.writerow(new_resp)
+
+for f in filelist:
+    filename = str(f)+'_MST144.csv'
+    df = pd.read_csv(filename)
+    get_similarity(df, 2) # Enter the number for the type of sound you want to analyze. (OLD = 1, LURE = 2, FOIL = 3)
 
 

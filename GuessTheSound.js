@@ -60,12 +60,12 @@ const trials_2LoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(trials_2LoopBegin, trials_2LoopScheduler);
 flowScheduler.add(trials_2LoopScheduler);
 flowScheduler.add(trials_2LoopEnd);
-flowScheduler.add(Welcome1RoutineBegin());
-flowScheduler.add(Welcome1RoutineEachFrame());
-flowScheduler.add(Welcome1RoutineEnd());
-flowScheduler.add(Welcome2RoutineBegin());
-flowScheduler.add(Welcome2RoutineEachFrame());
-flowScheduler.add(Welcome2RoutineEnd());
+flowScheduler.add(Welcome1Ver2RoutineBegin());
+flowScheduler.add(Welcome1Ver2RoutineEachFrame());
+flowScheduler.add(Welcome1Ver2RoutineEnd());
+flowScheduler.add(Welcome2Ver2RoutineBegin());
+flowScheduler.add(Welcome2Ver2RoutineEachFrame());
+flowScheduler.add(Welcome2Ver2RoutineEnd());
 flowScheduler.add(PracticeBeginRoutineBegin());
 flowScheduler.add(PracticeBeginRoutineEachFrame());
 flowScheduler.add(PracticeBeginRoutineEnd());
@@ -92,7 +92,7 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'Test/Foils/Bird.wav', 'path': 'Test/Foils/Bird.wav'},
+    {'name': 'Initial/Repeat/Crow_B.wav', 'path': 'Initial/Repeat/Crow_B.wav'},
     {'name': 'Initial/NoRepeat/Baby_B.wav', 'path': 'Initial/NoRepeat/Baby_B.wav'},
     {'name': 'Initial/Doubled/HairDryer_A.wav', 'path': 'Initial/Doubled/HairDryer_A.wav'},
     {'name': 'Initial/Repeat/Pour.wav', 'path': 'Initial/Repeat/Pour.wav'},
@@ -105,80 +105,89 @@ psychoJS.start({
     {'name': 'Chomp_C.wav', 'path': 'Chomp_C.wav'},
     {'name': 'Initial/Doubled/Laugh_A.wav', 'path': 'Initial/Doubled/Laugh_A.wav'},
     {'name': 'Initial/NoRepeat/Sleighbells_B.wav', 'path': 'Initial/NoRepeat/Sleighbells_B.wav'},
+    {'name': 'Initial/NoRepeat/Duck_A.wav', 'path': 'Initial/NoRepeat/Duck_A.wav'},
     {'name': 'Baby_A.wav', 'path': 'Baby_A.wav'},
     {'name': 'Headphone_check.xlsx', 'path': 'Headphone_check.xlsx'},
     {'name': 'Practice/Gargle_A.wav', 'path': 'Practice/Gargle_A.wav'},
     {'name': 'Test/Foils/Wind_B.wav', 'path': 'Test/Foils/Wind_B.wav'},
+    {'name': 'Initial/Repeat/Cello.wav', 'path': 'Initial/Repeat/Cello.wav'},
+    {'name': 'Trumpet_A.wav', 'path': 'Trumpet_A.wav'},
     {'name': 'Initial/Repeat/Whistle_A.wav', 'path': 'Initial/Repeat/Whistle_A.wav'},
     {'name': 'Goat_C.wav', 'path': 'Goat_C.wav'},
     {'name': 'Phone_D.wav', 'path': 'Phone_D.wav'},
     {'name': 'Whistle_B.wav', 'path': 'Whistle_B.wav'},
     {'name': 'Initial/NoRepeat/Droplet_B.wav', 'path': 'Initial/NoRepeat/Droplet_B.wav'},
     {'name': 'Headphone/t2_2.wav', 'path': 'Headphone/t2_2.wav'},
+    {'name': 'Initial/NoRepeat/Hammer_A.wav', 'path': 'Initial/NoRepeat/Hammer_A.wav'},
+    {'name': 'Test/Foils/Slurp.wav', 'path': 'Test/Foils/Slurp.wav'},
     {'name': 'Initial/Repeat/Airplane_B.wav', 'path': 'Initial/Repeat/Airplane_B.wav'},
     {'name': 'Initial/Repeat/Howl.wav', 'path': 'Initial/Repeat/Howl.wav'},
+    {'name': 'Initial/Repeat/Trumpet_B.wav', 'path': 'Initial/Repeat/Trumpet_B.wav'},
     {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
     {'name': 'Initial/Doubled/Writing_A.wav', 'path': 'Initial/Doubled/Writing_A.wav'},
     {'name': 'Headphone/t3_2.wav', 'path': 'Headphone/t3_2.wav'},
+    {'name': 'Snore_A.wav', 'path': 'Snore_A.wav'},
     {'name': 'Initial/NoRepeat/Faucet_A.wav', 'path': 'Initial/NoRepeat/Faucet_A.wav'},
     {'name': 'Initial/Repeat/Bagpipe.wav', 'path': 'Initial/Repeat/Bagpipe.wav'},
     {'name': 'Test/Lures/Chime_B.wav', 'path': 'Test/Lures/Chime_B.wav'},
     {'name': 'Headphone/t1_2.wav', 'path': 'Headphone/t1_2.wav'},
     {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
     {'name': 'Practice/Skid_B.wav', 'path': 'Practice/Skid_B.wav'},
-    {'name': 'Growl_D.wav', 'path': 'Growl_D.wav'},
-    {'name': 'CarStart_B.wav', 'path': 'CarStart_B.wav'},
-    {'name': 'Baby_D.wav', 'path': 'Baby_D.wav'},
+    {'name': 'Test/Foils/Horse.wav', 'path': 'Test/Foils/Horse.wav'},
+    {'name': 'Duck_B.wav', 'path': 'Duck_B.wav'},
     {'name': 'Siren_C.wav', 'path': 'Siren_C.wav'},
     {'name': 'Chomp_B.wav', 'path': 'Chomp_B.wav'},
     {'name': 'Test/Foils/Donkey.wav', 'path': 'Test/Foils/Donkey.wav'},
     {'name': 'Piano_B.wav', 'path': 'Piano_B.wav'},
-    {'name': 'Phone_C.wav', 'path': 'Phone_C.wav'},
+    {'name': 'Test/Foils/Heartbeat.wav', 'path': 'Test/Foils/Heartbeat.wav'},
+    {'name': 'Writing_B.wav', 'path': 'Writing_B.wav'},
     {'name': 'Initial/Doubled/CarStart_A.wav', 'path': 'Initial/Doubled/CarStart_A.wav'},
-    {'name': 'ManWhistle_D.wav', 'path': 'ManWhistle_D.wav'},
     {'name': 'Initial/Doubled/Dog_A.wav', 'path': 'Initial/Doubled/Dog_A.wav'},
     {'name': 'Initial/NoRepeat/Thunder_A.wav', 'path': 'Initial/NoRepeat/Thunder_A.wav'},
     {'name': 'Bird_C.wav', 'path': 'Bird_C.wav'},
+    {'name': 'Crow_A.wav', 'path': 'Crow_A.wav'},
+    {'name': 'Initial/Doubled/Coin_A.wav', 'path': 'Initial/Doubled/Coin_A.wav'},
     {'name': 'Practice/Seagull_A.wav', 'path': 'Practice/Seagull_A.wav'},
     {'name': 'Initial/Repeat/IceDrop.wav', 'path': 'Initial/Repeat/IceDrop.wav'},
     {'name': 'Initial/Doubled/Clap_A.wav', 'path': 'Initial/Doubled/Clap_A.wav'},
     {'name': 'Initial/Doubled/Cuckoo_A.wav', 'path': 'Initial/Doubled/Cuckoo_A.wav'},
+    {'name': 'Initial/NoRepeat/Elephant_A.wav', 'path': 'Initial/NoRepeat/Elephant_A.wav'},
+    {'name': 'Footsteps_C.wav', 'path': 'Footsteps_C.wav'},
     {'name': 'Test/Lures/Guitar_B.wav', 'path': 'Test/Lures/Guitar_B.wav'},
-    {'name': 'Initial/NoRepeat/Goat_B.wav', 'path': 'Initial/NoRepeat/Goat_B.wav'},
+    {'name': 'Coin_B.wav', 'path': 'Coin_B.wav'},
     {'name': 'Initial/NoRepeat/Toilet_B.wav', 'path': 'Initial/NoRepeat/Toilet_B.wav'},
     {'name': 'Initial/Repeat/Phone_A.wav', 'path': 'Initial/Repeat/Phone_A.wav'},
     {'name': 'Growl_B.wav', 'path': 'Growl_B.wav'},
     {'name': 'Initial/Repeat/Sneeze_B.wav', 'path': 'Initial/Repeat/Sneeze_B.wav'},
     {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
+    {'name': 'Initial/Repeat/Printer.wav', 'path': 'Initial/Repeat/Printer.wav'},
+    {'name': 'Test/Foils/Steam.wav', 'path': 'Test/Foils/Steam.wav'},
     {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
     {'name': 'Initial/Doubled/Growl_A.wav', 'path': 'Initial/Doubled/Growl_A.wav'},
-    {'name': 'Chime_C.wav', 'path': 'Chime_C.wav'},
-    {'name': 'Whistle_C.wav', 'path': 'Whistle_C.wav'},
-    {'name': 'Initial/Doubled/Piano_A.wav', 'path': 'Initial/Doubled/Piano_A.wav'},
-    {'name': 'Initial/Repeat/PaperRip.wav', 'path': 'Initial/Repeat/PaperRip.wav'},
     {'name': 'Initial/Repeat/Buzz.wav', 'path': 'Initial/Repeat/Buzz.wav'},
-    {'name': 'Pour_D.wav', 'path': 'Pour_D.wav'},
-    {'name': 'Dog_C.wav', 'path': 'Dog_C.wav'},
+    {'name': 'Initial/Repeat/PaperRip.wav', 'path': 'Initial/Repeat/PaperRip.wav'},
     {'name': 'Headphone/t1_1.wav', 'path': 'Headphone/t1_1.wav'},
     {'name': 'CarStart_D.wav', 'path': 'CarStart_D.wav'},
     {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'},
-    {'name': 'Siren_B.wav', 'path': 'Siren_B.wav'},
     {'name': 'Initial/Doubled/Chime_A.wav', 'path': 'Initial/Doubled/Chime_A.wav'},
     {'name': 'Bird_D.wav', 'path': 'Bird_D.wav'},
     {'name': 'Initial/NoRepeat/Helicopter_A.wav', 'path': 'Initial/NoRepeat/Helicopter_A.wav'},
     {'name': 'Test/Foils/Typing.wav', 'path': 'Test/Foils/Typing.wav'},
     {'name': 'Laugh_D.wav', 'path': 'Laugh_D.wav'},
+    {'name': 'Initial/NoRepeat/Mosquito_B.wav', 'path': 'Initial/NoRepeat/Mosquito_B.wav'},
     {'name': 'Initial/Doubled/Chicken_A.wav', 'path': 'Initial/Doubled/Chicken_A.wav'},
+    {'name': 'Test/Foils/Bowlingpins.wav', 'path': 'Test/Foils/Bowlingpins.wav'},
     {'name': 'Pour_C.wav', 'path': 'Pour_C.wav'},
     {'name': 'Initial/Doubled/Bubbles_A.wav', 'path': 'Initial/Doubled/Bubbles_A.wav'},
-    {'name': 'Cough_C.wav', 'path': 'Cough_C.wav'},
     {'name': 'Initial/NoRepeat/Snore_B.wav', 'path': 'Initial/NoRepeat/Snore_B.wav'},
     {'name': 'Dog_D.wav', 'path': 'Dog_D.wav'},
     {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
+    {'name': 'Test/Foils/Airhorn.wav', 'path': 'Test/Foils/Airhorn.wav'},
     {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
     {'name': 'Cough_D.wav', 'path': 'Cough_D.wav'},
-    {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
     {'name': 'Practice/Gargle_B.wav', 'path': 'Practice/Gargle_B.wav'},
+    {'name': 'Initial/NoRepeat/Puff_A.wav', 'path': 'Initial/NoRepeat/Puff_A.wav'},
+    {'name': 'Faucet_B.wav', 'path': 'Faucet_B.wav'},
     {'name': 'Test/Foils/Camera.wav', 'path': 'Test/Foils/Camera.wav'},
     {'name': 'Piano_C.wav', 'path': 'Piano_C.wav'},
     {'name': 'Initial/Doubled/Cough_A.wav', 'path': 'Initial/Doubled/Cough_A.wav'},
@@ -238,14 +247,14 @@ var CrossHeadphone;
 var CheckResp;
 var HeadphoneFeedbackClock;
 var FeedbackTxt;
-var Welcome1Clock;
-var WelcomeTxt1;
-var ContinueKey1;
-var ContinueResp;
-var Welcome2Clock;
-var Welcome2Txt;
-var Wel2ContinueKey;
-var Continue2;
+var Welcome1Ver2Clock;
+var text_3;
+var text_4;
+var key_resp_2;
+var Welcome2Ver2Clock;
+var text_5;
+var text_6;
+var key_resp_3;
 var PracticeBeginClock;
 var InstructionTxt2;
 var WelcomeContinue2;
@@ -274,9 +283,9 @@ var MSTSoundClock;
 var TargetSound;
 var Cross;
 var ItemNumber;
-var MSTClock;
-var MSTQuestion;
-var MSTResp;
+var MSTVer2Clock;
+var text_2;
+var key_resp;
 var EndClock;
 var ThankyouMssg;
 var CompletionCode;
@@ -446,12 +455,12 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  // Initialize components for Routine "Welcome1"
-  Welcome1Clock = new util.Clock();
-  WelcomeTxt1 = new visual.TextStim({
+  // Initialize components for Routine "Welcome1Ver2"
+  Welcome1Ver2Clock = new util.Clock();
+  text_3 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'WelcomeTxt1',
-    text: 'In this experiment, you will be presented with different enviornmental sounds one by one. \nOccasionally, you will hear the same sound being played for the second time. There are also sounds that are similar but not identical to a previously played sound.',
+    name: 'text_3',
+    text: 'Sound Sorting Task\n\n\nA scientist is collecting different sounds of everyday life and has created an audio file for each sound. However, he has accidently duplicated some of the audio files and now he needs your help looking for the duplicated words.\n\nThere are 128 sound files in total. Your task is to listen to each sound and label them as either "OLD" (duplicate) or "NEW".',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -459,9 +468,9 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  ContinueKey1 = new visual.TextStim({
+  text_4 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'ContinueKey1',
+    name: 'text_4',
     text: 'Press SPACE to continue',
     font: 'Arial',
     units: undefined, 
@@ -470,14 +479,14 @@ function experimentInit() {
     depth: -1.0 
   });
   
-  ContinueResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  key_resp_2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  // Initialize components for Routine "Welcome2"
-  Welcome2Clock = new util.Clock();
-  Welcome2Txt = new visual.TextStim({
+  // Initialize components for Routine "Welcome2Ver2"
+  Welcome2Ver2Clock = new util.Clock();
+  text_5 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'Welcome2Txt',
-    text: "Your task is to indicate whether a sound is a NEW sound that has never been presented before, a REPEAT of a previously presented sound, or a sound that is SIMILAR but different from a previously presented sound. \n\nPress '1' on your keyboard for REPEAT, '2' for SIMILAR, and '3' for NEW.",
+    name: 'text_5',
+    text: 'Importantly, some sounds are from the same category and are very similar but not identical to each other. Pay close attention to each sound and only label it as "OLD" if it is EXACTLY THE SAME as a previously played sound.',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -485,18 +494,18 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  Wel2ContinueKey = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
-  Continue2 = new visual.TextStim({
+  text_6 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'Continue2',
+    name: 'text_6',
     text: 'Press SPACE to continue',
     font: 'Arial',
     units: undefined, 
     pos: [0, (- 0.4)], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -2.0 
+    depth: -1.0 
   });
+  
+  key_resp_3 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "PracticeBegin"
   PracticeBeginClock = new util.Clock();
@@ -597,7 +606,7 @@ function experimentInit() {
   Options = new visual.TextStim({
     win: psychoJS.window,
     name: 'Options',
-    text: '1 = OLD\n2 = SIMILAR\n3 = NEW',
+    text: '1 = OLD\n2 = NEW',
     font: 'Arial',
     units: undefined, 
     pos: [0, (- 0.2)], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -623,7 +632,7 @@ function experimentInit() {
   StartTxt = new visual.TextStim({
     win: psychoJS.window,
     name: 'StartTxt',
-    text: 'This is the end of practice.\n\n\nWe will now begin the actual task. The sounds you heard in the practice are not a part of the actual task.\nThere are 144 items in total. Listen to each sound carefully as they will play once.',
+    text: 'This is the end of practice.\n\n\nWe will now begin the actual task. The sounds you heard in the practice are not a part of the actual task.\nThere are 128 items in total. Listen to each sound carefully as they will play once.',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -687,12 +696,12 @@ function experimentInit() {
     depth: -2.0 
   });
   
-  // Initialize components for Routine "MST"
-  MSTClock = new util.Clock();
-  MSTQuestion = new visual.TextStim({
+  // Initialize components for Routine "MSTVer2"
+  MSTVer2Clock = new util.Clock();
+  text_2 = new visual.TextStim({
     win: psychoJS.window,
-    name: 'MSTQuestion',
-    text: '(Press the corresponding number on your keyboard)\n\n1 = REPEAT (The exact same sound has been played before)\n\n2 = SIMILAR (This sound is similar but not identical to a previously played sound)\n\n3 = NEW (This is my first time hearing this sound in this experiment)\n',
+    name: 'text_2',
+    text: '1 = OLD (This exact sound has been played before) \n\n2 = NEW (This sound is being played for the first time)',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -700,7 +709,7 @@ function experimentInit() {
     depth: 0.0 
   });
   
-  MSTResp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "End"
   EndClock = new util.Clock();
@@ -1371,9 +1380,9 @@ function trialsLoopBegin(trialsLoopScheduler) {
     trialsLoopScheduler.add(MSTSoundRoutineBegin(snapshot));
     trialsLoopScheduler.add(MSTSoundRoutineEachFrame(snapshot));
     trialsLoopScheduler.add(MSTSoundRoutineEnd(snapshot));
-    trialsLoopScheduler.add(MSTRoutineBegin(snapshot));
-    trialsLoopScheduler.add(MSTRoutineEachFrame(snapshot));
-    trialsLoopScheduler.add(MSTRoutineEnd(snapshot));
+    trialsLoopScheduler.add(MSTVer2RoutineBegin(snapshot));
+    trialsLoopScheduler.add(MSTVer2RoutineEachFrame(snapshot));
+    trialsLoopScheduler.add(MSTVer2RoutineEnd(snapshot));
     trialsLoopScheduler.add(endLoopIteration(trialsLoopScheduler, snapshot));
   }
 
@@ -1668,26 +1677,26 @@ function HeadphoneFeedbackRoutineEnd(snapshot) {
 }
 
 
-var _ContinueResp_allKeys;
-var Welcome1Components;
-function Welcome1RoutineBegin(snapshot) {
+var _key_resp_2_allKeys;
+var Welcome1Ver2Components;
+function Welcome1Ver2RoutineBegin(snapshot) {
   return function () {
-    //------Prepare to start Routine 'Welcome1'-------
+    //------Prepare to start Routine 'Welcome1Ver2'-------
     t = 0;
-    Welcome1Clock.reset(); // clock
+    Welcome1Ver2Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    ContinueResp.keys = undefined;
-    ContinueResp.rt = undefined;
-    _ContinueResp_allKeys = [];
+    key_resp_2.keys = undefined;
+    key_resp_2.rt = undefined;
+    _key_resp_2_allKeys = [];
     // keep track of which components have finished
-    Welcome1Components = [];
-    Welcome1Components.push(WelcomeTxt1);
-    Welcome1Components.push(ContinueKey1);
-    Welcome1Components.push(ContinueResp);
+    Welcome1Ver2Components = [];
+    Welcome1Ver2Components.push(text_3);
+    Welcome1Ver2Components.push(text_4);
+    Welcome1Ver2Components.push(key_resp_2);
     
-    for (const thisComponent of Welcome1Components)
+    for (const thisComponent of Welcome1Ver2Components)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
     return Scheduler.Event.NEXT;
@@ -1695,52 +1704,52 @@ function Welcome1RoutineBegin(snapshot) {
 }
 
 
-function Welcome1RoutineEachFrame(snapshot) {
+function Welcome1Ver2RoutineEachFrame(snapshot) {
   return function () {
-    //------Loop for each frame of Routine 'Welcome1'-------
+    //------Loop for each frame of Routine 'Welcome1Ver2'-------
     // get current time
-    t = Welcome1Clock.getTime();
+    t = Welcome1Ver2Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *WelcomeTxt1* updates
-    if (t >= 0.0 && WelcomeTxt1.status === PsychoJS.Status.NOT_STARTED) {
+    // *text_3* updates
+    if (t >= 0.0 && text_3.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      WelcomeTxt1.tStart = t;  // (not accounting for frame time here)
-      WelcomeTxt1.frameNStart = frameN;  // exact frame index
+      text_3.tStart = t;  // (not accounting for frame time here)
+      text_3.frameNStart = frameN;  // exact frame index
       
-      WelcomeTxt1.setAutoDraw(true);
+      text_3.setAutoDraw(true);
     }
 
     
-    // *ContinueKey1* updates
-    if (t >= 0.0 && ContinueKey1.status === PsychoJS.Status.NOT_STARTED) {
+    // *text_4* updates
+    if (t >= 0.0 && text_4.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      ContinueKey1.tStart = t;  // (not accounting for frame time here)
-      ContinueKey1.frameNStart = frameN;  // exact frame index
+      text_4.tStart = t;  // (not accounting for frame time here)
+      text_4.frameNStart = frameN;  // exact frame index
       
-      ContinueKey1.setAutoDraw(true);
+      text_4.setAutoDraw(true);
     }
 
     
-    // *ContinueResp* updates
-    if (t >= 0.0 && ContinueResp.status === PsychoJS.Status.NOT_STARTED) {
+    // *key_resp_2* updates
+    if (t >= 0.0 && key_resp_2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      ContinueResp.tStart = t;  // (not accounting for frame time here)
-      ContinueResp.frameNStart = frameN;  // exact frame index
+      key_resp_2.tStart = t;  // (not accounting for frame time here)
+      key_resp_2.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { ContinueResp.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { ContinueResp.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { ContinueResp.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { key_resp_2.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_2.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_2.clearEvents(); });
     }
 
-    if (ContinueResp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = ContinueResp.getKeys({keyList: ['space'], waitRelease: false});
-      _ContinueResp_allKeys = _ContinueResp_allKeys.concat(theseKeys);
-      if (_ContinueResp_allKeys.length > 0) {
-        ContinueResp.keys = _ContinueResp_allKeys[_ContinueResp_allKeys.length - 1].name;  // just the last key pressed
-        ContinueResp.rt = _ContinueResp_allKeys[_ContinueResp_allKeys.length - 1].rt;
+    if (key_resp_2.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp_2.getKeys({keyList: ['space'], waitRelease: false});
+      _key_resp_2_allKeys = _key_resp_2_allKeys.concat(theseKeys);
+      if (_key_resp_2_allKeys.length > 0) {
+        key_resp_2.keys = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].name;  // just the last key pressed
+        key_resp_2.rt = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].rt;
         // a response ends the routine
         continueRoutine = false;
       }
@@ -1757,7 +1766,7 @@ function Welcome1RoutineEachFrame(snapshot) {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of Welcome1Components)
+    for (const thisComponent of Welcome1Ver2Components)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
         break;
@@ -1773,22 +1782,22 @@ function Welcome1RoutineEachFrame(snapshot) {
 }
 
 
-function Welcome1RoutineEnd(snapshot) {
+function Welcome1Ver2RoutineEnd(snapshot) {
   return function () {
-    //------Ending Routine 'Welcome1'-------
-    for (const thisComponent of Welcome1Components) {
+    //------Ending Routine 'Welcome1Ver2'-------
+    for (const thisComponent of Welcome1Ver2Components) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     }
-    psychoJS.experiment.addData('ContinueResp.keys', ContinueResp.keys);
-    if (typeof ContinueResp.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('ContinueResp.rt', ContinueResp.rt);
+    psychoJS.experiment.addData('key_resp_2.keys', key_resp_2.keys);
+    if (typeof key_resp_2.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp_2.rt', key_resp_2.rt);
         routineTimer.reset();
         }
     
-    ContinueResp.stop();
-    // the Routine "Welcome1" was not non-slip safe, so reset the non-slip timer
+    key_resp_2.stop();
+    // the Routine "Welcome1Ver2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;
@@ -1796,26 +1805,26 @@ function Welcome1RoutineEnd(snapshot) {
 }
 
 
-var _Wel2ContinueKey_allKeys;
-var Welcome2Components;
-function Welcome2RoutineBegin(snapshot) {
+var _key_resp_3_allKeys;
+var Welcome2Ver2Components;
+function Welcome2Ver2RoutineBegin(snapshot) {
   return function () {
-    //------Prepare to start Routine 'Welcome2'-------
+    //------Prepare to start Routine 'Welcome2Ver2'-------
     t = 0;
-    Welcome2Clock.reset(); // clock
+    Welcome2Ver2Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    Wel2ContinueKey.keys = undefined;
-    Wel2ContinueKey.rt = undefined;
-    _Wel2ContinueKey_allKeys = [];
+    key_resp_3.keys = undefined;
+    key_resp_3.rt = undefined;
+    _key_resp_3_allKeys = [];
     // keep track of which components have finished
-    Welcome2Components = [];
-    Welcome2Components.push(Welcome2Txt);
-    Welcome2Components.push(Wel2ContinueKey);
-    Welcome2Components.push(Continue2);
+    Welcome2Ver2Components = [];
+    Welcome2Ver2Components.push(text_5);
+    Welcome2Ver2Components.push(text_6);
+    Welcome2Ver2Components.push(key_resp_3);
     
-    for (const thisComponent of Welcome2Components)
+    for (const thisComponent of Welcome2Ver2Components)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
     return Scheduler.Event.NEXT;
@@ -1823,57 +1832,57 @@ function Welcome2RoutineBegin(snapshot) {
 }
 
 
-function Welcome2RoutineEachFrame(snapshot) {
+function Welcome2Ver2RoutineEachFrame(snapshot) {
   return function () {
-    //------Loop for each frame of Routine 'Welcome2'-------
+    //------Loop for each frame of Routine 'Welcome2Ver2'-------
     // get current time
-    t = Welcome2Clock.getTime();
+    t = Welcome2Ver2Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *Welcome2Txt* updates
-    if (t >= 0.0 && Welcome2Txt.status === PsychoJS.Status.NOT_STARTED) {
+    // *text_5* updates
+    if (t >= 0.0 && text_5.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      Welcome2Txt.tStart = t;  // (not accounting for frame time here)
-      Welcome2Txt.frameNStart = frameN;  // exact frame index
+      text_5.tStart = t;  // (not accounting for frame time here)
+      text_5.frameNStart = frameN;  // exact frame index
       
-      Welcome2Txt.setAutoDraw(true);
+      text_5.setAutoDraw(true);
     }
 
     
-    // *Wel2ContinueKey* updates
-    if (t >= 0.0 && Wel2ContinueKey.status === PsychoJS.Status.NOT_STARTED) {
+    // *text_6* updates
+    if (t >= 0.0 && text_6.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      Wel2ContinueKey.tStart = t;  // (not accounting for frame time here)
-      Wel2ContinueKey.frameNStart = frameN;  // exact frame index
+      text_6.tStart = t;  // (not accounting for frame time here)
+      text_6.frameNStart = frameN;  // exact frame index
       
-      // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { Wel2ContinueKey.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { Wel2ContinueKey.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { Wel2ContinueKey.clearEvents(); });
+      text_6.setAutoDraw(true);
     }
 
-    if (Wel2ContinueKey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = Wel2ContinueKey.getKeys({keyList: ['space'], waitRelease: false});
-      _Wel2ContinueKey_allKeys = _Wel2ContinueKey_allKeys.concat(theseKeys);
-      if (_Wel2ContinueKey_allKeys.length > 0) {
-        Wel2ContinueKey.keys = _Wel2ContinueKey_allKeys[_Wel2ContinueKey_allKeys.length - 1].name;  // just the last key pressed
-        Wel2ContinueKey.rt = _Wel2ContinueKey_allKeys[_Wel2ContinueKey_allKeys.length - 1].rt;
+    
+    // *key_resp_3* updates
+    if (t >= 0.0 && key_resp_3.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      key_resp_3.tStart = t;  // (not accounting for frame time here)
+      key_resp_3.frameNStart = frameN;  // exact frame index
+      
+      // keyboard checking is just starting
+      psychoJS.window.callOnFlip(function() { key_resp_3.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_3.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp_3.clearEvents(); });
+    }
+
+    if (key_resp_3.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp_3.getKeys({keyList: ['space'], waitRelease: false});
+      _key_resp_3_allKeys = _key_resp_3_allKeys.concat(theseKeys);
+      if (_key_resp_3_allKeys.length > 0) {
+        key_resp_3.keys = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].name;  // just the last key pressed
+        key_resp_3.rt = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].rt;
         // a response ends the routine
         continueRoutine = false;
       }
     }
     
-    
-    // *Continue2* updates
-    if (t >= 0.0 && Continue2.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      Continue2.tStart = t;  // (not accounting for frame time here)
-      Continue2.frameNStart = frameN;  // exact frame index
-      
-      Continue2.setAutoDraw(true);
-    }
-
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -1885,7 +1894,7 @@ function Welcome2RoutineEachFrame(snapshot) {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of Welcome2Components)
+    for (const thisComponent of Welcome2Ver2Components)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
         break;
@@ -1901,22 +1910,22 @@ function Welcome2RoutineEachFrame(snapshot) {
 }
 
 
-function Welcome2RoutineEnd(snapshot) {
+function Welcome2Ver2RoutineEnd(snapshot) {
   return function () {
-    //------Ending Routine 'Welcome2'-------
-    for (const thisComponent of Welcome2Components) {
+    //------Ending Routine 'Welcome2Ver2'-------
+    for (const thisComponent of Welcome2Ver2Components) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     }
-    psychoJS.experiment.addData('Wel2ContinueKey.keys', Wel2ContinueKey.keys);
-    if (typeof Wel2ContinueKey.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('Wel2ContinueKey.rt', Wel2ContinueKey.rt);
+    psychoJS.experiment.addData('key_resp_3.keys', key_resp_3.keys);
+    if (typeof key_resp_3.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp_3.rt', key_resp_3.rt);
         routineTimer.reset();
         }
     
-    Wel2ContinueKey.stop();
-    // the Routine "Welcome2" was not non-slip safe, so reset the non-slip timer
+    key_resp_3.stop();
+    // the Routine "Welcome2Ver2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;
@@ -2168,6 +2177,17 @@ function Practice1RoutineEnd(snapshot) {
     PracticeSound.stop();  // ensure sound has stopped at end of routine
     Tcount += 1;
     TrialCount = ("Trial " + Tcount.toString());
+    if ((Type === "NEW")) {
+        message = "This is a NEW word. \nThis is your first time hearing this sound.";
+    } else {
+        if ((Type === "SIMILAR")) {
+            message = "This is a NEW word. \nNotice that this one sounds similar to the previous sound but is not exactly the same.";
+        } else {
+            if ((Type === "OLD")) {
+                message = "This is an OLD word. \nThis sound is exactly the same as the first sound.";
+            }
+        }
+    }
     
     // the Routine "Practice1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
@@ -2187,18 +2207,7 @@ function PracticeFeedbackRoutineBegin(snapshot) {
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    if ((Correct2 === 3)) {
-        message = "This is a NEW sound. \nThis sound has never been played before.";
-    } else {
-        if ((Correct2 === 2)) {
-            message = "This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound.";
-        } else {
-            if ((Correct2 === 1)) {
-                message = "This is a REPEAT sound. \nThe exact same sound has been played previously.";
-            }
-        }
-    }
-    
+    /* Syntax Error: Fix Python code */
     Practice_resp.keys = undefined;
     Practice_resp.rt = undefined;
     _Practice_resp_allKeys = [];
@@ -2240,13 +2249,13 @@ function PracticeFeedbackRoutineEachFrame(snapshot) {
     }
 
     if (Practice_resp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = Practice_resp.getKeys({keyList: ['1', '2', '3'], waitRelease: false});
+      let theseKeys = Practice_resp.getKeys({keyList: ['1', '2'], waitRelease: false});
       _Practice_resp_allKeys = _Practice_resp_allKeys.concat(theseKeys);
       if (_Practice_resp_allKeys.length > 0) {
         Practice_resp.keys = _Practice_resp_allKeys[_Practice_resp_allKeys.length - 1].name;  // just the last key pressed
         Practice_resp.rt = _Practice_resp_allKeys[_Practice_resp_allKeys.length - 1].rt;
         // was this correct?
-        if (Practice_resp.keys == Correct2) {
+        if (Practice_resp.keys == Correct) {
             Practice_resp.corr = 1;
         } else {
             Practice_resp.corr = 0;
@@ -2340,7 +2349,7 @@ function PracticeFeedbackRoutineEnd(snapshot) {
     
     // was no response the correct answer?!
     if (Practice_resp.keys === undefined) {
-      if (['None','none',undefined].includes(Correct2)) {
+      if (['None','none',undefined].includes(Correct)) {
          Practice_resp.corr = 1;  // correct non-response
       } else {
          Practice_resp.corr = 0;  // failed to respond (incorrectly)
@@ -2587,7 +2596,7 @@ function Count1RoutineBegin(snapshot) {
     routineTimer.add(1.500000);
     // update component parameters for each repeat
     count += 1;
-    number = (count.toString() + "/144");
+    number = (count.toString() + "/128");
     
     // keep track of which components have finished
     Count1Components = [];
@@ -2784,25 +2793,25 @@ function MSTSoundRoutineEnd(snapshot) {
 }
 
 
-var _MSTResp_allKeys;
-var MSTComponents;
-function MSTRoutineBegin(snapshot) {
+var _key_resp_allKeys;
+var MSTVer2Components;
+function MSTVer2RoutineBegin(snapshot) {
   return function () {
-    //------Prepare to start Routine 'MST'-------
+    //------Prepare to start Routine 'MSTVer2'-------
     t = 0;
-    MSTClock.reset(); // clock
+    MSTVer2Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    MSTResp.keys = undefined;
-    MSTResp.rt = undefined;
-    _MSTResp_allKeys = [];
+    key_resp.keys = undefined;
+    key_resp.rt = undefined;
+    _key_resp_allKeys = [];
     // keep track of which components have finished
-    MSTComponents = [];
-    MSTComponents.push(MSTQuestion);
-    MSTComponents.push(MSTResp);
+    MSTVer2Components = [];
+    MSTVer2Components.push(text_2);
+    MSTVer2Components.push(key_resp);
     
-    for (const thisComponent of MSTComponents)
+    for (const thisComponent of MSTVer2Components)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
     return Scheduler.Event.NEXT;
@@ -2810,47 +2819,47 @@ function MSTRoutineBegin(snapshot) {
 }
 
 
-function MSTRoutineEachFrame(snapshot) {
+function MSTVer2RoutineEachFrame(snapshot) {
   return function () {
-    //------Loop for each frame of Routine 'MST'-------
+    //------Loop for each frame of Routine 'MSTVer2'-------
     // get current time
-    t = MSTClock.getTime();
+    t = MSTVer2Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *MSTQuestion* updates
-    if (t >= 0.0 && MSTQuestion.status === PsychoJS.Status.NOT_STARTED) {
+    // *text_2* updates
+    if (t >= 0.0 && text_2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      MSTQuestion.tStart = t;  // (not accounting for frame time here)
-      MSTQuestion.frameNStart = frameN;  // exact frame index
+      text_2.tStart = t;  // (not accounting for frame time here)
+      text_2.frameNStart = frameN;  // exact frame index
       
-      MSTQuestion.setAutoDraw(true);
+      text_2.setAutoDraw(true);
     }
 
     
-    // *MSTResp* updates
-    if (t >= 0.0 && MSTResp.status === PsychoJS.Status.NOT_STARTED) {
+    // *key_resp* updates
+    if (t >= 0.0 && key_resp.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      MSTResp.tStart = t;  // (not accounting for frame time here)
-      MSTResp.frameNStart = frameN;  // exact frame index
+      key_resp.tStart = t;  // (not accounting for frame time here)
+      key_resp.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { MSTResp.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { MSTResp.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { MSTResp.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { key_resp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { key_resp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { key_resp.clearEvents(); });
     }
 
-    if (MSTResp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = MSTResp.getKeys({keyList: ['1', '2', '3'], waitRelease: false});
-      _MSTResp_allKeys = _MSTResp_allKeys.concat(theseKeys);
-      if (_MSTResp_allKeys.length > 0) {
-        MSTResp.keys = _MSTResp_allKeys[_MSTResp_allKeys.length - 1].name;  // just the last key pressed
-        MSTResp.rt = _MSTResp_allKeys[_MSTResp_allKeys.length - 1].rt;
+    if (key_resp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = key_resp.getKeys({keyList: ['1', '2'], waitRelease: false});
+      _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
+      if (_key_resp_allKeys.length > 0) {
+        key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
+        key_resp.rt = _key_resp_allKeys[_key_resp_allKeys.length - 1].rt;
         // was this correct?
-        if (MSTResp.keys == Correct2) {
-            MSTResp.corr = 1;
+        if (key_resp.keys == Correct) {
+            key_resp.corr = 1;
         } else {
-            MSTResp.corr = 0;
+            key_resp.corr = 0;
         }
         // a response ends the routine
         continueRoutine = false;
@@ -2868,7 +2877,7 @@ function MSTRoutineEachFrame(snapshot) {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of MSTComponents)
+    for (const thisComponent of MSTVer2Components)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
         break;
@@ -2884,32 +2893,32 @@ function MSTRoutineEachFrame(snapshot) {
 }
 
 
-function MSTRoutineEnd(snapshot) {
+function MSTVer2RoutineEnd(snapshot) {
   return function () {
-    //------Ending Routine 'MST'-------
-    for (const thisComponent of MSTComponents) {
+    //------Ending Routine 'MSTVer2'-------
+    for (const thisComponent of MSTVer2Components) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     }
     // was no response the correct answer?!
-    if (MSTResp.keys === undefined) {
-      if (['None','none',undefined].includes(Correct2)) {
-         MSTResp.corr = 1;  // correct non-response
+    if (key_resp.keys === undefined) {
+      if (['None','none',undefined].includes(Correct)) {
+         key_resp.corr = 1;  // correct non-response
       } else {
-         MSTResp.corr = 0;  // failed to respond (incorrectly)
+         key_resp.corr = 0;  // failed to respond (incorrectly)
       }
     }
     // store data for thisExp (ExperimentHandler)
-    psychoJS.experiment.addData('MSTResp.keys', MSTResp.keys);
-    psychoJS.experiment.addData('MSTResp.corr', MSTResp.corr);
-    if (typeof MSTResp.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('MSTResp.rt', MSTResp.rt);
+    psychoJS.experiment.addData('key_resp.keys', key_resp.keys);
+    psychoJS.experiment.addData('key_resp.corr', key_resp.corr);
+    if (typeof key_resp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('key_resp.rt', key_resp.rt);
         routineTimer.reset();
         }
     
-    MSTResp.stop();
-    // the Routine "MST" was not non-slip safe, so reset the non-slip timer
+    key_resp.stop();
+    // the Routine "MSTVer2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;
