@@ -20,7 +20,7 @@ both_ind_list = []
 #     ind_list = list(range(initial_ind,initial_ind+45, 15))
 #     lure_ind_list.append(ind_list)
 
-for i in range(48):
+for i in range(58):
     initial_ind = random.randint(0, 110)
     ind_list = list(range(initial_ind,initial_ind+48, 16))
     both_ind_list.append(ind_list)
@@ -32,7 +32,7 @@ for i in range(48):
 #             ind += 1            
 #         seeds[ind] = item
 
-for i in range(48):
+for i in range(58):
     item = both[i]
     for ind in both_ind_list[i]:
         while seeds[ind] != 0:
