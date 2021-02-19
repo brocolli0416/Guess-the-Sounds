@@ -632,7 +632,7 @@ function experimentInit() {
   StartTxt = new visual.TextStim({
     win: psychoJS.window,
     name: 'StartTxt',
-    text: 'This is the end of practice.\n\n\nWe will now begin the actual task. The sounds you heard in the practice are not a part of the actual task.\nThere are 128 items in total. Listen to each sound carefully as they will play once.',
+    text: 'This is the end of practice.\n\n\nWe will now begin the actual task. The sounds you heard in the practice are not part of the actual task.\nThere are 128 items in total. Listen to each sound carefully as they will play only once.',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
