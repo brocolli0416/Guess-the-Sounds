@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 
 ### Load participant file ###
-filelist = [4, 5, 6]
+filelist = [3, 4, 5]
 
 ###############################
 ### Calculate accuracy rate ###
@@ -15,11 +15,11 @@ def get_accuracy(df):
         if pd.isnull(i) == False:
             corr.append(i)
     soundtype = [] # Sound type (old, lure, new)
-    t = df['Correct']
+    t = df['Correct2']
     for i in t:
         if pd.isnull(i) == False:
             soundtype.append(i)
-    del soundtype[:11] # Remove the first 11 headphone checks and practice trials
+    del soundtype[:5] # Remove the first 11 headphone checks and practice trials
     response = [] # Subject's response (OLD, SIMILAR, NEW)
     k = df['MSTResp.keys']
     for i in k:
@@ -36,6 +36,7 @@ def get_accuracy(df):
     old_n = 0
     sim_n = 0
     new_n = 0
+
     for i in range(len(soundtype)):
         if soundtype[i] == 1: # For Old sounds
             if response[i] == 1:
@@ -59,15 +60,15 @@ def get_accuracy(df):
             else:
                 new_n += 1
     # Calculate the average
-    old_o = old_o/30
-    sim_o = sim_o/30
-    new_o = new_o/30
-    old_s = old_s/30
-    sim_s = sim_s/30
-    new_s = new_s/30
-    old_n = old_n/49
-    sim_n = sim_n/49
-    new_n = new_n/49
+    old_o = old_o/64
+    sim_o = sim_o/64
+    new_o = new_o/64
+    old_s = old_s/32
+    sim_s = sim_s/32
+    new_s = new_s/32
+    old_n = old_n/48
+    sim_n = sim_n/48
+    new_n = new_n/48
 
 #############################
 ### Calculate LDI and REC ###
@@ -82,7 +83,7 @@ def get_accuracy(df):
         writer.writerow([old_o, sim_o, new_o, old_s, sim_s, new_s, old_n, sim_n, new_n, LDI, REC])
 
 for i in filelist:
-    filename = str(i)+'_MST110.csv'
+    filename = str(i)+'_MST144.csv'
     df = pd.read_csv(filename)
     get_accuracy(df)
 

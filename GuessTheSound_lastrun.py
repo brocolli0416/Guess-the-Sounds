@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on February 19, 2021, at 17:43
+    on February 20, 2021, at 14:58
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -149,6 +149,46 @@ HeadphoneContinue = visual.TextStim(win=win, name='HeadphoneContinue',
     depth=-1.0);
 HeadphoneContinueKey = keyboard.Keyboard()
 
+# Initialize components for Routine "HeadphonePlay"
+HeadphonePlayClock = core.Clock()
+CheckSound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+    name='CheckSound')
+CheckSound.setVolume(1)
+counter = 0
+checkcount = str(counter) + "/6"
+QuestionTxt = visual.TextStim(win=win, name='QuestionTxt',
+    text='Which tone was the quietest?\n(Press the corresponding number on your keyboard)\n\n1 = First  2 = Second  3 = Third',
+    font='Arial',
+    pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+CheckTrial = visual.TextStim(win=win, name='CheckTrial',
+    text='default text',
+    font='Arial',
+    pos=(0, 0.2), height=0.05, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+CrossHeadphone = visual.TextStim(win=win, name='CrossHeadphone',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+CheckResp = keyboard.Keyboard()
+
+# Initialize components for Routine "HeadphoneFeedback"
+HeadphoneFeedbackClock = core.Clock()
+FeedbackTxt = visual.TextStim(win=win, name='FeedbackTxt',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
 # Initialize components for Routine "Welcome1"
 Welcome1Clock = core.Clock()
 WelcomeTxt1 = visual.TextStim(win=win, name='WelcomeTxt1',
@@ -250,7 +290,7 @@ Continue = visual.TextStim(win=win, name='Continue',
     languageStyle='LTR',
     depth=-4.0);
 Options = visual.TextStim(win=win, name='Options',
-    text='1 = OLD\n2 = SIMILAR\n3 = NEW',
+    text='1 = REPEAT\n2 = SIMILAR\n3 = NEW',
     font='Arial',
     pos=(0, -0.2), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -270,7 +310,7 @@ FeedbackMssg = visual.TextStim(win=win, name='FeedbackMssg',
 # Initialize components for Routine "Start"
 StartClock = core.Clock()
 StartTxt = visual.TextStim(win=win, name='StartTxt',
-    text='This is the end of practice.\n\n\nWe will now begin the actual task. The sounds you heard in the practice are not a part of the actual task.\nThere are 128 items in total. Listen to each sound carefully as they will play once.',
+    text='This is the end of practice.\n\n\nWe will now begin the actual task. The sounds you heard in the practice are not part of the actual task.\nThere are 128 items in total. Listen to each sound carefully as they will play only once.',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -782,6 +822,263 @@ thisExp.nextEntry()
 # the Routine "HeadphoneCheck" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# set up handler to look after randomisation of conditions etc
+trials_2 = data.TrialHandler(nReps=1, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=data.importConditions('Headphone_check.xlsx'),
+    seed=None, name='trials_2')
+thisExp.addLoop(trials_2)  # add the loop to the experiment
+thisTrial_2 = trials_2.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+if thisTrial_2 != None:
+    for paramName in thisTrial_2:
+        exec('{} = thisTrial_2[paramName]'.format(paramName))
+
+for thisTrial_2 in trials_2:
+    currentLoop = trials_2
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_2.rgb)
+    if thisTrial_2 != None:
+        for paramName in thisTrial_2:
+            exec('{} = thisTrial_2[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "HeadphonePlay"-------
+    continueRoutine = True
+    # update component parameters for each repeat
+    CheckSound.setSound(File, hamming=True)
+    CheckSound.setVolume(1, log=False)
+    counter += 1
+    checkcount = str(counter) + "/6"
+    CheckTrial.setText(checkcount)
+    CheckResp.keys = []
+    CheckResp.rt = []
+    _CheckResp_allKeys = []
+    # keep track of which components have finished
+    HeadphonePlayComponents = [CheckSound, QuestionTxt, CheckTrial, CrossHeadphone, CheckResp]
+    for thisComponent in HeadphonePlayComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    HeadphonePlayClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "HeadphonePlay"-------
+    while continueRoutine:
+        # get current time
+        t = HeadphonePlayClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=HeadphonePlayClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        # start/stop CheckSound
+        if CheckSound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            CheckSound.frameNStart = frameN  # exact frame index
+            CheckSound.tStart = t  # local t and not account for scr refresh
+            CheckSound.tStartRefresh = tThisFlipGlobal  # on global time
+            CheckSound.play(when=win)  # sync with win flip
+        
+        # *QuestionTxt* updates
+        if QuestionTxt.status == NOT_STARTED and tThisFlip >= CheckSound.getDuration() + 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            QuestionTxt.frameNStart = frameN  # exact frame index
+            QuestionTxt.tStart = t  # local t and not account for scr refresh
+            QuestionTxt.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(QuestionTxt, 'tStartRefresh')  # time at next scr refresh
+            QuestionTxt.setAutoDraw(True)
+        
+        # *CheckTrial* updates
+        if CheckTrial.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            CheckTrial.frameNStart = frameN  # exact frame index
+            CheckTrial.tStart = t  # local t and not account for scr refresh
+            CheckTrial.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(CheckTrial, 'tStartRefresh')  # time at next scr refresh
+            CheckTrial.setAutoDraw(True)
+        if CheckTrial.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > CheckTrial.tStartRefresh + CheckSound.getDuration() + 0.5-frameTolerance:
+                # keep track of stop time/frame for later
+                CheckTrial.tStop = t  # not accounting for scr refresh
+                CheckTrial.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(CheckTrial, 'tStopRefresh')  # time at next scr refresh
+                CheckTrial.setAutoDraw(False)
+        
+        # *CrossHeadphone* updates
+        if CrossHeadphone.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            CrossHeadphone.frameNStart = frameN  # exact frame index
+            CrossHeadphone.tStart = t  # local t and not account for scr refresh
+            CrossHeadphone.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(CrossHeadphone, 'tStartRefresh')  # time at next scr refresh
+            CrossHeadphone.setAutoDraw(True)
+        if CrossHeadphone.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > CrossHeadphone.tStartRefresh + CheckSound.getDuration() + 0.5-frameTolerance:
+                # keep track of stop time/frame for later
+                CrossHeadphone.tStop = t  # not accounting for scr refresh
+                CrossHeadphone.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(CrossHeadphone, 'tStopRefresh')  # time at next scr refresh
+                CrossHeadphone.setAutoDraw(False)
+        
+        # *CheckResp* updates
+        waitOnFlip = False
+        if CheckResp.status == NOT_STARTED and tThisFlip >= CheckSound.getDuration() + 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            CheckResp.frameNStart = frameN  # exact frame index
+            CheckResp.tStart = t  # local t and not account for scr refresh
+            CheckResp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(CheckResp, 'tStartRefresh')  # time at next scr refresh
+            CheckResp.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(CheckResp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(CheckResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if CheckResp.status == STARTED and not waitOnFlip:
+            theseKeys = CheckResp.getKeys(keyList=['1', '2', '3'], waitRelease=False)
+            _CheckResp_allKeys.extend(theseKeys)
+            if len(_CheckResp_allKeys):
+                CheckResp.keys = _CheckResp_allKeys[-1].name  # just the last key pressed
+                CheckResp.rt = _CheckResp_allKeys[-1].rt
+                # was this correct?
+                if (CheckResp.keys == str(Correct)) or (CheckResp.keys == Correct):
+                    CheckResp.corr = 1
+                else:
+                    CheckResp.corr = 0
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in HeadphonePlayComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "HeadphonePlay"-------
+    for thisComponent in HeadphonePlayComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    CheckSound.stop()  # ensure sound has stopped at end of routine
+    trials_2.addData('CheckSound.started', CheckSound.tStartRefresh)
+    trials_2.addData('CheckSound.stopped', CheckSound.tStopRefresh)
+    if CheckResp.corr == 1:
+        message = "CORRECT"
+    else:
+        message = "INCORRECT"
+    trials_2.addData('QuestionTxt.started', QuestionTxt.tStartRefresh)
+    trials_2.addData('QuestionTxt.stopped', QuestionTxt.tStopRefresh)
+    trials_2.addData('CheckTrial.started', CheckTrial.tStartRefresh)
+    trials_2.addData('CheckTrial.stopped', CheckTrial.tStopRefresh)
+    trials_2.addData('CrossHeadphone.started', CrossHeadphone.tStartRefresh)
+    trials_2.addData('CrossHeadphone.stopped', CrossHeadphone.tStopRefresh)
+    # check responses
+    if CheckResp.keys in ['', [], None]:  # No response was made
+        CheckResp.keys = None
+        # was no response the correct answer?!
+        if str(Correct).lower() == 'none':
+           CheckResp.corr = 1;  # correct non-response
+        else:
+           CheckResp.corr = 0;  # failed to respond (incorrectly)
+    # store data for trials_2 (TrialHandler)
+    trials_2.addData('CheckResp.keys',CheckResp.keys)
+    trials_2.addData('CheckResp.corr', CheckResp.corr)
+    if CheckResp.keys != None:  # we had a response
+        trials_2.addData('CheckResp.rt', CheckResp.rt)
+    trials_2.addData('CheckResp.started', CheckResp.tStartRefresh)
+    trials_2.addData('CheckResp.stopped', CheckResp.tStopRefresh)
+    # the Routine "HeadphonePlay" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "HeadphoneFeedback"-------
+    continueRoutine = True
+    routineTimer.add(1.000000)
+    # update component parameters for each repeat
+    FeedbackTxt.setText(message)
+    # keep track of which components have finished
+    HeadphoneFeedbackComponents = [FeedbackTxt]
+    for thisComponent in HeadphoneFeedbackComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    HeadphoneFeedbackClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    
+    # -------Run Routine "HeadphoneFeedback"-------
+    while continueRoutine and routineTimer.getTime() > 0:
+        # get current time
+        t = HeadphoneFeedbackClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=HeadphoneFeedbackClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *FeedbackTxt* updates
+        if FeedbackTxt.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            FeedbackTxt.frameNStart = frameN  # exact frame index
+            FeedbackTxt.tStart = t  # local t and not account for scr refresh
+            FeedbackTxt.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FeedbackTxt, 'tStartRefresh')  # time at next scr refresh
+            FeedbackTxt.setAutoDraw(True)
+        if FeedbackTxt.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > FeedbackTxt.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                FeedbackTxt.tStop = t  # not accounting for scr refresh
+                FeedbackTxt.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(FeedbackTxt, 'tStopRefresh')  # time at next scr refresh
+                FeedbackTxt.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in HeadphoneFeedbackComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "HeadphoneFeedback"-------
+    for thisComponent in HeadphoneFeedbackComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials_2.addData('FeedbackTxt.started', FeedbackTxt.tStartRefresh)
+    trials_2.addData('FeedbackTxt.stopped', FeedbackTxt.tStopRefresh)
+    thisExp.nextEntry()
+    
+# completed 1 repeats of 'trials_2'
+
+
 # ------Prepare to start Routine "Welcome1"-------
 continueRoutine = True
 # update component parameters for each repeat
@@ -1126,7 +1423,7 @@ for thisPracticeTrial in PracticeTrials:
     continueRoutine = True
     # update component parameters for each repeat
     TrialNumber.setText(TrialCount)
-    PracticeSound.setSound(SoundFile5, hamming=True)
+    PracticeSound.setSound(SoundFile, hamming=True)
     PracticeSound.setVolume(1, log=False)
     # keep track of which components have finished
     Practice1Components = [TrialNumber, PracticeSound, PracticeCross]
@@ -1571,7 +1868,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='97:149'),
+    trialList=data.importConditions('GuessSounds_conditions.xlsx', selection='5:149'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1663,7 +1960,7 @@ for thisTrial in trials:
     # ------Prepare to start Routine "MSTSound"-------
     continueRoutine = True
     # update component parameters for each repeat
-    TargetSound.setSound(SoundFile5, hamming=True)
+    TargetSound.setSound(SoundFile, hamming=True)
     TargetSound.setVolume(1, log=False)
     ItemNumber.setText(number)
     # keep track of which components have finished
