@@ -45,10 +45,10 @@ flowScheduler.add(VolumeAdjustmentRoutineEnd());
 flowScheduler.add(HeadphoneCheckRoutineBegin());
 flowScheduler.add(HeadphoneCheckRoutineEachFrame());
 flowScheduler.add(HeadphoneCheckRoutineEnd());
-const trials_2LoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(trials_2LoopBegin, trials_2LoopScheduler);
-flowScheduler.add(trials_2LoopScheduler);
-flowScheduler.add(trials_2LoopEnd);
+const HeadphoneLoopLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(HeadphoneLoopLoopBegin, HeadphoneLoopLoopScheduler);
+flowScheduler.add(HeadphoneLoopLoopScheduler);
+flowScheduler.add(HeadphoneLoopLoopEnd);
 flowScheduler.add(Welcome1RoutineBegin());
 flowScheduler.add(Welcome1RoutineEachFrame());
 flowScheduler.add(Welcome1RoutineEnd());
@@ -81,107 +81,107 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'Test/Foils/Slurp.wav', 'path': 'Test/Foils/Slurp.wav'},
-    {'name': 'Snore_D.wav', 'path': 'Snore_D.wav'},
-    {'name': 'Headphone/t1_2.wav', 'path': 'Headphone/t1_2.wav'},
-    {'name': 'Laugh_D.wav', 'path': 'Laugh_D.wav'},
-    {'name': 'CarStart_E.wav', 'path': 'CarStart_E.wav'},
-    {'name': 'Test/Foils/Heartbeat.wav', 'path': 'Test/Foils/Heartbeat.wav'},
-    {'name': 'Pour_C.wav', 'path': 'Pour_C.wav'},
-    {'name': 'Growl_F.wav', 'path': 'Growl_F.wav'},
-    {'name': 'Initial/Repeat/Sneeze_B.wav', 'path': 'Initial/Repeat/Sneeze_B.wav'},
-    {'name': 'Initial/Doubled/Laugh_A.wav', 'path': 'Initial/Doubled/Laugh_A.wav'},
-    {'name': 'Headphone/t3_1.wav', 'path': 'Headphone/t3_1.wav'},
-    {'name': 'Coin_D.wav', 'path': 'Coin_D.wav'},
-    {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
-    {'name': 'Initial/Doubled/Bubbles_A.wav', 'path': 'Initial/Doubled/Bubbles_A.wav'},
-    {'name': 'Initial/Repeat/Cello.wav', 'path': 'Initial/Repeat/Cello.wav'},
-    {'name': 'Initial/Doubled/Chime_A.wav', 'path': 'Initial/Doubled/Chime_A.wav'},
-    {'name': 'Initial/Doubled/Cough_A.wav', 'path': 'Initial/Doubled/Cough_A.wav'},
-    {'name': 'Initial/NoRepeat/Footsteps_B.wav', 'path': 'Initial/NoRepeat/Footsteps_B.wav'},
-    {'name': 'Initial/NoRepeat/Puff_A.wav', 'path': 'Initial/NoRepeat/Puff_A.wav'},
-    {'name': 'Dog_E.wav', 'path': 'Dog_E.wav'},
-    {'name': 'Initial/NoRepeat/Faucet_A.wav', 'path': 'Initial/NoRepeat/Faucet_A.wav'},
-    {'name': 'Test/Foils/Typing.wav', 'path': 'Test/Foils/Typing.wav'},
-    {'name': 'Footsteps_C.wav', 'path': 'Footsteps_C.wav'},
-    {'name': 'Initial/Doubled/HairDryer_A.wav', 'path': 'Initial/Doubled/HairDryer_A.wav'},
-    {'name': 'Test/Foils/Bullfrog.wav', 'path': 'Test/Foils/Bullfrog.wav'},
-    {'name': 'Duck_A.wav', 'path': 'Duck_A.wav'},
-    {'name': 'Practice/Seagull_A.wav', 'path': 'Practice/Seagull_A.wav'},
-    {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
-    {'name': 'Goat_C.wav', 'path': 'Goat_C.wav'},
-    {'name': 'Initial/Doubled/Cuckoo_A.wav', 'path': 'Initial/Doubled/Cuckoo_A.wav'},
     {'name': 'Initial/NoRepeat/Hammer_A.wav', 'path': 'Initial/NoRepeat/Hammer_A.wav'},
-    {'name': 'Headphone/t1_1.wav', 'path': 'Headphone/t1_1.wav'},
-    {'name': 'Whistle_C.wav', 'path': 'Whistle_C.wav'},
-    {'name': 'Elephant_C.wav', 'path': 'Elephant_C.wav'},
-    {'name': 'Coin_E.wav', 'path': 'Coin_E.wav'},
-    {'name': 'Practice/Gargle_A.wav', 'path': 'Practice/Gargle_A.wav'},
-    {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
-    {'name': 'Piano_D.wav', 'path': 'Piano_D.wav'},
-    {'name': 'Initial/Repeat/Phone_A.wav', 'path': 'Initial/Repeat/Phone_A.wav'},
-    {'name': 'Bird_D.wav', 'path': 'Bird_D.wav'},
-    {'name': 'Initial/Doubled/Siren_A.wav', 'path': 'Initial/Doubled/Siren_A.wav'},
-    {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
-    {'name': 'Initial/Repeat/Crow_B.wav', 'path': 'Initial/Repeat/Crow_B.wav'},
-    {'name': 'Writing_C.wav', 'path': 'Writing_C.wav'},
-    {'name': 'Initial/NoRepeat/Droplet_B.wav', 'path': 'Initial/NoRepeat/Droplet_B.wav'},
-    {'name': 'Initial/NoRepeat/Toilet_B.wav', 'path': 'Initial/NoRepeat/Toilet_B.wav'},
-    {'name': 'Practice/Skid_B.wav', 'path': 'Practice/Skid_B.wav'},
-    {'name': 'Baby_F.wav', 'path': 'Baby_F.wav'},
-    {'name': 'Test/Foils/Steam.wav', 'path': 'Test/Foils/Steam.wav'},
-    {'name': 'Initial/Repeat/ManWhistle.wav', 'path': 'Initial/Repeat/ManWhistle.wav'},
-    {'name': 'Initial/Repeat/Buzz.wav', 'path': 'Initial/Repeat/Buzz.wav'},
-    {'name': 'Phone_D.wav', 'path': 'Phone_D.wav'},
-    {'name': 'Practice/Gargle_B.wav', 'path': 'Practice/Gargle_B.wav'},
-    {'name': 'Chick_A.wav', 'path': 'Chick_A.wav'},
-    {'name': 'Chomp_E.wav', 'path': 'Chomp_E.wav'},
-    {'name': 'Growl_E.wav', 'path': 'Growl_E.wav'},
-    {'name': 'Test/Lures/Bubbles_B.wav', 'path': 'Test/Lures/Bubbles_B.wav'},
-    {'name': 'Test/Lures/Chime_B.wav', 'path': 'Test/Lures/Chime_B.wav'},
-    {'name': 'Initial/Doubled/Chicken_A.wav', 'path': 'Initial/Doubled/Chicken_A.wav'},
-    {'name': 'Initial/NoRepeat/Sleighbells_B.wav', 'path': 'Initial/NoRepeat/Sleighbells_B.wav'},
-    {'name': 'Initial/Repeat/PaperRip.wav', 'path': 'Initial/Repeat/PaperRip.wav'},
-    {'name': 'Initial/Doubled/Cat_A.wav', 'path': 'Initial/Doubled/Cat_A.wav'},
-    {'name': 'Elephant_D.wav', 'path': 'Elephant_D.wav'},
-    {'name': 'Initial/Doubled/Writing_A.wav', 'path': 'Initial/Doubled/Writing_A.wav'},
-    {'name': 'Initial/Repeat/Trumpet_B.wav', 'path': 'Initial/Repeat/Trumpet_B.wav'},
-    {'name': 'Test/Foils/Horse.wav', 'path': 'Test/Foils/Horse.wav'},
-    {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
-    {'name': 'Initial/Repeat/Whistle_A.wav', 'path': 'Initial/Repeat/Whistle_A.wav'},
-    {'name': 'Initial/Repeat/Pour.wav', 'path': 'Initial/Repeat/Pour.wav'},
-    {'name': 'Initial/Repeat/IceDrop.wav', 'path': 'Initial/Repeat/IceDrop.wav'},
-    {'name': 'Headphone/t2_2.wav', 'path': 'Headphone/t2_2.wav'},
-    {'name': 'Test/Foils/Wind_B.wav', 'path': 'Test/Foils/Wind_B.wav'},
-    {'name': 'Headphone/t2_1.wav', 'path': 'Headphone/t2_1.wav'},
-    {'name': 'Initial/Repeat/Howl.wav', 'path': 'Initial/Repeat/Howl.wav'},
-    {'name': 'Goat_D.wav', 'path': 'Goat_D.wav'},
-    {'name': 'Baby_E.wav', 'path': 'Baby_E.wav'},
-    {'name': 'Headphone_check.xlsx', 'path': 'Headphone_check.xlsx'},
-    {'name': 'Crow_A.wav', 'path': 'Crow_A.wav'},
-    {'name': 'CarStart_F.wav', 'path': 'CarStart_F.wav'},
-    {'name': 'Initial/NoRepeat/Helicopter_A.wav', 'path': 'Initial/NoRepeat/Helicopter_A.wav'},
-    {'name': 'Initial/Repeat/Airplane_B.wav', 'path': 'Initial/Repeat/Airplane_B.wav'},
-    {'name': 'Clap_C.wav', 'path': 'Clap_C.wav'},
-    {'name': 'Snore_C.wav', 'path': 'Snore_C.wav'},
-    {'name': 'Clap_B.wav', 'path': 'Clap_B.wav'},
-    {'name': 'Headphone/t3_2.wav', 'path': 'Headphone/t3_2.wav'},
-    {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
-    {'name': 'Initial/NoRepeat/Thunder_A.wav', 'path': 'Initial/NoRepeat/Thunder_A.wav'},
-    {'name': 'Faucet_B.wav', 'path': 'Faucet_B.wav'},
-    {'name': 'Duck_B.wav', 'path': 'Duck_B.wav'},
-    {'name': 'Initial/Repeat/Printer.wav', 'path': 'Initial/Repeat/Printer.wav'},
-    {'name': 'Siren_B.wav', 'path': 'Siren_B.wav'},
-    {'name': 'Dog_F.wav', 'path': 'Dog_F.wav'},
     {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
-    {'name': 'Test/Foils/Camera.wav', 'path': 'Test/Foils/Camera.wav'},
-    {'name': 'Initial/Repeat/Bagpipe.wav', 'path': 'Initial/Repeat/Bagpipe.wav'},
-    {'name': 'Test/Lures/Guitar_B.wav', 'path': 'Test/Lures/Guitar_B.wav'},
+    {'name': 'Test/Lures/Chime_B.wav', 'path': 'Test/Lures/Chime_B.wav'},
+    {'name': 'Initial/Repeat/Pour.wav', 'path': 'Initial/Repeat/Pour.wav'},
+    {'name': 'Growl_E.wav', 'path': 'Growl_E.wav'},
+    {'name': 'Growl_F.wav', 'path': 'Growl_F.wav'},
+    {'name': 'Initial/Repeat/IceDrop.wav', 'path': 'Initial/Repeat/IceDrop.wav'},
+    {'name': 'Siren_B.wav', 'path': 'Siren_B.wav'},
+    {'name': 'Practice/Gargle_B.wav', 'path': 'Practice/Gargle_B.wav'},
+    {'name': 'Initial/Doubled/Bubbles_A.wav', 'path': 'Initial/Doubled/Bubbles_A.wav'},
     {'name': 'Test/Foils/Airhorn.wav', 'path': 'Test/Foils/Airhorn.wav'},
+    {'name': 'Test/Foils/Steam.wav', 'path': 'Test/Foils/Steam.wav'},
+    {'name': 'Headphone/t3_1.wav', 'path': 'Headphone/t3_1.wav'},
+    {'name': 'Headphone_check.xlsx', 'path': 'Headphone_check.xlsx'},
+    {'name': 'Whistle_C.wav', 'path': 'Whistle_C.wav'},
+    {'name': 'Cough_A.wav', 'path': 'Cough_A.wav'},
+    {'name': 'Test/Foils/Typing.wav', 'path': 'Test/Foils/Typing.wav'},
+    {'name': 'Goat_D.wav', 'path': 'Goat_D.wav'},
+    {'name': 'Initial/NoRepeat/Thunder_A.wav', 'path': 'Initial/NoRepeat/Thunder_A.wav'},
+    {'name': 'Initial/Doubled/Chomp_A.wav', 'path': 'Initial/Doubled/Chomp_A.wav'},
+    {'name': 'Test/Lures/Bubbles_B.wav', 'path': 'Test/Lures/Bubbles_B.wav'},
+    {'name': 'Laugh_D.wav', 'path': 'Laugh_D.wav'},
+    {'name': 'Initial/Doubled/Cat_A.wav', 'path': 'Initial/Doubled/Cat_A.wav'},
+    {'name': 'Piano_D.wav', 'path': 'Piano_D.wav'},
+    {'name': 'Footsteps_E.wav', 'path': 'Footsteps_E.wav'},
+    {'name': 'Initial/Doubled/Chicken_A.wav', 'path': 'Initial/Doubled/Chicken_A.wav'},
+    {'name': 'Clap_B.wav', 'path': 'Clap_B.wav'},
     {'name': 'Test/Foils/Donkey.wav', 'path': 'Test/Foils/Donkey.wav'},
+    {'name': 'Faucet_C.wav', 'path': 'Faucet_C.wav'},
+    {'name': 'Coin_E.wav', 'path': 'Coin_E.wav'},
+    {'name': 'Initial/Doubled/Chime_A.wav', 'path': 'Initial/Doubled/Chime_A.wav'},
+    {'name': 'Initial/Repeat/Howl.wav', 'path': 'Initial/Repeat/Howl.wav'},
+    {'name': 'Siren_E.wav', 'path': 'Siren_E.wav'},
+    {'name': 'Initial/Doubled/Cuckoo_A.wav', 'path': 'Initial/Doubled/Cuckoo_A.wav'},
+    {'name': 'Bird_D.wav', 'path': 'Bird_D.wav'},
+    {'name': 'Initial/NoRepeat/Helicopter_A.wav', 'path': 'Initial/NoRepeat/Helicopter_A.wav'},
+    {'name': 'Baby_F.wav', 'path': 'Baby_F.wav'},
+    {'name': 'Practice/Skid_B.wav', 'path': 'Practice/Skid_B.wav'},
+    {'name': 'Initial/NoRepeat/Puff_A.wav', 'path': 'Initial/NoRepeat/Puff_A.wav'},
+    {'name': 'Initial/Repeat/Printer.wav', 'path': 'Initial/Repeat/Printer.wav'},
+    {'name': 'Pour_C.wav', 'path': 'Pour_C.wav'},
     {'name': 'Test/Foils/Bowlingpins.wav', 'path': 'Test/Foils/Bowlingpins.wav'},
-    {'name': 'Cough_E.wav', 'path': 'Cough_E.wav'},
-    {'name': 'Initial/NoRepeat/Mosquito_B.wav', 'path': 'Initial/NoRepeat/Mosquito_B.wav'}
+    {'name': 'Elephant_D.wav', 'path': 'Elephant_D.wav'},
+    {'name': 'Test/Foils/Bullfrog.wav', 'path': 'Test/Foils/Bullfrog.wav'},
+    {'name': 'Initial/Doubled/Laugh_A.wav', 'path': 'Initial/Doubled/Laugh_A.wav'},
+    {'name': 'Crow_B.wav', 'path': 'Crow_B.wav'},
+    {'name': 'Footsteps_F.wav', 'path': 'Footsteps_F.wav'},
+    {'name': 'Dog_E.wav', 'path': 'Dog_E.wav'},
+    {'name': 'Initial/NoRepeat/Droplet_B.wav', 'path': 'Initial/NoRepeat/Droplet_B.wav'},
+    {'name': 'Goat_C.wav', 'path': 'Goat_C.wav'},
+    {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
+    {'name': 'Chomp_E.wav', 'path': 'Chomp_E.wav'},
+    {'name': 'Initial/Repeat/PaperRip.wav', 'path': 'Initial/Repeat/PaperRip.wav'},
+    {'name': 'Test/Foils/Camera.wav', 'path': 'Test/Foils/Camera.wav'},
+    {'name': 'Headphone/t3_2.wav', 'path': 'Headphone/t3_2.wav'},
+    {'name': 'Practice/Seagull_A.wav', 'path': 'Practice/Seagull_A.wav'},
+    {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
+    {'name': 'Elephant_C.wav', 'path': 'Elephant_C.wav'},
+    {'name': 'Duck_A.wav', 'path': 'Duck_A.wav'},
+    {'name': 'Chick_A.wav', 'path': 'Chick_A.wav'},
+    {'name': 'Initial/Repeat/Phone_A.wav', 'path': 'Initial/Repeat/Phone_A.wav'},
+    {'name': 'Faucet_A.wav', 'path': 'Faucet_A.wav'},
+    {'name': 'Test/Foils/Horse.wav', 'path': 'Test/Foils/Horse.wav'},
+    {'name': 'Initial/Repeat/ManWhistle.wav', 'path': 'Initial/Repeat/ManWhistle.wav'},
+    {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
+    {'name': 'Test/Foils/Slurp.wav', 'path': 'Test/Foils/Slurp.wav'},
+    {'name': 'Initial/Repeat/Sneeze_B.wav', 'path': 'Initial/Repeat/Sneeze_B.wav'},
+    {'name': 'Crow_A.wav', 'path': 'Crow_A.wav'},
+    {'name': 'Initial/NoRepeat/Mosquito_B.wav', 'path': 'Initial/NoRepeat/Mosquito_B.wav'},
+    {'name': 'Snore_C.wav', 'path': 'Snore_C.wav'},
+    {'name': 'Initial/Repeat/Airplane_B.wav', 'path': 'Initial/Repeat/Airplane_B.wav'},
+    {'name': 'Coin_D.wav', 'path': 'Coin_D.wav'},
+    {'name': 'CarStart_E.wav', 'path': 'CarStart_E.wav'},
+    {'name': 'Initial/Repeat/Bagpipe.wav', 'path': 'Initial/Repeat/Bagpipe.wav'},
+    {'name': 'Practice/Gargle_A.wav', 'path': 'Practice/Gargle_A.wav'},
+    {'name': 'Headphone/t2_1.wav', 'path': 'Headphone/t2_1.wav'},
+    {'name': 'Initial/Repeat/Buzz.wav', 'path': 'Initial/Repeat/Buzz.wav'},
+    {'name': 'Test/Foils/Heartbeat.wav', 'path': 'Test/Foils/Heartbeat.wav'},
+    {'name': 'Headphone/t1_2.wav', 'path': 'Headphone/t1_2.wav'},
+    {'name': 'Initial/Repeat/Cello.wav', 'path': 'Initial/Repeat/Cello.wav'},
+    {'name': 'Headphone/t1_1.wav', 'path': 'Headphone/t1_1.wav'},
+    {'name': 'CarStart_F.wav', 'path': 'CarStart_F.wav'},
+    {'name': 'Initial/Repeat/Trumpet_B.wav', 'path': 'Initial/Repeat/Trumpet_B.wav'},
+    {'name': 'Initial/NoRepeat/Toilet_B.wav', 'path': 'Initial/NoRepeat/Toilet_B.wav'},
+    {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
+    {'name': 'Dog_F.wav', 'path': 'Dog_F.wav'},
+    {'name': 'Headphone/t2_2.wav', 'path': 'Headphone/t2_2.wav'},
+    {'name': 'Baby_E.wav', 'path': 'Baby_E.wav'},
+    {'name': 'Test/Foils/Wind_B.wav', 'path': 'Test/Foils/Wind_B.wav'},
+    {'name': 'Initial/Doubled/HairDryer_A.wav', 'path': 'Initial/Doubled/HairDryer_A.wav'},
+    {'name': 'Whistle_A.wav', 'path': 'Whistle_A.wav'},
+    {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
+    {'name': 'Writing_C.wav', 'path': 'Writing_C.wav'},
+    {'name': 'Clap_C.wav', 'path': 'Clap_C.wav'},
+    {'name': 'Phone_D.wav', 'path': 'Phone_D.wav'},
+    {'name': 'Test/Lures/Guitar_B.wav', 'path': 'Test/Lures/Guitar_B.wav'},
+    {'name': 'Initial/Doubled/Writing_A.wav', 'path': 'Initial/Doubled/Writing_A.wav'},
+    {'name': 'Initial/NoRepeat/Sleighbells_B.wav', 'path': 'Initial/NoRepeat/Sleighbells_B.wav'},
+    {'name': 'Duck_B.wav', 'path': 'Duck_B.wav'},
+    {'name': 'Snore_D.wav', 'path': 'Snore_D.wav'},
+    {'name': 'Cough_E.wav', 'path': 'Cough_E.wav'}
   ]
 });
 
@@ -1272,40 +1272,40 @@ function HeadphoneCheckRoutineEnd(snapshot) {
 }
 
 
-var trials_2;
+var HeadphoneLoop;
 var currentLoop;
-function trials_2LoopBegin(trials_2LoopScheduler) {
+function HeadphoneLoopLoopBegin(HeadphoneLoopLoopScheduler) {
   // set up handler to look after randomisation of conditions etc
-  trials_2 = new TrialHandler({
+  HeadphoneLoop = new TrialHandler({
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
     trialList: 'Headphone_check.xlsx',
-    seed: undefined, name: 'trials_2'
+    seed: undefined, name: 'HeadphoneLoop'
   });
-  psychoJS.experiment.addLoop(trials_2); // add the loop to the experiment
-  currentLoop = trials_2;  // we're now the current loop
+  psychoJS.experiment.addLoop(HeadphoneLoop); // add the loop to the experiment
+  currentLoop = HeadphoneLoop;  // we're now the current loop
 
   // Schedule all the trials in the trialList:
-  trials_2.forEach(function() {
-    const snapshot = trials_2.getSnapshot();
+  HeadphoneLoop.forEach(function() {
+    const snapshot = HeadphoneLoop.getSnapshot();
 
-    trials_2LoopScheduler.add(importConditions(snapshot));
-    trials_2LoopScheduler.add(HeadphonePlayRoutineBegin(snapshot));
-    trials_2LoopScheduler.add(HeadphonePlayRoutineEachFrame(snapshot));
-    trials_2LoopScheduler.add(HeadphonePlayRoutineEnd(snapshot));
-    trials_2LoopScheduler.add(HeadphoneFeedbackRoutineBegin(snapshot));
-    trials_2LoopScheduler.add(HeadphoneFeedbackRoutineEachFrame(snapshot));
-    trials_2LoopScheduler.add(HeadphoneFeedbackRoutineEnd(snapshot));
-    trials_2LoopScheduler.add(endLoopIteration(trials_2LoopScheduler, snapshot));
+    HeadphoneLoopLoopScheduler.add(importConditions(snapshot));
+    HeadphoneLoopLoopScheduler.add(HeadphonePlayRoutineBegin(snapshot));
+    HeadphoneLoopLoopScheduler.add(HeadphonePlayRoutineEachFrame(snapshot));
+    HeadphoneLoopLoopScheduler.add(HeadphonePlayRoutineEnd(snapshot));
+    HeadphoneLoopLoopScheduler.add(HeadphoneFeedbackRoutineBegin(snapshot));
+    HeadphoneLoopLoopScheduler.add(HeadphoneFeedbackRoutineEachFrame(snapshot));
+    HeadphoneLoopLoopScheduler.add(HeadphoneFeedbackRoutineEnd(snapshot));
+    HeadphoneLoopLoopScheduler.add(endLoopIteration(HeadphoneLoopLoopScheduler, snapshot));
   });
 
   return Scheduler.Event.NEXT;
 }
 
 
-function trials_2LoopEnd() {
-  psychoJS.experiment.removeLoop(trials_2);
+function HeadphoneLoopLoopEnd() {
+  psychoJS.experiment.removeLoop(HeadphoneLoop);
 
   return Scheduler.Event.NEXT;
 }
@@ -1359,7 +1359,7 @@ function trialsLoopBegin(trialsLoopScheduler) {
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds_conditions.xlsx', '5:149'),
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds_conditions.xlsx', '133:261'),
     seed: undefined, name: 'trials'
   });
   psychoJS.experiment.addLoop(trials); // add the loop to the experiment

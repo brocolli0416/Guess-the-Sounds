@@ -1,0 +1,1090 @@
+1.4002 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.3457 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2256, 1504]. Using actual size
+7.2315 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002DEEC0AC7F0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002DEEC025EF0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([2256, 1504]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.2321 	EXP 	window1: mouseVisible = True
+7.2322 	EXP 	window1: recordFrameIntervals = False
+7.3970 	EXP 	window1: recordFrameIntervals = True
+7.5808 	EXP 	window1: recordFrameIntervals = False
+7.9298 	EXP 	Created InstructionTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.9390 	EXP 	Created WelcomContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+7.9584 	EXP 	Created VolumeBeginTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='VolumeBeginTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.9663 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.0145 	EXP 	Sound Music set volume 0.300
+8.0208 	EXP 	Created AdjustContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='AdjustContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.0430 	EXP 	Created HeadphoneCheckBeing = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='HeadphoneCheckBeing', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.0469 	EXP 	Created HeadphoneContinue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='HeadphoneContinue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+8.0674 	EXP 	Created WelcomeTxt1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomeTxt1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.0709 	EXP 	Created ContinueKey1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ContinueKey1', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+8.1000 	EXP 	Created Welcome2Txt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Welcome2Txt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.1041 	EXP 	Created Continue2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Continue2', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to continue', units='height', win=Window(...), wrapWidth=1)
+8.1187 	EXP 	Created InstructionTxt2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='InstructionTxt2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.1233 	EXP 	Created WelcomeContinue2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='WelcomeContinue2', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to begin practice\n', units='height', win=Window(...), wrapWidth=1)
+8.1266 	EXP 	Created TrialNumber = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='TrialNumber', opacity=1.0, ori=0, pos=array([0. , 0.3]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+8.1267 	EXP 	Sound PracticeSound set volume 1.000
+8.1413 	EXP 	Created PracticeCross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='PracticeCross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+8.1448 	EXP 	Created PracticeMssg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='PracticeMssg', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+8.1467 	EXP 	Created FeedbackCross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='FeedbackCross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+8.1515 	EXP 	Created Continue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Continue', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press the correct number on your keyboard', units='height', win=Window(...), wrapWidth=1)
+8.1593 	EXP 	Created Options = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Options', opacity=1.0, ori=0, pos=array([ 0. , -0.2]), rgb=array([255., 255., 255.]), text='1 = REPEAT\n2 = SIMILAR\n3 = NEW', units='height', win=Window(...), wrapWidth=1)
+8.1630 	EXP 	Created FeedbackMssg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='FeedbackMssg', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+8.1817 	EXP 	Created StartTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='StartTxt', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.1862 	EXP 	Created ContinueStart = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ContinueStart', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to begin the task', units='height', win=Window(...), wrapWidth=1)
+8.1876 	EXP 	Created no_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='no_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+8.1877 	EXP 	Sound TargetSound set volume 1.000
+8.1891 	EXP 	Created Cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Cross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+8.1925 	EXP 	Created ItemNumber = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ItemNumber', opacity=1.0, ori=0, pos=array([0. , 0.3]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+8.2165 	EXP 	Created MSTQuestion = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='MSTQuestion', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.2258 	EXP 	Created ThankyouMssg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ThankyouMssg', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.2982 	EXP 	Created ExitTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='ExitTxt', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([255., 255., 255.]), text='Press SPACE to exit the study', units='height', win=Window(...), wrapWidth=1)
+8.3077 	EXP 	Created CodeTxt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='CodeTxt', opacity=1.0, ori=0, pos=array([ 0.  , -0.22]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.3407 	EXP 	CompletionCode: autoLog = True
+8.3407 	EXP 	InstructionTxt: autoDraw = True
+8.3407 	EXP 	WelcomContinue: autoDraw = True
+9.4443 	DATA 	Keypress: space
+9.4492 	EXP 	InstructionTxt: autoDraw = False
+9.4492 	EXP 	WelcomContinue: autoDraw = False
+9.4492 	EXP 	VolumeBeginTxt: autoDraw = True
+9.9556 	DATA 	Keypress: space
+9.9596 	EXP 	VolumeBeginTxt: autoDraw = False
+9.9596 	EXP 	text: autoDraw = True
+9.9596 	EXP 	AdjustContinue: autoDraw = True
+10.6042 	DATA 	Keypress: space
+10.6308 	EXP 	text: autoDraw = False
+10.6308 	EXP 	AdjustContinue: autoDraw = False
+10.6308 	EXP 	HeadphoneCheckBeing: autoDraw = True
+10.6308 	EXP 	HeadphoneContinue: autoDraw = True
+11.2308 	DATA 	Keypress: space
+11.2360 	EXP 	HeadphoneCheckBeing: autoDraw = False
+11.2360 	EXP 	HeadphoneContinue: autoDraw = False
+11.2360 	EXP 	WelcomeTxt1: autoDraw = True
+11.2360 	EXP 	ContinueKey1: autoDraw = True
+11.6563 	DATA 	Keypress: space
+11.6827 	EXP 	WelcomeTxt1: autoDraw = False
+11.6827 	EXP 	ContinueKey1: autoDraw = False
+11.6827 	EXP 	Welcome2Txt: autoDraw = True
+11.6827 	EXP 	Continue2: autoDraw = True
+12.1304 	DATA 	Keypress: space
+12.1352 	EXP 	Welcome2Txt: autoDraw = False
+12.1352 	EXP 	Continue2: autoDraw = False
+12.1352 	EXP 	InstructionTxt2: autoDraw = True
+12.1352 	EXP 	WelcomeContinue2: autoDraw = True
+12.7279 	EXP 	Imported GuessSounds_conditions.xlsx as conditions, 5 conditions, 5 params
+12.7283 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+12.7286 	EXP 	New trial (rep=0, index=0): OrderedDict([('SoundFile', 'Practice/Seagull_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'Practice')])
+12.7399 	DATA 	Keypress: space
+12.7444 	EXP 	InstructionTxt2: autoDraw = False
+12.7444 	EXP 	WelcomeContinue2: autoDraw = False
+12.7444 	EXP 	TrialNumber: text = 'Trial 1'
+12.7444 	EXP 	TrialNumber: autoDraw = True
+12.7444 	EXP 	PracticeCross: autoDraw = True
+15.0420 	EXP 	TrialNumber: autoDraw = False
+15.0420 	EXP 	PracticeCross: autoDraw = False
+15.0420 	EXP 	TrialNumber: autoDraw = False
+15.0420 	EXP 	PracticeCross: autoDraw = False
+15.0420 	EXP 	PracticeMssg: text = 'This is a NEW sound. \nThis sound has never been played before.'
+15.0420 	EXP 	PracticeMssg: autoDraw = True
+15.0420 	EXP 	FeedbackCross: autoDraw = True
+15.0420 	EXP 	Continue: autoDraw = True
+15.0420 	EXP 	Options: autoDraw = True
+15.5228 	DATA 	Keypress: 3
+16.2074 	DATA 	Keypress: 3
+17.6065 	DATA 	Keypress: 3
+17.6108 	EXP 	PracticeMssg: autoDraw = False
+17.6108 	EXP 	FeedbackCross: autoDraw = False
+17.6108 	EXP 	Continue: autoDraw = False
+17.6108 	EXP 	Options: autoDraw = False
+17.6108 	EXP 	FeedbackMssg: text = 'CORRECT'
+17.6108 	EXP 	FeedbackMssg: autoDraw = True
+17.8187 	DATA 	Keypress: 3
+18.5993 	EXP 	New trial (rep=0, index=1): OrderedDict([('SoundFile', 'Practice/Skid_B.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'Practice')])
+18.6284 	EXP 	FeedbackMssg: autoDraw = False
+18.6284 	EXP 	TrialNumber: text = 'Trial 2'
+18.6284 	EXP 	TrialNumber: autoDraw = True
+18.6284 	EXP 	PracticeCross: autoDraw = True
+20.7299 	EXP 	TrialNumber: autoDraw = False
+20.7299 	EXP 	PracticeCross: autoDraw = False
+20.7470 	EXP 	TrialNumber: autoDraw = False
+20.7470 	EXP 	PracticeCross: autoDraw = False
+20.7470 	EXP 	PracticeMssg: text = 'This is a NEW sound. \nThis sound has never been played before.'
+20.7470 	EXP 	PracticeMssg: autoDraw = True
+20.7470 	EXP 	FeedbackCross: autoDraw = True
+20.7470 	EXP 	Continue: autoDraw = True
+20.7470 	EXP 	Options: autoDraw = True
+21.5135 	DATA 	Keypress: 3
+21.5177 	EXP 	PracticeMssg: autoDraw = False
+21.5177 	EXP 	FeedbackCross: autoDraw = False
+21.5177 	EXP 	Continue: autoDraw = False
+21.5177 	EXP 	Options: autoDraw = False
+21.5177 	EXP 	FeedbackMssg: text = 'CORRECT'
+21.5177 	EXP 	FeedbackMssg: autoDraw = True
+22.5153 	EXP 	New trial (rep=0, index=2): OrderedDict([('SoundFile', 'Practice/Seagull_A.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'Practice')])
+22.5456 	EXP 	FeedbackMssg: autoDraw = False
+22.5456 	EXP 	TrialNumber: text = 'Trial 3'
+22.5456 	EXP 	TrialNumber: autoDraw = True
+22.5456 	EXP 	PracticeCross: autoDraw = True
+24.8505 	EXP 	TrialNumber: autoDraw = False
+24.8505 	EXP 	PracticeCross: autoDraw = False
+24.8505 	EXP 	TrialNumber: autoDraw = False
+24.8505 	EXP 	PracticeCross: autoDraw = False
+24.8505 	EXP 	PracticeMssg: text = 'This is a REPEAT sound. \nThe exact same sound has been played previously.'
+24.8505 	EXP 	PracticeMssg: autoDraw = True
+24.8505 	EXP 	FeedbackCross: autoDraw = True
+24.8505 	EXP 	Continue: autoDraw = True
+24.8505 	EXP 	Options: autoDraw = True
+26.4731 	DATA 	Keypress: 1
+26.4965 	EXP 	PracticeMssg: autoDraw = False
+26.4965 	EXP 	FeedbackCross: autoDraw = False
+26.4965 	EXP 	Continue: autoDraw = False
+26.4965 	EXP 	Options: autoDraw = False
+26.4965 	EXP 	FeedbackMssg: text = 'CORRECT'
+26.4965 	EXP 	FeedbackMssg: autoDraw = True
+27.4841 	EXP 	New trial (rep=0, index=3): OrderedDict([('SoundFile', 'Practice/Gargle_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'Practice')])
+27.5232 	EXP 	FeedbackMssg: autoDraw = False
+27.5232 	EXP 	FeedbackMssg: autoDraw = False
+27.5232 	EXP 	TrialNumber: text = 'Trial 4'
+27.5232 	EXP 	TrialNumber: autoDraw = True
+27.5232 	EXP 	PracticeCross: autoDraw = True
+29.8233 	EXP 	TrialNumber: autoDraw = False
+29.8233 	EXP 	PracticeCross: autoDraw = False
+29.8233 	EXP 	TrialNumber: autoDraw = False
+29.8233 	EXP 	PracticeCross: autoDraw = False
+29.8233 	EXP 	PracticeMssg: text = 'This is a NEW sound. \nThis sound has never been played before.'
+29.8233 	EXP 	PracticeMssg: autoDraw = True
+29.8233 	EXP 	FeedbackCross: autoDraw = True
+29.8233 	EXP 	Continue: autoDraw = True
+29.8233 	EXP 	Options: autoDraw = True
+30.2602 	DATA 	Keypress: 3
+30.2643 	EXP 	PracticeMssg: autoDraw = False
+30.2643 	EXP 	FeedbackCross: autoDraw = False
+30.2643 	EXP 	Continue: autoDraw = False
+30.2643 	EXP 	Options: autoDraw = False
+30.2643 	EXP 	FeedbackMssg: text = 'CORRECT'
+30.2643 	EXP 	FeedbackMssg: autoDraw = True
+31.2655 	EXP 	New trial (rep=0, index=4): OrderedDict([('SoundFile', 'Practice/Gargle_B.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'Practice')])
+31.3055 	EXP 	FeedbackMssg: autoDraw = False
+31.3055 	EXP 	TrialNumber: text = 'Trial 5'
+31.3055 	EXP 	TrialNumber: autoDraw = True
+31.3055 	EXP 	PracticeCross: autoDraw = True
+33.3771 	EXP 	TrialNumber: autoDraw = False
+33.3771 	EXP 	PracticeCross: autoDraw = False
+33.3771 	EXP 	TrialNumber: autoDraw = False
+33.3771 	EXP 	PracticeCross: autoDraw = False
+33.3771 	EXP 	PracticeMssg: text = 'This is a SIMILAR sound. \nThis sound is similar but not identical to a previously played sound.'
+33.3771 	EXP 	PracticeMssg: autoDraw = True
+33.3771 	EXP 	FeedbackCross: autoDraw = True
+33.3771 	EXP 	Continue: autoDraw = True
+33.3771 	EXP 	Options: autoDraw = True
+33.8267 	DATA 	Keypress: 2
+33.8308 	EXP 	PracticeMssg: autoDraw = False
+33.8308 	EXP 	FeedbackCross: autoDraw = False
+33.8308 	EXP 	Continue: autoDraw = False
+33.8308 	EXP 	Options: autoDraw = False
+33.8308 	EXP 	FeedbackMssg: text = 'CORRECT'
+33.8308 	EXP 	FeedbackMssg: autoDraw = True
+34.8313 	EXP 	FeedbackMssg: autoDraw = False
+34.8313 	EXP 	FeedbackMssg: autoDraw = False
+34.8313 	EXP 	StartTxt: autoDraw = True
+34.8313 	EXP 	ContinueStart: autoDraw = True
+37.1078 	EXP 	Imported GuessSounds_conditions.xlsx as conditions, 67 conditions, 5 params
+37.1081 	EXP 	Created sequence: sequential, trialTypes=67, nReps=1, seed=None
+37.1084 	EXP 	New trial (rep=0, index=0): OrderedDict([('SoundFile', 'Snore_C.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+37.1117 	DATA 	Keypress: space
+37.1159 	EXP 	StartTxt: autoDraw = False
+37.1159 	EXP 	ContinueStart: autoDraw = False
+37.1159 	EXP 	no_3: autoDraw = True
+38.5167 	EXP 	no_3: autoDraw = False
+38.5167 	EXP 	ItemNumber: text = '1/128'
+38.5167 	EXP 	Cross: autoDraw = True
+38.5167 	EXP 	ItemNumber: autoDraw = True
+41.4149 	EXP 	Cross: autoDraw = False
+41.4149 	EXP 	ItemNumber: autoDraw = False
+41.4149 	EXP 	Cross: autoDraw = False
+41.4149 	EXP 	ItemNumber: autoDraw = False
+41.4149 	EXP 	MSTQuestion: autoDraw = True
+42.1352 	EXP 	New trial (rep=0, index=1): OrderedDict([('SoundFile', 'CarStart_F.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+42.1373 	DATA 	Keypress: 3
+42.1462 	EXP 	MSTQuestion: autoDraw = False
+42.1462 	EXP 	no_3: autoDraw = True
+43.6558 	EXP 	no_3: autoDraw = False
+43.6558 	EXP 	no_3: autoDraw = False
+43.6558 	EXP 	ItemNumber: text = '2/128'
+43.6558 	EXP 	Cross: autoDraw = True
+43.6558 	EXP 	ItemNumber: autoDraw = True
+46.1472 	EXP 	Cross: autoDraw = False
+46.1472 	EXP 	ItemNumber: autoDraw = False
+46.1472 	EXP 	Cross: autoDraw = False
+46.1472 	EXP 	ItemNumber: autoDraw = False
+46.1472 	EXP 	MSTQuestion: autoDraw = True
+46.6043 	EXP 	New trial (rep=0, index=2): OrderedDict([('SoundFile', 'Goat_C.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+46.6101 	DATA 	Keypress: 3
+46.6145 	EXP 	MSTQuestion: autoDraw = False
+46.6145 	EXP 	no_3: autoDraw = True
+48.1480 	EXP 	no_3: autoDraw = False
+48.1480 	EXP 	ItemNumber: text = '3/128'
+48.1480 	EXP 	Cross: autoDraw = True
+48.1480 	EXP 	ItemNumber: autoDraw = True
+49.9642 	EXP 	Cross: autoDraw = False
+49.9642 	EXP 	ItemNumber: autoDraw = False
+49.9642 	EXP 	Cross: autoDraw = False
+49.9642 	EXP 	ItemNumber: autoDraw = False
+49.9642 	EXP 	MSTQuestion: autoDraw = True
+51.4873 	DATA 	Keypress: 2
+51.5052 	EXP 	New trial (rep=0, index=3): OrderedDict([('SoundFile', 'Coin_E.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+51.5144 	EXP 	MSTQuestion: autoDraw = False
+51.5144 	EXP 	no_3: autoDraw = True
+53.0455 	EXP 	no_3: autoDraw = False
+53.0455 	EXP 	ItemNumber: text = '4/128'
+53.0455 	EXP 	Cross: autoDraw = True
+53.0455 	EXP 	ItemNumber: autoDraw = True
+55.0640 	EXP 	Cross: autoDraw = False
+55.0640 	EXP 	ItemNumber: autoDraw = False
+55.0640 	EXP 	Cross: autoDraw = False
+55.0640 	EXP 	ItemNumber: autoDraw = False
+55.0640 	EXP 	MSTQuestion: autoDraw = True
+55.5372 	EXP 	New trial (rep=0, index=4): OrderedDict([('SoundFile', 'Initial/Repeat/Howl.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+55.5425 	DATA 	Keypress: 3
+55.5468 	EXP 	MSTQuestion: autoDraw = False
+55.5468 	EXP 	no_3: autoDraw = True
+57.0565 	EXP 	no_3: autoDraw = False
+57.0565 	EXP 	no_3: autoDraw = False
+57.0565 	EXP 	ItemNumber: text = '5/128'
+57.0565 	EXP 	Cross: autoDraw = True
+57.0565 	EXP 	ItemNumber: autoDraw = True
+59.8139 	EXP 	Cross: autoDraw = False
+59.8139 	EXP 	ItemNumber: autoDraw = False
+59.8139 	EXP 	Cross: autoDraw = False
+59.8139 	EXP 	ItemNumber: autoDraw = False
+59.8139 	EXP 	MSTQuestion: autoDraw = True
+60.2220 	DATA 	Keypress: 3
+60.2384 	EXP 	New trial (rep=0, index=5): OrderedDict([('SoundFile', 'Initial/Repeat/Airplane_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+60.2464 	EXP 	MSTQuestion: autoDraw = False
+60.2464 	EXP 	no_3: autoDraw = True
+61.7640 	EXP 	no_3: autoDraw = False
+61.7640 	EXP 	no_3: autoDraw = False
+61.7640 	EXP 	ItemNumber: text = '6/128'
+61.7640 	EXP 	Cross: autoDraw = True
+61.7640 	EXP 	ItemNumber: autoDraw = True
+64.3804 	EXP 	Cross: autoDraw = False
+64.3804 	EXP 	ItemNumber: autoDraw = False
+64.3804 	EXP 	Cross: autoDraw = False
+64.3804 	EXP 	ItemNumber: autoDraw = False
+64.3804 	EXP 	MSTQuestion: autoDraw = True
+64.6045 	EXP 	New trial (rep=0, index=6): OrderedDict([('SoundFile', 'Initial/NoRepeat/Mosquito_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+64.6105 	DATA 	Keypress: 3
+64.6148 	EXP 	MSTQuestion: autoDraw = False
+64.6148 	EXP 	no_3: autoDraw = True
+66.1415 	EXP 	no_3: autoDraw = False
+66.1415 	EXP 	ItemNumber: text = '7/128'
+66.1415 	EXP 	Cross: autoDraw = True
+66.1415 	EXP 	ItemNumber: autoDraw = True
+68.2973 	EXP 	Cross: autoDraw = False
+68.2973 	EXP 	ItemNumber: autoDraw = False
+68.2973 	EXP 	Cross: autoDraw = False
+68.2973 	EXP 	ItemNumber: autoDraw = False
+68.2973 	EXP 	MSTQuestion: autoDraw = True
+68.6048 	EXP 	New trial (rep=0, index=7): OrderedDict([('SoundFile', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+68.6095 	DATA 	Keypress: 3
+68.6142 	EXP 	MSTQuestion: autoDraw = False
+68.6142 	EXP 	no_3: autoDraw = True
+70.1563 	EXP 	no_3: autoDraw = False
+70.1563 	EXP 	ItemNumber: text = '8/128'
+70.1563 	EXP 	Cross: autoDraw = True
+70.1563 	EXP 	ItemNumber: autoDraw = True
+72.3135 	EXP 	Cross: autoDraw = False
+72.3135 	EXP 	ItemNumber: autoDraw = False
+72.3135 	EXP 	Cross: autoDraw = False
+72.3135 	EXP 	ItemNumber: autoDraw = False
+72.3135 	EXP 	MSTQuestion: autoDraw = True
+72.8876 	EXP 	New trial (rep=0, index=8): OrderedDict([('SoundFile', 'Test/Foils/Donkey.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+72.8929 	DATA 	Keypress: 3
+72.8975 	EXP 	MSTQuestion: autoDraw = False
+72.8975 	EXP 	no_3: autoDraw = True
+74.4259 	EXP 	no_3: autoDraw = False
+74.4259 	EXP 	ItemNumber: text = '9/128'
+74.4259 	EXP 	Cross: autoDraw = True
+74.4259 	EXP 	ItemNumber: autoDraw = True
+77.1302 	EXP 	Cross: autoDraw = False
+77.1302 	EXP 	ItemNumber: autoDraw = False
+77.1302 	EXP 	Cross: autoDraw = False
+77.1302 	EXP 	ItemNumber: autoDraw = False
+77.1302 	EXP 	MSTQuestion: autoDraw = True
+77.3216 	EXP 	New trial (rep=0, index=9): OrderedDict([('SoundFile', 'Test/Lures/Guitar_B.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+77.3295 	DATA 	Keypress: 1
+77.3338 	EXP 	MSTQuestion: autoDraw = False
+77.3338 	EXP 	no_3: autoDraw = True
+78.8917 	EXP 	no_3: autoDraw = False
+78.8917 	EXP 	ItemNumber: text = '10/128'
+78.8917 	EXP 	Cross: autoDraw = True
+78.8917 	EXP 	ItemNumber: autoDraw = True
+81.2136 	EXP 	Cross: autoDraw = False
+81.2136 	EXP 	ItemNumber: autoDraw = False
+81.2136 	EXP 	Cross: autoDraw = False
+81.2136 	EXP 	ItemNumber: autoDraw = False
+81.2136 	EXP 	MSTQuestion: autoDraw = True
+81.7037 	DATA 	Keypress: 3
+81.7207 	EXP 	New trial (rep=0, index=10): OrderedDict([('SoundFile', 'Initial/Repeat/Bagpipe.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+81.7292 	EXP 	MSTQuestion: autoDraw = False
+81.7292 	EXP 	no_3: autoDraw = True
+83.2412 	EXP 	no_3: autoDraw = False
+83.2412 	EXP 	no_3: autoDraw = False
+83.2412 	EXP 	ItemNumber: text = '11/128'
+83.2412 	EXP 	Cross: autoDraw = True
+83.2412 	EXP 	ItemNumber: autoDraw = True
+85.6137 	EXP 	Cross: autoDraw = False
+85.6137 	EXP 	ItemNumber: autoDraw = False
+85.6137 	EXP 	Cross: autoDraw = False
+85.6137 	EXP 	ItemNumber: autoDraw = False
+85.6137 	EXP 	MSTQuestion: autoDraw = True
+85.8375 	EXP 	New trial (rep=0, index=11): OrderedDict([('SoundFile', 'Initial/NoRepeat/Hammer_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+85.8425 	DATA 	Keypress: 1
+85.8470 	EXP 	MSTQuestion: autoDraw = False
+85.8470 	EXP 	no_3: autoDraw = True
+87.3710 	EXP 	no_3: autoDraw = False
+87.3710 	EXP 	ItemNumber: text = '12/128'
+87.3710 	EXP 	Cross: autoDraw = True
+87.3710 	EXP 	ItemNumber: autoDraw = True
+89.8471 	EXP 	Cross: autoDraw = False
+89.8471 	EXP 	ItemNumber: autoDraw = False
+89.8471 	EXP 	Cross: autoDraw = False
+89.8471 	EXP 	ItemNumber: autoDraw = False
+89.8471 	EXP 	MSTQuestion: autoDraw = True
+90.6368 	EXP 	New trial (rep=0, index=12): OrderedDict([('SoundFile', 'Initial/NoRepeat/Helicopter_A.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+90.6411 	DATA 	Keypress: 1
+90.6457 	EXP 	MSTQuestion: autoDraw = False
+90.6457 	EXP 	no_3: autoDraw = True
+92.1556 	EXP 	no_3: autoDraw = False
+92.1556 	EXP 	no_3: autoDraw = False
+92.1556 	EXP 	ItemNumber: text = '13/128'
+92.1556 	EXP 	Cross: autoDraw = True
+92.1556 	EXP 	ItemNumber: autoDraw = True
+94.6136 	EXP 	Cross: autoDraw = False
+94.6136 	EXP 	ItemNumber: autoDraw = False
+94.6136 	EXP 	Cross: autoDraw = False
+94.6136 	EXP 	ItemNumber: autoDraw = False
+94.6136 	EXP 	MSTQuestion: autoDraw = True
+95.0040 	DATA 	Keypress: 3
+95.0207 	EXP 	New trial (rep=0, index=13): OrderedDict([('SoundFile', 'Test/Foils/Camera.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+95.0299 	EXP 	MSTQuestion: autoDraw = False
+95.0299 	EXP 	no_3: autoDraw = True
+96.5637 	EXP 	no_3: autoDraw = False
+96.5637 	EXP 	no_3: autoDraw = False
+96.5637 	EXP 	ItemNumber: text = '14/128'
+96.5637 	EXP 	Cross: autoDraw = True
+96.5637 	EXP 	ItemNumber: autoDraw = True
+97.5295 	EXP 	Cross: autoDraw = False
+97.5295 	EXP 	ItemNumber: autoDraw = False
+97.5295 	EXP 	Cross: autoDraw = False
+97.5295 	EXP 	ItemNumber: autoDraw = False
+97.5295 	EXP 	MSTQuestion: autoDraw = True
+98.6209 	EXP 	New trial (rep=0, index=14): OrderedDict([('SoundFile', 'Test/Foils/Steam.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+98.6273 	DATA 	Keypress: 3
+98.6316 	EXP 	MSTQuestion: autoDraw = False
+98.6316 	EXP 	no_3: autoDraw = True
+100.1868 	EXP 	no_3: autoDraw = False
+100.1868 	EXP 	ItemNumber: text = '15/128'
+100.1868 	EXP 	Cross: autoDraw = True
+100.1868 	EXP 	ItemNumber: autoDraw = True
+102.7135 	EXP 	Cross: autoDraw = False
+102.7135 	EXP 	ItemNumber: autoDraw = False
+102.7135 	EXP 	Cross: autoDraw = False
+102.7135 	EXP 	ItemNumber: autoDraw = False
+102.7135 	EXP 	MSTQuestion: autoDraw = True
+103.2218 	EXP 	New trial (rep=0, index=15): OrderedDict([('SoundFile', 'Test/Foils/Horse.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+103.2279 	DATA 	Keypress: 3
+103.2321 	EXP 	MSTQuestion: autoDraw = False
+103.2321 	EXP 	no_3: autoDraw = True
+104.7537 	EXP 	no_3: autoDraw = False
+104.7537 	EXP 	ItemNumber: text = '16/128'
+104.7537 	EXP 	Cross: autoDraw = True
+104.7537 	EXP 	ItemNumber: autoDraw = True
+106.9470 	EXP 	Cross: autoDraw = False
+106.9470 	EXP 	ItemNumber: autoDraw = False
+106.9470 	EXP 	Cross: autoDraw = False
+106.9470 	EXP 	ItemNumber: autoDraw = False
+106.9470 	EXP 	MSTQuestion: autoDraw = True
+107.6553 	DATA 	Keypress: 1
+107.6710 	EXP 	New trial (rep=0, index=16): OrderedDict([('SoundFile', 'Elephant_C.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+107.6800 	EXP 	MSTQuestion: autoDraw = False
+107.6800 	EXP 	no_3: autoDraw = True
+109.2016 	EXP 	no_3: autoDraw = False
+109.2016 	EXP 	no_3: autoDraw = False
+109.2016 	EXP 	ItemNumber: text = '17/128'
+109.2016 	EXP 	Cross: autoDraw = True
+109.2016 	EXP 	ItemNumber: autoDraw = True
+112.0794 	EXP 	Cross: autoDraw = False
+112.0794 	EXP 	ItemNumber: autoDraw = False
+112.0794 	EXP 	Cross: autoDraw = False
+112.0794 	EXP 	ItemNumber: autoDraw = False
+112.0794 	EXP 	MSTQuestion: autoDraw = True
+112.9520 	DATA 	Keypress: 3
+112.9685 	EXP 	New trial (rep=0, index=17): OrderedDict([('SoundFile', 'Initial/Repeat/Printer.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+112.9784 	EXP 	MSTQuestion: autoDraw = False
+112.9784 	EXP 	no_3: autoDraw = True
+114.4814 	EXP 	no_3: autoDraw = False
+114.4814 	EXP 	no_3: autoDraw = False
+114.4814 	EXP 	ItemNumber: text = '18/128'
+114.4814 	EXP 	Cross: autoDraw = True
+114.4814 	EXP 	ItemNumber: autoDraw = True
+116.8980 	DATA 	Keypress: 1
+117.2459 	EXP 	Cross: autoDraw = False
+117.2459 	EXP 	ItemNumber: autoDraw = False
+117.2459 	EXP 	Cross: autoDraw = False
+117.2459 	EXP 	ItemNumber: autoDraw = False
+117.2459 	EXP 	MSTQuestion: autoDraw = True
+117.5012 	EXP 	New trial (rep=0, index=18): OrderedDict([('SoundFile', 'Crow_A.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+117.5035 	DATA 	Keypress: 1
+117.5118 	EXP 	MSTQuestion: autoDraw = False
+117.5118 	EXP 	no_3: autoDraw = True
+119.0212 	EXP 	no_3: autoDraw = False
+119.0212 	EXP 	no_3: autoDraw = False
+119.0212 	EXP 	ItemNumber: text = '19/128'
+119.0212 	EXP 	Cross: autoDraw = True
+119.0212 	EXP 	ItemNumber: autoDraw = True
+120.8632 	EXP 	Cross: autoDraw = False
+120.8632 	EXP 	ItemNumber: autoDraw = False
+120.8632 	EXP 	Cross: autoDraw = False
+120.8632 	EXP 	ItemNumber: autoDraw = False
+120.8632 	EXP 	MSTQuestion: autoDraw = True
+121.4707 	DATA 	Keypress: 3
+121.4869 	EXP 	New trial (rep=0, index=19): OrderedDict([('SoundFile', 'Initial/Doubled/Bubbles_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+121.4955 	EXP 	MSTQuestion: autoDraw = False
+121.4955 	EXP 	no_3: autoDraw = True
+123.0165 	EXP 	no_3: autoDraw = False
+123.0165 	EXP 	no_3: autoDraw = False
+123.0165 	EXP 	ItemNumber: text = '20/128'
+123.0165 	EXP 	Cross: autoDraw = True
+123.0165 	EXP 	ItemNumber: autoDraw = True
+125.4299 	EXP 	Cross: autoDraw = False
+125.4299 	EXP 	ItemNumber: autoDraw = False
+125.4299 	EXP 	Cross: autoDraw = False
+125.4299 	EXP 	ItemNumber: autoDraw = False
+125.4299 	EXP 	MSTQuestion: autoDraw = True
+125.8040 	DATA 	Keypress: 3
+125.8203 	EXP 	New trial (rep=0, index=20): OrderedDict([('SoundFile', 'Chomp_E.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+125.8288 	EXP 	MSTQuestion: autoDraw = False
+125.8288 	EXP 	no_3: autoDraw = True
+127.3465 	EXP 	no_3: autoDraw = False
+127.3465 	EXP 	no_3: autoDraw = False
+127.3465 	EXP 	ItemNumber: text = '21/128'
+127.3465 	EXP 	Cross: autoDraw = True
+127.3465 	EXP 	ItemNumber: autoDraw = True
+129.5467 	EXP 	Cross: autoDraw = False
+129.5467 	EXP 	ItemNumber: autoDraw = False
+129.5467 	EXP 	Cross: autoDraw = False
+129.5467 	EXP 	ItemNumber: autoDraw = False
+129.5467 	EXP 	MSTQuestion: autoDraw = True
+130.0874 	EXP 	New trial (rep=0, index=21): OrderedDict([('SoundFile', 'Test/Foils/Airhorn.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+130.0926 	DATA 	Keypress: 2
+130.0969 	EXP 	MSTQuestion: autoDraw = False
+130.0969 	EXP 	no_3: autoDraw = True
+131.6482 	EXP 	no_3: autoDraw = False
+131.6482 	EXP 	ItemNumber: text = '22/128'
+131.6482 	EXP 	Cross: autoDraw = True
+131.6482 	EXP 	ItemNumber: autoDraw = True
+134.2129 	EXP 	Cross: autoDraw = False
+134.2129 	EXP 	ItemNumber: autoDraw = False
+134.2129 	EXP 	Cross: autoDraw = False
+134.2129 	EXP 	ItemNumber: autoDraw = False
+134.2129 	EXP 	MSTQuestion: autoDraw = True
+134.6875 	DATA 	Keypress: 3
+134.7046 	EXP 	New trial (rep=0, index=22): OrderedDict([('SoundFile', 'Initial/Doubled/Writing_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+134.7141 	EXP 	MSTQuestion: autoDraw = False
+134.7141 	EXP 	no_3: autoDraw = True
+136.2426 	EXP 	no_3: autoDraw = False
+136.2426 	EXP 	ItemNumber: text = '23/128'
+136.2426 	EXP 	Cross: autoDraw = True
+136.2426 	EXP 	ItemNumber: autoDraw = True
+138.9465 	EXP 	Cross: autoDraw = False
+138.9465 	EXP 	ItemNumber: autoDraw = False
+138.9465 	EXP 	Cross: autoDraw = False
+138.9465 	EXP 	ItemNumber: autoDraw = False
+138.9465 	EXP 	MSTQuestion: autoDraw = True
+139.3535 	EXP 	New trial (rep=0, index=23): OrderedDict([('SoundFile', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+139.3595 	DATA 	Keypress: 3
+139.3638 	EXP 	MSTQuestion: autoDraw = False
+139.3638 	EXP 	no_3: autoDraw = True
+140.9037 	EXP 	no_3: autoDraw = False
+140.9037 	EXP 	ItemNumber: text = '24/128'
+140.9037 	EXP 	Cross: autoDraw = True
+140.9037 	EXP 	ItemNumber: autoDraw = True
+143.3963 	EXP 	Cross: autoDraw = False
+143.3963 	EXP 	ItemNumber: autoDraw = False
+143.3963 	EXP 	Cross: autoDraw = False
+143.3963 	EXP 	ItemNumber: autoDraw = False
+143.3963 	EXP 	MSTQuestion: autoDraw = True
+143.7365 	DATA 	Keypress: 3
+143.7536 	EXP 	New trial (rep=0, index=24): OrderedDict([('SoundFile', 'Initial/Repeat/IceDrop.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+143.7628 	EXP 	MSTQuestion: autoDraw = False
+143.7628 	EXP 	no_3: autoDraw = True
+145.2871 	EXP 	no_3: autoDraw = False
+145.2871 	EXP 	no_3: autoDraw = False
+145.2871 	EXP 	ItemNumber: text = '25/128'
+145.2871 	EXP 	Cross: autoDraw = True
+145.2871 	EXP 	ItemNumber: autoDraw = True
+148.0462 	EXP 	Cross: autoDraw = False
+148.0462 	EXP 	ItemNumber: autoDraw = False
+148.0462 	EXP 	Cross: autoDraw = False
+148.0462 	EXP 	ItemNumber: autoDraw = False
+148.0462 	EXP 	MSTQuestion: autoDraw = True
+148.3200 	DATA 	Keypress: 3
+148.3363 	EXP 	New trial (rep=0, index=25): OrderedDict([('SoundFile', 'CarStart_E.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+148.3452 	EXP 	MSTQuestion: autoDraw = False
+148.3452 	EXP 	no_3: autoDraw = True
+149.8845 	EXP 	no_3: autoDraw = False
+149.8845 	EXP 	no_3: autoDraw = False
+149.8845 	EXP 	ItemNumber: text = '26/128'
+149.8845 	EXP 	Cross: autoDraw = True
+149.8845 	EXP 	ItemNumber: autoDraw = True
+152.3793 	EXP 	Cross: autoDraw = False
+152.3793 	EXP 	ItemNumber: autoDraw = False
+152.3793 	EXP 	Cross: autoDraw = False
+152.3793 	EXP 	ItemNumber: autoDraw = False
+152.3793 	EXP 	MSTQuestion: autoDraw = True
+155.6530 	DATA 	Keypress: 2
+155.6705 	EXP 	New trial (rep=0, index=26): OrderedDict([('SoundFile', 'Baby_F.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+155.6804 	EXP 	MSTQuestion: autoDraw = False
+155.6804 	EXP 	no_3: autoDraw = True
+157.2056 	EXP 	no_3: autoDraw = False
+157.2056 	EXP 	ItemNumber: text = '27/128'
+157.2056 	EXP 	Cross: autoDraw = True
+157.2056 	EXP 	ItemNumber: autoDraw = True
+159.3461 	EXP 	Cross: autoDraw = False
+159.3461 	EXP 	ItemNumber: autoDraw = False
+159.3461 	EXP 	Cross: autoDraw = False
+159.3461 	EXP 	ItemNumber: autoDraw = False
+159.3461 	EXP 	MSTQuestion: autoDraw = True
+160.8878 	EXP 	New trial (rep=0, index=27): OrderedDict([('SoundFile', 'Initial/NoRepeat/Puff_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+160.8940 	DATA 	Keypress: 3
+160.8983 	EXP 	MSTQuestion: autoDraw = False
+160.8983 	EXP 	no_3: autoDraw = True
+162.4211 	EXP 	no_3: autoDraw = False
+162.4211 	EXP 	ItemNumber: text = '28/128'
+162.4211 	EXP 	Cross: autoDraw = True
+162.4211 	EXP 	ItemNumber: autoDraw = True
+164.1129 	EXP 	Cross: autoDraw = False
+164.1129 	EXP 	ItemNumber: autoDraw = False
+164.1129 	EXP 	Cross: autoDraw = False
+164.1129 	EXP 	ItemNumber: autoDraw = False
+164.1129 	EXP 	MSTQuestion: autoDraw = True
+164.4535 	EXP 	New trial (rep=0, index=28): OrderedDict([('SoundFile', 'Initial/NoRepeat/Droplet_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+164.4586 	DATA 	Keypress: 3
+164.4629 	EXP 	MSTQuestion: autoDraw = False
+164.4629 	EXP 	no_3: autoDraw = True
+165.9884 	EXP 	no_3: autoDraw = False
+165.9884 	EXP 	ItemNumber: text = '29/128'
+165.9884 	EXP 	Cross: autoDraw = True
+165.9884 	EXP 	ItemNumber: autoDraw = True
+168.1461 	EXP 	Cross: autoDraw = False
+168.1461 	EXP 	ItemNumber: autoDraw = False
+168.1461 	EXP 	Cross: autoDraw = False
+168.1461 	EXP 	ItemNumber: autoDraw = False
+168.1461 	EXP 	MSTQuestion: autoDraw = True
+168.5034 	EXP 	New trial (rep=0, index=29): OrderedDict([('SoundFile', 'Test/Lures/Guitar_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+168.5093 	DATA 	Keypress: 1
+168.5136 	EXP 	MSTQuestion: autoDraw = False
+168.5136 	EXP 	no_3: autoDraw = True
+170.0354 	EXP 	no_3: autoDraw = False
+170.0354 	EXP 	ItemNumber: text = '30/128'
+170.0354 	EXP 	Cross: autoDraw = True
+170.0354 	EXP 	ItemNumber: autoDraw = True
+172.3628 	EXP 	Cross: autoDraw = False
+172.3628 	EXP 	ItemNumber: autoDraw = False
+172.3628 	EXP 	Cross: autoDraw = False
+172.3628 	EXP 	ItemNumber: autoDraw = False
+172.3628 	EXP 	MSTQuestion: autoDraw = True
+172.7036 	EXP 	New trial (rep=0, index=30): OrderedDict([('SoundFile', 'Initial/Repeat/PaperRip.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+172.7098 	DATA 	Keypress: 3
+172.7141 	EXP 	MSTQuestion: autoDraw = False
+172.7141 	EXP 	no_3: autoDraw = True
+174.2445 	EXP 	no_3: autoDraw = False
+174.2445 	EXP 	ItemNumber: text = '31/128'
+174.2445 	EXP 	Cross: autoDraw = True
+174.2445 	EXP 	ItemNumber: autoDraw = True
+175.8459 	EXP 	Cross: autoDraw = False
+175.8459 	EXP 	ItemNumber: autoDraw = False
+175.8459 	EXP 	Cross: autoDraw = False
+175.8459 	EXP 	ItemNumber: autoDraw = False
+175.8459 	EXP 	MSTQuestion: autoDraw = True
+176.2530 	EXP 	New trial (rep=0, index=31): OrderedDict([('SoundFile', 'Initial/NoRepeat/Mosquito_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+176.2604 	DATA 	Keypress: 3
+176.2649 	EXP 	MSTQuestion: autoDraw = False
+176.2649 	EXP 	no_3: autoDraw = True
+177.7872 	EXP 	no_3: autoDraw = False
+177.7872 	EXP 	ItemNumber: text = '32/128'
+177.7872 	EXP 	Cross: autoDraw = True
+177.7872 	EXP 	ItemNumber: autoDraw = True
+179.9275 	EXP 	Cross: autoDraw = False
+179.9275 	EXP 	ItemNumber: autoDraw = False
+179.9275 	EXP 	Cross: autoDraw = False
+179.9275 	EXP 	ItemNumber: autoDraw = False
+179.9275 	EXP 	MSTQuestion: autoDraw = True
+180.3013 	EXP 	New trial (rep=0, index=32): OrderedDict([('SoundFile', 'Initial/Repeat/Trumpet_B.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+180.3093 	DATA 	Keypress: 1
+180.3122 	EXP 	MSTQuestion: autoDraw = False
+180.3122 	EXP 	no_3: autoDraw = True
+181.8379 	EXP 	no_3: autoDraw = False
+181.8379 	EXP 	ItemNumber: text = '33/128'
+181.8379 	EXP 	Cross: autoDraw = True
+181.8379 	EXP 	ItemNumber: autoDraw = True
+184.1281 	EXP 	Cross: autoDraw = False
+184.1281 	EXP 	ItemNumber: autoDraw = False
+184.1281 	EXP 	Cross: autoDraw = False
+184.1281 	EXP 	ItemNumber: autoDraw = False
+184.1281 	EXP 	MSTQuestion: autoDraw = True
+184.4866 	EXP 	New trial (rep=0, index=33): OrderedDict([('SoundFile', 'Test/Foils/Bullfrog.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+184.4928 	DATA 	Keypress: 3
+184.4964 	EXP 	MSTQuestion: autoDraw = False
+184.4964 	EXP 	no_3: autoDraw = True
+186.0461 	EXP 	no_3: autoDraw = False
+186.0461 	EXP 	ItemNumber: text = '34/128'
+186.0461 	EXP 	Cross: autoDraw = True
+186.0461 	EXP 	ItemNumber: autoDraw = True
+188.9290 	EXP 	Cross: autoDraw = False
+188.9290 	EXP 	ItemNumber: autoDraw = False
+188.9290 	EXP 	Cross: autoDraw = False
+188.9290 	EXP 	ItemNumber: autoDraw = False
+188.9290 	EXP 	MSTQuestion: autoDraw = True
+189.6865 	EXP 	New trial (rep=0, index=34): OrderedDict([('SoundFile', 'Elephant_D.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+189.6907 	DATA 	Keypress: 3
+189.6968 	EXP 	MSTQuestion: autoDraw = False
+189.6968 	EXP 	no_3: autoDraw = True
+191.2374 	EXP 	no_3: autoDraw = False
+191.2374 	EXP 	ItemNumber: text = '35/128'
+191.2374 	EXP 	Cross: autoDraw = True
+191.2374 	EXP 	ItemNumber: autoDraw = True
+194.1125 	EXP 	Cross: autoDraw = False
+194.1125 	EXP 	ItemNumber: autoDraw = False
+194.1125 	EXP 	Cross: autoDraw = False
+194.1125 	EXP 	ItemNumber: autoDraw = False
+194.1125 	EXP 	MSTQuestion: autoDraw = True
+194.5197 	EXP 	New trial (rep=0, index=35): OrderedDict([('SoundFile', 'Initial/Repeat/Sneeze_B.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+194.5270 	DATA 	Keypress: 3
+194.5313 	EXP 	MSTQuestion: autoDraw = False
+194.5313 	EXP 	no_3: autoDraw = True
+196.0603 	EXP 	no_3: autoDraw = False
+196.0603 	EXP 	ItemNumber: text = '36/128'
+196.0603 	EXP 	Cross: autoDraw = True
+196.0603 	EXP 	ItemNumber: autoDraw = True
+197.2957 	EXP 	Cross: autoDraw = False
+197.2957 	EXP 	ItemNumber: autoDraw = False
+197.2957 	EXP 	Cross: autoDraw = False
+197.2957 	EXP 	ItemNumber: autoDraw = False
+197.2957 	EXP 	MSTQuestion: autoDraw = True
+197.9362 	EXP 	New trial (rep=0, index=36): OrderedDict([('SoundFile', 'Test/Foils/Camera.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+197.9422 	DATA 	Keypress: 3
+197.9465 	EXP 	MSTQuestion: autoDraw = False
+197.9465 	EXP 	no_3: autoDraw = True
+199.4652 	EXP 	no_3: autoDraw = False
+199.4652 	EXP 	ItemNumber: text = '37/128'
+199.4652 	EXP 	Cross: autoDraw = True
+199.4652 	EXP 	ItemNumber: autoDraw = True
+200.4289 	EXP 	Cross: autoDraw = False
+200.4289 	EXP 	ItemNumber: autoDraw = False
+200.4289 	EXP 	Cross: autoDraw = False
+200.4289 	EXP 	ItemNumber: autoDraw = False
+200.4289 	EXP 	MSTQuestion: autoDraw = True
+200.8701 	DATA 	Keypress: 1
+200.8870 	EXP 	New trial (rep=0, index=37): OrderedDict([('SoundFile', 'Initial/Doubled/Cat_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+200.8961 	EXP 	MSTQuestion: autoDraw = False
+200.8961 	EXP 	no_3: autoDraw = True
+202.4266 	EXP 	no_3: autoDraw = False
+202.4266 	EXP 	ItemNumber: text = '38/128'
+202.4266 	EXP 	Cross: autoDraw = True
+202.4266 	EXP 	ItemNumber: autoDraw = True
+203.8458 	EXP 	Cross: autoDraw = False
+203.8458 	EXP 	ItemNumber: autoDraw = False
+203.8458 	EXP 	Cross: autoDraw = False
+203.8458 	EXP 	ItemNumber: autoDraw = False
+203.8458 	EXP 	MSTQuestion: autoDraw = True
+204.2363 	EXP 	New trial (rep=0, index=38): OrderedDict([('SoundFile', 'Test/Foils/Steam.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+204.2416 	DATA 	Keypress: 3
+204.2460 	EXP 	MSTQuestion: autoDraw = False
+204.2460 	EXP 	no_3: autoDraw = True
+205.7685 	EXP 	no_3: autoDraw = False
+205.7685 	EXP 	ItemNumber: text = '39/128'
+205.7685 	EXP 	Cross: autoDraw = True
+205.7685 	EXP 	ItemNumber: autoDraw = True
+208.2956 	EXP 	Cross: autoDraw = False
+208.2956 	EXP 	ItemNumber: autoDraw = False
+208.2956 	EXP 	Cross: autoDraw = False
+208.2956 	EXP 	ItemNumber: autoDraw = False
+208.2956 	EXP 	MSTQuestion: autoDraw = True
+208.3381 	DATA 	Keypress: 3
+208.3528 	EXP 	New trial (rep=0, index=39): OrderedDict([('SoundFile', 'Writing_C.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+208.3623 	EXP 	MSTQuestion: autoDraw = False
+208.3623 	EXP 	no_3: autoDraw = True
+209.8983 	EXP 	no_3: autoDraw = False
+209.8983 	EXP 	ItemNumber: text = '40/128'
+209.8983 	EXP 	Cross: autoDraw = True
+209.8983 	EXP 	ItemNumber: autoDraw = True
+212.6121 	EXP 	Cross: autoDraw = False
+212.6121 	EXP 	ItemNumber: autoDraw = False
+212.6121 	EXP 	Cross: autoDraw = False
+212.6121 	EXP 	ItemNumber: autoDraw = False
+212.6121 	EXP 	MSTQuestion: autoDraw = True
+212.9695 	EXP 	New trial (rep=0, index=40): OrderedDict([('SoundFile', 'Initial/Repeat/IceDrop.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+212.9755 	DATA 	Keypress: 2
+212.9798 	EXP 	MSTQuestion: autoDraw = False
+212.9798 	EXP 	no_3: autoDraw = True
+214.5041 	EXP 	no_3: autoDraw = False
+214.5041 	EXP 	ItemNumber: text = '41/128'
+214.5041 	EXP 	Cross: autoDraw = True
+214.5041 	EXP 	ItemNumber: autoDraw = True
+217.2622 	EXP 	Cross: autoDraw = False
+217.2622 	EXP 	ItemNumber: autoDraw = False
+217.2622 	EXP 	Cross: autoDraw = False
+217.2622 	EXP 	ItemNumber: autoDraw = False
+217.2622 	EXP 	MSTQuestion: autoDraw = True
+217.8694 	EXP 	New trial (rep=0, index=41): OrderedDict([('SoundFile', 'Test/Foils/Slurp.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+217.8753 	DATA 	Keypress: 3
+217.8796 	EXP 	MSTQuestion: autoDraw = False
+217.8796 	EXP 	no_3: autoDraw = True
+219.4385 	EXP 	no_3: autoDraw = False
+219.4385 	EXP 	ItemNumber: text = '42/128'
+219.4385 	EXP 	Cross: autoDraw = True
+219.4385 	EXP 	ItemNumber: autoDraw = True
+221.8120 	EXP 	Cross: autoDraw = False
+221.8120 	EXP 	ItemNumber: autoDraw = False
+221.8120 	EXP 	Cross: autoDraw = False
+221.8120 	EXP 	ItemNumber: autoDraw = False
+221.8120 	EXP 	MSTQuestion: autoDraw = True
+222.1659 	EXP 	New trial (rep=0, index=42): OrderedDict([('SoundFile', 'Baby_E.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+222.1678 	DATA 	Keypress: 3
+222.1774 	EXP 	MSTQuestion: autoDraw = False
+222.1774 	EXP 	no_3: autoDraw = True
+223.7008 	EXP 	no_3: autoDraw = False
+223.7008 	EXP 	no_3: autoDraw = False
+223.7008 	EXP 	ItemNumber: text = '43/128'
+223.7008 	EXP 	Cross: autoDraw = True
+223.7008 	EXP 	ItemNumber: autoDraw = True
+226.0119 	EXP 	Cross: autoDraw = False
+226.0119 	EXP 	ItemNumber: autoDraw = False
+226.0119 	EXP 	Cross: autoDraw = False
+226.0119 	EXP 	ItemNumber: autoDraw = False
+226.0119 	EXP 	MSTQuestion: autoDraw = True
+226.4864 	EXP 	New trial (rep=0, index=43): OrderedDict([('SoundFile', 'Test/Foils/DialTone.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+226.4914 	DATA 	Keypress: 2
+226.4958 	EXP 	MSTQuestion: autoDraw = False
+226.4958 	EXP 	no_3: autoDraw = True
+228.0549 	EXP 	no_3: autoDraw = False
+228.0549 	EXP 	ItemNumber: text = '44/128'
+228.0549 	EXP 	Cross: autoDraw = True
+228.0549 	EXP 	ItemNumber: autoDraw = True
+230.5619 	EXP 	Cross: autoDraw = False
+230.5619 	EXP 	ItemNumber: autoDraw = False
+230.5619 	EXP 	Cross: autoDraw = False
+230.5619 	EXP 	ItemNumber: autoDraw = False
+230.5619 	EXP 	MSTQuestion: autoDraw = True
+230.9691 	EXP 	New trial (rep=0, index=44): OrderedDict([('SoundFile', 'Initial/NoRepeat/Puff_A.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+230.9752 	DATA 	Keypress: 3
+230.9796 	EXP 	MSTQuestion: autoDraw = False
+230.9796 	EXP 	no_3: autoDraw = True
+232.4999 	EXP 	no_3: autoDraw = False
+232.4999 	EXP 	ItemNumber: text = '45/128'
+232.4999 	EXP 	Cross: autoDraw = True
+232.4999 	EXP 	ItemNumber: autoDraw = True
+234.1956 	EXP 	Cross: autoDraw = False
+234.1956 	EXP 	ItemNumber: autoDraw = False
+234.1956 	EXP 	Cross: autoDraw = False
+234.1956 	EXP 	ItemNumber: autoDraw = False
+234.1956 	EXP 	MSTQuestion: autoDraw = True
+234.5689 	EXP 	New trial (rep=0, index=45): OrderedDict([('SoundFile', 'Initial/Repeat/Buzz.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+234.5746 	DATA 	Keypress: 1
+234.5792 	EXP 	MSTQuestion: autoDraw = False
+234.5792 	EXP 	no_3: autoDraw = True
+236.1157 	EXP 	no_3: autoDraw = False
+236.1157 	EXP 	ItemNumber: text = '46/128'
+236.1157 	EXP 	Cross: autoDraw = True
+236.1157 	EXP 	ItemNumber: autoDraw = True
+238.4285 	EXP 	Cross: autoDraw = False
+238.4285 	EXP 	ItemNumber: autoDraw = False
+238.4285 	EXP 	Cross: autoDraw = False
+238.4285 	EXP 	ItemNumber: autoDraw = False
+238.4285 	EXP 	MSTQuestion: autoDraw = True
+238.7845 	DATA 	Keypress: 3
+238.8030 	EXP 	New trial (rep=0, index=46): OrderedDict([('SoundFile', 'Test/Foils/Airhorn.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+238.8125 	EXP 	MSTQuestion: autoDraw = False
+238.8125 	EXP 	no_3: autoDraw = True
+240.3360 	EXP 	no_3: autoDraw = False
+240.3360 	EXP 	ItemNumber: text = '47/128'
+240.3360 	EXP 	Cross: autoDraw = True
+240.3360 	EXP 	ItemNumber: autoDraw = True
+242.8953 	EXP 	Cross: autoDraw = False
+242.8953 	EXP 	ItemNumber: autoDraw = False
+242.8953 	EXP 	Cross: autoDraw = False
+242.8953 	EXP 	ItemNumber: autoDraw = False
+242.8953 	EXP 	MSTQuestion: autoDraw = True
+243.2188 	EXP 	New trial (rep=0, index=47): OrderedDict([('SoundFile', 'Initial/NoRepeat/Sleighbells_B.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+243.2252 	DATA 	Keypress: 1
+243.2296 	EXP 	MSTQuestion: autoDraw = False
+243.2296 	EXP 	no_3: autoDraw = True
+244.7703 	EXP 	no_3: autoDraw = False
+244.7703 	EXP 	ItemNumber: text = '48/128'
+244.7703 	EXP 	Cross: autoDraw = True
+244.7703 	EXP 	ItemNumber: autoDraw = True
+247.1954 	EXP 	Cross: autoDraw = False
+247.1954 	EXP 	ItemNumber: autoDraw = False
+247.1954 	EXP 	Cross: autoDraw = False
+247.1954 	EXP 	ItemNumber: autoDraw = False
+247.1954 	EXP 	MSTQuestion: autoDraw = True
+247.6360 	EXP 	New trial (rep=0, index=48): OrderedDict([('SoundFile', 'Initial/Doubled/Cuckoo_A.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+247.6410 	DATA 	Keypress: 3
+247.6454 	EXP 	MSTQuestion: autoDraw = False
+247.6454 	EXP 	no_3: autoDraw = True
+249.1679 	EXP 	no_3: autoDraw = False
+249.1679 	EXP 	ItemNumber: text = '49/128'
+249.1679 	EXP 	Cross: autoDraw = True
+249.1679 	EXP 	ItemNumber: autoDraw = True
+251.6620 	EXP 	Cross: autoDraw = False
+251.6620 	EXP 	ItemNumber: autoDraw = False
+251.6620 	EXP 	Cross: autoDraw = False
+251.6620 	EXP 	ItemNumber: autoDraw = False
+251.6620 	EXP 	MSTQuestion: autoDraw = True
+251.6867 	EXP 	New trial (rep=0, index=49): OrderedDict([('SoundFile', 'Test/Foils/Wind_B.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+251.6920 	DATA 	Keypress: 3
+251.6964 	EXP 	MSTQuestion: autoDraw = False
+251.6964 	EXP 	no_3: autoDraw = True
+253.2608 	EXP 	no_3: autoDraw = False
+253.2608 	EXP 	ItemNumber: text = '50/128'
+253.2608 	EXP 	Cross: autoDraw = True
+253.2608 	EXP 	ItemNumber: autoDraw = True
+255.9946 	EXP 	Cross: autoDraw = False
+255.9946 	EXP 	ItemNumber: autoDraw = False
+255.9946 	EXP 	Cross: autoDraw = False
+255.9946 	EXP 	ItemNumber: autoDraw = False
+255.9946 	EXP 	MSTQuestion: autoDraw = True
+256.3191 	EXP 	New trial (rep=0, index=50): OrderedDict([('SoundFile', 'Test/Foils/Typing.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+256.3251 	DATA 	Keypress: 3
+256.3294 	EXP 	MSTQuestion: autoDraw = False
+256.3294 	EXP 	no_3: autoDraw = True
+257.8861 	EXP 	no_3: autoDraw = False
+257.8861 	EXP 	ItemNumber: text = '51/128'
+257.8861 	EXP 	Cross: autoDraw = True
+257.8861 	EXP 	ItemNumber: autoDraw = True
+260.7452 	EXP 	Cross: autoDraw = False
+260.7452 	EXP 	ItemNumber: autoDraw = False
+260.7452 	EXP 	Cross: autoDraw = False
+260.7452 	EXP 	ItemNumber: autoDraw = False
+260.7452 	EXP 	MSTQuestion: autoDraw = True
+261.0693 	EXP 	New trial (rep=0, index=51): OrderedDict([('SoundFile', 'Test/Lures/Bubbles_B.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+261.0746 	DATA 	Keypress: 3
+261.0795 	EXP 	MSTQuestion: autoDraw = False
+261.0795 	EXP 	no_3: autoDraw = True
+262.6316 	EXP 	no_3: autoDraw = False
+262.6316 	EXP 	ItemNumber: text = '52/128'
+262.6316 	EXP 	Cross: autoDraw = True
+262.6316 	EXP 	ItemNumber: autoDraw = True
+265.0784 	EXP 	Cross: autoDraw = False
+265.0784 	EXP 	ItemNumber: autoDraw = False
+265.0784 	EXP 	Cross: autoDraw = False
+265.0784 	EXP 	ItemNumber: autoDraw = False
+265.0784 	EXP 	MSTQuestion: autoDraw = True
+265.5028 	EXP 	New trial (rep=0, index=52): OrderedDict([('SoundFile', 'Duck_A.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+265.5090 	DATA 	Keypress: 2
+265.5133 	EXP 	MSTQuestion: autoDraw = False
+265.5133 	EXP 	no_3: autoDraw = True
+267.0572 	EXP 	no_3: autoDraw = False
+267.0572 	EXP 	ItemNumber: text = '53/128'
+267.0572 	EXP 	Cross: autoDraw = True
+267.0572 	EXP 	ItemNumber: autoDraw = True
+269.1618 	EXP 	Cross: autoDraw = False
+269.1618 	EXP 	ItemNumber: autoDraw = False
+269.1618 	EXP 	Cross: autoDraw = False
+269.1618 	EXP 	ItemNumber: autoDraw = False
+269.1618 	EXP 	MSTQuestion: autoDraw = True
+269.5013 	DATA 	Keypress: 3
+269.5186 	EXP 	New trial (rep=0, index=53): OrderedDict([('SoundFile', 'Initial/Repeat/Trumpet_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+269.5275 	EXP 	MSTQuestion: autoDraw = False
+269.5275 	EXP 	no_3: autoDraw = True
+271.0375 	EXP 	no_3: autoDraw = False
+271.0375 	EXP 	no_3: autoDraw = False
+271.0375 	EXP 	ItemNumber: text = '54/128'
+271.0375 	EXP 	Cross: autoDraw = True
+271.0375 	EXP 	ItemNumber: autoDraw = True
+273.3281 	EXP 	Cross: autoDraw = False
+273.3281 	EXP 	ItemNumber: autoDraw = False
+273.3281 	EXP 	Cross: autoDraw = False
+273.3281 	EXP 	ItemNumber: autoDraw = False
+273.3281 	EXP 	MSTQuestion: autoDraw = True
+273.6361 	EXP 	New trial (rep=0, index=54): OrderedDict([('SoundFile', 'Initial/Repeat/PaperRip.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+273.6420 	DATA 	Keypress: 1
+273.6463 	EXP 	MSTQuestion: autoDraw = False
+273.6463 	EXP 	no_3: autoDraw = True
+275.1674 	EXP 	no_3: autoDraw = False
+275.1674 	EXP 	ItemNumber: text = '55/128'
+275.1674 	EXP 	Cross: autoDraw = True
+275.1674 	EXP 	ItemNumber: autoDraw = True
+276.7614 	EXP 	Cross: autoDraw = False
+276.7614 	EXP 	ItemNumber: autoDraw = False
+276.7614 	EXP 	Cross: autoDraw = False
+276.7614 	EXP 	ItemNumber: autoDraw = False
+276.7614 	EXP 	MSTQuestion: autoDraw = True
+277.8030 	EXP 	New trial (rep=0, index=55): OrderedDict([('SoundFile', 'Initial/Repeat/Sneeze_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+277.8110 	DATA 	Keypress: 3
+277.8154 	EXP 	MSTQuestion: autoDraw = False
+277.8154 	EXP 	no_3: autoDraw = True
+279.3359 	EXP 	no_3: autoDraw = False
+279.3359 	EXP 	ItemNumber: text = '56/128'
+279.3359 	EXP 	Cross: autoDraw = True
+279.3359 	EXP 	ItemNumber: autoDraw = True
+280.5617 	EXP 	Cross: autoDraw = False
+280.5617 	EXP 	ItemNumber: autoDraw = False
+280.5617 	EXP 	Cross: autoDraw = False
+280.5617 	EXP 	ItemNumber: autoDraw = False
+280.5617 	EXP 	MSTQuestion: autoDraw = True
+280.9530 	EXP 	New trial (rep=0, index=56): OrderedDict([('SoundFile', 'Initial/Repeat/Pour.wav'), ('Correct', 2), ('Correct2', 3), ('Type', 'NEW'), ('Trial', 'B')])
+280.9582 	DATA 	Keypress: 1
+280.9658 	EXP 	MSTQuestion: autoDraw = False
+280.9658 	EXP 	no_3: autoDraw = True
+282.5053 	EXP 	no_3: autoDraw = False
+282.5053 	EXP 	ItemNumber: text = '57/128'
+282.5053 	EXP 	Cross: autoDraw = True
+282.5053 	EXP 	ItemNumber: autoDraw = True
+285.0782 	EXP 	Cross: autoDraw = False
+285.0782 	EXP 	ItemNumber: autoDraw = False
+285.0782 	EXP 	Cross: autoDraw = False
+285.0782 	EXP 	ItemNumber: autoDraw = False
+285.0782 	EXP 	MSTQuestion: autoDraw = True
+285.6022 	EXP 	New trial (rep=0, index=57): OrderedDict([('SoundFile', 'Initial/Doubled/Cat_A.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+285.6080 	DATA 	Keypress: 3
+285.6125 	EXP 	MSTQuestion: autoDraw = False
+285.6125 	EXP 	no_3: autoDraw = True
+287.1327 	EXP 	no_3: autoDraw = False
+287.1327 	EXP 	ItemNumber: text = '58/128'
+287.1327 	EXP 	Cross: autoDraw = True
+287.1327 	EXP 	ItemNumber: autoDraw = True
+288.5614 	EXP 	Cross: autoDraw = False
+288.5614 	EXP 	ItemNumber: autoDraw = False
+288.5614 	EXP 	Cross: autoDraw = False
+288.5614 	EXP 	ItemNumber: autoDraw = False
+288.5614 	EXP 	MSTQuestion: autoDraw = True
+289.1527 	EXP 	New trial (rep=0, index=58): OrderedDict([('SoundFile', 'Test/Foils/Slurp.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+289.1596 	DATA 	Keypress: 1
+289.1640 	EXP 	MSTQuestion: autoDraw = False
+289.1640 	EXP 	no_3: autoDraw = True
+290.6853 	EXP 	no_3: autoDraw = False
+290.6853 	EXP 	ItemNumber: text = '59/128'
+290.6853 	EXP 	Cross: autoDraw = True
+290.6853 	EXP 	ItemNumber: autoDraw = True
+293.0617 	EXP 	Cross: autoDraw = False
+293.0617 	EXP 	ItemNumber: autoDraw = False
+293.0617 	EXP 	Cross: autoDraw = False
+293.0617 	EXP 	ItemNumber: autoDraw = False
+293.0617 	EXP 	MSTQuestion: autoDraw = True
+293.4696 	EXP 	New trial (rep=0, index=59): OrderedDict([('SoundFile', 'Test/Foils/Bullfrog.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+293.4761 	DATA 	Keypress: 1
+293.4819 	EXP 	MSTQuestion: autoDraw = False
+293.4819 	EXP 	no_3: autoDraw = True
+294.9934 	EXP 	no_3: autoDraw = False
+294.9934 	EXP 	ItemNumber: text = '60/128'
+294.9934 	EXP 	Cross: autoDraw = True
+294.9934 	EXP 	ItemNumber: autoDraw = True
+297.8781 	EXP 	Cross: autoDraw = False
+297.8781 	EXP 	ItemNumber: autoDraw = False
+297.8781 	EXP 	Cross: autoDraw = False
+297.8781 	EXP 	ItemNumber: autoDraw = False
+297.8781 	EXP 	MSTQuestion: autoDraw = True
+298.2019 	EXP 	New trial (rep=0, index=60): OrderedDict([('SoundFile', 'Test/Foils/Wind_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+298.2078 	DATA 	Keypress: 1
+298.2121 	EXP 	MSTQuestion: autoDraw = False
+298.2121 	EXP 	no_3: autoDraw = True
+299.7362 	EXP 	no_3: autoDraw = False
+299.7362 	EXP 	ItemNumber: text = '61/128'
+299.7362 	EXP 	Cross: autoDraw = True
+299.7362 	EXP 	ItemNumber: autoDraw = True
+302.4781 	EXP 	Cross: autoDraw = False
+302.4781 	EXP 	ItemNumber: autoDraw = False
+302.4781 	EXP 	Cross: autoDraw = False
+302.4781 	EXP 	ItemNumber: autoDraw = False
+302.4781 	EXP 	MSTQuestion: autoDraw = True
+303.2350 	EXP 	New trial (rep=0, index=61): OrderedDict([('SoundFile', 'Duck_B.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+303.2406 	DATA 	Keypress: 1
+303.2449 	EXP 	MSTQuestion: autoDraw = False
+303.2449 	EXP 	no_3: autoDraw = True
+304.7787 	EXP 	no_3: autoDraw = False
+304.7787 	EXP 	ItemNumber: text = '62/128'
+304.7787 	EXP 	Cross: autoDraw = True
+304.7787 	EXP 	ItemNumber: autoDraw = True
+306.4946 	EXP 	Cross: autoDraw = False
+306.4946 	EXP 	ItemNumber: autoDraw = False
+306.4946 	EXP 	Cross: autoDraw = False
+306.4946 	EXP 	ItemNumber: autoDraw = False
+306.4946 	EXP 	MSTQuestion: autoDraw = True
+308.1185 	EXP 	New trial (rep=0, index=62): OrderedDict([('SoundFile', 'Test/Foils/DialTone.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+308.1250 	DATA 	Keypress: 2
+308.1292 	EXP 	MSTQuestion: autoDraw = False
+308.1292 	EXP 	no_3: autoDraw = True
+309.6582 	EXP 	no_3: autoDraw = False
+309.6582 	EXP 	ItemNumber: text = '63/128'
+309.6582 	EXP 	Cross: autoDraw = True
+309.6582 	EXP 	ItemNumber: autoDraw = True
+312.1613 	EXP 	Cross: autoDraw = False
+312.1613 	EXP 	ItemNumber: autoDraw = False
+312.1613 	EXP 	Cross: autoDraw = False
+312.1613 	EXP 	ItemNumber: autoDraw = False
+312.1613 	EXP 	MSTQuestion: autoDraw = True
+312.3028 	EXP 	New trial (rep=0, index=63): OrderedDict([('SoundFile', 'Initial/Repeat/Buzz.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+312.3088 	DATA 	Keypress: 1
+312.3130 	EXP 	MSTQuestion: autoDraw = False
+312.3130 	EXP 	no_3: autoDraw = True
+313.8353 	EXP 	no_3: autoDraw = False
+313.8353 	EXP 	ItemNumber: text = '64/128'
+313.8353 	EXP 	Cross: autoDraw = True
+313.8353 	EXP 	ItemNumber: autoDraw = True
+316.1443 	EXP 	Cross: autoDraw = False
+316.1443 	EXP 	ItemNumber: autoDraw = False
+316.1443 	EXP 	Cross: autoDraw = False
+316.1443 	EXP 	ItemNumber: autoDraw = False
+316.1443 	EXP 	MSTQuestion: autoDraw = True
+316.5348 	EXP 	New trial (rep=0, index=64): OrderedDict([('SoundFile', 'Pour_C.wav'), ('Correct', 2), ('Correct2', 2), ('Type', 'SIMILAR'), ('Trial', 'B')])
+316.5407 	DATA 	Keypress: 1
+316.5450 	EXP 	MSTQuestion: autoDraw = False
+316.5450 	EXP 	no_3: autoDraw = True
+318.0822 	EXP 	no_3: autoDraw = False
+318.0822 	EXP 	ItemNumber: text = '65/128'
+318.0822 	EXP 	Cross: autoDraw = True
+318.0822 	EXP 	ItemNumber: autoDraw = True
+320.9777 	EXP 	Cross: autoDraw = False
+320.9777 	EXP 	ItemNumber: autoDraw = False
+320.9777 	EXP 	Cross: autoDraw = False
+320.9777 	EXP 	ItemNumber: autoDraw = False
+320.9777 	EXP 	MSTQuestion: autoDraw = True
+321.7215 	DATA 	Keypress: 2
+321.7351 	EXP 	New trial (rep=0, index=65): OrderedDict([('SoundFile', 'Test/Foils/Typing.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+321.7436 	EXP 	MSTQuestion: autoDraw = False
+321.7436 	EXP 	no_3: autoDraw = True
+323.2552 	EXP 	no_3: autoDraw = False
+323.2552 	EXP 	no_3: autoDraw = False
+323.2552 	EXP 	ItemNumber: text = '66/128'
+323.2552 	EXP 	Cross: autoDraw = True
+323.2552 	EXP 	ItemNumber: autoDraw = True
+326.1275 	EXP 	Cross: autoDraw = False
+326.1275 	EXP 	ItemNumber: autoDraw = False
+326.1275 	EXP 	Cross: autoDraw = False
+326.1275 	EXP 	ItemNumber: autoDraw = False
+326.1275 	EXP 	MSTQuestion: autoDraw = True
+326.4190 	EXP 	New trial (rep=0, index=66): OrderedDict([('SoundFile', 'Initial/NoRepeat/Sleighbells_B.wav'), ('Correct', 1), ('Correct2', 1), ('Type', 'OLD'), ('Trial', 'B')])
+326.4250 	DATA 	Keypress: 1
+326.4292 	EXP 	MSTQuestion: autoDraw = False
+326.4292 	EXP 	no_3: autoDraw = True
+327.9512 	EXP 	no_3: autoDraw = False
+327.9512 	EXP 	ItemNumber: text = '67/128'
+327.9512 	EXP 	Cross: autoDraw = True
+327.9512 	EXP 	ItemNumber: autoDraw = True
+330.3775 	EXP 	Cross: autoDraw = False
+330.3775 	EXP 	ItemNumber: autoDraw = False
+330.3775 	EXP 	Cross: autoDraw = False
+330.3775 	EXP 	ItemNumber: autoDraw = False
+330.3775 	EXP 	MSTQuestion: autoDraw = True
+331.2893 	DATA 	Keypress: 3
+331.2940 	EXP 	MSTQuestion: autoDraw = False
+331.2940 	EXP 	ThankyouMssg: autoDraw = True
+331.2940 	EXP 	CompletionCode: autoDraw = True
+331.2940 	EXP 	ExitTxt: autoDraw = True
+331.2940 	EXP 	CodeTxt: autoDraw = True
+339.3565 	DATA 	Keypress: space
+339.3765 	EXP 	ThankyouMssg: autoDraw = False
+339.3765 	EXP 	CompletionCode: autoDraw = False
+339.3765 	EXP 	ExitTxt: autoDraw = False
+339.3765 	EXP 	CodeTxt: autoDraw = False
+339.6339 	EXP 	window1: mouseVisible = True
