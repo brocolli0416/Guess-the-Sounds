@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 
 ### Load participant file ###
-filelist = [3, 4, 5]
+filelist = [1, 2, 3, 4, 5]
 
 ###############################
 ### Calculate accuracy rate ###
@@ -60,15 +60,15 @@ def get_accuracy(df):
             else:
                 new_n += 1
     # Calculate the average
-    old_o = old_o/64
-    sim_o = sim_o/64
-    new_o = new_o/64
-    old_s = old_s/32
-    sim_s = sim_s/32
-    new_s = new_s/32
-    old_n = old_n/48
-    sim_n = sim_n/48
-    new_n = new_n/48
+    old_o = old_o/40
+    sim_o = sim_o/40
+    new_o = new_o/40
+    old_s = old_s/24
+    sim_s = sim_s/24
+    new_s = new_s/24
+    old_n = old_n/64
+    sim_n = sim_n/64
+    new_n = new_n/64
 
 #############################
 ### Calculate LDI and REC ###
@@ -83,7 +83,7 @@ def get_accuracy(df):
         writer.writerow([old_o, sim_o, new_o, old_s, sim_s, new_s, old_n, sim_n, new_n, LDI, REC])
 
 for i in filelist:
-    filename = str(i)+'_MST144.csv'
+    filename = str(i)+'_MST128_3AFCh.csv'
     df = pd.read_csv(filename)
     get_accuracy(df)
 

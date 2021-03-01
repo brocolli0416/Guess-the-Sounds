@@ -5,7 +5,7 @@ import pandas as pd
 ### The number of "OLD" response to the Lure items is used to measure similarity 
 ### (The more OLD response given, the greater the similarity)
 
-filelist = [1, 2, 3, 4, 5]
+filelist = [6, 7, 8]
 
 
 def get_similarity(df, cat):
