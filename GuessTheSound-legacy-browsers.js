@@ -58,10 +58,10 @@ flowScheduler.add(Welcome2RoutineEnd());
 flowScheduler.add(PracticeBeginRoutineBegin());
 flowScheduler.add(PracticeBeginRoutineEachFrame());
 flowScheduler.add(PracticeBeginRoutineEnd());
-const PracticeTrialsLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(PracticeTrialsLoopBegin, PracticeTrialsLoopScheduler);
-flowScheduler.add(PracticeTrialsLoopScheduler);
-flowScheduler.add(PracticeTrialsLoopEnd);
+const PracticeLoopLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(PracticeLoopLoopBegin, PracticeLoopLoopScheduler);
+flowScheduler.add(PracticeLoopLoopScheduler);
+flowScheduler.add(PracticeLoopLoopEnd);
 flowScheduler.add(StartRoutineBegin());
 flowScheduler.add(StartRoutineEachFrame());
 flowScheduler.add(StartRoutineEnd());
@@ -84,29 +84,25 @@ psychoJS.start({
     {'name': 'Test/Foils/Bowlingpins.wav', 'path': 'Test/Foils/Bowlingpins.wav'},
     {'name': 'Chomp_F.wav', 'path': 'Chomp_F.wav'},
     {'name': 'Piano_D.wav', 'path': 'Piano_D.wav'},
-    {'name': 'Goat_C.wav', 'path': 'Goat_C.wav'},
     {'name': 'Pour_C.wav', 'path': 'Pour_C.wav'},
     {'name': 'Initial/NoRepeat/Fireworks.wav', 'path': 'Initial/NoRepeat/Fireworks.wav'},
     {'name': 'Faucet_D.wav', 'path': 'Faucet_D.wav'},
     {'name': 'Initial/Doubled/Bubbles_A.wav', 'path': 'Initial/Doubled/Bubbles_A.wav'},
-    {'name': 'Cough_A.wav', 'path': 'Cough_A.wav'},
-    {'name': 'Dog_F.wav', 'path': 'Dog_F.wav'},
     {'name': 'Footsteps_G.wav', 'path': 'Footsteps_G.wav'},
     {'name': 'Initial/Repeat/Cello.wav', 'path': 'Initial/Repeat/Cello.wav'},
     {'name': 'Test/Lures/Guitar_B.wav', 'path': 'Test/Lures/Guitar_B.wav'},
     {'name': 'CarStart_F.wav', 'path': 'CarStart_F.wav'},
     {'name': 'Initial/Repeat/Airplane_B.wav', 'path': 'Initial/Repeat/Airplane_B.wav'},
-    {'name': 'Crow_B.wav', 'path': 'Crow_B.wav'},
     {'name': 'Footsteps_F.wav', 'path': 'Footsteps_F.wav'},
+    {'name': 'Crow_B.wav', 'path': 'Crow_B.wav'},
     {'name': 'Test/Foils/Bullfrog.wav', 'path': 'Test/Foils/Bullfrog.wav'},
-    {'name': 'Cough_E.wav', 'path': 'Cough_E.wav'},
     {'name': 'GuessSounds_conditions.xlsx', 'path': 'GuessSounds_conditions.xlsx'},
+    {'name': 'Duck_D.wav', 'path': 'Duck_D.wav'},
     {'name': 'volumeadjust.wav', 'path': 'volumeadjust.wav'},
     {'name': 'Test/Foils/Slurp.wav', 'path': 'Test/Foils/Slurp.wav'},
     {'name': 'Headphone/t1_1.wav', 'path': 'Headphone/t1_1.wav'},
     {'name': 'Phone_D.wav', 'path': 'Phone_D.wav'},
     {'name': 'Clap_C.wav', 'path': 'Clap_C.wav'},
-    {'name': 'Dog_E.wav', 'path': 'Dog_E.wav'},
     {'name': 'Initial/Repeat/Sneeze_B.wav', 'path': 'Initial/Repeat/Sneeze_B.wav'},
     {'name': 'Initial/Doubled/Writing_A.wav', 'path': 'Initial/Doubled/Writing_A.wav'},
     {'name': 'Initial/Repeat/Cup.wav', 'path': 'Initial/Repeat/Cup.wav'},
@@ -119,14 +115,15 @@ psychoJS.start({
     {'name': 'Initial/NoRepeat/Toilet_B.wav', 'path': 'Initial/NoRepeat/Toilet_B.wav'},
     {'name': 'Headphone/t2_1.wav', 'path': 'Headphone/t2_1.wav'},
     {'name': 'Crow_A.wav', 'path': 'Crow_A.wav'},
-    {'name': 'Chick_A.wav', 'path': 'Chick_A.wav'},
     {'name': 'Practice/Gargle_A.wav', 'path': 'Practice/Gargle_A.wav'},
     {'name': 'Test/Foils/Camera.wav', 'path': 'Test/Foils/Camera.wav'},
     {'name': 'Practice/Gargle_B.wav', 'path': 'Practice/Gargle_B.wav'},
     {'name': 'Faucet_C.wav', 'path': 'Faucet_C.wav'},
+    {'name': 'Cough_G.wav', 'path': 'Cough_G.wav'},
     {'name': 'Initial/NoRepeat/Hammer_A.wav', 'path': 'Initial/NoRepeat/Hammer_A.wav'},
     {'name': 'Initial/Repeat/IceDrop.wav', 'path': 'Initial/Repeat/IceDrop.wav'},
     {'name': 'Coin_D.wav', 'path': 'Coin_D.wav'},
+    {'name': 'Goat_E.wav', 'path': 'Goat_E.wav'},
     {'name': 'Baby_F.wav', 'path': 'Baby_F.wav'},
     {'name': 'Siren_B.wav', 'path': 'Siren_B.wav'},
     {'name': 'Chime_A.wav', 'path': 'Chime_A.wav'},
@@ -135,6 +132,7 @@ psychoJS.start({
     {'name': 'Initial/NoRepeat/Droplet_B.wav', 'path': 'Initial/NoRepeat/Droplet_B.wav'},
     {'name': 'Headphone/t3_1.wav', 'path': 'Headphone/t3_1.wav'},
     {'name': 'Initial/Doubled/Cuckoo_A.wav', 'path': 'Initial/Doubled/Cuckoo_A.wav'},
+    {'name': 'Duck_C.wav', 'path': 'Duck_C.wav'},
     {'name': 'Test/Foils/Airhorn.wav', 'path': 'Test/Foils/Airhorn.wav'},
     {'name': 'Practice/Seagull_A.wav', 'path': 'Practice/Seagull_A.wav'},
     {'name': 'Test/Foils/Horse.wav', 'path': 'Test/Foils/Horse.wav'},
@@ -143,19 +141,22 @@ psychoJS.start({
     {'name': 'Headphone/t1_2.wav', 'path': 'Headphone/t1_2.wav'},
     {'name': 'Chomp_E.wav', 'path': 'Chomp_E.wav'},
     {'name': 'Headphone/t3_2.wav', 'path': 'Headphone/t3_2.wav'},
+    {'name': 'Dog_H.wav', 'path': 'Dog_H.wav'},
     {'name': 'Initial/NoRepeat/Thunder_A.wav', 'path': 'Initial/NoRepeat/Thunder_A.wav'},
     {'name': 'Initial/Repeat/Bagpipe.wav', 'path': 'Initial/Repeat/Bagpipe.wav'},
     {'name': 'Practice/Skid_B.wav', 'path': 'Practice/Skid_B.wav'},
     {'name': 'Headphone/t2_2.wav', 'path': 'Headphone/t2_2.wav'},
+    {'name': 'Bird_E.wav', 'path': 'Bird_E.wav'},
+    {'name': 'Dog_G.wav', 'path': 'Dog_G.wav'},
     {'name': 'Laugh_F.wav', 'path': 'Laugh_F.wav'},
     {'name': 'Clap_B.wav', 'path': 'Clap_B.wav'},
     {'name': 'Chime_B.wav', 'path': 'Chime_B.wav'},
     {'name': 'Goat_D.wav', 'path': 'Goat_D.wav'},
     {'name': 'Initial/Doubled/Chicken_A.wav', 'path': 'Initial/Doubled/Chicken_A.wav'},
     {'name': 'Duck_A.wav', 'path': 'Duck_A.wav'},
-    {'name': 'Duck_B.wav', 'path': 'Duck_B.wav'},
     {'name': 'Test/Foils/DialTone.wav', 'path': 'Test/Foils/DialTone.wav'},
     {'name': 'Baby_E.wav', 'path': 'Baby_E.wav'},
+    {'name': 'Cough_H.wav', 'path': 'Cough_H.wav'},
     {'name': 'Headphone_check.xlsx', 'path': 'Headphone_check.xlsx'},
     {'name': 'Growl_H.wav', 'path': 'Growl_H.wav'},
     {'name': 'Initial/Repeat/ManWhistle.wav', 'path': 'Initial/Repeat/ManWhistle.wav'},
@@ -174,11 +175,11 @@ psychoJS.start({
     {'name': 'Initial/NoRepeat/Mosquito_B.wav', 'path': 'Initial/NoRepeat/Mosquito_B.wav'},
     {'name': 'Phone_E.wav', 'path': 'Phone_E.wav'},
     {'name': 'Initial/NoRepeat/Helicopter_A.wav', 'path': 'Initial/NoRepeat/Helicopter_A.wav'},
-    {'name': 'Bird_D.wav', 'path': 'Bird_D.wav'},
     {'name': 'Initial/Repeat/Howl.wav', 'path': 'Initial/Repeat/Howl.wav'},
     {'name': 'Initial/NoRepeat/Cow.wav', 'path': 'Initial/NoRepeat/Cow.wav'},
     {'name': 'Initial/Repeat/Printer.wav', 'path': 'Initial/Repeat/Printer.wav'},
     {'name': 'Test/Foils/Donkey.wav', 'path': 'Test/Foils/Donkey.wav'},
+    {'name': 'Bird_F.wav', 'path': 'Bird_F.wav'},
     {'name': 'Test/Foils/Wind_B.wav', 'path': 'Test/Foils/Wind_B.wav'},
     {'name': 'Test/Foils/Steam.wav', 'path': 'Test/Foils/Steam.wav'},
     {'name': 'Elephant_D.wav', 'path': 'Elephant_D.wav'}
@@ -1311,42 +1312,42 @@ function trials_2LoopEnd() {
 }
 
 
-var PracticeTrials;
-function PracticeTrialsLoopBegin(PracticeTrialsLoopScheduler) {
+var PracticeLoop;
+function PracticeLoopLoopBegin(PracticeLoopLoopScheduler) {
   // set up handler to look after randomisation of conditions etc
-  PracticeTrials = new TrialHandler({
+  PracticeLoop = new TrialHandler({
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds_conditions.xlsx', '0:5'),
-    seed: undefined, name: 'PracticeTrials'
+    seed: undefined, name: 'PracticeLoop'
   });
-  psychoJS.experiment.addLoop(PracticeTrials); // add the loop to the experiment
-  currentLoop = PracticeTrials;  // we're now the current loop
+  psychoJS.experiment.addLoop(PracticeLoop); // add the loop to the experiment
+  currentLoop = PracticeLoop;  // we're now the current loop
 
   // Schedule all the trials in the trialList:
-  PracticeTrials.forEach(function() {
-    const snapshot = PracticeTrials.getSnapshot();
+  PracticeLoop.forEach(function() {
+    const snapshot = PracticeLoop.getSnapshot();
 
-    PracticeTrialsLoopScheduler.add(importConditions(snapshot));
-    PracticeTrialsLoopScheduler.add(Practice1RoutineBegin(snapshot));
-    PracticeTrialsLoopScheduler.add(Practice1RoutineEachFrame(snapshot));
-    PracticeTrialsLoopScheduler.add(Practice1RoutineEnd(snapshot));
-    PracticeTrialsLoopScheduler.add(PracticeFeedbackRoutineBegin(snapshot));
-    PracticeTrialsLoopScheduler.add(PracticeFeedbackRoutineEachFrame(snapshot));
-    PracticeTrialsLoopScheduler.add(PracticeFeedbackRoutineEnd(snapshot));
-    PracticeTrialsLoopScheduler.add(PracticeFeedbackIIRoutineBegin(snapshot));
-    PracticeTrialsLoopScheduler.add(PracticeFeedbackIIRoutineEachFrame(snapshot));
-    PracticeTrialsLoopScheduler.add(PracticeFeedbackIIRoutineEnd(snapshot));
-    PracticeTrialsLoopScheduler.add(endLoopIteration(PracticeTrialsLoopScheduler, snapshot));
+    PracticeLoopLoopScheduler.add(importConditions(snapshot));
+    PracticeLoopLoopScheduler.add(Practice1RoutineBegin(snapshot));
+    PracticeLoopLoopScheduler.add(Practice1RoutineEachFrame(snapshot));
+    PracticeLoopLoopScheduler.add(Practice1RoutineEnd(snapshot));
+    PracticeLoopLoopScheduler.add(PracticeFeedbackRoutineBegin(snapshot));
+    PracticeLoopLoopScheduler.add(PracticeFeedbackRoutineEachFrame(snapshot));
+    PracticeLoopLoopScheduler.add(PracticeFeedbackRoutineEnd(snapshot));
+    PracticeLoopLoopScheduler.add(PracticeFeedbackIIRoutineBegin(snapshot));
+    PracticeLoopLoopScheduler.add(PracticeFeedbackIIRoutineEachFrame(snapshot));
+    PracticeLoopLoopScheduler.add(PracticeFeedbackIIRoutineEnd(snapshot));
+    PracticeLoopLoopScheduler.add(endLoopIteration(PracticeLoopLoopScheduler, snapshot));
   });
 
   return Scheduler.Event.NEXT;
 }
 
 
-function PracticeTrialsLoopEnd() {
-  psychoJS.experiment.removeLoop(PracticeTrials);
+function PracticeLoopLoopEnd() {
+  psychoJS.experiment.removeLoop(PracticeLoop);
 
   return Scheduler.Event.NEXT;
 }
@@ -1359,7 +1360,7 @@ function trialsLoopBegin(trialsLoopScheduler) {
     psychoJS: psychoJS,
     nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds_conditions.xlsx', '133:260'),
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'GuessSounds_conditions.xlsx', '133:261'),
     seed: undefined, name: 'trials'
   });
   psychoJS.experiment.addLoop(trials); // add the loop to the experiment
