@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 
 ### Load participant file ###
-filelist = [1, 2, 3, 4, 5]
+filelist = [9,10,11,12,13,14]
 
 ###############################
 ### Calculate accuracy rate ###
