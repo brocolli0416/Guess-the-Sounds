@@ -1,7 +1,0 @@
-VolumeContinueKey.keys,VolumeContinueKey.rt,HeadphoneContinueKey.keys,HeadphoneContinueKey.rt,CheckResp.keys,CheckResp.corr,CheckResp.rt,HeadphoneLoop.thisRepN,HeadphoneLoop.thisTrialN,HeadphoneLoop.thisN,HeadphoneLoop.thisIndex,HeadphoneLoop.ran,File,Correct,participant,session,date,expName,psychopyVersion,OS,frameRate
-space,2.783,space,15.596,1,1,1.495,0,0,0,0,1,Headphone/t1_1.wav,1,,001,2021-02-28_17h59.15.351,GuessTheSound,2020.2.10,Win32,60
-,,,,3,1,0.107,0,1,1,5,1,Headphone/t3_2.wav,3,,001,2021-02-28_17h59.15.351,GuessTheSound,2020.2.10,Win32,60
-,,,,3,1,0.717,0,2,2,4,1,Headphone/t3_1.wav,3,,001,2021-02-28_17h59.15.351,GuessTheSound,2020.2.10,Win32,60
-,,,,2,1,0.566,0,3,3,3,1,Headphone/t2_2.wav,2,,001,2021-02-28_17h59.15.351,GuessTheSound,2020.2.10,Win32,60
-,,,,2,1,1.776,0,4,4,2,1,Headphone/t2_1.wav,2,,001,2021-02-28_17h59.15.351,GuessTheSound,2020.2.10,Win32,60
-,,,,1,1,0.318,0,5,5,1,1,Headphone/t1_2.wav,1,,001,2021-02-28_17h59.15.351,GuessTheSound,2020.2.10,Win32,60
