@@ -1153,7 +1153,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="1 = REPEAT&amp;#10;2 = SIMILAR&amp;#10;3 = NEW" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="1 = OLD&amp;#10;2 = NEW" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1600,7 +1600,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Sound Sorting Task&amp;#10;&amp;#10;&amp;#10;A scientist is collecting different sounds of everyday life and has created an audio file for each sound. However, he has accidently duplicated some of the audio files and now he needs your help looking for the duplicated words.&amp;#10;&amp;#10;There are 144 sound files in total. Your task is to listen to each sound and label them as either &quot;OLD&quot; (duplicate) or &quot;NEW&quot;." valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Sound Sorting Task&amp;#10;&amp;#10;&amp;#10;A scientist is collecting different sounds of everyday life and has created an audio file for each sound. However, he has accidently duplicated some of the audio files and now he needs your help looking for the duplicated words.&amp;#10;&amp;#10;There are 128 sound files in total. Your task is to listen to each sound and label them as either &quot;OLD&quot; (duplicate) or &quot;NEW&quot;." valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1721,6 +1721,20 @@
     <Routine name="StartAdjustment"/>
     <Routine name="VolumeAdjustment"/>
     <Routine name="HeadphoneCheck"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('File', 'Headphone/t1_1.wav'), ('Correct', 1)]), OrderedDict([('File', 'Headphone/t1_2.wav'), ('Correct', 1)]), OrderedDict([('File', 'Headphone/t2_1.wav'), ('Correct', 2)]), OrderedDict([('File', 'Headphone/t2_2.wav'), ('Correct', 2)]), OrderedDict([('File', 'Headphone/t3_1.wav'), ('Correct', 3)]), OrderedDict([('File', 'Headphone/t3_2.wav'), ('Correct', 3)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Headphone_check.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="HeadphonePlay"/>
+    <Routine name="HeadphoneFeedback"/>
+    <LoopTerminator name="trials_2"/>
     <Routine name="Welcome1Ver2"/>
     <Routine name="Welcome2Ver2"/>
     <Routine name="PracticeBegin"/>
