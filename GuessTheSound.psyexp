@@ -7,7 +7,7 @@
     <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
-    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Experiment info" updates="None" val="{'participant': ''}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="" valType="str"/>
@@ -18,13 +18,13 @@
     <Param name="Save excel file" updates="None" val="False" valType="bool"/>
     <Param name="Save log file" updates="None" val="True" valType="bool"/>
     <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
-    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="False" valType="bool"/>
     <Param name="Screen" updates="None" val="1" valType="num"/>
     <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="Window size (pixels)" updates="None" val="[1504, 1003]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
@@ -1019,8 +1019,8 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="Tcount += 1;&amp;#10;TrialCount = (&quot;Trial &quot; + Tcount.toString());&amp;#10;if ((SoundType === &quot;NEW&quot;)) {&amp;#10;    message = &quot;This is a NEW word. \nThis is your first time hearing this sound.&quot;;&amp;#10;} else {&amp;#10;    if ((SoundType === &quot;SIMILAR&quot;)) {&amp;#10;        message = &quot;This is a NEW word. \nNotice that this one sounds similar to the previous sound but is not exactly the same.&quot;;&amp;#10;    } else {&amp;#10;        if ((SoundType === &quot;OLD&quot;)) {&amp;#10;            message = &quot;This is an OLD word. \nThis sound is exactly the same as the first sound.&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="Tcount += 1&amp;#10;TrialCount = 'Trial ' + str(Tcount)&amp;#10;&amp;#10;if SoundType == 'NEW':&amp;#10;    message = &quot;This is a NEW word. \nThis is your first time hearing this sound.&quot;&amp;#10;elif SoundType == 'SIMILAR':&amp;#10;    message = &quot;This is a NEW word. \nNotice that this one sounds similar to the previous sound but is not exactly the same.&quot;&amp;#10;elif SoundType == 'OLD':&amp;#10;    message = &quot;This is an OLD word. \nThis sound is exactly the same as the first sound.&quot;" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="Tcount += 1;&amp;#10;TrialCount = (&quot;Trial &quot; + Tcount.toString());&amp;#10;if ((SoundType === &quot;NEW&quot;)) {&amp;#10;    message = &quot;This is a NEW word. \nThis is your first time hearing this sound.&quot;;&amp;#10;} else {&amp;#10;    if ((SoundType === &quot;SIMILAR&quot;)) {&amp;#10;        message = &quot;This is a NEW word. \nNote that this one sounds similar to the previous sound but is not exactly the same.&quot;;&amp;#10;    } else {&amp;#10;        if ((SoundType === &quot;OLD&quot;)) {&amp;#10;            message = &quot;This is an OLD word. \nThis sound is exactly the same as the first sound.&quot;;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="Tcount += 1&amp;#10;TrialCount = 'Trial ' + str(Tcount)&amp;#10;&amp;#10;if SoundType == 'NEW':&amp;#10;    message = &quot;This is a NEW word. \nThis is your first time hearing this sound.&quot;&amp;#10;elif SoundType == 'SIMILAR':&amp;#10;    message = &quot;This is a NEW word. \nNote that this one sounds similar to the previous sound but is not exactly the same.&quot;&amp;#10;elif SoundType == 'OLD':&amp;#10;    message = &quot;This is an OLD word. \nThis sound is exactly the same as the first sound.&quot;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_2" valType="code"/>
       </CodeComponent>
